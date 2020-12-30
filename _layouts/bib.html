@@ -53,25 +53,34 @@
 
       <div class="periodical">
       {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
+        <em>{{entry.journal}}</em>. {{entry.year}}.
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
-      {% endif %}
-      {% if entry.year %}
-        {{entry.year}}
+        <em>In {{entry.booktitle}}</em>. {{entry.year}}.
+      {% elsif entry.type == "phdthesis" %}
+        <em>{{entry.school}}</em>. {{entry.year}}.
       {% endif %}
       </div>
+
+      {% if entry.note %}
+      <div class="periodical">
+        <em>{{entry.note}}</em>
+      </div>
+      {% endif %}
+
     {% endif %}
 
     <div class="links">
     {% if entry.abstract %}
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
     {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
     {% endif %}
-    {% if entry.html %}
-      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+    {% if entry.doi %}
+        <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" class="btn btn-sm z-depth-0" role="button" target="_blank">doi</a>
+    {% endif %}
+    {% if entry.url %}
+      <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
@@ -79,6 +88,9 @@
       {% else %}
       <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
+    {% endif %}
+    {% if entry.preprint %}
+      <a href="{{ entry.preprint }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Preprint</a>
     {% endif %}
     {% if entry.supp %}
       {% if entry.supp contains '://' %}

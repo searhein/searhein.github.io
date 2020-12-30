@@ -8,17 +8,18 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>University of Stuttgart</p>
+    <p>Pfaffenwaldring 57</p>
+    <p>70569 Stuttgart, Germany</p>
+    <p>Room 7.157</p>
+    <p style="margin-top: 5px">Tel.: +49-(0)711 685-62040</p>
+    <p>Fax : +49-(0)711 685-65507</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+recent_papers: true # includes a list of papers marked as "recent={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Alexander Heinlein is substitute professor at the <a href="https://www.ians.uni-stuttgart.de/nmh/" target="_blank">Chair of Numerical Mathematics for High Performance Computing (NMH)</a> of the <a href="https://www.ians.uni-stuttgart.de" target="_blank">Institute of Applied Analysis and Numerical Simulation (IANS)</a> at the <a href="https://www.uni-stuttgart.de" target="_blank">University of Stuttgart</a>.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+His main research areas are **numerical methods for partial differential equations** and **scientific computing**, in particular, solvers and discretizations based on **domain decomposition and multiscale approaches**. He is interested in **high-performance computing (HPC)** and solving challenging problems involving, e.g., complex geometries, highly heterogenous coefficient functions, or the coupling of multiple physics. More recently, Alexander also started focusing on the combination of scientific computing and machine learning, a new research area also known as **scientific machine learning (SciML)**. Generally, his work includes the development of new methods and their theoretical foundation as well as their implementation on **current computer architectures (CPUs, GPUs)** and application to real world problems.

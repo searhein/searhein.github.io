@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h3 class="post-title {{ page.university }}">
+      {% if page.university == "ude" %}
+        University of Duisburg-Essen
+      {% endif %}
+      {% if page.university == "uzk" %}
+        University of Cologne
+      {% endif %}
+      {% if page.university == "ust" %}
+        University of Stuttgart
+      {% endif %}
+      - 
+      {{ page.semester }}
+      </h3>
+    <h1 class="post-title">
+      {{ page.title }}
+    </h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+
+</div>

@@ -19,6 +19,7 @@ $green-color-lime:    #B7D12A !default;
 $green-color-dark:    #009f06 !default;
 $green-color-light:   #ddffdd !default;
 $green-color-bright:  #11D68B !default;
+$petrol-color:        #005f69 !default;
 $purple-color:        #B509AC !default;
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
@@ -29,7 +30,12 @@ $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-dark:     darken($grey-color, 25%);
 
 /* Set theme colors *************************/
-$theme-color:         $purple-color;
+$theme-color:         $petrol-color;
 
 $link-color:          $theme-color;
 $text-color:          #111 !default;
+
+/* Set university colors *************************/
+$ude-color:           #09356d !default;
+$uzk-color:           #2d3e50 !default;
+$ust-color:           #24b6fc !default;

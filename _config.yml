@@ -3,20 +3,22 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: (Long Last) Name
-email: you@example.com
+first_name: Alexander
+middle_name:
+last_name: Heinlein
+email: alexander.heinlein@uni-koeln.de
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
+  Personal website of Alexander Heinlein.
+# A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+
+footer_text:
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+# Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+baseurl: #/al-folio # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -39,19 +41,19 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: searhein # your GitHub user name
 twitter_username: # your Twitter handle
 linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
+scholar_userid: Pb5ZhSIAAAAJ # your Google Scholar ID
+orcid_id: 0000-0003-1578-8104 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
+research_gate_profile: Alexander_Heinlein # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+#  You can even add a little note about which of these is the best way to reach you.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -59,7 +61,7 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
+blog_name: #al-folio  # your blog must have a name for it to show up in the nav bar
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
@@ -83,6 +85,15 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  research:
+    output: true
+    permalink: /research/:path/
+  software:
+    output: true
+    permalink: /software/:path/
+  teaching:
+    output: true
+    permalink: /teaching/:path/
 
 news_limit: 5
 
@@ -123,7 +134,7 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
+  last_name: Heinlein
 
   style: apa
   locale: en
@@ -150,7 +161,7 @@ enable_katex:             true
 enable_mansory:           true
 enable_progressbar:       true
 enable_tooltips:          false
-show_social_icons:        false
+show_social_icons:        true
 
 # -----------------------------------------------------------------------------
 # Library versions
