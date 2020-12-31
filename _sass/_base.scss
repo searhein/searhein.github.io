@@ -43,7 +43,7 @@ a, table.table a {
   width: 100%;
 
   .address {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 5px;
     font-family: monospace;
     font-size: 1.1rem;
@@ -139,7 +139,7 @@ a, table.table a {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: $grey-color-dark;
+    background-color: var(--global-icon-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -304,7 +304,7 @@ footer.sticky-bottom {
         color: var(--global-theme-color); // var(--global-hover-color);
       }
       .card {
-        border: 1px solid var(--global-theme-color);
+        border: 1px solid var(--global-hover-color);
       }
     }
   }
@@ -501,8 +501,14 @@ footer.sticky-bottom {
     .card {
       .card-header {
         height: 100%;
+        border-radius: 3px 0px 0px 3px;
         p {
           color: white;
+        }
+      }
+      .card-body {
+        p {
+          color: $black-color;
         }
       }
       .ude {
@@ -513,6 +519,15 @@ footer.sticky-bottom {
       }
       .ust {
         background-color: $ust-color;
+      }
+    }
+    a {
+      &:hover {
+        .card-body {
+          p {
+            color: var(--global-theme-color);
+          }
+        }
       }
     }
   }
