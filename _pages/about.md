@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description:
 
 profile:
   align: right
@@ -17,7 +17,7 @@ profile:
 
 news: true  # includes a list of news items
 recent_papers: true # includes a list of papers marked as "recent={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
 Alexander Heinlein is substitute professor at the <a href="https://www.ians.uni-stuttgart.de/nmh/" target="_blank">Chair of Numerical Mathematics for High Performance Computing (NMH)</a> of the <a href="https://www.ians.uni-stuttgart.de" target="_blank">Institute of Applied Analysis and Numerical Simulation (IANS)</a> at the <a href="https://www.uni-stuttgart.de" target="_blank">University of Stuttgart</a>.

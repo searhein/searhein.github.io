@@ -291,22 +291,33 @@ footer.sticky-bottom {
 }
 
 
+// Grid-Item
+.grid-item {
+  margin-bottom: 10px;
+  h1, h2, h3, h4, h5, h6 {
+    color: $black-color;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--global-theme-color); // var(--global-hover-color);
+      }
+      .card {
+        border: 1px solid var(--global-theme-color);
+      }
+    }
+  }
+}
+
 // Projects
 
 .projects {
   .grid-item {
     width: 250px;
-    margin-bottom: 10px;
-    a {
-      color: black;
-      text-decoration: none;
-      &:hover {
-        color: var(--global-theme-color);
-      }
+    .card img {
+      width: 100%;
     }
-  }
-  .card img {
-    width: 100%;
   }
 }
 
@@ -436,19 +447,11 @@ footer.sticky-bottom {
 }
 
 
-// Projects
+// Research
 
 .research {
   .grid-item {
     width: 100%;
-    margin-bottom: 10px;
-    a {
-      color: black;
-      text-decoration: none;
-      &:hover {
-        color: $theme-color;
-      }
-    }
     .card {
       .card-header {
         height: 100%;
@@ -462,7 +465,7 @@ footer.sticky-bottom {
 //     width: 375px;
 //     margin-bottom: 10px;
 //     a {
-//       color: black;
+//       color: $black-color;
 //       text-decoration: none;
 //       &:hover {
 //         color: $theme-color;
@@ -480,14 +483,6 @@ footer.sticky-bottom {
 .software {
   .grid-item {
     width: 100%;
-    margin-bottom: 10px;
-    a {
-      color: black;
-      text-decoration: none;
-      &:hover {
-        color: $theme-color;
-      }
-    }
     .card {
       .card-header {
         height: 100%;
@@ -503,28 +498,20 @@ footer.sticky-bottom {
   font-size: 0.8rem;
   .grid-item {
     width: 100%;
-    margin-bottom: 10px;
-    a {
-      color: black;
-      text-decoration: none;
-      &:hover {
-        color: $theme-color;
-      }
-    }
     .card {
       .card-header {
         height: 100%;
+        p {
+          color: white;
+        }
       }
       .ude {
-        color: white;
         background-color: $ude-color;
       }
       .uzk {
-        color: white;
         background-color: $uzk-color;
       }
       .ust {
-        color: white;
         background-color: $ust-color;
       }
     }
