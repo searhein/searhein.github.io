@@ -33,7 +33,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 </p>
 
 <p id="phdthesis">
-<h2 class="year">phd thesis</h2>
+<h2 class="year">theses</h2>
 {% bibliography -f papers --query @phdthesis[keywords ~= published]* %}
 </p>
 
