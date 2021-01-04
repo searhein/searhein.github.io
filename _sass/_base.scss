@@ -290,6 +290,14 @@ footer.sticky-bottom {
   }
 }
 
+// Grid-Container
+// .grid-container {
+//     display: grid;
+//     grid-gap: 5px;
+//     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+//     grid-auto-flow: row dense;
+//     grid-auto-rows: minmax(100px, auto);;
+// }
 
 // Grid-Item
 .grid-item {
@@ -297,6 +305,9 @@ footer.sticky-bottom {
   h1, h2, h3, h4, h5, h6 {
     color: $black-color;
   }
+  // .card {
+  //   border: 1px solid var(--global-bg-color);
+  // }
   a {
     text-decoration: none;
     &:hover {
