@@ -32,7 +32,7 @@ References
     abstract = {In recent years, nonlinear domain decomposition (DD) methods for the solution of nonlinear partial differential equations as, e.g., ASPIN (Additive Schwarz Preconditioned Inexact Newton) or Nonlinear-FETI-DP (Nonlinear - Finite Element Tearing and Interconnecting - Dual-Primal), became popular. For several model problems, these approaches outperform classical inexact Newton methods, where a corresponding linear DD method is used to solve the linearized problems, in terms of linear and nonlinear iteration counts and time to solution. As in the linear case, in nonlinear DD methods, an appropriate coarse space is often necessary for robustness and numerical scalability. In this paper, a new multiplicative implementation of a coarse space for ASPIN as well as the related RASPEN (Restricted Additive Schwarz Preconditioned Exact Newton) method is suggested. Additionally, several coarse spaces, which are also applicable for unstructured meshes and domain decompositions, are suggested. Robustness and numerical scalability is shown for different homogeneous and heterogeneous p-Laplace problems in two spatial dimensions.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_30},
     preprint = {https://kups.ub.uni-koeln.de/9015/},
-    keywords = {published, recent}
+    keywords = {published}
 }
 
 @inproceedings{Heinlein:2020:MLAa,
@@ -47,7 +47,7 @@ References
     abstract = {Adaptive FETI-DP (Finite Element Tearing and Interconnecting - Dual-Primal) methods are considered for the solution of two-dimensional scalar elliptic model problems with complex coefficient distributions where large coefficient jumps can occur along or across the domain decomposition interface. The adaptive coarse space is obtained by solving certain generalized eigenvalue problems on subdomain edges. In order to reduce the number of eigenvalue problems, a machine learning based strategy using a neural network to predict the geometric location of critical edges can be applied in a preprocessing step. Here, the effect of different types of training data sets on the robustness of the machine learning adaptive FETI-DP algorithm is investigated. Therefore, the neural network is first trained on different data sets and then the machine learning model is evaluated for a coefficient distribution obtained from a realistic dual-phase steel microstructure. It can be observed that the best results are obtained using a priori knowledge (smart data), whereas purely random data yields bad results. However, by imposing some structure on the random data and increasing the size of the data set, the performance is comparable to the smart data.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_24},
     preprint = {https://kups.ub.uni-koeln.de/9016/},
-    keywords = {published, recent}
+    keywords = {published}
 }
 
 @inproceedings{Heinlein:2020:LSA,
@@ -62,7 +62,7 @@ References
     abstract = {We compare the spectra of local generalized eigenvalue problems in different adaptive coarse spaces for overlapping and nonoverlapping domain decomposition methods. In particular, we compare the AGDSW (Adaptive Generalized Dryja-Smith-Widlund), the OS-ACMS (Overlapping Schwarz-Approximate Component Mode Synthesis), and the SHEM (Spectral Harmonically Enriched Multiscale) coarse spaces for overlapping Schwarz methods, the GenEO (Generalized Eigenproblems in the Overlaps) coarse space for FETI-1 and BDD methods, and two approaches based on estimates for the $P_D$ operator for FETI-DP and BDDC methods. Therefore, we consider eight different two-dimensional coefficient functions with jumps ranging from simple channels to a realistic microstructure of a dual-phase steel. We observe significant differences in the width of the gap between good and bad eigenvalues depending on the coefficient distribution. In addition to that, eigenvalue problems involving sophisticated but more expensive harmonic extensions or deluxe-scaling can reduce the number of bad eigenvalues.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_18},
     preprint = {https://kups.ub.uni-koeln.de/9019/},
-    keywords = {published, recent}
+    keywords = {published}
 }
 
 @inproceedings{Heinlein:2020:FRO,
@@ -77,7 +77,7 @@ References
     abstract = {A parallel two-level overlapping Schwarz domain decomposition preconditioner has been integrated into the Trilinos ShyLU-package. The preconditioner uses an energy-minimizing coarse space and can be constructed from an assembled sparse matrix. The software implements variants of the two-level overlapping Schwarz method from [Dohrmann, Klawonn, Widlund, SINUM 2008], where it was denoted Generalized Dryja, Smith, Widlund (GDSW). The implementation is based on [Heinlein, Klawonn, Rheinbach, SISC 2016] but has been improved significantly with respect to efficiency, generality, e.g., for the use of Tpetra instead of Epetra matrices, and its interface.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_19},
     preprint = {https://kups.ub.uni-koeln.de/9018/},
-    keywords = {published, recent}
+    keywords = {published}
 }
 
 @inproceedings{Heinlein:2020:TLE,
@@ -92,7 +92,7 @@ References
     abstract = {A three-level extension of the GDSW overlapping Schwarz preconditioner in three dimensions is presented, constructed by recursively applying the GDSW preconditioner to the coarse problem using a standard and a reduced dimension coarse space. Numerical results, obtained for a parallel implementation using the Trilinos software library, are presented for up to 64,000 cores of the JUQUEEN supercomputer. The superior weak parallel scalability of the three-level method is verified. For large problems and a large number of cores, the three-level method is faster by more than a factor of two, compared to the standard two-level method. The three-level method shows to scale when the classical method is already be out-of-memory.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_20},
     preprint = {https://kups.ub.uni-koeln.de/9017/},
-    keywords = {published, recent}
+    keywords = {published}
 }
 
 @article{Heinlein:2020:AHN,
