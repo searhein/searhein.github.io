@@ -430,6 +430,16 @@ References
 
 # accepted
 
+@techreport{Heinlein:2020:CMLb,
+    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
+    title = {Combining Machine Learning and Domain Decomposition Methods for the Solution of Partial Diﬀerential Equations – A Review},
+    note = {Accepted for publication in the GAMM-Mitteilungen. January 2021},
+    abbr = {GAMM-Mitteilungen},
+    abstract = {Scientiﬁc machine learning, an area of research where techniques from machine learning and scientiﬁc computing are combined, has become of increasing importance and receives growing attention. Here, our focus is on a very speciﬁc area within scientiﬁc machine learning given by the combination of domain decomposition methods with machine learning techniques. The aim of the present work is to make an attempt of providing a review of existing and also new approaches within this field as well as to present some known results in a uniﬁed framework; no claim of completeness is made. As a concrete example of machine learning enhanced domain decomposition methods, an approach is presented which uses neural networks to reduce the computational eﬀort in adaptive domain decomposition methods while retaining their robustness. More precisely, deep neural networks are used to predict the geometric location of constraints which are needed to deﬁne a robust coarse space. Additionally, two recently published deep domain decomposition approaches are presented in a uniﬁed framework. Both approaches use physics-constrained neural networks to replace the discretization and solution of the subdomain problems of a given decomposition of the computational domain. Finally, a brief overview is given of several further approaches which combine machine learning with ideas from domain decomposition methods to either increase the performance of already existing algorithms or to create completely new methods.},
+    preprint = {http://kups.ub.uni-koeln.de/id/eprint/20708},
+    keywords = {accepted, recent}
+}
+
 @techreport{Eichinger:2020:SFP,
     author = {Matthias Eichinger and Alexander Heinlein and Axel Klawonn},
     title = {Stationary flow predictions using convolutional neural networks},
@@ -477,15 +487,6 @@ References
     note = {Submitted December 2020},
     abstract = {A convolution neural network (CNN)-based approach for the construction of reduced order surrogate models for computational fluid dynamics (CFD) simulations is introduced; it is inspired by the approach of Guo, Li, and Iori [X. Guo, W. Li, and F. Iorio, Convolutional neural networks for steady flow approximation, in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD'16, New York, USA, 2016, ACM, pp. 481--490]. In particular, the neural networks are trained in order to predict images of the flow field in a channel with varying obstacle based on an image of the geometry of the channel. A classical CNN with bottleneck structure and a U-Net are compared while varying the input format, the number of decoder paths, as well as the loss function used to train the networks. This approach yields very low prediction errors, in particular, when using the U-Net architecture. Furthermore, the models are also able to generalize to unseen geometries of the same type. A transfer learning approach enables the model to be trained to a new type of geometries with very low training cost. Finally, based on this transfer learning approach, a sequential learning strategy is introduced, which significantly reduces the amount of necessary training data.},
     preprint = {https://kups.ub.uni-koeln.de/29760/},
-    keywords = {submitted, recent}
-}
-
-@techreport{Heinlein:2020:CMLb,
-    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
-    title = {Combining Machine Learning and Domain Decomposition Methods for the Solution of Partial Diﬀerential Equations – A Review},
-    note = {Submitted October 2020},
-    abstract = {Scientiﬁc machine learning, an area of research where techniques from machine learning and scientiﬁc computing are combined, has become of increasing importance and receives growing attention. Here, our focus is on a very speciﬁc area within scientiﬁc machine learning given by the combination of domain decomposition methods with machine learning techniques. The aim of the present work is to make an attempt of providing a review of existing and also new approaches within this ﬁeld as well as to present some known results in a uniﬁed framework; no claim of completeness is made. As a concrete example of machine learning enhanced domain decomposition methods, an approach is presented which uses neural networks to reduce the computational eﬀort in adaptive domain decomposition methods while retaining their robustness. More precisely, deep neural networks are used to predict the geometric location of constraints which are needed to deﬁne a robust coarse space. Additionally, two recently published deep domain decomposition approaches are presented in a uniﬁed framework. Both approaches use physics-constrained neural networks to replace the discretization and solution of the subdomain problems of a given decomposition of the computational domain. Finally, a brief overview is given of several further approaches which combine machine learning with ideas from domain decomposition methods to either increase the performance of already existing algorithms or to create completely new methods.},
-    preprint = {http://kups.ub.uni-koeln.de/id/eprint/20708},
     keywords = {submitted, recent}
 }
 
