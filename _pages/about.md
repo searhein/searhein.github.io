@@ -6,7 +6,7 @@ description:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic2.jpeg
   address: >
     <p>University of Stuttgart</p>
     <p>Pfaffenwaldring 57</p>
