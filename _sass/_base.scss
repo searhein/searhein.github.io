@@ -89,6 +89,10 @@ a, table.table a {
       color: white;
       background-color: $ust-color;
     }
+    .tud {
+      color: white;
+      background-color: $tud-color;
+    }
 }
 
 
@@ -530,6 +534,9 @@ footer.sticky-bottom {
       }
       .ust {
         background-color: $ust-color;
+      }
+      .tud {
+        background-color: $tud-color;
       }
     }
     a {

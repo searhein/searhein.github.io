@@ -37,7 +37,10 @@ nav: true
                 {% endif %}
                 {% if teaching.university == "ust" %}
                   <p class="card-text">University of Stuttgart</p>
-                {% endif %}          
+                {% endif %}
+                {% if teaching.university == "tud" %}
+                  <p class="card-text">TU Delft</p>
+                {% endif %}
                 <p class="card-text">{{ teaching.semester }}</p>
               </div>
             </div>

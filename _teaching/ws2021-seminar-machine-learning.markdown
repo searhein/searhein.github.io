@@ -5,7 +5,7 @@ semester: WS 2020/2021
 title: Seminar on Machine Learning
 description: The seminar covers several topics from machine learning.
 runningindex: 11
-archive: false
+archive: true
 ---
 
 ### Time and Location

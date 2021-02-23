@@ -5,7 +5,7 @@ semester: WS 2020/2021
 title: Scientific Computing
 description: An advanced class about domain decomposition methods and parallel computing.
 runningindex: 12
-archive: false
+archive: true
 ---
 
 ### Time and Location
