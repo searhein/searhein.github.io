@@ -5,6 +5,21 @@ References
 
 # published
 
+@article{Heinlein:2021:CMLb,
+    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
+    title = {Combining Machine Learning and Domain Decomposition Methods for the Solution of Partial Diﬀerential Equations – A Review},
+    journal = {GAMM-Mitteilungen},
+    volume = {44},
+    number = {1},
+    pages = {e202100001},
+    year = {2021},
+    doi = {10.1002/gamm.202100001},
+    abbr = {GAMM-Mitteilungen},
+    abstract = {Scientiﬁc machine learning, an area of research where techniques from machine learning and scientiﬁc computing are combined, has become of increasing importance and receives growing attention. Here, our focus is on a very speciﬁc area within scientiﬁc machine learning given by the combination of domain decomposition methods with machine learning techniques. The aim of the present work is to make an attempt of providing a review of existing and also new approaches within this field as well as to present some known results in a uniﬁed framework; no claim of completeness is made. As a concrete example of machine learning enhanced domain decomposition methods, an approach is presented which uses neural networks to reduce the computational eﬀort in adaptive domain decomposition methods while retaining their robustness. More precisely, deep neural networks are used to predict the geometric location of constraints which are needed to deﬁne a robust coarse space. Additionally, two recently published deep domain decomposition approaches are presented in a uniﬁed framework. Both approaches use physics-constrained neural networks to replace the discretization and solution of the subdomain problems of a given decomposition of the computational domain. Finally, a brief overview is given of several further approaches which combine machine learning with ideas from domain decomposition methods to either increase the performance of already existing algorithms or to create completely new methods.},
+    preprint = {http://kups.ub.uni-koeln.de/id/eprint/20708},
+    keywords = {published, recent}
+}
+
 @article{Heinlein:2020:FFE,
     author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
     title = {A Frugal {FETI-DP} and {BDDC} Coarse Space for Heterogeneous Problems},
@@ -430,17 +445,6 @@ References
 
 # accepted
 
-@techreport{Heinlein:2020:CMLb,
-    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
-    title = {Combining Machine Learning and Domain Decomposition Methods for the Solution of Partial Diﬀerential Equations – A Review},
-    note = {Accepted for publication in the GAMM-Mitteilungen. January 2021},
-    doi = {10.1002/gamm.202100001},
-    abbr = {GAMM-Mitteilungen},
-    abstract = {Scientiﬁc machine learning, an area of research where techniques from machine learning and scientiﬁc computing are combined, has become of increasing importance and receives growing attention. Here, our focus is on a very speciﬁc area within scientiﬁc machine learning given by the combination of domain decomposition methods with machine learning techniques. The aim of the present work is to make an attempt of providing a review of existing and also new approaches within this field as well as to present some known results in a uniﬁed framework; no claim of completeness is made. As a concrete example of machine learning enhanced domain decomposition methods, an approach is presented which uses neural networks to reduce the computational eﬀort in adaptive domain decomposition methods while retaining their robustness. More precisely, deep neural networks are used to predict the geometric location of constraints which are needed to deﬁne a robust coarse space. Additionally, two recently published deep domain decomposition approaches are presented in a uniﬁed framework. Both approaches use physics-constrained neural networks to replace the discretization and solution of the subdomain problems of a given decomposition of the computational domain. Finally, a brief overview is given of several further approaches which combine machine learning with ideas from domain decomposition methods to either increase the performance of already existing algorithms or to create completely new methods.},
-    preprint = {http://kups.ub.uni-koeln.de/id/eprint/20708},
-    keywords = {accepted, recent}
-}
-
 @techreport{Eichinger:2020:SFP,
     author = {Matthias Eichinger and Alexander Heinlein and Axel Klawonn},
     title = {Stationary flow predictions using convolutional neural networks},
@@ -485,7 +489,7 @@ References
     author = {Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and Friederike R\"over},
     title = {A Three-Level Extension for Fast and Robust Overlapping Schwarz (FROSch) Preconditioners with Reduced Dimensional Coarse Space},
     note = {Submitted March 2021},
-    abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, which reduce the size of the coarse problem compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we will present results, obtained on the SuperMUC-NG supercomputer up to 85K MPI ranks applying the three-level extension to the reduced dimensional GDSW coarse space. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
+    abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
     keywords = {submitted, recent}
 }
 
@@ -521,7 +525,7 @@ References
     note = {Submitted September 2020},
     abstract = {The course of an epidemic can be often successfully described mathematically using compartment models. These models result in a system of ordinary diﬀerential equations. Two well-known examples are the SIR and the SEIR models. The transition rates between the diﬀerent compartments are deﬁned by certain parameters which are speciﬁc for the respective virus. Often, these parameters can be taken from the literature or can be determined from statistics. However, the contact rate or the related eﬀective reproduction number are in general not constant and thus cannot easily be determined. Here, a new machine learning approach based on physics-informed neural networks is presented that can learn the contact rate from given data for the dynamical systems given by the SIR and SEIR models. The new method generalizes an already known approach for the identiﬁcation of constant parameters to the variable or time-dependent case. After introducing the new method, it is tested for synthetic data generated by the numerical solution of SIR and SEIR models. Here, the case of exact and perturbed data is considered. In all cases, the contact rate can be learned very satisfactorily. Finally, the SEIR model in combination with physics-informed neural networks is used to learn the contact rate for COVID-19 data given by the course of the epidemic in Germany. The simulation of the number of infected individuals over the course of the epidemic, using the learned contact rate, is very promising.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/12159},
-    keywords = {submitted, recent}
+    keywords = {submitted}
 }
 
 @techreport{Heinlein:2020:AGD,
