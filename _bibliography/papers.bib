@@ -5,6 +5,48 @@ References
 
 # published
 
+@inproceedings{Eichinger:2021:SFP,
+    author = {Matthias Eichinger and Alexander Heinlein and Axel Klawonn},
+    title = {Stationary flow predictions using convolutional neural networks},
+    booktitle = {Numerical Mathematics and Advanced Applications ENUMATH 2019},
+    pages = {541--549},
+    publisher = {Springer International Publishing},
+    year = {2021},
+    doi = {10.1007/978-3-030-55874-1_53},
+    abbr = {Springer LNCSE},
+    astract = {Computational Fluid Dynamics (CFD) simulations are a numerical tool to model and analyze the behavior of fluid flow. However, accurate simulations are generally very costly because they require high grid resolutions. In this paper, an alternative approach for computing flow predictions using Convolutional Neural Networks (CNNs) is described; in particular, a classical CNN as well as the U-Net architecture are used. First, the networks are trained in an expensive offline phase using flow fields computed by CFD simulations. Afterwards, the evaluation of the trained neural networks is very cheap. Here, the focus is on the dependence of the stationary flow in a channel on variations of the shape and the location of an obstacle. CNNs perform very well on validation data, where the averaged error for the best networks is below 3%. In addition to that, they also generalize very well to new data, with an averaged error below 10%.},
+    preprint = {https://kups.ub.uni-koeln.de/id/eprint/10440},
+    keywords = {published, reviewed, recent}
+}
+
+@inproceedings{Heinlein:2021:FAT,
+    author = {Alexander Heinlein and Christian Hochmuth and Axel Klawonn},
+    title = {Fully algebraic two-level overlapping {S}chwarz preconditioners for elasticity problems},
+    booktitle = {Numerical Mathematics and Advanced Applications ENUMATH 2019},
+    pages = {531--539},
+    publisher = {Springer International Publishing},
+    year = {2021},
+    doi = {10.1007/978-3-030-55874-1_52},
+    abbr = {Springer LNCSE},
+    abstract = {Different parallel two-level overlapping Schwarz preconditioners with Generalized Dryja-Smith-Widlund (GDSW) and Reduced dimension GDSW (RGDSW) coarse spaces for elasticity problems are considered. GDSW type coarse spaces can be constructed from the fully assembled system matrix, but they additionally need the index set of the interface of the corresponding nonoverlapping domain decomposition and the null space of the elasticity operator, i.e., the rigid body motions. In this paper, fully algebraic variants, which are constructed solely from the uniquely distributed system matrix, are compared to the classical variants which make use of this additional information; the fully algebraic variants use an approximation of the interface and an incomplete algebraic null space. Nevertheless, the parallel performance of the fully algebraic variants is competitive compared to the classical variants for a stationary homogeneous model problem and a dynamic heterogenous model problem with coefficient jumps in the shear modulus; the largest parallel computations were performed on 4,096 MPI (Message Passing Interface) ranks. The parallel implementations are based on the Trilinos package FROSch.},
+    preprint = {https://kups.ub.uni-koeln.de/id/eprint/10441},
+    keywords = {published, reviewed, recent}
+}
+
+@inproceedings{Heinlein:2021:MLA,
+    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
+    title = {Machine Learning in Adaptive Domain Decomposition Methods - Reducing the Effort in Sampling},
+    booktitle = {Numerical Mathematics and Advanced Applications ENUMATH 2019},
+    pages = {593--603},
+    publisher = {Springer International Publishing},
+    year = {2021},
+    doi = {10.1007/978-3-030-55874-1_58},
+    abbr = {Springer LNCSE},
+    abstract = {The convergence rate of classic domain decomposition methods in general deteriorates severely for large discontinuities in the coefficient functions of the considered partial differential equation. To retain the robustness for such highly heterogeneous problems, the coarse space can be enriched by additional coarse basis functions. These can be obtained by solving local generalized eigenvalue problems on subdomain edges. In order to reduce the number of eigenvalue problems and thus the computational cost, we use a neural network to predict the geometric location of critical edges, i.e., edges where the eigenvalue problem is indispensable. As input data for the neural network, we use function evaluations of the coefficient function within the two subdomains adjacent to an edge. In the present article, we examine the effect of computing the input data only in a neighborhood of the edge, i.e., on slabs next to the edge. We show numerical results for both the training data as well as for a concrete test problem in form of a microsection subsection for linear elasticity problems. We observe that computing the sampling points only in one half or one quarter of each subdomain still provides robust algorithms.},
+    preprint = {https://kups.ub.uni-koeln.de/id/eprint/10439},
+    keywords = {published, reviewed, recent}
+}
+
 @inproceedings{Heinlein:2021:CST,
     author = {Alexander Heinlein and Oliver Rheinbach and Friederike R\"over},
     title = {Choosing the Subregions in Three-Level FROSch Preconditioners},
@@ -17,7 +59,7 @@ References
     keywords = {published, recent}
 }
 
-@article{Heinlein:2021:CMLb,
+@article{Heinlein:2021:CML,
     author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
     title = {Combining Machine Learning and Domain Decomposition Methods for the Solution of Partial Diﬀerential Equations – A Review},
     journal = {GAMM-Mitteilungen},
@@ -30,7 +72,7 @@ References
     abstract = {Scientiﬁc machine learning, an area of research where techniques from machine learning and scientiﬁc computing are combined, has become of increasing importance and receives growing attention. Here, our focus is on a very speciﬁc area within scientiﬁc machine learning given by the combination of domain decomposition methods with machine learning techniques. The aim of the present work is to make an attempt of providing a review of existing and also new approaches within this field as well as to present some known results in a uniﬁed framework; no claim of completeness is made. As a concrete example of machine learning enhanced domain decomposition methods, an approach is presented which uses neural networks to reduce the computational eﬀort in adaptive domain decomposition methods while retaining their robustness. More precisely, deep neural networks are used to predict the geometric location of constraints which are needed to deﬁne a robust coarse space. Additionally, two recently published deep domain decomposition approaches are presented in a uniﬁed framework. Both approaches use physics-constrained neural networks to replace the discretization and solution of the subdomain problems of a given decomposition of the computational domain. Finally, a brief overview is given of several further approaches which combine machine learning with ideas from domain decomposition methods to either increase the performance of already existing algorithms or to create completely new methods.},
     url = {https://onlinelibrary.wiley.com/doi/10.1002/gamm.202100001},
     preprint = {http://kups.ub.uni-koeln.de/id/eprint/20708},
-    keywords = {published, recent}
+    keywords = {published, reviewed, recent}
 }
 
 @article{Heinlein:2020:FFE,
@@ -45,7 +87,7 @@ References
     abstract = {The convergence rate of domain decomposition methods is generally determined by the eigenvalues of the preconditioned system. For second-order elliptic partial differential equations, coefficient discontinuities with a large contrast can lead to a deterioration of the convergence rate. Only by implementing an appropriate coarse space or second level, a robust domain decomposition method can be obtained. In this article, a new frugal coarse space for FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) and BDDC (Balancing Domain Decomposition by Constraints) methods is presented, which has a lower set-up cost than competing adaptive coarse spaces. In particular, in contrast to adaptive coarse spaces, it does not require the solution of any local generalized eigenvalue problems. The approach considered here aims at a low-dimensional approximation of the adaptive coarse space by using appropriate weighted averages and is robust for a broad range of coefficient distributions for diffusion and elasticity problems. In this article, the robustness is heuristically justified as well as numerically shown for several coefficient distributions. The new coarse space is compared to adaptive coarse spaces, and parallel scalability up to 262,144 parallel cores for a parallel BDDC implementation with the new coarse space is shown. The superiority of the new coarse space over classic coarse spaces with respect to parallel weak scalability and time to solution is confirmed by numerical experiments.},
     url = {https://epub.oeaw.ac.at/?arp=0x003c1ad0},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/10363},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2020:CSN,
@@ -60,10 +102,10 @@ References
     abstract = {In recent years, nonlinear domain decomposition (DD) methods for the solution of nonlinear partial differential equations as, e.g., ASPIN (Additive Schwarz Preconditioned Inexact Newton) or Nonlinear-FETI-DP (Nonlinear - Finite Element Tearing and Interconnecting - Dual-Primal), became popular. For several model problems, these approaches outperform classical inexact Newton methods, where a corresponding linear DD method is used to solve the linearized problems, in terms of linear and nonlinear iteration counts and time to solution. As in the linear case, in nonlinear DD methods, an appropriate coarse space is often necessary for robustness and numerical scalability. In this paper, a new multiplicative implementation of a coarse space for ASPIN as well as the related RASPEN (Restricted Additive Schwarz Preconditioned Exact Newton) method is suggested. Additionally, several coarse spaces, which are also applicable for unstructured meshes and domain decompositions, are suggested. Robustness and numerical scalability is shown for different homogeneous and heterogeneous p-Laplace problems in two spatial dimensions.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_30},
     preprint = {https://kups.ub.uni-koeln.de/9015/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
-@inproceedings{Heinlein:2020:MLAa,
+@inproceedings{Heinlein:2020:MLA,
     author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
     title = {Machine Learning in Adaptive FETI-DP - A Comparison of Smart and Random Training Data},
     booktitle = {Domain Decomposition Methods in Science and Engineering XXV},
@@ -75,7 +117,7 @@ References
     abstract = {Adaptive FETI-DP (Finite Element Tearing and Interconnecting - Dual-Primal) methods are considered for the solution of two-dimensional scalar elliptic model problems with complex coefficient distributions where large coefficient jumps can occur along or across the domain decomposition interface. The adaptive coarse space is obtained by solving certain generalized eigenvalue problems on subdomain edges. In order to reduce the number of eigenvalue problems, a machine learning based strategy using a neural network to predict the geometric location of critical edges can be applied in a preprocessing step. Here, the effect of different types of training data sets on the robustness of the machine learning adaptive FETI-DP algorithm is investigated. Therefore, the neural network is first trained on different data sets and then the machine learning model is evaluated for a coefficient distribution obtained from a realistic dual-phase steel microstructure. It can be observed that the best results are obtained using a priori knowledge (smart data), whereas purely random data yields bad results. However, by imposing some structure on the random data and increasing the size of the data set, the performance is comparable to the smart data.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_24},
     preprint = {https://kups.ub.uni-koeln.de/9016/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2020:LSA,
@@ -90,7 +132,7 @@ References
     abstract = {We compare the spectra of local generalized eigenvalue problems in different adaptive coarse spaces for overlapping and nonoverlapping domain decomposition methods. In particular, we compare the AGDSW (Adaptive Generalized Dryja-Smith-Widlund), the OS-ACMS (Overlapping Schwarz-Approximate Component Mode Synthesis), and the SHEM (Spectral Harmonically Enriched Multiscale) coarse spaces for overlapping Schwarz methods, the GenEO (Generalized Eigenproblems in the Overlaps) coarse space for FETI-1 and BDD methods, and two approaches based on estimates for the $P_D$ operator for FETI-DP and BDDC methods. Therefore, we consider eight different two-dimensional coefficient functions with jumps ranging from simple channels to a realistic microstructure of a dual-phase steel. We observe significant differences in the width of the gap between good and bad eigenvalues depending on the coefficient distribution. In addition to that, eigenvalue problems involving sophisticated but more expensive harmonic extensions or deluxe-scaling can reduce the number of bad eigenvalues.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_18},
     preprint = {https://kups.ub.uni-koeln.de/9019/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2020:FRO,
@@ -105,7 +147,7 @@ References
     abstract = {A parallel two-level overlapping Schwarz domain decomposition preconditioner has been integrated into the Trilinos ShyLU-package. The preconditioner uses an energy-minimizing coarse space and can be constructed from an assembled sparse matrix. The software implements variants of the two-level overlapping Schwarz method from [Dohrmann, Klawonn, Widlund, SINUM 2008], where it was denoted Generalized Dryja, Smith, Widlund (GDSW). The implementation is based on [Heinlein, Klawonn, Rheinbach, SISC 2016] but has been improved significantly with respect to efficiency, generality, e.g., for the use of Tpetra instead of Epetra matrices, and its interface.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_19},
     preprint = {https://kups.ub.uni-koeln.de/9018/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2020:TLE,
@@ -120,7 +162,7 @@ References
     abstract = {A three-level extension of the GDSW overlapping Schwarz preconditioner in three dimensions is presented, constructed by recursively applying the GDSW preconditioner to the coarse problem using a standard and a reduced dimension coarse space. Numerical results, obtained for a parallel implementation using the Trilinos software library, are presented for up to 64,000 cores of the JUQUEEN supercomputer. The superior weak parallel scalability of the three-level method is verified. For large problems and a large number of cores, the three-level method is faster by more than a factor of two, compared to the standard two-level method. The three-level method shows to scale when the classical method is already be out-of-memory.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-56750-7_20},
     preprint = {https://kups.ub.uni-koeln.de/9017/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @article{Heinlein:2020:AHN,
@@ -136,7 +178,7 @@ References
     abstract = {Nonlinear domain decomposition (DD) methods, such as ASPIN (additive Schwarz preconditioned inexact Newton), RASPEN (restricted additive Schwarz preconditioned inexact Newton), nonlinear FETI-DP (finite element tearing and interconnecting-dual primal), and nonlinear BDDC (balancing DD by constraints), can be reasonable alternatives to classical Newton--Krylov-DD methods for the solution of sparse nonlinear systems of equations, e.g., arising from a discretization of a nonlinear partial differential equation (PDE). These nonlinear DD approaches are often able to effectively tackle unevenly distributed nonlinearities and outperform Newton's method with respect to convergence speed as well as global convergence behavior. Furthermore, they often improve parallel scalability due to a superior ratio of local to global work. Nonetheless, as for linear DD methods, it is often necessary to incorporate an appropriate coarse space in a second level to obtain numerical scalability for increasing numbers of subdomains. In addition, an appropriate coarse space can also improve the nonlinear convergence of nonlinear DD methods. In this paper, we introduce four variants for integrating coarse spaces in nonlinear Schwarz methods in an additive or multiplicative way using Galerkin projections. These new variants can be interpreted as natural nonlinear equivalents to well-known linear additive and hybrid two-level Schwarz preconditioners. Furthermore, they facilitate the use of various coarse spaces, e.g., coarse spaces based on energy-minimizing extensions, which can easily be used for irregular DDs, such as, e.g., those obtained by graph partitioners. In particular, multiscale finite element method (MsFEM)-type coarse spaces are considered, and it is shown that they outperform classical approaches for certain heterogeneous nonlinear problems. The new approaches are then compared with classical Newton--Krylov-DD and nonlinear one-level Schwarz approaches for different homogeneous and heterogeneous model problems based on the $p$-Laplace operator.},
     url = {https://epubs.siam.org/doi/abs/10.1137/19M1276972},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/9845},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @article{Heinlein:2020:RDG,
@@ -153,7 +195,7 @@ References
     keywords = {algebraic preconditioner, overlapping domain decomposition, GDSW, Navier-Stokes, parallel computing, Stokes},
     url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6258},
     preprint = {https://kups.ub.uni-koeln.de/9675/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @article{Heinlein:2019:MLA,
@@ -169,7 +211,7 @@ References
     abstract = {Domain decomposition methods are robust and parallel scalable, preconditioned iterative algorithms for the solution of the large linear systems arising in the discretization of elliptic partial differential equations by finite elements. The convergence rate of these methods is generally determined by the eigenvalues of the preconditioned system. For second-order elliptic partial differential equations, coefficient discontinuities with a large contrast can lead to a deterioration of the convergence rate. A remedy can be obtained by enhancing the coarse space with elements, which are often called constraints, that are computed by solving small eigenvalue problems on portions of the interface of the domain decomposition, i.e., edges in two dimensions or faces and edges in three dimensions. In the present work, without restriction of generality, the focus is on two dimensions. In general, it is difficult to predict where these constraints have to be added, and therefore the corresponding local eigenvalue problems have to be computed, i.e., on which edges. Here, a machine learning based strategy using neural networks is suggested to predict the geometric location of these edges in a preprocessing step. This reduces the number of eigenvalue problems that have to be solved before the iteration. Numerical experiments for model problems and realistic microsections using regular decompositions as well as decompositions from graph partitioners are provided, showing very promising results.},
     url = {https://epubs.siam.org/doi/abs/10.1137/18M1205364?journalCode=sjoce3},
     preprint = {https://kups.ub.uni-koeln.de/8645/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2019:TLE,
@@ -184,7 +226,7 @@ References
     abstract = {A three-level extension of the GDSW overlapping Schwarz preconditioner in two dimensions is presented, constructed by recursively applying the GDSW preconditioner to the coarse problem. Numerical results, obtained for a parallel implementation using the Trilinos software library, are presented for up to 90,000 cores of the JUQUEEN supercomputer. The superior weak parallel scalability of the three-level method is verified. For large problems and a large number of cores, the three-level method is faster by more than a factor of two, compared to the standard two-level method . The three-level method can also be expected to scale when the classical method will already be out-of-memory.},
     url = {https://link.springer.com/chapter/10.1007%2F978-3-030-14244-5_10},
     preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/preprint_2018_04_heinlein_klawonn_rheinbach_roever.pdf},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @article{Heinlein:2019:AGDa,
@@ -200,7 +242,7 @@ References
     abstract = {A robust two-level overlapping Schwarz method for scalar elliptic model problems with highly varying coefficient functions is introduced. While the convergence of standard coarse spaces may depend strongly on the contrast of the coefficient function, the condition number bound of the new method is independent of the coefficient function. Indeed, the condition number only depends on a user-prescribed tolerance. The coarse space is based on discrete harmonic extensions of vertex, edge, and face interface functions, which are computed from the solutions of corresponding local generalized edge and face eigenvalue problems. The local eigenvalue problems are of the size of the edges and faces of the decomposition, and the eigenvalue problems can be constructed solely from the local subdomain stiffness matrices and the fully assembled global stiffness matrix. The new AGDSW (adaptive generalized Dryja--Smith--Widlund) coarse space always contains the classical GDSW coarse space by construction of the generalized eigenvalue problems. Numerical results supporting the theory are presented for several model problems in three dimensions using structured as well as unstructured meshes and unstructured decompositions.},
     url = {https://epubs.siam.org/doi/abs/10.1137/18M1220613},
     preprint = {https://kups.ub.uni-koeln.de/8756/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @article{Heinlein:2019:MOS,
@@ -216,7 +258,7 @@ References
     abstract = {Monolithic overlapping Schwarz preconditioners for saddle point problems of Stokes and Navier--Stokes type are presented. In order to obtain numerically scalable algorithms, coarse spaces obtained from the generalized Dryja--Smith--Widlund (GDSW) approach are used. Numerical results of our parallel implementation are presented for various incompressible fluid flow problems. In particular, cases are considered where the problem cannot or should not be reduced using local static condensation, e.g., Stokes or Navier--Stokes problems with continuous pressure spaces. In the new monolithic preconditioners, the local overlapping problems and the coarse problem are saddle point problems with the same structure as the original problem. Our parallel implementation of these preconditioners is based on the fast and robust overlapping Schwarz (FROSch) library, which is part of the Trilinos package ShyLU. The implementation is essentially algebraic in the sense that, for the class of problems presented here, the preconditioners can be constructed from the fully assembled stiffness matrix and information about the block structure of the problem. Further information about the geometry or the null space of the underlying problem can improve the performance compared to the default settings. Parallel scalability results for several thousand cores for Stokes and Navier--Stokes model problems are reported. Each of the local problems is solved using a direct solver in serial mode, whereas the coarse problem is solved using a direct solver in serial or message passing interface (MPI)-parallel mode or using an MPI-parallel iterative Krylov solver.},
     url = {https://epubs.siam.org/doi/abs/10.1137/18M1184047},
     preprint = {https://kups.ub.uni-koeln.de/8355/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2019:IPP,
@@ -230,7 +272,7 @@ References
     abbr = {Springer LNCSE},
     abstract = {We consider a recent overlapping Schwarz method with an energy-minimizing coarse space of reduced size. In numerical experiments for up to 64,000 cores, we show that the parallel efficiency and the total time to solution is improved significantly, compared to our previous overlapping Schwarz method using an alternative energy-minimizing coarse space.},
     url = {https://link.springer.com/chapter/10.1007%2F978-3-319-93873-8_36},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2019:AGDb,
@@ -245,7 +287,7 @@ References
     abstract = {We propose robust coarse spaces for two-level overlapping Schwarz preconditioners, which are extensions of the energy minimizing coarse space known as GDSW (Generalized Dryja, Smith, Widlund). The resulting two-level methods with adaptive coarse spaces are robust for second order elliptic problems in two dimensions, even in presence of a highly heterogeneous coefficient function, and reduce to the standard GDSW algorithm if no additional coarse basis functions are used.},
     url = {https://link.springer.com/chapter/10.1007/978-3-319-93873-8_35},
     preprint = {https://kups.ub.uni-koeln.de/8756/},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2019:AFR,
@@ -308,7 +350,7 @@ References
     abstract = {Two-level overlapping Schwarz domain decomposition methods for second-order elliptic problems in two dimensions are proposed using coarse spaces constructed from the Approximate Component Mode Synthesis (ACMS) multiscale discretization approach. These coarse spaces are based on eigenvalue problems using Schur complements on subdomain edges. It is then shown that the convergence of the resulting preconditioned Krylov method can be controlled by a user-specified tolerance and thus can be made independent of heterogeneities in the coefficient of the partial differential equation. The relations of this new approach to other known adaptive coarse space approaches for overlapping Schwarz methods are also discussed. Compared to one of the competing adaptive approaches, the new coarse space can be significantly smaller. Compared to other competing approaches, the eigenvalue problems are significantly cheaper to solve, i.e., the dimension of the eigenvalue problems is minimal among the competing adaptive approaches under consideration. Our local eigenvalue problems can be solved using one iteration of LobPCG for essentially the same cost as a Cholesky-decomposition of a Schur complement on a subdomain edge.},
     url = {https://epub.oeaw.ac.at/?arp=0x0038c0cb},
     preprint = {http://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2016-09_fertig.pdf},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Fausten:2018:RFS,
@@ -338,7 +380,7 @@ References
     abstract = {Parallel results obtained with a new implementation of an overlapping Schwarz method using an energy minimizing coarse space are presented. We consider structured and unstructured domain decompositions for scalar elliptic and linear elasticity model problems in two dimensions. In particular, strong and weak parallel scalability studies for up to 1024 processor cores are presented for both types of problems. Additionally, weak scalability results for a three-dimensional linear elasticity model problem using up to 4096 processor cores are discussed. Finally, an application from fully-coupled fluid-structure interaction using a nonlinear hyperelastic material model for the structure is shown.},
     url = {https://link.springer.com/chapter/10.1007%2F978-3-319-52389-7_36},
     preprint = {http://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2016-03_fertig.pdf},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Fausten:2017:STM,
@@ -369,7 +411,7 @@ References
     abstract = {We describe a new implementation of a two-level overlapping Schwarz preconditioner with energy-minimizing coarse space (GDSW: generalized Dryja--Smith--Widlund) and show numerical results for an additive and a hybrid additive-multiplicative version. Our parallel implementation makes use of the Trilinos software library and provides a framework for parallel two-level Schwarz methods. We show parallel scalability for two- and three-dimensional scalar second-order elliptic and linear elasticity problems for several thousands of cores. We also discuss techniques for the parallel construction of coarse spaces which are also of interest for other parallel preconditioners and discretization methods using energy minimizing coarse functions. We finally show an application in monolithic fluid-structure interaction, where significant improvements are achieved compared to a standard algebraic, one-level overlapping Schwarz method.},
     url = {https://epubs.siam.org/doi/10.1137/16M1062843},
     preprint = {http://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2016-04_fertig.pdf},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Heinlein:2016:PTO,
@@ -384,7 +426,7 @@ References
     abstract = {Parallel overlapping Schwarz preconditioners are considered and applied to the structural block in monolithic fluid-structure interaction (FSI). The two-level overlapping Schwarz method uses a coarse level based on energy minimizing functions. Linear elastic as well as nonlinear, anisotropic hyperelastic structural models are considered in an FSI problem of a pressure wave in a tube. Using our recent parallel implementation of a two-level overlapping Schwarz preconditioner based on the Trilinos library, the total computation time of our FSI benchmark problem was reduced by more than a factor of two compared to the algebraic one-level overlapping Schwarz method used previously. Finally, also strong scalability for our FSI problem is shown for up to 512 processor cores.},
     url = {https://link.springer.com/chapter/10.1007/978-3-319-39929-4_50},
     preprint = {http://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2015-15_fertig_0.pdf},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @phdthesis{Heinlein:2016:POS,
@@ -396,7 +438,7 @@ References
     abbr = {PhD Thesis},
     abstract = {Accurate simulations of transmural wall stresses in artherosclerotic coronary arteries may help to predict plaque rupture. Therefore, a robust and efficient numerical framework for Fluid-Structure Interaction (FSI) of the blood flow and the arterial wall has to be set up, and suitable material laws for the modeling of the fluid and the structural response have to be incorporated. In this thesis, monolithic coupling algorithms and corresponding monolithic preconditioners are used to simulate FSI using highly nonlinear anisotropic polyconvex hyperelastic and anisotropic viscoelastic material models for the arterial wall. An MPI-parallel FSI software from the LifeV library is coupled to the software FEAP in order to enable access to the structural material models implemented in FEAP. To define a benchmark test for highly nonlinear material models in FSI, a simple geometry corresponding to a section of an idealized coronary artery, suitable boundary conditions, and material parameters adapted to experimental data are used. In particular, the geometry is chosen to be nonsymmetric to make effects due to the anisotropy of the structure visible. An initialization phase and several heartbeats are simulated, and systematical studies with meshes of increasing refinement and different space discretizations are carried out. The results indicate that, for the highly nonlinear material models, piecewise quadratic or F-bar element discretizations lead to significantly better results than piecewise linear shape functions. The results using piecewise linear shape functions are less accurate with respect to the displacements and, in particular, to the approximation of the stresses. To improve the performance of the FSI simulations, a more robust preconditioner for the highly nonlinear structural material models has to be used. Therefore, a parallel implementation of the GDSW (Generalized Dryja-Smith-Widlund) preconditioner, which is a geometric two-level overlapping Schwarz preconditioner with energy-minimizing coarse space, is presented. The implementation, which is based on the software library Trilinos, is held flexible to make further extensions of the preconditioner possible. Even though the dimension of its coarse space is comparably large, parallel scalability for two and three dimensional scalar elliptic and linear elastic problems for thousands of cores is demonstrated. Also for unstructured domain decompositions and for a hybrid version of the preconditioner, convincing scalability is presented. When used as a preconditioner for the structure block in FSI simulations, the GDSW preconditioner shows excellent performance as well: scalability for up to 512 cores and a significant reduction of the simulation time and of the number of iterations with respect to the previously used preconditioner, IFPACK, are observed. IFPACK is an algebraic one-level overlapping Schwarz preconditioner. Finally, highly heterogeneous (multiscale) problems are investigated. Since the GDSW coarse space is not robust for general problems of this type, spaces based on Approximate Component Mode Synthesis (ACMS) are considered. On the basis of the ACMS space, coarse spaces for overlapping Schwarz methods are constructed, and a parallel implementation of a special finite element method is presented. For the coarse spaces, preliminary results indicating numerical scalability and robustness are discussed. For the parallel implementation of the special finite element method, very good parallel weak scalability is observed with respect to the construction of the basis functions and to the solution of the resulting linear system using the FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) method.},
     url = {https://kups.ub.uni-koeln.de/6841},
-    keywords = {phd, published}
+    keywords = {phd, reviewed, published}
 }
 
 @article{Balzani:2016:NMF,
@@ -412,7 +454,7 @@ References
     abstract = {The accurate prediction of transmural stresses in arterial walls requires on the one hand robust and efficient numerical schemes for the solution of boundary value problems including fluid-structure interactions and on the other hand the use of a material model for the vessel wall that is able to capture the relevant features of the material behavior. One of the main contributions of this paper is the application of a highly nonlinear, polyconvex anisotropic structural model for the solid in the context of fluid-structure interaction, together with a suitable discretization. Additionally, the influence of viscoelasticity is investigated. The fluid-structure interaction problem is solved using a monolithic approach; that is, the nonlinear system is solved (after time and space discretizations) as a whole without splitting among its components. The linearized block systems are solved iteratively using parallel domain decomposition preconditioners. A simple but nonsymmetric curved geometry is proposed that is demonstrated to be suitable as a benchmark testbed for fluid-structure interaction simulations in biomechanics where nonlinear structural models are used. Based on the curved benchmark geometry, the influence of different material models, spatial discretizations, and meshes of varying refinement is investigated. It turns out that often-used standard displacement elements with linear shape functions are not sufficient to provide good approximations of the arterial wall stresses, whereas for standard displacement elements or F-bar formulations with quadratic shape functions, suitable results are obtained. For the time discretization, a second-order backward differentiation formula scheme is used. It is shown that the curved geometry enables the analysis of non-rotationally symmetric distributions of the mechanical fields. For instance, the maximal shear stresses in the fluidâstructure interface are found to be higher in the inner curve that corresponds to clinical observations indicating a high plaque nucleation probability at such locations.},
     url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cnm.2756},
     preprint = {http://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2015-03_fertig.pdf},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @article{Heinlein:2015:ACM,
@@ -429,7 +471,7 @@ References
     abstract = {A special finite element method based on approximate component mode synthesis (ACMS) was introduced in Hetmaniuk and Lehoucq (2010). ACMS was developed for second order elliptic partial differential equations with rough or highly varying coefficients. Here, a parallel implementation of ACMS is presented and parallel scalability issues are discussed for representative examples. Additionally, a parallel domain decomposition preconditioner (FETI-DP) is applied to solve the ACMS finite element system. Weak parallel scalability results for ACMS are presented for up to 1024 cores. Our numerical results also suggest a quadratic–logarithmic condition number bound for the preconditioned FETI-DP method applied to ACMS discretizations.},
     url = {http://www.sciencedirect.com/science/article/pii/S0377042715001405},
     note = {Sixth International Conference on Advanced Computational Methods in Engineering (ACOMEN 2014)},
-    keywords = {published}
+    keywords = {published, reviewed}
 }
 
 @inproceedings{Deparis:2015:CPS,
@@ -465,7 +507,7 @@ References
     abbr = {ETNA},
     abstract = {The course of an epidemic can be often successfully described mathematically using compartment models. These models result in a system of ordinary diﬀerential equations. Two well-known examples are the SIR and the SEIR models. The transition rates between the diﬀerent compartments are deﬁned by certain parameters which are speciﬁc for the respective virus. Often, these parameters can be taken from the literature or can be determined from statistics. However, the contact rate or the related eﬀective reproduction number are in general not constant and thus cannot easily be determined. Here, a new machine learning approach based on physics-informed neural networks is presented that can learn the contact rate from given data for the dynamical systems given by the SIR and SEIR models. The new method generalizes an already known approach for the identiﬁcation of constant parameters to the variable or time-dependent case. After introducing the new method, it is tested for synthetic data generated by the numerical solution of SIR and SEIR models. Here, the case of exact and perturbed data is considered. In all cases, the contact rate can be learned very satisfactorily. Finally, the SEIR model in combination with physics-informed neural networks is used to learn the contact rate for COVID-19 data given by the course of the epidemic in Germany. The simulation of the number of infected individuals over the course of the epidemic, using the learned contact rate, is very promising.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/12159},
-    keywords = {accepted, recent}
+    keywords = {accepted, reviewed, recent}
 }
 
 @techreport{Heinlein:2020:CMLa,
@@ -475,37 +517,7 @@ References
     abbr = {SISC},
     abstract = {The hybrid ML-FETI-DP algorithm combines the advantages of adaptive coarse spaces in domain decomposition methods and certain supervised machine learning techniques. Adaptive coarse spaces ensure robustness of highly scalable domain decomposition solvers, even for highly heterogeneous coefficient distributions with arbitrary coefficient jumps. However, their construction requires the setup and solution of local generalized eigenvalue problems, which is typically computationally expensive. The idea of ML-FETI-DP is to interpret the coefficient distribution as image data and predict whether an eigenvalue problem has to be solved or can be neglected while still maintaining robustness of the adaptive FETI-DP method. For this purpose, neural networks are used as image classifiers. In the present work, the ML-FETI-DP algorithm is extended to three dimensions, which requires both a complex data preprocessing procedure to construct consistent input data for the neural network as well as a representative training and validation data set to ensure generalization properties of the machine learning model. Numerical experiments for stationary diffusion and linear elasticity problems with realistic coefficient distributions show that a large number of eigenvalue problems can be saved; in the best case of the numerical results presented here, 97% of the eigenvalue problems can be avoided to be set up and solved.},
     preprint = {https://kups.ub.uni-koeln.de/11285/},
-    keywords = {accepted, recent}
-}
-
-@techreport{Eichinger:2020:SFP,
-    author = {Matthias Eichinger and Alexander Heinlein and Axel Klawonn},
-    title = {Stationary flow predictions using convolutional neural networks},
-    note = {Accepted for publication in the proceedings of the ENUMATH 2019 conference. April 2020.},
-    abbr = {Springer LNCSE},
-    astract = {Computational Fluid Dynamics (CFD) simulations are a numerical tool to model and analyze the behavior of fluid flow. However, accurate simulations are generally very costly because they require high grid resolutions. In this paper, an alternative approach for computing flow predictions using Convolutional Neural Networks (CNNs) is described; in particular, a classical CNN as well as the U-Net architecture are used. First, the networks are trained in an expensive offline phase using flow fields computed by CFD simulations. Afterwards, the evaluation of the trained neural networks is very cheap. Here, the focus is on the dependence of the stationary flow in a channel on variations of the shape and the location of an obstacle. CNNs perform very well on validation data, where the averaged error for the best networks is below 3%. In addition to that, they also generalize very well to new data, with an averaged error below 10%.},
-    preprint = {https://kups.ub.uni-koeln.de/id/eprint/10440},
-    keywords = {accepted}
-}
-
-@techreport{Heinlein:2020:FAT,
-    author = {Alexander Heinlein and Christian Hochmuth and Axel Klawonn},
-    title = {Fully algebraic two-level overlapping {S}chwarz preconditioners for elasticity problems},
-    note = {Accepted for publication in the proceedings of the ENUMATH 2019 conference. April 2020.},
-    abbr = {Springer LNCSE},
-    abstract = {Different parallel two-level overlapping Schwarz preconditioners with Generalized Dryja-Smith-Widlund (GDSW) and Reduced dimension GDSW (RGDSW) coarse spaces for elasticity problems are considered. GDSW type coarse spaces can be constructed from the fully assembled system matrix, but they additionally need the index set of the interface of the corresponding nonoverlapping domain decomposition and the null space of the elasticity operator, i.e., the rigid body motions. In this paper, fully algebraic variants, which are constructed solely from the uniquely distributed system matrix, are compared to the classical variants which make use of this additional information; the fully algebraic variants use an approximation of the interface and an incomplete algebraic null space. Nevertheless, the parallel performance of the fully algebraic variants is competitive compared to the classical variants for a stationary homogeneous model problem and a dynamic heterogenous model problem with coefficient jumps in the shear modulus; the largest parallel computations were performed on 4,096 MPI (Message Passing Interface) ranks. The parallel implementations are based on the Trilinos package FROSch.},
-    preprint = {https://kups.ub.uni-koeln.de/id/eprint/10441},
-    keywords = {accepted}
-}
-
-@techreport{Heinlein:2020:MLAb,
-    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
-    title = {Machine Learning in Adaptive Domain Decomposition Methods - Reducing the Effort in Sampling},
-    note = {Accepted for publication in the proceedings of the ENUMATH 2019 conference. April 2020.},
-    abbr = {Springer LNCSE},
-    abstract = {The convergence rate of classic domain decomposition methods in general deteriorates severely for large discontinuities in the coefficient functions of the considered partial differential equation. To retain the robustness for such highly heterogeneous problems, the coarse space can be enriched by additional coarse basis functions. These can be obtained by solving local generalized eigenvalue problems on subdomain edges. In order to reduce the number of eigenvalue problems and thus the computational cost, we use a neural network to predict the geometric location of critical edges, i.e., edges where the eigenvalue problem is indispensable. As input data for the neural network, we use function evaluations of the coefficient function within the two subdomains adjacent to an edge. In the present article, we examine the effect of computing the input data only in a neighborhood of the edge, i.e., on slabs next to the edge. We show numerical results for both the training data as well as for a concrete test problem in form of a microsection subsection for linear elasticity problems. We observe that computing the sampling points only in one half or one quarter of each subdomain still provides robust algorithms.},
-    preprint = {https://kups.ub.uni-koeln.de/id/eprint/10439},
-    keywords = {accepted}
+    keywords = {accepted, reviewed, recent}
 }
 
 # submitted
@@ -516,7 +528,7 @@ References
     note = {Submitted March 2021},
     abstract = {Overlapping GDSW domain decomposition methods are considered for diffusion problems in two dimensions discretized by finite elements. For a diffusion coefficient with high contrast, the condition number is usually dependent on it. A remedy is given by adaptive domain decomposition methods, where the coarse space is enhanced by additional coarse basis functions. These are chosen problem-dependently by solving small local eigenvalue problems. Here, the eigenvalue problems (EVPs) are associated with the edges of the domain decomposition interface; edges, where these EVPs have to be solved are denoted as critical edges. For many applications, not all edges are critical and the solution of the EVPs is not necessary. In an earlier work, a strategy to predict the location of critical edges, based on deep learning, has been proposed for adaptive FETI-DP, a class of nonoverlapping methods. In the present work, this strategy is successfully applied to  adaptive GDSW; differences in the classification process for this overlapping method are described. Choosing the classification threshold has been a challenge in all these approaches. Here, for the first time, a heuristic based on the receiver operating characteristic (ROC) curve and the precision-recall graph is discussed. Results for a challenging realistic coefficient function are presented.},
     preprint = {https://kups.ub.uni-koeln.de/36257},
-    keywords = {submitted, recent}
+    keywords = {submitted, reviewed, recent}
 }
 
 @techreport{Heinlein:2021:TLE,
@@ -525,7 +537,7 @@ References
     note = {Submitted March 2021},
     abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
     preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-02.pdf},
-    keywords = {submitted, recent}
+    keywords = {submitted, reviewed, recent}
 }
 
 @techreport{Heinlein:2021:FRO,
@@ -534,7 +546,7 @@ References
     note = {Submitted January 2021},
     abstract = {Numerical simulations of Greenland and Antarctic ice sheets involve the solution of large-scale highly nonlinear systems of equations on complex shallow geometries. This work is concerned with the construction of Schwarz preconditioners for the solution of the associated tangent problems, which are challenging for solvers mainly because of the strong anisotropy of the meshes and wildly changing boundary conditions that can lead to poorly constrained problems on large portions of the domain. Here, two-level GDSW (Generalized Dryja-Smith-Widlund) type Schwarz preconditioners are applied to diﬀerent land ice problems, i.e., a velocity problem, a temperature problem, as well as the coupling of the former two problems. We employ the MPI-parallel implementation of multi-level Schwarz preconditioners provided by the package FROSch (Fast and Robust Schwarz) from the Trilinos library. The strength of the proposed preconditioner is that it yields out-of-the-box scalable and robust preconditioners for the single physics problems. To our knowledge, this is the ﬁrst time two-level Schwarz preconditioners are applied to the ice sheet problem and a scalable preconditioner has been used for the coupled problem. The preconditioner for the coupled problem diﬀers from previous monolithic GDSW preconditioners in the sense that decoupled extension operators are used to compute the values in the interior of the subdomains. Several approaches for improving the performance, such as reuse strategies and shared memory OpenMP parallelization, are explored as well. In our numerical study we target both uniform meshes of varying resolution for the Antarctic ice sheet as well as non uniform meshes for the Greenland ice sheet are considered. We present several weak and strong scaling studies conﬁrming the robustness of the approach and the parallel scalability of the FROSch implementation. Among the highlights of the numerical results are a weak scaling study for up to 32 K processor cores (8 K MPI-ranks and 4 OpenMP threads) and 566 M degrees of freedom for the velocity problem as well as a strong scaling study for up to 4 K processor cores (and MPI-ranks) and 68 M degrees of freedom for the coupled problem.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/30668},
-    keywords = {submitted}
+    keywords = {submitted, reviewed}
 }
 
 @techreport{Eichinger:2020:SCN,
@@ -543,7 +555,7 @@ References
     note = {Submitted December 2020},
     abstract = {A convolution neural network (CNN)-based approach for the construction of reduced order surrogate models for computational fluid dynamics (CFD) simulations is introduced; it is inspired by the approach of Guo, Li, and Iori [X. Guo, W. Li, and F. Iorio, Convolutional neural networks for steady flow approximation, in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD'16, New York, USA, 2016, ACM, pp. 481--490]. In particular, the neural networks are trained in order to predict images of the flow field in a channel with varying obstacle based on an image of the geometry of the channel. A classical CNN with bottleneck structure and a U-Net are compared while varying the input format, the number of decoder paths, as well as the loss function used to train the networks. This approach yields very low prediction errors, in particular, when using the U-Net architecture. Furthermore, the models are also able to generalize to unseen geometries of the same type. A transfer learning approach enables the model to be trained to a new type of geometries with very low training cost. Finally, based on this transfer learning approach, a sequential learning strategy is introduced, which significantly reduces the amount of necessary training data.},
     preprint = {https://kups.ub.uni-koeln.de/29760/},
-    keywords = {submitted}
+    keywords = {submitted, reviewed}
 }
 
 @techreport{Heinlein:2020:AGD,
@@ -552,5 +564,5 @@ References
     note = {Submitted September 2020},
     abstract = {A new reduced dimension adaptive GDSW (Generalized Dryja-Smith-Widlund) overlapping Schwarz method for linear second-order elliptic problems in three dimensions is introduced. It is robust with respect to large contrasts of the coefficients of the partial differential equations. The condition number bound of the new method is shown to be independent of the coefficient contrast and only dependent on a user-prescribed tolerance. The interface of the nonoverlapping domain decomposition is partitioned into nonoverlapping patches. The new coarse space is obtained by selecting a few eigenvectors of certain local eigenproblems which are defined on these patches. These eigenmodes are energy-minimally extended to the interior of the nonoverlapping subdomains and added to the coarse space. By using a new interface decomposition the reduced dimension adaptive GDSW overlapping Schwarz method usually has a smaller coarse space than existing GDSW and adaptive GDSW domain decomposition methods. A robust condition number estimate is proven for the new reduced dimension adaptive GDSW method which is also valid for existing adaptive GDSW methods. Numerical results for the equations of isotropic linear elasticity in three dimensions confirming the theoretical findings are presented.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/12113},
-    keywords = {submitted}
+    keywords = {submitted, reviewed}
 }
