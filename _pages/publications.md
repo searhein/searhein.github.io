@@ -10,7 +10,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 
 <div class="publications">
 
-<table style="width:100%">
+<!-- <table style="width:100%">
   <tr>
     <td><a href="#published">journal publications: {% bibliography_count -f papers --query @article[keywords ~= published] %}</a></td>
     <td><a href="#published">book chapters and conference proceedings: {% bibliography_count -f papers --query @inproceedings[keywords ~= published] %}</a></td>
@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
     <td><a href="#accepted">accepted: {% bibliography_count -f papers --query @*[keywords ~= accepted] %}</a></td>
     <td><a href="#submitted">submitted: {% bibliography_count -f papers --query @*[keywords ~= submitted] %}</a></td>
   </tr>
-</table>
+</table> -->
 
 {% if page.selected_papers %}
   {% include selected_papers.html %}
