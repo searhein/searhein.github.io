@@ -6,6 +6,12 @@ description: Collection of the current and previous classes taught by Alexander 
 nav: true
 ---
 
+<h2>open master projects</h2>
+
++ [Parallel Multiplicative One-Level Schwarz Preconditioners With FROSch and Trilinos]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein-frosch_multiplicative_coloring.pdf %}){:target="_blank"} ([Sandia](https://www.sandia.gov/){:target="_blank"})
++ [Overlapping Schwarz Domain Decomposition Methods for Implicit Ocean Models]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein_thies-frosch_ocean.pdf %}){:target="_blank"} ([Institute for Marine and Atmospheric Modeling](https://www.uu.nl/en/research/institute-for-marine-and-atmospheric-research-imau){:target="_blank"})
++ [Reduced Order Models for Fluid Flow With Generative Adversarial Networks (GANs)]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein-gan_pdes.pdf %}){:target="_blank"}
+
 <h2>current teaching</h2>
 <div class="teaching grid">
   {% assign sorted_teaching = site.teaching | sort: "runningindex" | reverse %}
