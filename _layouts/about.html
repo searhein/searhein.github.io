@@ -27,6 +27,11 @@ layout: default
 
     <div class="clearfix">
       {{ content }}
+
+      {% if page.email_before_news %}
+      <div class="email_before_news">        
+        {% include email.html %}
+      {% endif %}
     </div>
 
     {% if page.news %}
@@ -37,8 +42,8 @@ layout: default
       {% include recent_papers.html %}
     {% endif %}
 
-    {% if page.social %}
-    <div class="social">
+    {% if page.social_bottom %}
+    <div class="social_bottom">
       {% include social.html %}
       <div class="contact-note">{{ site.contact_note }}</div>
     </div>

@@ -186,9 +186,26 @@ a, table.table a {
   width: 125px;
 }
 
+// Email (before news)
+
+.email_before_news {
+  margin-bottom: -5px;
+  margin-top: -5px;
+  text-align: center;
+  .contact-icon {
+    font-size: 3rem;
+    a {
+      color: var(--global-icon-color);
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
 // Social (bottom)
 
-.social {
+.social_bottom {
   text-align: center;
   .contact-icon {
     font-size: 4rem;

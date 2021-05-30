@@ -9,11 +9,9 @@ profile:
   image: prof_pic3.jpeg
   address: >
     <p>TU Delft</p>
-    <p>Faculty of EEMCS</p>
+    <p>DIAM, Faculty of EEMCS</p>
     <p>Numerical Analysis</p>
-    <p>Building 36</p>
-    <p>Mekelweg 4</p>
-    <p>2628 CD Delft</p>
+    <p>Mekelweg 4, 2628 CD Delft</p>
     <p style="margin-top: 5px">Tel.: +31 (0)15 27 89135</p>
 
     <!-- <p>University of Stuttgart</p>
@@ -34,7 +32,8 @@ profile:
 
 news: true  # includes a list of news items
 recent_papers: true # includes a list of papers marked as "recent={true}"
-social: false  # includes social icons at the bottom of the page
+email_before_news: true
+social_bottom: false  # includes social icons at the bottom of the page
 ---
 
 Alexander Heinlein is assistant professor in the <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/numerical-analysis" target="_blank">Numerical Analysis group</a> of the <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics" target="_blank">Delft Institute of Applied Mathematics (DIAM)</a>, <a href="https://www.tudelft.nl/en/eemcs" target="_blank">Faculty of Electrical Engineering, Mathematics & Computer Science (EEMCS)</a>, at the <a href="https://www.tudelft.nl/en/" target="_blank">Delft University of Technology (TU Delft)</a>.
