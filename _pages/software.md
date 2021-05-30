@@ -2,7 +2,7 @@
 layout: page
 title: software
 permalink: /software/
-description: A compilation of software projects Alexander Heinlein is contributing to (current projects) or has contributed to (archive).
+description: A compilation of software projects Alexander Heinlein is contributing to.
 nav: true
 ---
 
