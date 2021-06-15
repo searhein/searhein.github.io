@@ -14,7 +14,7 @@ References
     year = {2021},
     doi = {10.1007/978-3-030-55874-1_53},
     abbr = {Springer LNCSE},
-    astract = {Computational Fluid Dynamics (CFD) simulations are a numerical tool to model and analyze the behavior of fluid flow. However, accurate simulations are generally very costly because they require high grid resolutions. In this paper, an alternative approach for computing flow predictions using Convolutional Neural Networks (CNNs) is described; in particular, a classical CNN as well as the U-Net architecture are used. First, the networks are trained in an expensive offline phase using flow fields computed by CFD simulations. Afterwards, the evaluation of the trained neural networks is very cheap. Here, the focus is on the dependence of the stationary flow in a channel on variations of the shape and the location of an obstacle. CNNs perform very well on validation data, where the averaged error for the best networks is below 3%. In addition to that, they also generalize very well to new data, with an averaged error below 10%.},
+    abstract = {Computational Fluid Dynamics (CFD) simulations are a numerical tool to model and analyze the behavior of fluid flow. However, accurate simulations are generally very costly because they require high grid resolutions. In this paper, an alternative approach for computing flow predictions using Convolutional Neural Networks (CNNs) is described; in particular, a classical CNN as well as the U-Net architecture are used. First, the networks are trained in an expensive offline phase using flow fields computed by CFD simulations. Afterwards, the evaluation of the trained neural networks is very cheap. Here, the focus is on the dependence of the stationary flow in a channel on variations of the shape and the location of an obstacle. CNNs perform very well on validation data, where the averaged error for the best networks is below 3%. In addition to that, they also generalize very well to new data, with an averaged error below 10%.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/10440},
     keywords = {published, reviewed, recent}
 }
@@ -522,6 +522,14 @@ References
 
 # submitted
 
+@techreport{Frei:2021:THN,
+    author = {Stefan Frei and Alexander Heinlein and Thomas Richter},
+    title = {On temporal homogenization in the numerical simulation of atherosclerotic plaque growth},
+    note = {Submitted June 2021},
+    abstract = {A temporal homogenization approach for the numerical simulation of atherosclerotic plaque growth is extended to fully coupled fluid-structure interaction (FSI) simulations. The numerical results indicate that the two-scale approach yields significantly different results compared to a simple heuristic averaging, where only stationary long-scale FSI problems are solved, confirming the importance of incorporating stress variations on small time-scales. In the homogenization approach, a periodic fine-scale problem, which is periodic with respect to the heart beat, has to be solved for each long-scale time step. Even if no exact initial conditions are available, periodicity can be achieved within only 2--3 heart beats by simple time-stepping.},
+    keywords = {submitted, recent}
+}
+
 @techreport{Heinlein:2021:PGL,
     author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
     title = {Predicting the geometric location of critical edges in adaptive GDSW overlapping domain decomposition methods using deep learning},
@@ -565,12 +573,4 @@ References
     abstract = {A new reduced dimension adaptive GDSW (Generalized Dryja-Smith-Widlund) overlapping Schwarz method for linear second-order elliptic problems in three dimensions is introduced. It is robust with respect to large contrasts of the coefficients of the partial differential equations. The condition number bound of the new method is shown to be independent of the coefficient contrast and only dependent on a user-prescribed tolerance. The interface of the nonoverlapping domain decomposition is partitioned into nonoverlapping patches. The new coarse space is obtained by selecting a few eigenvectors of certain local eigenproblems which are defined on these patches. These eigenmodes are energy-minimally extended to the interior of the nonoverlapping subdomains and added to the coarse space. By using a new interface decomposition the reduced dimension adaptive GDSW overlapping Schwarz method usually has a smaller coarse space than existing GDSW and adaptive GDSW domain decomposition methods. A robust condition number estimate is proven for the new reduced dimension adaptive GDSW method which is also valid for existing adaptive GDSW methods. Numerical results for the equations of isotropic linear elasticity in three dimensions confirming the theoretical findings are presented.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/12113},
     keywords = {submitted, reviewed}
-}
-
-@techreport{Frei:2021:THN,
-    author = {Stefan Frei and Alexander Heinlein and Thomas Richter},
-    title = {On temporal homogenization in the numerical simulation of atherosclerotic plaque growth},
-    note = {Submitted June 2021},
-    abstract = {A temporal homogenization approach for the numerical simulation of atherosclerotic plaque growth is extended to fully coupled fluid-structure interaction (FSI) simulations. The numerical results indicate that the two-scale approach yields significantly different results compared to a simple heuristic averaging, where only stationary long-scale FSI problems are solved, confirming the importance of incorporating stress variations on small time-scales. In the homogenization approach, a periodic fine-scale problem, which is periodic with respect to the heart beat, has to be solved for each long-scale time step. Even if no exact initial conditions are available, periodicity can be achieved within only 2--3 heart beats by simple time-stepping.},
-    keywords = {submitted, recent}
 }
