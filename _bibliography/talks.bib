@@ -11,6 +11,7 @@ References
     year = {2021},
     abbr = {YIC 2021},
     note = {YIC 2021 (Virtual), July 7-9, 2021},
+    abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners, which is part of Trilinos. Although being a general framework for the construction and combination of Schwarz operators, FROSch currently focusses on preconditioners that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. The computation of the first level is based on the construction of overlapping subdomains, which can be carried out based on the sparsity pattern of the matrix. In addition to that, robust and scalable coarse spaces are constructed from a partition of unity on the domain decomposition interface and energy-minimizing extensions, without the need for additional information. In particular, GDSW (Generalized Dryja-Smith-Widlund) type coarse spaces are considered. In this talk, the use of inexact solvers for the local overlapping problems and the global coarse problem will be investigated. For this purpose, inexact solvers from different packages from the Trilinos framework will be employed, e.g, from Ifpack2, MueLu, or FROSch itself.},
     url = {https://yic2021.upv.es},
     keywords = {}
 }
@@ -19,8 +20,9 @@ References
     title = {FROSch Preconditioners for Land Ice Simulations of Greenland and Antarctica},
     author = {Alexander Heinlein},
     year = {2021},
-    abbr = {Coupled 2021},
-    note = {Coupled 2021 (Virtual), June 13-16, 2021},
+    abbr = {COUPLED 2021},
+    note = {9th International Conference on Computational Methods for Coupled Problems in Science and Engineering (Virtual), June 14-16, 2021},
+    abstract = {Greenland and Antarctic ice sheets store most of the fresh water on earth and mass loss from these ice sheets signiﬁcantly contributes to sea-level rise. The simulation of temperature and velocity of the ice sheets gives rise to large highly nonlinear systems of equations. The solution of the associated tangent problems, arising in Newton’s method, is challenging also because of the strong anisotropy of the meshes. We ﬁrst consider simulations of the ice velocity of Antarctica and the ice temperature of Greenland. We use one-level Schwarz preconditioners as well as GDSW (Generalized Dryja-Smith-Widlund) type preconditioners from the Trilinos package FROSch (Fast and Robust Schwarz), scaling up to 32 k processor cores (8 k MPI ranks and 4 OpenMP threads) for the ﬁnest Antarctica mesh; the corresponding velocity problem contains 566 M degrees of freedom. We then study the coupled velocity and temperature problem for the Greenland ice sheet. To the best of our knowledge, it is the ﬁrst time that a scalable monolithic two-level preconditioner has been used for this multiphysics problem. We present strong scaling results, up to 4 k MPI ranks, using a monolithic GDSW type preconditioner with decoupled extensions from the FROSch package.},
     url = {https://congress.cimne.com/coupled2021},
     keywords = {}
 }
@@ -31,6 +33,7 @@ References
     year = {2021},
     abbr = {BaNaNa},
     note = {BaNaNa talk, SIAM Student Chapter Delft, May 19, 2021},
+    abstract = {Trilinos is a collection of more than 50 open-source software packages that can be used as building blocks for all kinds of scientific applications. For example, packages exist for iterative solvers, PDE-constrained optimization problems and automatic differentiation. This talk will give a brief introduction to Trilinos. Special attention is paid to the Tpetra package that facilitates parallel sparse linear algebra.},
     url = {https://projectbanana.github.io/lecture/2021/05/19/Trilinos.html},
     keywords = {}
 }
@@ -41,6 +44,7 @@ References
     year = {2021},
     abbr = {CM2021},
     note = {20th Copper Mountain Conference On Multigrid Methods (Virtual), March 29 - April 2, 2021},
+    abstract = {Greenland and Antarctic ice sheets store most of the fresh water on earth and mass loss from these ice sheets signiﬁcantly contributes to sea-level rise. The simulation of temperature and velocity of the ice sheets gives rise to large highly nonlinear systems of equations. The solution of the associated tangent problems, arising in Newton’s method, is challenging also because of the strong anisotropy of the meshes. We ﬁrst consider simulations of the ice velocity of Antarctica and the ice temperature of Greenland. We use one-level Schwarz preconditioners as well as GDSW (Generalized Dryja-Smith-Widlund) type preconditioners from the Trilinos package FROSch (Fast and Robust Schwarz), scaling up to 32 k processor cores (8 k MPI ranks and 4 OpenMP threads) for the ﬁnest Antarctica mesh; the corresponding velocity problem contains 566 M degrees of freedom. We then study the coupled velocity and temperature problem for the Greenland ice sheet. To the best of our knowledge, it is the ﬁrst time that a scalable monolithic two-level preconditioner has been used for this multiphysics problem. We present strong scaling results, up to 4 k MPI ranks, using a monolithic GDSW type preconditioner with decoupled extensions from the FROSch package.},
     url = {https://grandmaster.colorado.edu/copper/2021/},
     keywords = {selected}
 }
@@ -51,6 +55,7 @@ References
     year = {2021},
     abbr = {GAMM 2020@21},
     note = {91st GAMM Annual Meeting (Virtual), Kassel, Germany, March 15-19, 2021},
+    abstract = {Stress distributions in walls of in vivo arteries (transmural stresses) are a major factor for the course of cardiac diseases; for instance, they are a driving force for the process of arteriosclerosis and arteriogenesis. In order to make accurate predictions of realistic stress distributions using numerical fluid-structure interaction (FSI) simulations, the use of appropriate material models for the arterial walls is essential. In the literature, a wide range of material models is used for this purpose. In this talk, several existing material models for arterial walls are compared based on the curved tube FSI benchmark. In the benchmark configuration, the geometry corresponds to a bended idealized coronary artery with only one material layer. Furthermore, two phases are considered: first, the artery is brought to a physiological pressure of 80 mmHg, and second, the inflow profile of one heartbeat is imposed. As material models, linear elasticity, isotropic hyperelasticity, i.e., a Neo-Hookean material model, as well as the nonlinear anisotropic hyperelastic material models are taken into account. Numerical results for both linear elasticity and Neo-Hookean material models differ significantly from the results obtained with nonlinear anisotropic hyperelastic material models, which have been fitted to experimental data of real arteries. Moreover, the performance of the parallel FSI simulations using different material models is investigated.},
     url = {https://jahrestagung.gamm-ev.de/index.php/2020/2020-annual-meeting},
     keywords = {selected}
 }
@@ -61,6 +66,7 @@ References
     year = {2021},
     abbr = {Seminar},
     note = {Numerical Analysis Seminar, TU Delft, Online, February, 2021},
+    abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners, which is part of the Trilinos package ShyLU. Although being a general framework for the construction and combination of Schwarz operators, FROSch currently focusses on preconditioners that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension based coarse spaces, such as GDSW (Generalized Dryja-Smith-Widlund) type coarse spaces. This talk will cover several Schwarz preconditioning techniques which are currently being developed based on the FROSch package: reduced dimension coarse spaces, multilevel GDSW coarse spaces, and monolithic preconditioners for block systems. These approaches are introduced and applied to different problems ranging from a Poisson equation to a coupled multi physics simulations of land ice in Antarctica. Furthermore, a brief overview of some related Schwarz preconditioning techniques, which are not implemented in FROSch yet, will be given. This includes nonlinear two-level Schwarz preconditioning techniques based on Galerkin projections, adaptive coarse spaces for highly heterogeneous problems, as well as the application of machine learning techniques in order to improve the efficiency of these adaptive coarse spaces.},
     url = {https://www.tudelft.nl/cse/events/dcse-conferences/numerical-analysis-seminars},
     keywords = {selected}
 }
@@ -71,6 +77,7 @@ References
     year = {2021},
     abbr = {Colloquium},
     note = {Mathematisches Kolloquium, Universit\"at Stuttgart, Online, February, 2021},
+    abstract = {Schwarz methods are an algorithmic framework for a large class of domain decomposition methods. The software FROSch (Fast and Robust Overlapping Schwarz), which is part of the Trilinos package ShyLU, provides a highly scalable implementation of the Schwarz framework, and the resulting solvers are based on the construction and combination of the relevant Schwarz operators. FROSch currently focusses on Schwarz operators that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension-based coarse spaces, such as generalized Dryja-Smith-Widlund (GDSW) type coarse spaces. This talk will cover several Schwarz preconditioning techniques which are currently being developed based on the FROSch package: reduced dimension coarse spaces, multilevel GDSW preconditioners, and monolithic preconditioners for block systems. These approaches are introduced and applied to different problems ranging from a simple Poisson equation to a coupled multiphysics simulations of land ice in Greenland and Antarctica. Furthermore, a brief overview of related Schwarz preconditioning techniques which are currently being developed but not implemented in FROSch yet will be given. This includes nonlinear two-level Schwarz preconditioning techniques based on Galerkin projections, adaptive coarse spaces for highly heterogeneous problems, as well as novel hybrid preconditioning algorithms combining adaptive coarse spaces and machine learning techniques.},
     keywords = {selected}
 }
 
@@ -80,6 +87,7 @@ References
     year = {2021},
     abbr = {Workshop},
     note = {GAMM CSE Workshop 2021, Online, January, 2021},
+    abstract = {Simulations of fluid flow are generally very costly because too low grid resolutions may even lead to qualitatively incorrect solutions. In applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities (e.g., maximum velocity, pressure drop within a section of a pipe, or wall shear stresses at certain locations). In this talk, the use of Convolutional Neural Networks (CNNs) to predict fluid flow fields is investigated. Therefore, U-Net [Ronneberger et al., 2015] type convolutional neural networks, which are successfully used for image recognition and segmentation tasks, are applied in this context. As a model problem, the flow around obstacles with varying shape and size within a channel is considered. Obstacles of certain type are used as training data, and the generalization of the models to other obstacle geometries and sizes is analyzed. Even though, the training of a neural network is expensive, its evaluation is quite cheap compared to fully resolved Computational Fluid Dynamics (CFD) simulations. This results in a multitude of application possibilities for neural networks in this context, especially in time critical settings.},
     url = {https://www.mb.uni-siegen.de/nm/workshops/gamm-cse-2021/},
     keywords = {}
 }
