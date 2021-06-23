@@ -8,6 +8,10 @@ p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
   color: var(--global-text-color);
 }
 
+article div {
+  margin-bottom: 1rem;
+}
+
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
@@ -35,6 +39,10 @@ a, table.table a {
   text-align: center;
 }
 
+// Citation
+.citation, .citation-number {
+  color: var(--global-theme-color);
+}
 
 // Profile
 
@@ -55,6 +63,10 @@ a, table.table a {
   }
 }
 
+.clearfix {
+  margin-bottom: 0rem;
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
@@ -65,7 +77,7 @@ a, table.table a {
 }
 
 .post-description {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 0.875rem;
   a {
     color: inherit;
@@ -101,11 +113,10 @@ a, table.table a {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
-  opacity: 0.95;
   background-color: var(--global-bg-color);
+  opacity: 0.95;
 }
 .navbar.navbar-light {
-  // Remove link decoration
   a {
     &:hover {
       text-decoration: none;
@@ -128,11 +139,19 @@ a, table.table a {
         color: var(--global-hover-color);
       }
   }
-  .contact-icon {
+  .navbar-brand.social {
+    padding-bottom: 0;
+    padding-top: 0;
     font-size: 2rem;
     a {
+      i::before {
+        // color: var(--global-text-color);
+        -webkit-transition: all 0.2s ease-in-out;
+      }
       &:hover {
-        color: var(--global-hover-color);
+        i::before {
+          color: var(--global-hover-color);
+        }
       }
     }
   }
@@ -144,6 +163,7 @@ a, table.table a {
     width: 22px;
     height: 2px;
     background-color: var(--global-icon-color);
+    // background-color: var(--global-text-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -176,6 +196,10 @@ a, table.table a {
 
 // News
 
+.news {
+  margin-top: 1rem;
+}
+
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
@@ -188,11 +212,11 @@ a, table.table a {
 
 // Email (before news)
 
-.email_before_news {
-  margin-bottom: -5px;
-  margin-top: -5px;
+.social_before_news {
+  margin-bottom: 0px;
+  margin-top: 0px;
   text-align: center;
-  .contact-icon {
+  .contact-icons {
     font-size: 3rem;
     a {
       color: var(--global-icon-color);
@@ -207,12 +231,17 @@ a, table.table a {
 
 .social_bottom {
   text-align: center;
-  .contact-icon {
+  .contact-icons {
     font-size: 4rem;
     a {
-      color: var(--global-icon-color);
+      i::before {
+        color: var(--global-text-color);
+        -webkit-transition: all 0.2s ease-in-out;
+      }
       &:hover {
-        color: var(--global-theme-color);
+        i::before {
+          color: var(--global-theme-color);
+        }
       }
     }
   }
@@ -234,7 +263,7 @@ footer.fixed-bottom {
   a {
     color: var(--global-footer-link-color);
     &:hover {
-      color: pink;
+      color: var(--global-theme-color);
       text-decoration: none;
     }
   }
@@ -271,7 +300,7 @@ footer.sticky-bottom {
     padding-top: 2rem;
     padding-bottom: 2rem;
     .post-meta {
-      color: $grey-color;
+      color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
     }
@@ -294,6 +323,7 @@ footer.sticky-bottom {
       }
     }
     &.active .page-link {
+      color: $white-color;
       background-color: var(--global-theme-color);
       &:hover {
         background-color: var(--global-theme-color);
@@ -346,11 +376,51 @@ footer.sticky-bottom {
 // Projects
 
 .projects {
-  .grid-item {
-    width: 250px;
-    .card img {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .card {
+    img {
       width: 100%;
     }
+    .card-title {
+      color: $black-color;
+    }
+  }
+
+  .card-item {
+    width: auto;
+    margin-bottom: 10px;
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .grid {
+    margin-bottom: 0rem;
+  }
+
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  h2.category {
+    color: $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
   }
 }
 
@@ -358,7 +428,10 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  div {
+    margin-bottom: 0rem;
+  }
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -389,7 +462,7 @@ footer.sticky-bottom {
     font-size: 0.75rem;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -441,7 +514,7 @@ footer.sticky-bottom {
         }
       }
       .hidden {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
@@ -484,8 +557,14 @@ footer.sticky-bottom {
 
 .research {
   .grid-item {
+    div {
+      margin-bottom: 0rem;
+    }
     width: 100%;
     .card {
+      div {
+        margin-bottom: 0rem;
+      }
       .card-header {
         height: 100%;
       }
@@ -515,8 +594,14 @@ footer.sticky-bottom {
 
 .software {
   .grid-item {
+    div {
+      margin-bottom: 0rem;
+    }
     width: 100%;
     .card {
+      div {
+        margin-bottom: 0rem;
+      }
       .card-header {
         height: 100%;
       }
@@ -528,8 +613,12 @@ footer.sticky-bottom {
 // Teaching
 
 .teaching {
+  margin-bottom: 0rem;
   font-size: 0.8rem;
   .grid-item {
+    div {
+      margin-bottom: 0rem;
+    }
     width: 100%;
     .card {
       .card-header {
@@ -571,9 +660,30 @@ footer.sticky-bottom {
 
 
 // Rouge Color Customization
+figure.highlight {
+  margin: 0 0 1rem;
+}
+
+pre {
+  color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 6px;
+  padding: 6px 12px;
+  pre, code {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
 code {
   color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 3px;
+  padding: 3px 3px;
 }
+
+
 // Transitioning Themes
 html.transition,
 html.transition *,

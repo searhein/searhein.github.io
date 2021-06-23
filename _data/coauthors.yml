@@ -1,59 +1,79 @@
 Balzani:
+  - firstname: ["Daniel", "D."]
     url: http://www.lkm.rub.de/institut/team/Balzani.html
 
 Deparis:
+  - firstname: ["Simone", "S."]
     url: https://people.epfl.ch/Simone.Deparis?lang=en
 
 Frei:
+  - firstname: ["Stefan", "S."]
     url: https://www.math.uni-konstanz.de/~frei/
 
 Grimm:
+  - firstname: ["Viktor", "V."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/v-grimm-m-sc
 
 Hochmuth:
+  - firstname: ["Christian", "C."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-c-hochmuth
 
 Lanser:
+  - firstname: ["Martin", "M."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-m-lanser
 
 Klawonn:
+  - firstname: ["Axel", "A."]
     url: https://numerik.uni-koeln.de
 
 Knepper:
+  - firstname: ["Jascha", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/j-knepper-m-sc
 
 Kühn:
+  - firstname: ["Martin", "M."]
     url: https://www.dlr.de/sc/desktopdefault.aspx/tabid-1192/1635_read-38447/sortby-b_city/
 
 Perego:
+  - firstname: ["Mauro", "M."]
     url: https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/profile.cfm?mperego
 
 Quarteroni:
+  - firstname: ["Alfio", "A."]
     url: https://mox.polimi.it/people/alfio-quarteroni/
 
 Rajamanickam:
+  - firstname: ["Sivasankaran", "Siva", "S."]
     url: https://www.sandia.gov/~srajama/index.html
 
 Rheinbach:
+  - firstname: ["Oliver", "O."]
     url: https://tu-freiberg.de/fakult1/nmo/rheinbach
 
 Richter:
+  - firstname: ["Thomas", "T."]
     url: https://www.math.uni-magdeburg.de/~richter/
 
 Röver:
+  - firstname: ["Friederike", "F."]
     url: https://tu-freiberg.de/fakult1/nmo/roever
 
 Sandfeld:
+  - firstname: ["Stefan", "S."]
     url: https://tu-freiberg.de/fakult4/imfd/mimm/mitarbeiter/stefan-sandfeld
 
 Schröder:
+  - firstname: ["Jörg", "J."]
     url: https://www.uni-due.de/mechanika/index.php
 
 Steinberger:
+  - firstname: ["Daniel", "D."]
     url: https://tu-freiberg.de/fakult4/imfd/mimm/mitarbeiter/dominik-steinberger
 
 Weber:
+  - firstname: ["Janine", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/j-weber-m-sc
 
 Widlund:
+  - firstname: ["Olof B.", "Olof B.", "O. B.", "O."]
     url: https://cs.nyu.edu/widlund/

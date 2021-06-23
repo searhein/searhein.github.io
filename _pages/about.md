@@ -32,7 +32,8 @@ profile:
 
 news: true  # includes a list of news items
 recent_papers: true # includes a list of papers marked as "recent={true}"
-email_before_news: true
+email_before_news: false
+social_before_news: true
 social_bottom: false  # includes social icons at the bottom of the page
 ---
 
