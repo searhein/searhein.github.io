@@ -6,114 +6,40 @@ description: Collection of the current and previous classes taught by Alexander 
 nav: true
 ---
 
-<h2>open master projects</h2>
-
-+ [Parallel Multiplicative One-Level Schwarz Preconditioners With FROSch and Trilinos]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein-frosch_multiplicative_coloring.pdf %}){:target="_blank"} ([Sandia](https://www.sandia.gov/){:target="_blank"})
-+ [Overlapping Schwarz Domain Decomposition Methods for Implicit Ocean Models]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein_thies-frosch_ocean.pdf %}){:target="_blank"} ([Institute for Marine and Atmospheric Modeling](https://www.uu.nl/en/research/institute-for-marine-and-atmospheric-research-imau){:target="_blank"}); Co-Supervisor: Jonas Thies (TU Delft, Numerical Analysis)
-+ [Reduced Order Models for Fluid Flow With Generative Adversarial Networks (GANs)]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein-gan_pdes.pdf %}){:target="_blank"}
-+ [Block Preconditioners for Monolithic Solvers of Very Large Floating Structures]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein_colomes-block_preconditioners_floating_structures.pdf %}){:target="_blank"} ([Mocean](https://www.mocean-offshore.com){:target="_blank"}); Co-Supervisor: Oriol Colomés (TU Delft, Offshore Engineering)
-
-<h2>current teaching</h2>
-<div class="teaching grid">
+<div class="teaching">
+<h2 class="category">open master projects</h2>
+<div class="grid">
   {% assign sorted_teaching = site.teaching | sort: "runningindex" | reverse %}
   {% for teaching in sorted_teaching %}
-    {% unless teaching.archive %}
-    <div class="grid-item">
-      {% if teaching.redirect %}
-        {% unless teaching.nolink %}
-         <a href="{{ teaching.redirect }}" target="_blank">
-        {% endunless %}
-      {% else %}
-        {% unless teaching.nolink %}
-          <a href="{{ teaching.url | relative_url }}">
-        {% endunless %}
-      {% endif %}
-        {% if teaching.nolink %}
-          <div class="card">
-        {% else %}
-          <div class="card hoverable">
-        {% endif %}  
-          <div class="row no-gutters">
-            <div class="col-md-4">          
-              <div class="card-header {{ teaching.university }}">
-                {% if teaching.university == "ude" %}
-                  <p class="card-text">University of Duisburg-Essen</p>
-                {% endif %}
-                {% if teaching.university == "uzk" %}
-                  <p class="card-text">University of Cologne</p>
-                {% endif %}
-                {% if teaching.university == "ust" %}
-                  <p class="card-text">University of Stuttgart</p>
-                {% endif %}
-                {% if teaching.university == "tud" %}
-                  <p class="card-text">TU Delft</p>
-                {% endif %}
-                <p class="card-text">{{ teaching.semester }}</p>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <p class="card-title">{{ teaching.title }}</p>
-                <!-- <p class="card-text">{{ teaching.description }}</p>               -->
-              </div>
-            </div>
-          </div>
-        </div>
-      {% unless teaching.nolink %}
-        </a>
-      {% endunless %}
-    </div>
-    {% endunless %}
+    {% if teaching.category == "thesis" %}
+      {% include theses.html %}
+    {% endif %}
   {% endfor %}
 </div>
 
-<h2>archive</h2>
-<div class="teaching grid">
+<!-- + [Parallel Multiplicative One-Level Schwarz Preconditioners With FROSch and Trilinos]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein-frosch_multiplicative_coloring.pdf %}){:target="_blank"} ([Sandia](https://www.sandia.gov/){:target="_blank"})
++ [Overlapping Schwarz Domain Decomposition Methods for Implicit Ocean Models]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein_thies-frosch_ocean.pdf %}){:target="_blank"} ([Institute for Marine and Atmospheric Modeling](https://www.uu.nl/en/research/institute-for-marine-and-atmospheric-research-imau){:target="_blank"}); Co-Supervisor: Jonas Thies (TU Delft, Numerical Analysis)
++ [Reduced Order Models for Fluid Flow With Generative Adversarial Networks (GANs)]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein-gan_pdes.pdf %}){:target="_blank"}
++ [Block Preconditioners for Monolithic Solvers of Very Large Floating Structures]({{ site.baseurl }}{% link /assets/pdf/thesis_projects/2021-heinlein_colomes-block_preconditioners_floating_structures.pdf %}){:target="_blank"} ([Mocean](https://www.mocean-offshore.com){:target="_blank"}); Co-Supervisor: Oriol Colomés (TU Delft, Offshore Engineering) -->
+
+<h2 class="category">active</h2>
+<div class="grid">
   {% assign sorted_teaching = site.teaching | sort: "runningindex" | reverse %}
   {% for teaching in sorted_teaching %}
-    {% if teaching.archive == true %}
-    <div class="grid-item">
-      {% if teaching.redirect %}
-        {% unless teaching.nolink %}
-          <a href="{{ teaching.redirect }}" target="_blank">
-        {% endunless %}
-      {% else %}
-        {% unless teaching.nolink %}
-          <a href="{{ teaching.url | relative_url }}">
-        {% endunless %}
-      {% endif %}
-        {% if teaching.nolink %}
-          <div class="card">
-        {% else %}
-          <div class="card hoverable">
-        {% endif %}        
-          <div class="row no-gutters">
-            <div class="col-md-4">          
-              <div class="card-header {{ teaching.university }}">
-                {% if teaching.university == "ude" %}
-                  <p class="card-text">University of Duisburg-Essen</p>
-                {% endif %}
-                {% if teaching.university == "uzk" %}
-                  <p class="card-text">University of Cologne</p>
-                {% endif %}
-                {% if teaching.university == "ust" %}
-                  <p class="card-text">University of Stuttgart</p>
-                {% endif %}              
-                <p class="card-text">{{ teaching.semester }}</p>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <p class="card-title">{{ teaching.title }}</p>
-                <!-- <p class="card-text">{{ teaching.description }}</p>               -->
-              </div>
-            </div>
-          </div>
-        </div>
-      {% unless teaching.nolink %}
-        </a>
-      {% endunless %}
-    </div>
+    {% if teaching.category == "active" %}
+      {% include courses.html %}
     {% endif %}
   {% endfor %}
+</div>
+
+<h2 class="category">archive</h2>
+<div class="grid">
+  {% assign sorted_teaching = site.teaching | sort: "runningindex" | reverse %}
+  {% for teaching in sorted_teaching %}
+    {% if teaching.category == "archive" %}
+      {% include courses.html %}
+    {% endif %}
+  {% endfor %}
+</div>
+
 </div>

@@ -6,5 +6,5 @@ title: Linear Algebra
 description: Interfaculty teaching linear algebra course for engineering students.
 runningindex: 15
 nolink: true
-archive: false
+category: active
 ---

@@ -359,6 +359,21 @@ footer.sticky-bottom {
   }
   .card {
     border: 1px solid var(--global-bg-color);
+
+    .card-title {
+      color: $black-color;
+      font-size: 1.25rem;
+    }
+
+    .card-body {
+      margin-bottom: 0rem;
+      padding: 1.0rem;
+    }
+
+    .card-text {
+      font-size: 0.75rem;
+      margin-bottom: 0rem;
+    }
   }
   a {
     text-decoration: none;
@@ -390,9 +405,6 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
-    .card-title {
-      color: $black-color;
-    }
   }
 
   .card-item {
@@ -416,9 +428,10 @@ footer.sticky-bottom {
 
   h2.category {
     color: $grey-color-dark;
+    font-size: 1.5rem;
     border-bottom: 1px solid $grey-color-light;
     padding-top: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     margin-bottom: 0.5rem;
     text-align: right;
   }
@@ -428,7 +441,7 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 1rem;
+  margin-top: 0rem;
   div {
     margin-bottom: 0rem;
   }
@@ -613,6 +626,16 @@ footer.sticky-bottom {
 // Teaching
 
 .teaching {
+  h2.category {
+    color: $grey-color-dark;
+    font-size: 1.5rem;
+    border-bottom: 1px solid $grey-color-light;
+    padding-top: 0.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
+  }
+
   margin-bottom: 0rem;
   font-size: 0.8rem;
   .grid-item {
@@ -621,14 +644,27 @@ footer.sticky-bottom {
     }
     width: 100%;
     .card {
+        .additional {
+          margin-top: 0.5rem;
+          font-weight: lighter;
+        }
+
       .card-header {
+        padding: 0.75rem 1.25rem;
         height: 100%;
         border-radius: 3px 0px 0px 3px;
+
         p {
           color: white;
         }
       }
+      .card-title {
+        font-size: 0.75rem;
+        //font-weight: bolder;
+        margin-bottom: 0rem;
+      }
       .card-body {
+        padding: 0.75rem 1.25rem;
         p {
           color: $black-color;
         }

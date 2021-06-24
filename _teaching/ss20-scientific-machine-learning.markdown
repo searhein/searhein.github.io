@@ -6,7 +6,7 @@ title: Scientific Machine Learning
 description: asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd
 runningindex: 10
 nolink: true
-archive: true
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.

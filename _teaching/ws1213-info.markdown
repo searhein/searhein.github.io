@@ -6,7 +6,7 @@ title: Mathematics for Students of Business Informatics
 description: asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd
 runningindex: 2
 nolink: true
-archive: true
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.

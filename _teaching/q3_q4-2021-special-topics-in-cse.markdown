@@ -6,5 +6,5 @@ title: Special Topics in CSE
 description: Scientific machine learning.
 runningindex: 14
 nolink: true
-archive: false
+category: active
 ---

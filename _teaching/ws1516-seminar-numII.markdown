@@ -6,7 +6,7 @@ title: Seminar on Numerical Mathematics II
 description: asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd
 runningindex: 3
 nolink: true
-archive: true
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.

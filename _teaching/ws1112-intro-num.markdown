@@ -6,7 +6,7 @@ title: Introduction to Numerical Mathematics
 description: asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd
 runningindex: 1
 nolink: true
-archive: true
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.

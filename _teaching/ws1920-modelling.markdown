@@ -6,7 +6,7 @@ title: Project-Oriented Lecture and Seminar on Modeling and Simulation of Applic
 description: asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd
 runningindex: 9
 nolink: true
-archive: true
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.

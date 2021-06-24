@@ -6,5 +6,5 @@ title: Scientific Computing
 description: asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd
 runningindex: 5
 nolink: true
-archive: true
+category: archive
 ---
