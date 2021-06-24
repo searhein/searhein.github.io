@@ -18,8 +18,8 @@
             <!-- <h3 class="card-title text-lowercase">{{ project.title }}</h3> -->
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
+            {% if project.github %}
             <div class="row ml-1 mr-1 p-0">
-              {% if project.github %}
               <div class="github-icon">
                 <div class="icon" data-toggle="tooltip" title="Code Repository">
                   <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
@@ -31,8 +31,8 @@
                 </span>
                 {% endif %}
               </div>
-              {% endif %}
             </div>
+            {% endif %}
           </div>
         </div>
       </div>
