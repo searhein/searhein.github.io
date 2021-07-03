@@ -6,5 +6,5 @@ title: Mathematical Data Science
 description: Mathematical aspects of problems related to data science.
 runningindex: 13
 nolink: true
-category: active
+category: archive
 ---
