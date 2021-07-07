@@ -1,7 +1,7 @@
 ---
 layout: page_teaching
 university: tud
-collaboration: Thesis in Civil Engineering (similar project in Applied Mathematics possible)
+collaboration: Thesis in Offshore and Dredging Engineering (similar project in Applied Mathematics possible)
 title: Surrogate models for the characterization of hydrodynamic loads on perforated monopiles
 description: Co-Supervisor Oriol Colomés (TU Delft, Offshore Engineering)
 runningindex: 6
