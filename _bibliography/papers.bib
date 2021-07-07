@@ -557,6 +557,15 @@ References
 
 # submitted
 
+@techreport{Heinlein:2021:PST,
+    author = {Alexander Heinlein and Oliver Rheinbach and Friederike R{\"o}ver},
+    title = {Parallel Scalability of Three-Level FROSch Preconditioners to 220 000 Cores using the Theta Supercomputer},
+    note = {Submitted Juli 2021},
+    abstract = {The parallel performance of the three-level Fast and Robust Overlapping Schwarz (FROSch) preconditioners is investigated for linear elasticity. The FROSch framework is part of the Trilinos software library and contains a parallel implementation of diﬀerent preconditioners with energy minimizing coarse spaces of GDSW (Generalized Dryja–Smith–Widlund) type. The three-level extension is constructed by a recursive application of the FROSch preconditioner to the coarse problem. In this paper, the additional steps in the implementation in order to apply the FROSch preconditioner recursively are described in detail. Furthermore, it is shown that no explicit geometric information is needed in the recursive application of the preconditioner. In particular, the rigid body modes, including the rotations, can be interpolated on the coarse level without additional geometric information. Parallel results for a three-dimensional linear elasticity problem obtained on the Theta supercomputer (ALCF, Argonne, USA) using up to 220 000 cores are discussed and compared to results obtained on the SuperMUC-NG supercomputer (LRZ, Garching, Germany). Notably, it can be observed that a hierarchical communication operation in FROSch related to the coarse operator starts to dominate the computing time on Theta for 100 000 MPI ranks or more. The same operation, however, scales well and stays within the order of a second in all experiments performed on SuperMUC-NG. Using hybrid MPI/OpenMP parallelization, better performance is then achieved on Theta.},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Frei:2021:THN,
     author = {Stefan Frei and Alexander Heinlein and Thomas Richter},
     title = {On temporal homogenization in the numerical simulation of atherosclerotic plaque growth},
