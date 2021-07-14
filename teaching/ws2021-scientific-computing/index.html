@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Alexander  Heinlein | blank</title>
+<title>Alexander  Heinlein | Scientific Computing</title>
 <meta name="description" content="Personal website of Alexander Heinlein.
 ">
 
@@ -33,7 +33,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>/assets/img/favicon.ico</text></svg>">
  -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/teaching/ws2021-scientific-computing/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -184,56 +184,87 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
-
-
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
+  <header class="post-header">
+    <h3 class="post-title ust">
       
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
       
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
       
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
+        University of Stuttgart
       
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+      - 
+      WS 2020/2021
+      </h3>
+    <h1 class="post-title">
+      Scientific Computing
+    </h1>
+    <p class="post-description">An advanced class about domain decomposition methods and parallel computing.</p>
+  </header>
 
+  <article>
+    <h3 id="time-and-location">Time and Location</h3>
 
+<p><strong>Lecture</strong></p>
+<ul>
+  <li>Pre-recorded videos</li>
+</ul>
+
+<p><strong>First Lecture</strong>: Tuesday, 03.11.2020, 09.45 – 11.15 (online)</p>
+
+<p><strong>Exercise Class</strong></p>
+<ul>
+  <li>Wednesday 09.45 – 11.15 (online)</li>
+</ul>
+
+<h3 id="summary">Summary</h3>
+
+<p>In this course, numerical methods for the solution of large sparse linear systems of equations are treated. While direct solvers are not feasible due their superlinear complexity and memory consumption, the convergence of simple iterative methods deteriorates with an increasing problem size. Therefore, we will discuss domain decomposition methods, which are hybrid approaches combining the advantages of both direct and iterative methods.</p>
+
+<p>Domain decomposition methods are divide-and-conquer algorithms, which are well suited for current parallel hardware architectures, ranging from tablet computers to large supercomputers with CPU or GPU architectures. The key idea for these approaches is to divide the initial large problem into smaller subproblems, which can be solved independently. Then, the solution of the full problem is computed in an iterative scheme. The best performance is typically obtained by adding an additional small but global problem to couple the local subproblems.</p>
+
+<p>List of topics:</p>
+<ul>
+  <li>Krylov methods for symmetric and nonsymmetric problems</li>
+  <li>C/C++, MPI, and <a href="https://trilinos.github.io">Trilinos</a> programming crash courses</li>
+  <li>Domain decomposition methods:
+    <ul>
+      <li>Classical nonoverlapping and overlapping domain decomposition methods</li>
+      <li>Abstract Schwarz theory</li>
+      <li>One-level and multi-level Schwarz methods</li>
+    </ul>
+  </li>
+  <li>Optional / depending on the audience:
+    <ul>
+      <li>Node-level parallelization using OpenMP</li>
+      <li>Nonoverlapping domain decomposition methods: BDDC (Balancing domain decomposition by constraints) and FETI-DP (ﬁnite element tearing and interconnecting dual-primal) methods</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="goals">Goals</h3>
+
+<p>The goal of this course is discuss the theory of domain decomposition methods and to develop an MPI-parallel code containing both a parallel ﬁnite element implementation as well as a parallel domain decomposition solver. As the basis, the parallel linear algebra packages from the library Trilinos
+(https://trilinos.github.io) will be used.</p>
+
+<h3 id="prior-knowledge">Prior knowledge</h3>
+
+<p>Some knowledge of Numerics for PDEs, e.g. PDEMAS (Bachelor) or Einführung in die Numerik partieller Differentialgleichungen (Master)</p>
+
+<h3 id="remarks">Remarks</h3>
+
+<p>The lectures will be pre-recorded and made available on Ilias. Note that the <strong>first lecture (Tuesday, 03.11.2020, 9.45 – 11.15) will be held online via WebEx</strong> to clarify organizational issues.</p>
+
+<p>Instead of weekly exercises, the lecture will be <strong>accompanied by smaller projects</strong> (involving theory and implementation). The <strong>exercise sessions will be used for discussing the progress of the projects using the videoconference tool WebEx</strong>. If more time is needed, the timeslots for the lectures may be used for discussions as well.</p>
+
+<h3 id="literature">Literature</h3>
+
+<ul>
+  <li>Saad, Yousef. Iterative methods for sparse linear systems. Society for Industrial and Applied Mathematics, 2003.</li>
+  <li>Smith, Barry, Petter Bjorstad, and William Gropp. Domain decomposition: parallel multilevel methods for elliptic partial differential equations. Cambridge university press, 2004.</li>
+  <li>Toselli, Andrea, and Olof Widlund. Domain decomposition methods-algorithms and theory. Vol. 34. Springer Science &amp; Business Media, 2006.</li>
+  <li>More literature will be announced in the lecture.</li>
+</ul>
+
+  </article>
 
 </div>
 
