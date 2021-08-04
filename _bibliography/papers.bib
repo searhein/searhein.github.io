@@ -533,6 +533,17 @@ References
 
 # accepted
 
+@techreport{Heinlein:2021:PGL,
+    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
+    title = {Predicting the geometric location of critical edges in adaptive GDSW overlapping domain decomposition methods using deep learning},
+    note = {Accepted for publication in the proceedings of the DD26 conference. August 2021.},
+    abbr = {Springer LNCSE},
+    abstract = {Overlapping GDSW domain decomposition methods are considered for diffusion problems in two dimensions discretized by finite elements. For a diffusion coefficient with high contrast, the condition number is usually dependent on it. A remedy is given by adaptive domain decomposition methods, where the coarse space is enhanced by additional coarse basis functions. These are chosen problem-dependently by solving small local eigenvalue problems. Here, the eigenvalue problems (EVPs) are associated with the edges of the domain decomposition interface; edges, where these EVPs have to be solved are denoted as critical edges. For many applications, not all edges are critical and the solution of the EVPs is not necessary. In an earlier work, a strategy to predict the location of critical edges, based on deep learning, has been proposed for adaptive FETI-DP, a class of nonoverlapping methods. In the present work, this strategy is successfully applied to  adaptive GDSW; differences in the classification process for this overlapping method are described. Choosing the classification threshold has been a challenge in all these approaches. Here, for the first time, a heuristic based on the receiver operating characteristic (ROC) curve and the precision-recall graph is discussed. Results for a challenging realistic coefficient function are presented.},
+    preprint = {https://kups.ub.uni-koeln.de/36257},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Grimm:2020:ETD,
     author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
     title = {Estimating the time-dependent contact rate of SIR and SEIR models in mathematical epidemiology using physics-informed neural networks},
@@ -584,16 +595,6 @@ References
     abstract = {A temporal homogenization approach for the numerical simulation of atherosclerotic plaque growth is extended to fully coupled fluid-structure interaction (FSI) simulations. The numerical results indicate that the two-scale approach yields significantly different results compared to a simple heuristic averaging, where only stationary long-scale FSI problems are solved, confirming the importance of incorporating stress variations on small time-scales. In the homogenization approach, a periodic fine-scale problem, which is periodic with respect to the heart beat, has to be solved for each long-scale time step. Even if no exact initial conditions are available, periodicity can be achieved within only 2--3 heart beats by simple time-stepping.},
     preprint = {https://arxiv.org/abs/2106.09394},
     keywords = {submitted, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2021:PGL,
-    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
-    title = {Predicting the geometric location of critical edges in adaptive GDSW overlapping domain decomposition methods using deep learning},
-    note = {Submitted March 2021},
-    abstract = {Overlapping GDSW domain decomposition methods are considered for diffusion problems in two dimensions discretized by finite elements. For a diffusion coefficient with high contrast, the condition number is usually dependent on it. A remedy is given by adaptive domain decomposition methods, where the coarse space is enhanced by additional coarse basis functions. These are chosen problem-dependently by solving small local eigenvalue problems. Here, the eigenvalue problems (EVPs) are associated with the edges of the domain decomposition interface; edges, where these EVPs have to be solved are denoted as critical edges. For many applications, not all edges are critical and the solution of the EVPs is not necessary. In an earlier work, a strategy to predict the location of critical edges, based on deep learning, has been proposed for adaptive FETI-DP, a class of nonoverlapping methods. In the present work, this strategy is successfully applied to  adaptive GDSW; differences in the classification process for this overlapping method are described. Choosing the classification threshold has been a challenge in all these approaches. Here, for the first time, a heuristic based on the receiver operating characteristic (ROC) curve and the precision-recall graph is discussed. Results for a challenging realistic coefficient function are presented.},
-    preprint = {https://kups.ub.uni-koeln.de/36257},
-    keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
 
