@@ -533,6 +533,17 @@ References
 
 # accepted
 
+@techreport{Heinlein:2021:TLE,
+    author = {Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and Friederike R\"over},
+    title = {A Three-Level Extension for Fast and Robust Overlapping Schwarz (FROSch) Preconditioners with Reduced Dimensional Coarse Space},
+    note = {Accepted for publication in the proceedings of the DD26 conference. August 2021.},
+    abbr = {Springer LNCSE},
+    abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
+    preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-02.pdf},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Heinlein:2021:PGL,
     author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
     title = {Predicting the geometric location of critical edges in adaptive GDSW overlapping domain decomposition methods using deep learning},
@@ -595,16 +606,6 @@ References
     abstract = {A temporal homogenization approach for the numerical simulation of atherosclerotic plaque growth is extended to fully coupled fluid-structure interaction (FSI) simulations. The numerical results indicate that the two-scale approach yields significantly different results compared to a simple heuristic averaging, where only stationary long-scale FSI problems are solved, confirming the importance of incorporating stress variations on small time-scales. In the homogenization approach, a periodic fine-scale problem, which is periodic with respect to the heart beat, has to be solved for each long-scale time step. Even if no exact initial conditions are available, periodicity can be achieved within only 2--3 heart beats by simple time-stepping.},
     preprint = {https://arxiv.org/abs/2106.09394},
     keywords = {submitted, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2021:TLE,
-    author = {Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and Friederike R\"over},
-    title = {A Three-Level Extension for Fast and Robust Overlapping Schwarz (FROSch) Preconditioners with Reduced Dimensional Coarse Space},
-    note = {Submitted March 2021},
-    abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
-    preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-02.pdf},
-    keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
 
