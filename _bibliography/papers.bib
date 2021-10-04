@@ -550,6 +550,17 @@ References
 
 # accepted
 
+@techreport{Heinlein:2021:AGD,
+    author = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Oliver Rheinbach and Olof B. Widlund},
+    title = {Adaptive GDSW coarse spaces of reduced dimension for overlapping Schwarz methods},
+    note = {Accepted for publication in SIAM Journal on Scientific Computing. October 2021},
+    abbr = {SISC},
+    abstract = {A new reduced dimension adaptive GDSW (Generalized Dryja-Smith-Widlund) overlapping Schwarz method for linear second-order elliptic problems in three dimensions is introduced. It is robust with respect to large contrasts of the coefficients of the partial differential equations. The condition number bound of the new method is shown to be independent of the coefficient contrast and only dependent on a user-prescribed tolerance. The interface of the nonoverlapping domain decomposition is partitioned into nonoverlapping patches. The new coarse space is obtained by selecting a few eigenvectors of certain local eigenproblems which are defined on these patches. These eigenmodes are energy-minimally extended to the interior of the nonoverlapping subdomains and added to the coarse space. By using a new interface decomposition the reduced dimension adaptive GDSW overlapping Schwarz method usually has a smaller coarse space than existing GDSW and adaptive GDSW domain decomposition methods. A robust condition number estimate is proven for the new reduced dimension adaptive GDSW method which is also valid for existing adaptive GDSW methods. Numerical results for the equations of isotropic linear elasticity in three dimensions confirming the theoretical findings are presented.},
+    preprint = {https://kups.ub.uni-koeln.de/id/eprint/12113},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Frei:2021:THN,
     author = {Stefan Frei and Alexander Heinlein and Thomas Richter},
     title = {On temporal homogenization in the numerical simulation of atherosclerotic plaque growth},
@@ -568,7 +579,7 @@ References
     abbr = {Springer LNCSE},
     abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
     preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-02.pdf},
-    keywords = {accepted, reviewed, recent},
+    keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
 
@@ -579,7 +590,7 @@ References
     abbr = {Springer LNCSE},
     abstract = {Overlapping GDSW domain decomposition methods are considered for diffusion problems in two dimensions discretized by finite elements. For a diffusion coefficient with high contrast, the condition number is usually dependent on it. A remedy is given by adaptive domain decomposition methods, where the coarse space is enhanced by additional coarse basis functions. These are chosen problem-dependently by solving small local eigenvalue problems. Here, the eigenvalue problems (EVPs) are associated with the edges of the domain decomposition interface; edges, where these EVPs have to be solved are denoted as critical edges. For many applications, not all edges are critical and the solution of the EVPs is not necessary. In an earlier work, a strategy to predict the location of critical edges, based on deep learning, has been proposed for adaptive FETI-DP, a class of nonoverlapping methods. In the present work, this strategy is successfully applied to  adaptive GDSW; differences in the classification process for this overlapping method are described. Choosing the classification threshold has been a challenge in all these approaches. Here, for the first time, a heuristic based on the receiver operating characteristic (ROC) curve and the precision-recall graph is discussed. Results for a challenging realistic coefficient function are presented.},
     preprint = {https://kups.ub.uni-koeln.de/36257},
-    keywords = {accepted, reviewed, recent},
+    keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
 
@@ -632,16 +643,6 @@ References
     note = {Submitted December 2020},
     abstract = {A convolution neural network (CNN)-based approach for the construction of reduced order surrogate models for computational fluid dynamics (CFD) simulations is introduced; it is inspired by the approach of Guo, Li, and Iori [X. Guo, W. Li, and F. Iorio, Convolutional neural networks for steady flow approximation, in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD'16, New York, USA, 2016, ACM, pp. 481--490]. In particular, the neural networks are trained in order to predict images of the flow field in a channel with varying obstacle based on an image of the geometry of the channel. A classical CNN with bottleneck structure and a U-Net are compared while varying the input format, the number of decoder paths, as well as the loss function used to train the networks. This approach yields very low prediction errors, in particular, when using the U-Net architecture. Furthermore, the models are also able to generalize to unseen geometries of the same type. A transfer learning approach enables the model to be trained to a new type of geometries with very low training cost. Finally, based on this transfer learning approach, a sequential learning strategy is introduced, which significantly reduces the amount of necessary training data.},
     preprint = {https://kups.ub.uni-koeln.de/29760/},
-    keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2020:AGD,
-    author = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Oliver Rheinbach and Olof B. Widlund},
-    title = {Adaptive GDSW coarse spaces of reduced dimension for overlapping Schwarz methods},
-    note = {Submitted September 2020},
-    abstract = {A new reduced dimension adaptive GDSW (Generalized Dryja-Smith-Widlund) overlapping Schwarz method for linear second-order elliptic problems in three dimensions is introduced. It is robust with respect to large contrasts of the coefficients of the partial differential equations. The condition number bound of the new method is shown to be independent of the coefficient contrast and only dependent on a user-prescribed tolerance. The interface of the nonoverlapping domain decomposition is partitioned into nonoverlapping patches. The new coarse space is obtained by selecting a few eigenvectors of certain local eigenproblems which are defined on these patches. These eigenmodes are energy-minimally extended to the interior of the nonoverlapping subdomains and added to the coarse space. By using a new interface decomposition the reduced dimension adaptive GDSW overlapping Schwarz method usually has a smaller coarse space than existing GDSW and adaptive GDSW domain decomposition methods. A robust condition number estimate is proven for the new reduced dimension adaptive GDSW method which is also valid for existing adaptive GDSW methods. Numerical results for the equations of isotropic linear elasticity in three dimensions confirming the theoretical findings are presented.},
-    preprint = {https://kups.ub.uni-koeln.de/id/eprint/12113},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
