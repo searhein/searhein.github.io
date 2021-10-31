@@ -3,8 +3,9 @@ layout: page_teaching
 university: uzk
 semester: SS 2017
 title: Scientific Computing
-description: asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd asdafsasdasd
+instructors: Stefanie Friedhoff, Alexander Heinlein, Axel Klawonn, and Martin Lanser
 runningindex: 5
 nolink: true
-category: archive
+category: course
+status: archive
 ---

@@ -36,6 +36,10 @@
         <div class="col-md-8">
           <div class="card-body">
             <p class="card-title">{{ teaching.title }}</p>
+            {% if teaching.instructors %}
+              <p class="card-text additional"> Instructor(s): {{ teaching.instructors }}</p>
+            {% endif %}
+            <!-- <p class="card-title">{{ teaching.title }}</p> -->
             <!-- <p class="card-text">{{ teaching.description }}</p>               -->
           </div>
         </div>

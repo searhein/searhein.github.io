@@ -2,7 +2,7 @@
 layout: page
 title: Domain Decomposition Methods
 description: Solvers based on decomposition the computational into multiple nonoverlapping or overlapping subdomains.
-img: /assets/img/metis-dd-overlap1.png
+img: assets/img/metis-dd-overlap1.png
 importance: 1
 nolink: true
 ---

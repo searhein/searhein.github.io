@@ -12,6 +12,7 @@ profile:
     <p>DIAM, Faculty of EEMCS</p>
     <p>Numerical Analysis</p>
     <p>Mekelweg 4, 2628 CD Delft</p>
+    <p>Room HB 03.290</p>
     <p style="margin-top: 5px">Tel.: +31 (0)15 27 89135</p>
 
     <!-- <p>University of Stuttgart</p>

@@ -2,7 +2,7 @@
 layout: page
 title: EXASTEEL
 description: Bridging Scales for Multiphase Steels
-img: /assets/img/fe2ti_nakajima.png
+img: assets/img/fe2ti_nakajima.png
 redirect: https://numerik.uni-koeln.de/index.php?id=14079
 importance: 4
 category: archive

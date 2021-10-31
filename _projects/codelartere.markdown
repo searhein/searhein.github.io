@@ -2,7 +2,7 @@
 layout: page
 title: CoDELartere
 description: Domain-Decomposition-Based Fluid Structure Interaction Algorithms for Highly Nonlinear and Anisotropic Elastic Arterial Wall Models in 3D
-img: /assets/img/fsi-artery.png
+img: assets/img/fsi-artery.png
 redirect: https://numerik.uni-koeln.de/index.php?id=14080
 importance: 2
 category: archive

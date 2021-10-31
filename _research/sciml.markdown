@@ -2,7 +2,7 @@
 layout: page
 title: Scientific Machine Learning
 description: Combination of Scientific Computing and Machine Learning
-img: /assets/img/sciml.png
+img: assets/img/sciml.png
 importance: 2
 nolink: true
 ---

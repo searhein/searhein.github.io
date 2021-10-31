@@ -3,9 +3,10 @@ layout: page_teaching
 university: ust
 semester: WS 2020/2021
 title: Scientific Computing
-description: An advanced class about domain decomposition methods and parallel computing.
+instructors: Alexander Heinlein
 runningindex: 12
-category: archive
+category: course
+status: archive
 ---
 
 ### Time and Location

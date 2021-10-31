@@ -1,9 +1,9 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
+title: research_projects
+permalink: /research_projects/
 description: Collection of research projects Alexander Heinlein is contributing to (current projects) or has contributed to (archive).
-nav: true
+nav: false
 display_categories: [active, archive]
 horizontal: false
 ---
@@ -12,7 +12,7 @@ horizontal: false
   {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
     {% for category in page.display_categories %}
-      <h2 class="category">{{category}}</h2>
+      <h2 class="category">{{ category }}</h2>
       {% assign categorized_projects = site.projects | where: "category", category %}
       {% assign sorted_projects = categorized_projects | sort: "importance" %}
       <!-- Generate cards for each project -->

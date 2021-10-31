@@ -3,9 +3,10 @@ layout: page_teaching
 university: ust
 semester: WS 2020/2021
 title: Seminar on Machine Learning
-description: The seminar covers several topics from machine learning.
+instructors: Alexander Heinlein
 runningindex: 11
-category: archive
+category: course
+status: archive
 ---
 
 ### Time and Location

@@ -52,11 +52,12 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            {% if teaching.description %}
-              <p class="card-title">{{ teaching.title }}</p>
-              <p class="card-text additional">{{ teaching.description }}</p>
-            {% else %}
-              <p class="card-title">{{ teaching.title }}</p>
+            <p class="card-title">{{ teaching.title }}</p>
+            {% if teaching.co-supervisor %}
+              <p class="card-text additional"> Co-Supervisor(s): {{ teaching.co-supervisor }}</p>
+            {% endif %}
+            {% if teaching.student %}
+              <p class="card-text additional"> Student: {{ teaching.student }}</p>
             {% endif %}
           </div>
         </div>
