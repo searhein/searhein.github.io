@@ -3,7 +3,7 @@ layout: page
 title: software
 permalink: /software/
 description: A compilation of software projects Alexander Heinlein is contributing to.
-nav: true
+nav: false
 ---
 
 <div class="software grid">

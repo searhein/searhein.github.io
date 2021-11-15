@@ -9,4 +9,7 @@ children:
     - title: divider
     - title: research projects
       permalink: /research_projects/
+    - title: divider
+    - title: software
+      permalink: /software/
 ---
