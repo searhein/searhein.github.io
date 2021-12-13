@@ -6,7 +6,7 @@ title: The Application of Neural Networks to Predict Skin Evolution After Burn T
 co-supervisor: Fred Vermolen (University of Hasselt)
 runningindex: 5
 nolink: false
-redirect: /assets/pdf/thesis_projects/2021-heinlein-vermolen-neural_networks_burn_injuries.pdf
+redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_vermolen-neural_networks_burn_injuries.pdf
 category: thesis
 status: open
 ---
