@@ -5,6 +5,16 @@ References
 
 # talks
 
+@misc{Heinlein:2022:RUB:SCS,
+    title = {Spectral coarse spaces for overlapping Schwarz methods based on energy-minimizing extensions},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {Seminar},
+    note = {Seminar, Ruhr-Universit\"at Bochum, January 13, 2022},
+    abstract = {Discretizing partial differential equations often results in sparse linear equation systems, and high spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, e.g., in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. In particular, the generalized eigenvalue problems are based on energy-minimizing extensions corresponding to the interface components. The presented methods have a provable condition number bound, which is independent of the contrast of the coefficient functions. A great challenge is to construct adaptive coarse spaces that are robust but can be built algebraically, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information. In this talk, a novel adaptive coarse space that is both robust and algebraic is introduced. Furthermore, approaches for combining adaptive coarse spaces with nonlinear preconditioning as well as machine learning techniques are discussed. The talk is based on joint work with Axel Klawonn, Jascha Knepper, Martin Lanser, Janine Weber (University of Cologne), Oliver Rheinbach (TU Bergakademie Freiberg), Kathrin Smetana (Stevens Institute of Technology), and Olof Widlund (New York University).},
+    keywords = {}
+}
+
 @misc{Heinlein:2021:PPS:SMC,
     title = {Surrogate Models for Computational Fluid Dynamics Simulations Using Convolutional Autoencoder Neural Networks and Physical Constraints},
     author = {Alexander Heinlein},
