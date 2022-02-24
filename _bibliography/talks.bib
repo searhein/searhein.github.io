@@ -5,6 +5,28 @@ References
 
 # talks
 
+@misc{Heinlein:2022:CM:FAS,
+    title = {A fully algebraic spectral coarse space for overlapping Schwarz methods},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {CM2022},
+    note = {17th Copper Mountain Conference On Iterative Methods (Virtual), April 4 - April 8, 2022},
+    abstract = {Discretizing partial differential equations often results in sparse systems of linear equations. High spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, for instance, in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. The development of spectral coarse spaces for domain decomposition methods has been a very active topic within the last decade. However, until recently, the algebraic construction of robust spectral coarse spaces, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information, has still been on open problem. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. An algebraic and robust spectral coarse space is then constructed by solving two eigenvalue problems on each edge of a two-dimensional domain decomposition. One of them is based on optimal local approximation spaces that are also successfully employed in the construction of multiscale discretizations. The resulting condition number bound is independent of the contrast of the coefficient function, indicating the robustness of the method. In order investigate the robustness of this new method numerically, numerical results for different coefficient distributions with large jumps are presented, including typical examples with channels, random distributions, and coefficient distributions generated from the SPE10 benchmark. Furthermore, randomized eigensolvers are employed to improve the efficiency of solving the eigenvalue problems.},
+    url = {https://grandmaster.colorado.edu/copper/2022/},
+    keywords = {selected}
+}
+
+@misc{Heinlein:2022:SIAMPP:NDF,
+    title = {New Developments of the FROSch Domain Decomposition Solver Package},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {SIAM PP22},
+    note = {SIAM Conference on Parallel Processing for Scientific Computing, SIAM PP22, Virtual, February 23-26, 2022},
+    abstract = {Schwarz methods are an algorithmic framework for a large class of domain decomposition methods. The software FROSch (Fast and Robust Overlapping Schwarz), which is part of the Trilinos package ShyLU, provides a highly scalable implementation of the Schwarz framework, and the resulting solvers are based on the construction and combination of the relevant Schwarz operators. FROSch currently focusses on Schwarz operators that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension-based coarse spaces, such as generalized Dryja-Smith-Wildund (GDSW) type coarse spaces. This talk gives an overview of the FROSch software framework as well as current developments in improving the performance of the solvers, for instance, due to the use of inexact subdomain and coarse solvers. Moreover, recent parallel results for challenging applications, such as coupled multiphysics simulations of land ice in Greenland and Antarctica, are presented.},
+    url = {https://www.siam.org/conferences/cm/conference/pp22},
+    keywords = {selected}
+}
+
 @misc{Heinlein:2022:RUB:SCS,
     title = {Spectral coarse spaces for overlapping Schwarz methods based on energy-minimizing extensions},
     author = {Alexander Heinlein},
@@ -12,7 +34,7 @@ References
     abbr = {Seminar},
     note = {Seminar, Ruhr-Universit\"at Bochum, January 13, 2022},
     abstract = {Discretizing partial differential equations often results in sparse linear equation systems, and high spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, e.g., in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. In particular, the generalized eigenvalue problems are based on energy-minimizing extensions corresponding to the interface components. The presented methods have a provable condition number bound, which is independent of the contrast of the coefficient functions. A great challenge is to construct adaptive coarse spaces that are robust but can be built algebraically, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information. In this talk, a novel adaptive coarse space that is both robust and algebraic is introduced. Furthermore, approaches for combining adaptive coarse spaces with nonlinear preconditioning as well as machine learning techniques are discussed. The talk is based on joint work with Axel Klawonn, Jascha Knepper, Martin Lanser, Janine Weber (University of Cologne), Oliver Rheinbach (TU Bergakademie Freiberg), Kathrin Smetana (Stevens Institute of Technology), and Olof Widlund (New York University).},
-    keywords = {}
+    keywords = {selected}
 }
 
 @misc{Heinlein:2021:PPS:SMC,
@@ -34,7 +56,7 @@ References
     abstract = {},
     url = {https://trilinos.github.io/trilinos_user-developer_group_meeting_2021.html},
     slides = {heinlein-2021-tug-fro/2021-heinlein-frosch_land_ice_simulations.pdf},
-    keywords = {}
+    keywords = {selected}
 }
 
 @misc{Heinlein:2021:DDSS:ESF,
@@ -54,10 +76,10 @@ References
     author = {Alexander Heinlein},
     year = {2021},
     abbr = {CIRM 2021},
-    note = {CIRM Conference "Analysis, Control and Numerics for PDE Models of Interest to Physical and Life Sciences", Levico Terme, Italy, September 20-24, 2021},
+    note = {CIRM Conference ``Analysis, Control and Numerics for PDE Models of Interest to Physical and Life Sciences'', Levico Terme, Italy, September 20-24, 2021},
     abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities (e.g., maximum velocity, pressure drop within a section of a pipe, or wall shear stresses at certain locations). In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed; cf. [Eichinger et al., 2021] and [Eichinger et al., submitted 2020]. Using this approach, which is inspired by [Guo et al., 2016], it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. The proposed framework is very general since the geometry and solution fields are simply encoded as pixel images, which allows the application to various types of geometries; also the extension to other physics is, in principle, straight forward. In order to construct accurate surrogate models, U-Net [Ronneberger et al., 2015] type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed and the architecture and hyper parameters are optimized to this application. As a first step, a fully supervised approach, which requires the availability of simulation results as the training data, is presented. Here, the choice of an appropriate loss function is crucial to obtain good results. After that, results for a newer unsupervised approach, which does not require CFD simulation results but is based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Moreover, results for the application to geometries of arteries with aneurysms are presented. In both cases, only two-dimensional configurations are considered for now. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes. In particular, the predictions can be performed on a workstation within a fraction of a second, without requiring the generation of a computational mesh. When evaluated on GPUs, the prediction time can be further reduced by factor of more than ten. The talk is based on joint work with Matthias Eichinger, Viktor Grimm, and Axel Klawonn (University of Cologne).},
     url = {https://pde-levico21.fbk.eu},
-    keywords = {}
+    keywords = {selected}
 }
 
 @misc{Heinlein:2021:YIC:UIS,
@@ -101,7 +123,7 @@ References
     note = {20th Copper Mountain Conference On Multigrid Methods (Virtual), March 29 - April 2, 2021},
     abstract = {Greenland and Antarctic ice sheets store most of the fresh water on earth and mass loss from these ice sheets signiﬁcantly contributes to sea-level rise. The simulation of temperature and velocity of the ice sheets gives rise to large highly nonlinear systems of equations. The solution of the associated tangent problems, arising in Newton’s method, is challenging also because of the strong anisotropy of the meshes. We ﬁrst consider simulations of the ice velocity of Antarctica and the ice temperature of Greenland. We use one-level Schwarz preconditioners as well as GDSW (Generalized Dryja-Smith-Widlund) type preconditioners from the Trilinos package FROSch (Fast and Robust Schwarz), scaling up to 32 k processor cores (8 k MPI ranks and 4 OpenMP threads) for the ﬁnest Antarctica mesh; the corresponding velocity problem contains 566 M degrees of freedom. We then study the coupled velocity and temperature problem for the Greenland ice sheet. To the best of our knowledge, it is the ﬁrst time that a scalable monolithic two-level preconditioner has been used for this multiphysics problem. We present strong scaling results, up to 4 k MPI ranks, using a monolithic GDSW type preconditioner with decoupled extensions from the FROSch package.},
     url = {https://grandmaster.colorado.edu/copper/2021/},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2021:GAMM:CAW,
@@ -123,7 +145,7 @@ References
     note = {Numerical Analysis Seminar, TU Delft, Online, February, 2021},
     abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners, which is part of the Trilinos package ShyLU. Although being a general framework for the construction and combination of Schwarz operators, FROSch currently focusses on preconditioners that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension based coarse spaces, such as GDSW (Generalized Dryja-Smith-Widlund) type coarse spaces. This talk will cover several Schwarz preconditioning techniques which are currently being developed based on the FROSch package: reduced dimension coarse spaces, multilevel GDSW coarse spaces, and monolithic preconditioners for block systems. These approaches are introduced and applied to different problems ranging from a Poisson equation to a coupled multi physics simulations of land ice in Antarctica. Furthermore, a brief overview of some related Schwarz preconditioning techniques, which are not implemented in FROSch yet, will be given. This includes nonlinear two-level Schwarz preconditioning techniques based on Galerkin projections, adaptive coarse spaces for highly heterogeneous problems, as well as the application of machine learning techniques in order to improve the efficiency of these adaptive coarse spaces.},
     url = {https://www.tudelft.nl/cse/events/dcse-conferences/numerical-analysis-seminars},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2021:StuttgartKolloquium:FRO,
@@ -133,7 +155,7 @@ References
     abbr = {Colloquium},
     note = {Mathematisches Kolloquium, Universit\"at Stuttgart, Online, February, 2021},
     abstract = {Schwarz methods are an algorithmic framework for a large class of domain decomposition methods. The software FROSch (Fast and Robust Overlapping Schwarz), which is part of the Trilinos package ShyLU, provides a highly scalable implementation of the Schwarz framework, and the resulting solvers are based on the construction and combination of the relevant Schwarz operators. FROSch currently focusses on Schwarz operators that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension-based coarse spaces, such as generalized Dryja-Smith-Widlund (GDSW) type coarse spaces. This talk will cover several Schwarz preconditioning techniques which are currently being developed based on the FROSch package: reduced dimension coarse spaces, multilevel GDSW preconditioners, and monolithic preconditioners for block systems. These approaches are introduced and applied to different problems ranging from a simple Poisson equation to a coupled multiphysics simulations of land ice in Greenland and Antarctica. Furthermore, a brief overview of related Schwarz preconditioning techniques which are currently being developed but not implemented in FROSch yet will be given. This includes nonlinear two-level Schwarz preconditioning techniques based on Galerkin projections, adaptive coarse spaces for highly heterogeneous problems, as well as novel hybrid preconditioning algorithms combining adaptive coarse spaces and machine learning techniques.},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2021:GAMMCSE:FPC,

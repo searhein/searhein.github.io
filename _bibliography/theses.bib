@@ -3,6 +3,77 @@
 References
 ==========
 
+# phd
+
+@phdthesis{Knepper:2022:ACS,
+    author = {Jascha Knepper},
+    title = {Adaptive Coarse Spaces for the Overlapping Schwarz Method and Multiscale Elliptic Problems},
+    school = {Universit{\"a}t zu K{\"o}ln},
+    year = {Submitted 2022},
+    abbr = {PhD Thesis},
+    note = {PhD thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    keywords = {phd, supervised}
+}
+
+@phdthesis{Weber:2022:ERF,
+    author = {Janine Weber},
+    title = {Efficient and Robust FETI-DP and BDDC Methods -- Approximate Coarse Spaces and Deep Learning-Based Adaptive Coarse Spaces},
+    school = {Universit{\"a}t zu K{\"o}ln},
+    year = {Submitted 2022},
+    abbr = {PhD Thesis},
+    note = {PhD thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Alexander Heinlein, and Dr.\ Martin Lanser},
+    keywords = {phd, supervised}
+}
+
+@phdthesis{Hochmuth:2021:POS,
+    author = {Christian Hochmuth},
+    title = {Parallel Overlapping Schwarz Preconditioners for Incompressible Fluid Flow and Fluid-Structure Interaction Problems},
+    school = {Universit{\"a}t zu K{\"o}ln},
+    year = {2021},
+    url = {https://kups.ub.uni-koeln.de/11345},
+    abbr = {PhD Thesis},
+    abstract = {Efficient methods for the approximation of solutions to incompressible fluid flow and fluid-structure interaction problems are presented. In particular, partial differential equations (PDEs) are derived from basic conservation principles. First, the incompressible Navier-Stokes equations for Newtonian fluids are introduced. This is followed by a consideration of solid mechanical problems. Both, the fluid equations and the equation for solid problems are then coupled and a fluid-structure interaction problem is constructed. Furthermore, a discretization by the finite element method for weak formulations of these problems is described. This spatial discretization of variables is followed by a discretization of the remaining time-dependent parts. An implementation of the discretizations and problems in a parallel C++ software environment is described. This implementation is based on the software package Trilinos. The parallel execution of a program is the essence of High Performance Computing (HPC). HPC clusters are, in general, machines with several tens of thousands of cores. The fastest current machine, as of the TOP500 list from November 2019, has over 2.4 million cores, while the largest machine possesses over 10 million cores. To achieve sufficient accuracy of the approximate solutions, a fine spatial discretization must be used. In particular, fine spatial discretizations lead to systems with large sparse matrices that have to be solved. Iterative preconditioned Krylov methods are among the most widely used and efficient solution strategies for these systems. Robust and efficient preconditioners which possess good scaling behavior for a parallel execution on several thousand cores are the main component. In this thesis, the focus is on parallel algebraic preconditioners for fluid and fluid-structure interaction problems. Therefore, monolithic overlapping Schwarz preconditioners for saddle point problems of Stokes and Navier-Stokes problems are presented. Monolithic preconditioners for incompressible fluid flow problems can significantly improve the convergence speed compared to preconditioners based on block factorizations. In order to obtain numerically scalable algorithms, coarse spaces obtained from the Generalized Dryja-Smith-Widlund (GDSW) and the Reduced dimension GDSW (RGDSW) approach are used. These coarse spaces can be constructed in an essentially algebraic way. Numerical results of the parallel implementation are presented for various incompressible fluid flow problems. Good scalability for up to 11 979 MPI ranks, which corresponds to the largest problem configuration fitting on the employed supercomputer, were achieved. A comparison of these monolithic approaches and commonly used block preconditioners with respect to time-to-solution is made. Similarly, the most efficient construction of two-level overlapping Schwarz preconditioners with GDSW and RGDSW coarse spaces for solid problems is reported. These techniques are then combined to efficiently solve fully coupled monolithic fluid-structure interaction problems.},
+ 	note = {PhD thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Alexander Heinlein},
+    keywords = {phd, supervised}
+}
+
+@unpublished{Grimm:PFP,
+    author = {Viktor Grimm},
+    title = {Predicting the Flow in Patient-Specific Aneurysm Geometries Using Convolutional Neural Networks},
+    school = {Universit{\"a}t zu K{\"o}ln},
+    abbr = {PhD Thesis},
+    note = {Ongoing PhD thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    keywords = {phd, supervised}
+}
+
+@unpublished{Mache:PIM,
+    author = {Karim Mache},
+    title = {Physics-Informed Machine Learning for Climate Modeling},
+    school = {Universit{\"a}t zu K{\"o}ln},
+    abbr = {PhD Thesis},
+    note = {Ongoing PhD thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Alexander Heinlein, Dr.\ Martin Schultz, and Dr.\ Michael Langguth},
+    keywords = {phd, supervised}
+}
+
+@unpublished{Roever:MGD,
+    author = {Friederike R\"over},
+    title = {Multilevel GDSW Methods},
+    school = {Technische Universit\"at Bergakademie Freiberg},
+    abbr = {PhD Thesis},
+	note = {Ongoing PhD thesis. Supervision by Prof.\ Dr.\ Oliver Rheinbach and Dr.\ Alexander Heinlein},
+    keywords = {phd, supervised}
+}
+
+@unpublished{Sassmannshausen:MSP,
+    author = {Lea Sa{\ss}mannshausen},
+    title = {Modeling and simulation of pharmaco-mechanical FSI for an enhanced treatment of cardiovascular diseases},
+    school = {Universit{\"a}t zu K{\"o}ln},
+    abbr = {PhD Thesis},
+    note = {Ongoing PhD thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    keywords = {phd, supervised}
+}
+
+
 # diploma
 
 @thesis{Grigoleit:2017:FSI,
@@ -11,7 +82,7 @@ References
     school = {Technische Universit\"at Bergakademie Freiberg},
     year = {2017},
     abbr = {Diploma Thesis},
-    note = {Diploma Thesis. Supervision by Prof.\ Dr.\ Oliver Rheinbach and Dr.\ Alexander Heinlein},
+    note = {Diploma thesis. Supervision by Prof.\ Dr.\ Oliver Rheinbach and Dr.\ Alexander Heinlein},
     keywords = {diploma, supervised}
 }
 
@@ -23,7 +94,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2021},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -34,7 +105,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2021},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -44,7 +115,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2020},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Christian Hochmuth, and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Christian Hochmuth, and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -54,7 +125,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2020},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Christian Hochmuth, and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Christian Hochmuth, and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -64,7 +135,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2020},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Christian Hochmuth, and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn, Dr.\ Christian Hochmuth, and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -74,7 +145,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2018},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -84,7 +155,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2018},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -94,7 +165,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2016},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
@@ -104,11 +175,20 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2014},
     abbr = {Master Thesis},
-    note = {Master Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Master thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {master, supervised}
 }
 
 # bachelor
+
+@thesis{Sperber:2022:DAC,
+    author = {Daniel Sperber},
+    title = {Dimensionsreduktion mit Autoencodern basierend auf Convolutional Neuronal Networks und Principal Component Analysis},
+    school = {Universit\"at Stuttgart},
+    year = {2021},
+    abbr = {Bachelor Thesis},
+    keywords = {bachelor, supervised}
+}
 
 @thesis{Dammrath:2018:SFE,
     author = {Martin Dammrath},
@@ -116,7 +196,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2018},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -126,7 +206,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2017},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -136,7 +216,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2016},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -146,7 +226,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2016},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -156,7 +236,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2016},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -166,7 +246,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2016},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -176,7 +256,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2013},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -186,7 +266,7 @@ References
     school = {Universit\"at zu K\"oln},
     year = {2013},
     abbr = {Bachelor Thesis},
-    note = {Bachelor Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
+    note = {Bachelor thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Dr.\ Alexander Heinlein},
     keywords = {bachelor, supervised}
 }
 
@@ -198,6 +278,6 @@ References
     school = {Universit{\"a}t Duisburg-Essen},
     year = {2011},
     abbr = {Diploma Thesis},
-    note = {Diploma Thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Prof.\ Dr.\ Oliver Rheinbach},
+    note = {Diploma thesis. Supervision by Prof.\ Dr.\ Axel Klawonn and Prof.\ Dr.\ Oliver Rheinbach},
     keywords = {diploma}
 }
