@@ -5,7 +5,6 @@ References
 
 # published
 
-
 @inproceedings{Frei:2021:THN,
     author = {Stefan Frei and Alexander Heinlein and Thomas Richter},
     title = {On temporal homogenization in the numerical simulation of atherosclerotic plaque growth},
@@ -19,7 +18,7 @@ References
     abstract = {A temporal homogenization approach for the numerical simulation of atherosclerotic plaque growth is extended to fully coupled fluid-structure interaction (FSI) simulations. The numerical results indicate that the two-scale approach yields significantly different results compared to a simple heuristic averaging, where only stationary long-scale FSI problems are solved, confirming the importance of incorporating stress variations on small time-scales. In the homogenization approach, a periodic fine-scale problem, which is periodic with respect to the heart beat, has to be solved for each long-scale time step. Even if no exact initial conditions are available, periodicity can be achieved within only 2--3 heart beats by simple time-stepping.},
     url = {https://onlinelibrary.wiley.com/doi/10.1002/pamm.202100055},
     preprint = {https://arxiv.org/abs/2106.09394},
-    keywords = {published, recent},
+    keywords = {published},
     bibtex_show = {true}
 }
 
@@ -642,6 +641,16 @@ References
 
 # submitted
 
+@techreport{Frei:2022:TPT,
+    author = {Stefan Frei and Alexander Heinlein},
+    title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
+    note = {Submitted March 2022},
+    abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro scale reaction-diffusion problem instead of the micro scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
+    preprint = {},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Balzani:2022:CAW,
     author = {Daniel Balzani and Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and J{\"o}rg Schr{\"o}der},
     title = {Comparison of Arterial Wall Models in Fluid-Structure Interaction Simulations},
@@ -656,7 +665,7 @@ References
     author = {Alexander Heinlein and Axel Klawonn and Martin Lanser},
     title = {Adaptive nonlinear domain decomposition methods},
     note = {Submitted Juli 2021},
-    abstract = {In this article, diﬀerent nonlinear domain decomposition methods are applied to nonlinear problems with highly-heterogeneous coeﬃcient functions with jumps. In order to obtain a robust solver with respect to nonlinear as well as linear convergence, adaptive coarse spaces are employed. First, as an example for a nonlinearly left-preconditioned domain decomposition method, the two-level restricted nonlinear Schwarz method H1-RASPEN (Hybrid Restricted Additive Schwarz Preconditioned Exact Newton) is combined with an adaptive generalized Dryja–Smith–Widlund (GDSW) coarse space. Second, as an example for a nonlinearly right-preconditioned domain decomposition method, a nonlinear FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) method is equipped with an edge-based adaptive coarse space. Both approaches are compared with the respective nonlinear domain decomposition methods with classical coarse spaces as well as with the respective Newton-Krylov methods with adaptive coarse spaces. For some two-dimensional pLaplace model problems with diﬀerent spatial coeﬃcient distributions, it can be observed that the best linear and nonlinear convergence can only be obtained when combining the nonlinear domain decomposition methods with adaptive coarse spaces.},
+    abstract = {In this article, different nonlinear domain decomposition methods are applied to nonlinear problems with highly-heterogeneous coeﬃcient functions with jumps. In order to obtain a robust solver with respect to nonlinear as well as linear convergence, adaptive coarse spaces are employed. First, as an example for a nonlinearly left-preconditioned domain decomposition method, the two-level restricted nonlinear Schwarz method H1-RASPEN (Hybrid Restricted Additive Schwarz Preconditioned Exact Newton) is combined with an adaptive generalized Dryja–Smith–Widlund (GDSW) coarse space. Second, as an example for a nonlinearly right-preconditioned domain decomposition method, a nonlinear FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) method is equipped with an edge-based adaptive coarse space. Both approaches are compared with the respective nonlinear domain decomposition methods with classical coarse spaces as well as with the respective Newton-Krylov methods with adaptive coarse spaces. For some two-dimensional pLaplace model problems with diﬀerent spatial coeﬃcient distributions, it can be observed that the best linear and nonlinear convergence can only be obtained when combining the nonlinear domain decomposition methods with adaptive coarse spaces.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/52537},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
