@@ -5,6 +5,22 @@ References
 
 # published
 
+@article{Eichinger:2022:SCN,
+    author = {Matthias Eichinger and Alexander Heinlein and Axel Klawonn},
+    title = {Surrogate convolutional neural network models for steady computational fluid dynamics simulations},
+    journal = {Electronic Transactions on Numerical Analysis (ETNA)},
+    volume = {56},
+    pages = {235--255},
+    year = {2022},
+    doi = {10.1553/etna_vol56s235},
+    abbr = {ETNA},
+    abstract = {A convolution neural network (CNN)-based approach for the construction of reduced order surrogate models for computational fluid dynamics (CFD) simulations is introduced; it is inspired by the approach of Guo, Li, and Iori [X. Guo, W. Li, and F. Iorio, Convolutional neural networks for steady flow approximation, in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD'16, New York, USA, 2016, ACM, pp. 481--490]. In particular, the neural networks are trained in order to predict images of the flow field in a channel with varying obstacle based on an image of the geometry of the channel. A classical CNN with bottleneck structure and a U-Net are compared while varying the input format, the number of decoder paths, as well as the loss function used to train the networks. This approach yields very low prediction errors, in particular, when using the U-Net architecture. Furthermore, the models are also able to generalize to unseen geometries of the same type. A transfer learning approach enables the model to be trained to a new type of geometries with very low training cost. Finally, based on this transfer learning approach, a sequential learning strategy is introduced, which significantly reduces the amount of necessary training data.},
+    url = {https://epub.oeaw.ac.at/?arp=0x003d4c21},
+    preprint = {https://kups.ub.uni-koeln.de/29760/},
+    keywords = {published, reviewed, selected, recent},
+    bibtex_show = {true}
+}
+
 @inproceedings{Frei:2021:THN,
     author = {Stefan Frei and Alexander Heinlein and Thomas Richter},
     title = {On temporal homogenization in the numerical simulation of atherosclerotic plaque growth},
@@ -593,18 +609,6 @@ References
     keywords = {accepted, reviewed, selected, recent},
     bibtex_show = {true}
 }
-
-@techreport{Eichinger:2021:SCN,
-    author = {Matthias Eichinger and Alexander Heinlein and Axel Klawonn},
-    title = {Surrogate Convolutional Neural Network Models for Steady Computational Fluid Dynamics Simulations},
-    note = {Accepted for publication in ETNA. October 2021.},
-    abbr = {ETNA},
-    abstract = {A convolution neural network (CNN)-based approach for the construction of reduced order surrogate models for computational fluid dynamics (CFD) simulations is introduced; it is inspired by the approach of Guo, Li, and Iori [X. Guo, W. Li, and F. Iorio, Convolutional neural networks for steady flow approximation, in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD'16, New York, USA, 2016, ACM, pp. 481--490]. In particular, the neural networks are trained in order to predict images of the flow field in a channel with varying obstacle based on an image of the geometry of the channel. A classical CNN with bottleneck structure and a U-Net are compared while varying the input format, the number of decoder paths, as well as the loss function used to train the networks. This approach yields very low prediction errors, in particular, when using the U-Net architecture. Furthermore, the models are also able to generalize to unseen geometries of the same type. A transfer learning approach enables the model to be trained to a new type of geometries with very low training cost. Finally, based on this transfer learning approach, a sequential learning strategy is introduced, which significantly reduces the amount of necessary training data.},
-    preprint = {https://kups.ub.uni-koeln.de/29760/},
-    keywords = {accepted, reviewed, selected, recent},
-    bibtex_show = {true}
-}
-
 
 @techreport{Heinlein:2021:AGD,
     author = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Oliver Rheinbach and Olof B. Widlund},
