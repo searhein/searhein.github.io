@@ -5,6 +5,23 @@ References
 
 # published
 
+@article{Heinlein:2022:FRO,
+    author = {Alexander Heinlein and Mauro Perego and Sivasankaran Rajamanickam},
+    title = {FROSch Preconditioners for Land Ice Simulations of Greenland and Antarctica},
+    journal = {SIAM Journal on Scientific Computing},
+    volume = {44},
+    number = {2},
+    pages = {B339-B367},
+    year = {2022},
+    doi = {10.1137/21M1395260},
+    abbr = {SISC},
+    abstract = {Numerical simulations of Greenland and Antarctic ice sheets involve the solution of large-scale highly nonlinear systems of equations on complex shallow geometries. This work is concerned with the construction of Schwarz preconditioners for the solution of the associated tangent problems, which are challenging for solvers mainly because of the strong anisotropy of the meshes and wildly changing boundary conditions that can lead to poorly constrained problems on large portions of the domain. Here, two-level generalized Dryja--Smith--Widlund (GDSW)--type Schwarz preconditioners are applied to different land ice problems, i.e., a velocity problem, a temperature problem, as well as the coupling of the former two problems. We employ the message passing interface (MPI)--parallel implementation of multilevel Schwarz preconditioners provided by the package FROSch (fast and robust Schwarz) from the Trilinos library. The strength of the proposed preconditioner is that it yields out-of-the-box scalable and robust preconditioners for the single physics problems. To the best of our knowledge, this is the first time two-level Schwarz preconditioners have been applied to the ice sheet problem and a scalable preconditioner has been used for the coupled problem. The preconditioner for the coupled problem differs from previous monolithic GDSW preconditioners in the sense that decoupled extension operators are used to compute the values in the interior of the subdomains. Several approaches for improving the performance, such as reuse strategies and shared memory OpenMP parallelization, are explored as well. In our numerical study we target both uniform meshes of varying resolution for the Antarctic ice sheet as well as nonuniform meshes for the Greenland ice sheet. We present several weak and strong scaling studies confirming the robustness of the approach and the parallel scalability of the FROSch implementation. Among the highlights of the numerical results are a weak scaling study for up to 32K processor cores (8K MPI ranks and 4 OpenMP threads) and 566M degrees of freedom for the velocity problem as well as a strong scaling study for up to 4K processor cores (and MPI ranks) and 68M degrees of freedom for the coupled problem.},
+    url = {https://doi.org/10.1137/21M1395260},
+    preprint = {https://kups.ub.uni-koeln.de/id/eprint/30668},
+    keywords = {published, reviewed, selected, recent},
+    bibtex_show = {true}
+}
+
 @article{Eichinger:2022:SCN,
     author = {Matthias Eichinger and Alexander Heinlein and Axel Klawonn},
     title = {Surrogate convolutional neural network models for steady computational fluid dynamics simulations},
@@ -606,17 +623,6 @@ References
     abbr = {SISC},
     abstract = {In this article, different nonlinear domain decomposition methods are applied to nonlinear problems with highly-heterogeneous coeﬃcient functions with jumps. In order to obtain a robust solver with respect to nonlinear as well as linear convergence, adaptive coarse spaces are employed. First, as an example for a nonlinearly left-preconditioned domain decomposition method, the two-level restricted nonlinear Schwarz method H1-RASPEN (Hybrid Restricted Additive Schwarz Preconditioned Exact Newton) is combined with an adaptive generalized Dryja–Smith–Widlund (GDSW) coarse space. Second, as an example for a nonlinearly right-preconditioned domain decomposition method, a nonlinear FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) method is equipped with an edge-based adaptive coarse space. Both approaches are compared with the respective nonlinear domain decomposition methods with classical coarse spaces as well as with the respective Newton-Krylov methods with adaptive coarse spaces. For some two-dimensional pLaplace model problems with diﬀerent spatial coeﬃcient distributions, it can be observed that the best linear and nonlinear convergence can only be obtained when combining the nonlinear domain decomposition methods with adaptive coarse spaces.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/52537},
-    keywords = {accepted, reviewed, selected, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2022:FRO,
-    author = {Alexander Heinlein and Mauro Perego and Sivasankaran Rajamanickam},
-    title = {FROSch Preconditioners for Land Ice Simulations of Greenland and Antarctica},
-    note = {Accepted for publication in SIAM Journal on Scientific Computing. January 2022},
-    abbr = {SISC},
-    abstract = {Numerical simulations of Greenland and Antarctic ice sheets involve the solution of large-scale highly nonlinear systems of equations on complex shallow geometries. This work is concerned with the construction of Schwarz preconditioners for the solution of the associated tangent problems, which are challenging for solvers mainly because of the strong anisotropy of the meshes and wildly changing boundary conditions that can lead to poorly constrained problems on large portions of the domain. Here, two-level GDSW (Generalized Dryja-Smith-Widlund) type Schwarz preconditioners are applied to diﬀerent land ice problems, i.e., a velocity problem, a temperature problem, as well as the coupling of the former two problems. We employ the MPI-parallel implementation of multi-level Schwarz preconditioners provided by the package FROSch (Fast and Robust Schwarz) from the Trilinos library. The strength of the proposed preconditioner is that it yields out-of-the-box scalable and robust preconditioners for the single physics problems. To our knowledge, this is the ﬁrst time two-level Schwarz preconditioners are applied to the ice sheet problem and a scalable preconditioner has been used for the coupled problem. The preconditioner for the coupled problem diﬀers from previous monolithic GDSW preconditioners in the sense that decoupled extension operators are used to compute the values in the interior of the subdomains. Several approaches for improving the performance, such as reuse strategies and shared memory OpenMP parallelization, are explored as well. In our numerical study we target both uniform meshes of varying resolution for the Antarctic ice sheet as well as non uniform meshes for the Greenland ice sheet are considered. We present several weak and strong scaling studies conﬁrming the robustness of the approach and the parallel scalability of the FROSch implementation. Among the highlights of the numerical results are a weak scaling study for up to 32 K processor cores (8 K MPI-ranks and 4 OpenMP threads) and 566 M degrees of freedom for the velocity problem as well as a strong scaling study for up to 4 K processor cores (and MPI-ranks) and 68 M degrees of freedom for the coupled problem.},
-    preprint = {https://kups.ub.uni-koeln.de/id/eprint/30668},
     keywords = {accepted, reviewed, selected, recent},
     bibtex_show = {true}
 }
