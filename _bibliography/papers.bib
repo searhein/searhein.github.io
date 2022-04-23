@@ -616,6 +616,17 @@ References
 
 # accepted
 
+@techreport{Heinlein:2021:PST,
+    author = {Alexander Heinlein and Oliver Rheinbach and Friederike R{\"o}ver},
+    title = {Parallel Scalability of Three-Level FROSch Preconditioners to 220 000 Cores using the Theta Supercomputer},
+    note = {Accepted for publication in SIAM Journal on Scientific Computing. April 2022},
+    abbr = {SISC},
+    abstract = {The parallel performance of the three-level Fast and Robust Overlapping Schwarz (FROSch) preconditioners is investigated for linear elasticity. The FROSch framework is part of the Trilinos software library and contains a parallel implementation of diﬀerent preconditioners with energy minimizing coarse spaces of GDSW (Generalized Dryja–Smith–Widlund) type. The three-level extension is constructed by a recursive application of the FROSch preconditioner to the coarse problem. In this paper, the additional steps in the implementation in order to apply the FROSch preconditioner recursively are described in detail. Furthermore, it is shown that no explicit geometric information is needed in the recursive application of the preconditioner. In particular, the rigid body modes, including the rotations, can be interpolated on the coarse level without additional geometric information. Parallel results for a three-dimensional linear elasticity problem obtained on the Theta supercomputer (ALCF, Argonne, USA) using up to 220 000 cores are discussed and compared to results obtained on the SuperMUC-NG supercomputer (LRZ, Garching, Germany). Notably, it can be observed that a hierarchical communication operation in FROSch related to the coarse operator starts to dominate the computing time on Theta for 100 000 MPI ranks or more. The same operation, however, scales well and stays within the order of a second in all experiments performed on SuperMUC-NG. Using hybrid MPI/OpenMP parallelization, better performance is then achieved on Theta.},
+    preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-03.pdf},
+    keywords = {accepted, reviewed, selected, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Heinlein:2021:AND,
     author = {Alexander Heinlein and Axel Klawonn and Martin Lanser},
     title = {Adaptive nonlinear domain decomposition methods},
@@ -679,15 +690,5 @@ References
     abstract = {Monolithic fluid-structure interaction (FSI) of blood ﬂow with arterial walls is considered, making use of sophisticated nonlinear wall models. These incorporate the eﬀects of almost incompressibility as well as of the anisotropy caused by embedded collagen ﬁbers. In the literature, relatively simple structural models such as Neo-Hooke are often considered for FSI with arterial walls. Such models lack, both, anisotropy and incompressibility. In this paper, numerical simulations of idealized heart beats in a curved benchmark geometry, using simple and sophisticated arterial wall models, are compared: we consider three diﬀerent almost incompressible, anisotropic arterial wall models as a reference and, for comparison, a simple, isotropic Neo-Hooke model using four different parameter sets. The simulations show significant quantitative and qualitative diﬀerences in the stresses and displacements as well as the lumen cross sections. For the Neo-Hooke models, a significantly larger amplitude in the in- and outﬂow areas during the heart beat is observed, presumably due to the lack of ﬁber stiﬀening. For completeness, we also consider a linear elastic wall using 16 different parameter sets. However, using our benchmark setup, we were not successful in achieving good agreement with our nonlinear reference calculation.},
     preprint = {http://kups.ub.uni-koeln.de/id/eprint/55586},
     keywords = {submitted, reviewed, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2021:PST,
-    author = {Alexander Heinlein and Oliver Rheinbach and Friederike R{\"o}ver},
-    title = {Parallel Scalability of Three-Level FROSch Preconditioners to 220 000 Cores using the Theta Supercomputer},
-    note = {Submitted Juli 2021},
-    abstract = {The parallel performance of the three-level Fast and Robust Overlapping Schwarz (FROSch) preconditioners is investigated for linear elasticity. The FROSch framework is part of the Trilinos software library and contains a parallel implementation of diﬀerent preconditioners with energy minimizing coarse spaces of GDSW (Generalized Dryja–Smith–Widlund) type. The three-level extension is constructed by a recursive application of the FROSch preconditioner to the coarse problem. In this paper, the additional steps in the implementation in order to apply the FROSch preconditioner recursively are described in detail. Furthermore, it is shown that no explicit geometric information is needed in the recursive application of the preconditioner. In particular, the rigid body modes, including the rotations, can be interpolated on the coarse level without additional geometric information. Parallel results for a three-dimensional linear elasticity problem obtained on the Theta supercomputer (ALCF, Argonne, USA) using up to 220 000 cores are discussed and compared to results obtained on the SuperMUC-NG supercomputer (LRZ, Garching, Germany). Notably, it can be observed that a hierarchical communication operation in FROSch related to the coarse operator starts to dominate the computing time on Theta for 100 000 MPI ranks or more. The same operation, however, scales well and stays within the order of a second in all experiments performed on SuperMUC-NG. Using hybrid MPI/OpenMP parallelization, better performance is then achieved on Theta.},
-    preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-03.pdf},
-    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
