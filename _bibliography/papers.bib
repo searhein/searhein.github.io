@@ -5,6 +5,23 @@ References
 
 # published
 
+@article{Heinlein:2022:AGD,
+    author = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Oliver Rheinbach and Olof B. Widlund},
+    title = {Adaptive GDSW Coarse Spaces of Reduced Dimension for Overlapping Schwarz Methods},
+    journal = {SIAM Journal on Scientific Computing},
+    volume = {44},
+    number = {3},
+    pages = {A1176-A1204},
+    year = {2022},
+    doi = {10.1137/20M1364540},
+    abbr = {SISC},
+    abstract = { A new reduced-dimension adaptive generalized Dryja--Smith--Widlund (GDSW) overlapping Schwarz method for linear second-order elliptic problems in three dimensions is introduced. It is robust with respect to large contrasts of the coefficients of the partial differential equations. The condition number bound of the new method is shown to be independent of the coefficient contrast and only dependent on a user-prescribed tolerance. The interface of the nonoverlapping domain decomposition is partitioned into nonoverlapping patches. The new coarse space is obtained by selecting a few eigenvectors of certain local eigenproblems which are defined on these patches. These eigenmodes are energy-minimally extended to the interior of the nonoverlapping subdomains and added to the coarse space. By using a new interface decomposition, the reduced-dimension adaptive GDSW overlapping Schwarz method usually has a smaller coarse space than existing GDSW and adaptive GDSW domain decomposition methods. A robust condition number estimate is proven for the new reduced-dimension adaptive GDSW method which is also valid for existing adaptive GDSW methods. Numerical results for the equations of isotropic linear elasticity in three dimensions confirming the theoretical findings are presented.},
+    url = {https://doi.org/10.1137/20M1364540},
+    preprint = {https://kups.ub.uni-koeln.de/id/eprint/12113},
+    keywords = {published, reviewed, selected, recent},
+    bibtex_show = {true}
+}
+
 @article{Heinlein:2022:FRO,
     author = {Alexander Heinlein and Mauro Perego and Sivasankaran Rajamanickam},
     title = {FROSch Preconditioners for Land Ice Simulations of Greenland and Antarctica},
@@ -635,17 +652,6 @@ References
     abstract = {In this article, different nonlinear domain decomposition methods are applied to nonlinear problems with highly-heterogeneous coeﬃcient functions with jumps. In order to obtain a robust solver with respect to nonlinear as well as linear convergence, adaptive coarse spaces are employed. First, as an example for a nonlinearly left-preconditioned domain decomposition method, the two-level restricted nonlinear Schwarz method H1-RASPEN (Hybrid Restricted Additive Schwarz Preconditioned Exact Newton) is combined with an adaptive generalized Dryja–Smith–Widlund (GDSW) coarse space. Second, as an example for a nonlinearly right-preconditioned domain decomposition method, a nonlinear FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) method is equipped with an edge-based adaptive coarse space. Both approaches are compared with the respective nonlinear domain decomposition methods with classical coarse spaces as well as with the respective Newton-Krylov methods with adaptive coarse spaces. For some two-dimensional pLaplace model problems with diﬀerent spatial coeﬃcient distributions, it can be observed that the best linear and nonlinear convergence can only be obtained when combining the nonlinear domain decomposition methods with adaptive coarse spaces.},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/52537},
     keywords = {accepted, reviewed, selected, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2021:AGD,
-    author = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Oliver Rheinbach and Olof B. Widlund},
-    title = {Adaptive GDSW coarse spaces of reduced dimension for overlapping Schwarz methods},
-    note = {Accepted for publication in SIAM Journal on Scientific Computing. October 2021},
-    abbr = {SISC},
-    abstract = {A new reduced dimension adaptive GDSW (Generalized Dryja-Smith-Widlund) overlapping Schwarz method for linear second-order elliptic problems in three dimensions is introduced. It is robust with respect to large contrasts of the coefficients of the partial differential equations. The condition number bound of the new method is shown to be independent of the coefficient contrast and only dependent on a user-prescribed tolerance. The interface of the nonoverlapping domain decomposition is partitioned into nonoverlapping patches. The new coarse space is obtained by selecting a few eigenvectors of certain local eigenproblems which are defined on these patches. These eigenmodes are energy-minimally extended to the interior of the nonoverlapping subdomains and added to the coarse space. By using a new interface decomposition the reduced dimension adaptive GDSW overlapping Schwarz method usually has a smaller coarse space than existing GDSW and adaptive GDSW domain decomposition methods. A robust condition number estimate is proven for the new reduced dimension adaptive GDSW method which is also valid for existing adaptive GDSW methods. Numerical results for the equations of isotropic linear elasticity in three dimensions confirming the theoretical findings are presented.},
-    preprint = {https://kups.ub.uni-koeln.de/id/eprint/12113},
-    keywords = {accepted, reviewed, recent},
     bibtex_show = {true}
 }
 
