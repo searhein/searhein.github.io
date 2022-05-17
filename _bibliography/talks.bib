@@ -5,6 +5,17 @@ References
 
 # talks
 
+@misc{Heinlein:2022:DD27:RAS,
+    title = {Robust, algebraic, and scalable Schwarz preconditioners with extension-based coarse spaces},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {DD XXVII},
+    note = {Invited Lecture. 27th International Conference on Domain Decomposition Methods, Prague, Czech Republic, July 25-29},
+    abstract = {Coarse spaces are an important component in domain decomposition preconditioners since they are, in general, necessary to obtain numerical scalability and robustness. This talk will focus on presenting an algorithmic framework for the construction of coarse spaces for Schwarz preconditioners which is based on the generalized Dryja--Smith--Widlund (GDSW) coarse space. In particular, the coarse basis functions are extensions from the interface into the interior of a corresponding nonoverlapping domain decomposition by solving the homogeneous partial differential equation (PDE) with a given trace on the interface. This makes the coarse spaces very practical since they can be constructed in an algebraic way, that is, using only the fully assembled system matrix. This algorithmic framework is the basis for the highly-scalable FROSch (Fast and Robust Schwarz) solver package, which is part of the Trilinos software library. The FROSch package provides a parallel software framework to construct algebraic Schwarz preconditioners that are robust as well as numerically and parallel scalable for a wide range of problems. It provides a multi-level implementation to extend parallel scalability. Moreover, using extension-based coarse spaces, robust monolithic solvers for saddle-point problems, such as the (Navier--)Stokes equations and multi-physics problems in land ice simulations, can be constructed. Solving appropriate local eigenvalue problems on a partition of the interface to compute the traces of the coarse basis yields provably robust extension-based coarse spaces, even for highly heterogeneous model problems with large coefficient jumps. These adaptive coarse spaces are generally not algebraic since the eigenvalue problems require local Neumann matrices. However, by solving two local eigenvalue problems for each interface component instead, an algebraic and adaptive coarse space can be obtained. Finally, the framework can also be employed in nonlinear Schwarz preconditioning.},
+    url = {https://www.dd27.cz/},
+    keywords = {selected}
+}
+
 @misc{Heinlein:2022:CM:FAS,
     title = {A fully algebraic spectral coarse space for overlapping Schwarz methods},
     author = {Alexander Heinlein},
@@ -76,7 +87,7 @@ References
     author = {Alexander Heinlein},
     year = {2021},
     abbr = {CIRM 2021},
-    note = {CIRM Conference ``Analysis, Control and Numerics for PDE Models of Interest to Physical and Life Sciences'', Levico Terme, Italy, September 20-24},
+    note = {Invited Lecture. CIRM Conference ``Analysis, Control and Numerics for PDE Models of Interest to Physical and Life Sciences'', Levico Terme, Italy, September 20-24},
     abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities (e.g., maximum velocity, pressure drop within a section of a pipe, or wall shear stresses at certain locations). In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed; cf. [Eichinger et al., 2021] and [Eichinger et al., submitted 2020]. Using this approach, which is inspired by [Guo et al., 2016], it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. The proposed framework is very general since the geometry and solution fields are simply encoded as pixel images, which allows the application to various types of geometries; also the extension to other physics is, in principle, straight forward. In order to construct accurate surrogate models, U-Net [Ronneberger et al., 2015] type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed and the architecture and hyper parameters are optimized to this application. As a first step, a fully supervised approach, which requires the availability of simulation results as the training data, is presented. Here, the choice of an appropriate loss function is crucial to obtain good results. After that, results for a newer unsupervised approach, which does not require CFD simulation results but is based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Moreover, results for the application to geometries of arteries with aneurysms are presented. In both cases, only two-dimensional configurations are considered for now. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes. In particular, the predictions can be performed on a workstation within a fraction of a second, without requiring the generation of a computational mesh. When evaluated on GPUs, the prediction time can be further reduced by factor of more than ten. The talk is based on joint work with Matthias Eichinger, Viktor Grimm, and Axel Klawonn (University of Cologne).},
     url = {https://pde-levico21.fbk.eu},
     keywords = {selected}
@@ -175,7 +186,7 @@ References
     year = {2020},
     abbr = {DD XXVI},
     note = {26th International Conference on Domain Decomposition Methods (Virtual), Hong Kong, China, December 7-12},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2020:DD26:FPC,
