@@ -1,0 +1,12 @@
+---
+layout: page_teaching
+university: tud
+semester: Q3 & Q4 2021/2022
+title: Computational Fluid Dynamics
+instructors: Alexander Heinlein and Shobhit Jain
+description:
+runningindex: 17
+nolink: true
+category: course
+status: planned
+---

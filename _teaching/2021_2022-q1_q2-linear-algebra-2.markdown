@@ -7,5 +7,5 @@ instructors: Alexander Heinlein and Matthias Möller
 runningindex: 16
 nolink: true
 category: course
-status: ongoing
+status: archive
 ---
