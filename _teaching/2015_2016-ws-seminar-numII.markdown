@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: uzk
 semester: WS 2015/2016
 title: Seminar on Numerical Mathematics II

@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h3 class="post-title {{ page.university }}">
+      {{ page.student }}
+      (
+      {% if page.university == "ude" %}
+        University of Duisburg-Essen
+      {% endif %}
+      {% if page.university == "uzk" %}
+        University of Cologne
+      {% endif %}
+      {% if page.university == "ust" %}
+        University of Stuttgart
+      {% endif %}
+      {% if page.university == "tud" %}
+        TU Delft
+      {% endif %}
+      )
+      </h3>
+    <h1 class="post-title">
+      {{ page.title }}
+    </h1>
+    <p class="post-description">
+      <b>Supervisors:</b> Alexander Heinlein (TU Delft, Numerical Analysis), {{ page.co-supervisor }} <br>
+      <!-- {{ page.description }} -->
+      <div class="files">
+        {% if page.project_description %}
+          <a class="btn btn-sm z-depth-0" href="{{ page.project_description }}" target="_blank"> Project description </a>
+        {% endif %}
+        {% if page.final_thesis %}
+          <a class="btn btn-sm z-depth-0" href="{{ page.thesis }}" target="_blank"> Thesis </a>
+        {% endif %}
+        {% if page.final_presentation %}
+          <a class="btn btn-sm z-depth-0" href="{{ page.final_presentation }}" target="_blank"> Presentation </a>
+        {% endif %}
+        {% if page.interim_thesis %}
+          <a class="btn btn-sm z-depth-0" href="{{ page.interim_thesis }}" target="_blank"> Interim thesis </a>
+        {% endif %}
+        {% if page.interim_presentation %}
+          <a class="btn btn-sm z-depth-0" href="{{ page.interim_presentation }}" target="_blank"> Interim presentation </a>
+        {% endif %}
+      </div>
+    </p>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+
+</div>

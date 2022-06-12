@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: ude
 semester: WS 2011/2012
 title: Introduction to Numerical Mathematics

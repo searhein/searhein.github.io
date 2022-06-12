@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: Sandia National Laboratories #<a href="https://www.sandia.gov/" target="_blank">Sandia National Labs</a>
 title: >

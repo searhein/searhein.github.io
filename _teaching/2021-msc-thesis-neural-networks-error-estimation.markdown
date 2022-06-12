@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 title: Error Estimates for Finite Element Simulations Using Neural Networks
 co-supervisor: Deepesh Toshniwal (TU Delft, Numerical Analysis)

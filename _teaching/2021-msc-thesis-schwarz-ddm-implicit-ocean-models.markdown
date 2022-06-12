@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: Institute for Marine and Atmospheric Modeling (IMAU) # <a href="https://www.uu.nl/en/research/institute-for-marine-and-atmospheric-research-imau" target="_blank">Institute for Marine and Atmospheric Modeling (IMAU)</a>
 title: Overlapping Schwarz Domain Decomposition Methods for Implicit Ocean Models

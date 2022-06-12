@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: tud
 semester: Q3 & Q4 2021/2022
 title: Computational Fluid Dynamics (WI4011-17)

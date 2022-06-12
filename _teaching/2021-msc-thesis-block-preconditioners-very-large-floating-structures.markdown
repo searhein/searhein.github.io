@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: Mocean #<a href="https://www.mocean-offshore.com" target="_blank">Mocean</a>
 title: Block Preconditioners for Monolithic Solvers of Very Large Floating Structures

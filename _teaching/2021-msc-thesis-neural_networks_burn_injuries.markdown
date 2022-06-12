@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: University of Hasselt
 title: The Application of Neural Networks to Predict Skin Evolution After Burn Trauma

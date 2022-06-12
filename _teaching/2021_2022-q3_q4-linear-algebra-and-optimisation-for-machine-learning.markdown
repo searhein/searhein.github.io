@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: tud
 semester: Q3 & Q4 2021/2022
 title: Linear Algebra and Optimisation for Machine Learning (WI4635)

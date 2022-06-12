@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 title: Reduced Order Models for Fluid Flow With Generative Adversarial Networks (GANs)
 co-supervisor: Kees Vuik (TU Delft, Numerical Analysis)

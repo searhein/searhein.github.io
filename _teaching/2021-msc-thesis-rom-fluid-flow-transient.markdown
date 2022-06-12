@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 title: Convolutional Neural Networks for Time-Dependent Fluid Flow
 co-supervisor:

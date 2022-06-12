@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: tud
 semester: Q3 & Q4 2020/2021
 title: Mathematical Data Science (WI4231)

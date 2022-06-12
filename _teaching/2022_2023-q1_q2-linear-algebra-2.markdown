@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: tud
 semester: Q1 & Q2 2022/2023
 title: Linear Algebra 2 (AM2010)

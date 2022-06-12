@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: uzk
 semester: SS 2017
 title: Scientific Computing

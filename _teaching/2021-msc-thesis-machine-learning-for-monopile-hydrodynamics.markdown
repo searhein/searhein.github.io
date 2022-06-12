@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: Offshore and Dredging Engineering, TU Delft
 title: Surrogate models for the characterization of hydrodynamic loads on perforated monopiles

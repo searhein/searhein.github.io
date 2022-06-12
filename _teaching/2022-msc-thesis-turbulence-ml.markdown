@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: NRG
 title: AI-driven turbulence modeling of two-phase flows in nuclear reactors

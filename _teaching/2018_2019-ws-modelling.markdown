@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: uzk
 semester: WS 2018/2019
 title: Project-Oriented Lecture and Seminar on Modeling and Simulation of Application Problems in Industry, Economy, and Science

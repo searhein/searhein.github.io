@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: COMSOL
 title: Predicting the Optimal Solver Settings with Machine Learning in COMSOL CFD Module

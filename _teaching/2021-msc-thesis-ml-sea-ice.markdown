@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: Max-Planck-Institute of Meteorology
 title: Enhancing Sea Ice Dynamics in the Climate System by Machine Learning

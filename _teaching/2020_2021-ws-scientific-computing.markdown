@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_course
 university: ust
 semester: WS 2020/2021
 title: Scientific Computing

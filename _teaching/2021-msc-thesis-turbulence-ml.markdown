@@ -1,5 +1,5 @@
 ---
-layout: page_teaching
+layout: page_thesis
 university: tud
 collaboration: Sioux Technologies
 title: Machine Learning for Turbulent Flows
