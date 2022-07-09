@@ -16,6 +16,50 @@ References
     keywords = {selected}
 }
 
+@misc{Heinlein:2022:DD27:RCS,
+    title = {Robust Coarse Spaces for Nonlinear Schwarz Methods},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {DD XXVII},
+    note = {27th International Conference on Domain Decomposition Methods, Prague, Czech Republic, July 25-29},
+    abstract = {In this talk, nonlinear left-preconditioning by nonlinear Schwarz domain decomposition methods is considered. In particular, the focus is on the restricted additive Schwarz preconditioned exact Newton (RASPEN) method. It is based on additive Schwarz preconditioned Newton (ASPEN) method, which has been introduced together with the corresponding inexact method, ASPIN. Nonlinear domain decomposition methods can improve nonlinear as well as linear convergence. However, as in linear domain decomposition methods, scalability and robustness for difficult problems, such as highly heterogeneous problems, generally requires adding a coarse space. The coarse space can be integrated in an additive or multiplicative way using a Galerkin projection, as described in [5]. This approach has proven to be very flexible, allowing for the use of different types of coarse spaces, such as classical Lagrangian or multiscale finite element method (MsFEM) type coarse spaces. Furthermore, to obtain robustness for heterogeneous problems, spectral coarse spaces, such as the adaptive generalized Dryja–Smith–Wildund (GDSW) coarse space can be employed. The main goal of this talk is to investigate the effectiveness of different coarse spaces, including GDSW, MsFEM, adaptive GDSW, and approximate component mode synthesis-based (OS-ACMS) adaptive coarse spaces for different nonlinear model problems and depending on the domain decomposition as well as heterogeneity of the problem.},
+    url = {https://www.dd27.cz/},
+    keywords = {}
+}
+
+@misc{Heinlein:2022:DD27:SMC,
+    title = {Surrogate Models for Computational Fluid Dynamics Simulations Using Convolutional Autoencoder Neural Networks and Physical Constraints},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {DD XXVII},
+    note = {27th International Conference on Domain Decomposition Methods, Prague, Czech Republic, July 25-29},
+    abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities (e.g., maximum velocity, pressure drop within a section of a pipe, or wall shear stresses at certain locations). In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed. Using this approach, it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. In order to construct accurate surrogate models, U-Net type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed and the architecture and hyper parameters are optimized to this application. As a first step, a fully supervised approach, which requires the availability of simulation results as the training data, is presented. After that, a novel approach is introduced, which does not require CFD simulation results but is based on introducing physical constraints via the loss function. As a test-bed for the surrogate models, flow around obstacles with varying shape and size within a channel is considered. Moreover, results for the application to geometries of arteries with aneurysms are presented. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes.},
+    url = {https://www.dd27.cz/},
+    keywords = {}
+}
+
+@misc{Heinlein:2022:EQUADIFF:SMC,
+    title = {Surrogate Models for Computational Fluid Dynamics Simulations Using Convolutional Autoencoder Neural Networks and Physical Constraints},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {EQUADIFF 15},
+    note = {Equadiff 15, Brno, Czech Republic, July 11-15},
+    abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities (e.g., maximum velocity, pressure drop within a section of a pipe, or wall shear stresses at certain locations). In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed. Using this approach, it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. In order to construct accurate surrogate models, U-Net type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed and the architecture and hyper parameters are optimized to this application. As a first step, a fully supervised approach, which requires the availability of simulation results as the training data, is presented. After that, a novel approach is introduced, which does not require CFD simulation results but is based on introducing physical constraints via the loss function. As a test-bed for the surrogate models, flow around obstacles with varying shape and size within a channel is considered. Moreover, results for the application to geometries of arteries with aneurysms are presented. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes.},
+    url = {https://conference.math.muni.cz/equadiff15/},
+    keywords = {}
+}
+
+@misc{Heinlein:2022:ICMS:FAS,
+    title = {A fully algebraic spectral coarse space for overlapping Schwarz methods},
+    author = {Alexander Heinlein},
+    year = {2022},
+    abbr = {ICMS@Strathclyde},
+    note = {Invited talk. ICMS@Strathclyde: Solvers for frequency-domain wave problems and applications, Glasgow, UK, June 20 - 24},
+    abstract = {Discretizing partial differential equations often results in sparse systems of linear equations. High spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, for instance, in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. The development of spectral coarse spaces for domain decomposition methods has been a very active topic within the last decade. However, until recently, the algebraic construction of robust spectral coarse spaces, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information, has still been on open problem. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. An algebraic and robust spectral coarse space is then constructed by solving two eigenvalue problems on each edge of a two-dimensional domain decomposition. One of them is based on optimal local approximation spaces that are also successfully employed in the construction of multiscale discretizations. The resulting condition number bound is independent of the contrast of the coefficient function, indicating the robustness of the method. In order investigate the robustness of this new method numerically, numerical results for different coefficient distributions with large jumps are presented, including typical examples with channels, random distributions, and coefficient distributions generated from the SPE10 benchmark.},
+    url = {https://www.icms.org.uk/workshops/2022/icmsstrathclyde-solvers-frequency-domain-wave-problems-and-applications},
+    keywords = {selected}
+}
+
 @misc{Heinlein:2022:ECCOMAS:PSD,
     title = {Parallel Schwarz domain decomposition preconditioning and an introduction to FROSch},
     author = {Alexander Heinlein},
@@ -68,7 +112,7 @@ References
     abbr = {Seminar},
     note = {Seminar, Ruhr-Universit\"at Bochum, January 13},
     abstract = {Discretizing partial differential equations often results in sparse linear equation systems, and high spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, e.g., in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. In particular, the generalized eigenvalue problems are based on energy-minimizing extensions corresponding to the interface components. The presented methods have a provable condition number bound, which is independent of the contrast of the coefficient functions. A great challenge is to construct adaptive coarse spaces that are robust but can be built algebraically, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information. In this talk, a novel adaptive coarse space that is both robust and algebraic is introduced. Furthermore, approaches for combining adaptive coarse spaces with nonlinear preconditioning as well as machine learning techniques are discussed. The talk is based on joint work with Axel Klawonn, Jascha Knepper, Martin Lanser, Janine Weber (University of Cologne), Oliver Rheinbach (TU Bergakademie Freiberg), Kathrin Smetana (Stevens Institute of Technology), and Olof Widlund (New York University).},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2021:PPS:SMC,
@@ -263,7 +307,7 @@ References
     year = {2020},
     abbr = {Seminar},
     note = {Seminar, Humboldt-Universit\"at zu Berlin, Germany, January 29},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2020:SciML:FPC,
@@ -398,7 +442,7 @@ References
     year = {2018},
     abbr = {GAMM 89},
     note = {89th GAMM Annual Meeting, Munich, Germany, March 19-23},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2017:Sandia:FRO,
@@ -452,7 +496,7 @@ References
     year = {2017},
     abbr = {DD XIV},
     note = {24th International Conference on Domain Decomposition Methods, Svalbard, Norway, February 6-10},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2016:GAMMCSE:DDB,

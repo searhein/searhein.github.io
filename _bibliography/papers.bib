@@ -36,7 +36,7 @@ References
     abstract = {Numerical simulations of Greenland and Antarctic ice sheets involve the solution of large-scale highly nonlinear systems of equations on complex shallow geometries. This work is concerned with the construction of Schwarz preconditioners for the solution of the associated tangent problems, which are challenging for solvers mainly because of the strong anisotropy of the meshes and wildly changing boundary conditions that can lead to poorly constrained problems on large portions of the domain. Here, two-level generalized Dryja--Smith--Widlund (GDSW)--type Schwarz preconditioners are applied to different land ice problems, i.e., a velocity problem, a temperature problem, as well as the coupling of the former two problems. We employ the message passing interface (MPI)--parallel implementation of multilevel Schwarz preconditioners provided by the package FROSch (fast and robust Schwarz) from the Trilinos library. The strength of the proposed preconditioner is that it yields out-of-the-box scalable and robust preconditioners for the single physics problems. To the best of our knowledge, this is the first time two-level Schwarz preconditioners have been applied to the ice sheet problem and a scalable preconditioner has been used for the coupled problem. The preconditioner for the coupled problem differs from previous monolithic GDSW preconditioners in the sense that decoupled extension operators are used to compute the values in the interior of the subdomains. Several approaches for improving the performance, such as reuse strategies and shared memory OpenMP parallelization, are explored as well. In our numerical study we target both uniform meshes of varying resolution for the Antarctic ice sheet as well as nonuniform meshes for the Greenland ice sheet. We present several weak and strong scaling studies confirming the robustness of the approach and the parallel scalability of the FROSch implementation. Among the highlights of the numerical results are a weak scaling study for up to 32K processor cores (8K MPI ranks and 4 OpenMP threads) and 566M degrees of freedom for the velocity problem as well as a strong scaling study for up to 4K processor cores (and MPI ranks) and 68M degrees of freedom for the coupled problem.},
     url = {https://doi.org/10.1137/21M1395260},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/30668},
-    keywords = {published, reviewed, selected, recent},
+    keywords = {published, reviewed, selected},
     bibtex_show = {true}
 }
 
@@ -706,6 +706,15 @@ References
     note = {Submitted July 2022},
     abstract = {In order to make the numerical simulation of atherosclerotic plaque growth feasible, a temporal homogenization approach is employed. The resulting macro-scale problem for the plaque growth can be further accelerated by using parallel time integration schemes, such as the parareal algorithm. However, the parallel scalability is dominated by the computational cost of the coarse propagator. Therefore, in this paper, an interpolation-based coarse propagator, which uses growth values from previously computed micro-scale problems, is introduced. For a simple model problem, it is shown that this approach reduces both the computational work for a single parareal iteration as well as the required number of parareal iterations.},
     preprint = {https://arxiv.org/abs/2207.02081},
+    keywords = {submitted, recent},
+    bibtex_show = {true}
+}
+
+@techreport{Zinsser:2022:IDT,
+    author = {Mario Zin{\ss}er and Benedikt Braun and Tim Helder and Theresa Magorian Friedlmeier and Bart Pieters and Alexander Heinlein and Martin Denk and Dominik G\"oddeke and Michael Powalla},
+    title = {Irradiation-dependent Topology Optimization of Metallization Grid Patterns and Variation of Contact Layer Thickness used for Latitude-based Yield Gain of Thin-film Solar Modules},
+    note = {Submitted April 2022},
+    abstract = {We show that the concept of topology optimization for metallization grid patterns of thin-film solar devices can be applied to monolithically integrated solar cells. Different irradiation intensities favour different topological grid designs as well as a different thickness of the transparent conductive oxide (TCO) layer. For standard laboratory efficiency determination, an irradiation power of 1000 W/m2 is generally applied. However, this power rarely occurs for real world solar modules operating at mid-latitude locations. Therefore, contact layer thicknesses but also lateral grid patterns should be optimized for lower irradiation intensities. This results in material production savings for the grid and TCO layer of up to 50 % and simultaneously a significant gain in yield of over 1 % for regions with a low annual mean irradiation.},
     keywords = {submitted, recent},
     bibtex_show = {true}
 }
