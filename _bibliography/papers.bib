@@ -5,6 +5,23 @@ References
 
 # published
 
+@article{Heinlein:2022:AND,
+    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser},
+    title = {Adaptive nonlinear domain decomposition methods},
+    journal = {SIAM Journal on Scientific Computing},
+    volume = {},
+    number = {},
+    pages = {152-S172},
+    year = {2022},
+    doi = {10.1137/21M1433605},
+    abbr = {SISC},
+    abstract = {In this article, different nonlinear domain decomposition methods are applied to nonlinear problems with highly-heterogeneous coeﬃcient functions with jumps. In order to obtain a robust solver with respect to nonlinear as well as linear convergence, adaptive coarse spaces are employed. First, as an example for a nonlinearly left-preconditioned domain decomposition method, the two-level restricted nonlinear Schwarz method H1-RASPEN (Hybrid Restricted Additive Schwarz Preconditioned Exact Newton) is combined with an adaptive generalized Dryja–Smith–Widlund (GDSW) coarse space. Second, as an example for a nonlinearly right-preconditioned domain decomposition method, a nonlinear FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) method is equipped with an edge-based adaptive coarse space. Both approaches are compared with the respective nonlinear domain decomposition methods with classical coarse spaces as well as with the respective Newton-Krylov methods with adaptive coarse spaces. For some two-dimensional pLaplace model problems with diﬀerent spatial coeﬃcient distributions, it can be observed that the best linear and nonlinear convergence can only be obtained when combining the nonlinear domain decomposition methods with adaptive coarse spaces.},
+    url = {https://epubs.siam.org/doi/pdf/10.1137/21M1433605},
+    preprint = {https://kups.ub.uni-koeln.de/id/eprint/52537},
+    keywords = {published, reviewed, selected, recent},
+    bibtex_show = {true}
+}
+
 @article{Zinsser:2022:IDT,
     author = {Mario Zin{\ss}er and Benedikt Braun and Tim Helder and Theresa Magorian Friedlmeier and Bart Pieters and Alexander Heinlein and Martin Denk and Dominik G\"oddeke and Michael Powalla},
     title = {Irradiation-dependent Topology Optimization of Metallization Grid Patterns and Variation of Contact Layer Thickness used for Latitude-based Yield Gain of Thin-film Solar Modules},
@@ -661,17 +678,6 @@ References
     bibtex_show = {true}
 }
 
-@techreport{Heinlein:2021:AND,
-    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser},
-    title = {Adaptive nonlinear domain decomposition methods},
-    note = {Accepted for publication in SIAM Journal on Scientific Computing. March 2022},
-    abbr = {SISC},
-    abstract = {In this article, different nonlinear domain decomposition methods are applied to nonlinear problems with highly-heterogeneous coeﬃcient functions with jumps. In order to obtain a robust solver with respect to nonlinear as well as linear convergence, adaptive coarse spaces are employed. First, as an example for a nonlinearly left-preconditioned domain decomposition method, the two-level restricted nonlinear Schwarz method H1-RASPEN (Hybrid Restricted Additive Schwarz Preconditioned Exact Newton) is combined with an adaptive generalized Dryja–Smith–Widlund (GDSW) coarse space. Second, as an example for a nonlinearly right-preconditioned domain decomposition method, a nonlinear FETI-DP (Finite Element Tearing and Interconnecting - Dual Primal) method is equipped with an edge-based adaptive coarse space. Both approaches are compared with the respective nonlinear domain decomposition methods with classical coarse spaces as well as with the respective Newton-Krylov methods with adaptive coarse spaces. For some two-dimensional pLaplace model problems with diﬀerent spatial coeﬃcient distributions, it can be observed that the best linear and nonlinear convergence can only be obtained when combining the nonlinear domain decomposition methods with adaptive coarse spaces.},
-    preprint = {https://kups.ub.uni-koeln.de/id/eprint/52537},
-    keywords = {accepted, reviewed, selected, recent},
-    bibtex_show = {true}
-}
-
 @techreport{Heinlein:2021:TLE,
     author = {Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and Friederike R\"over},
     title = {A Three-Level Extension for Fast and Robust Overlapping Schwarz (FROSch) Preconditioners with Reduced Dimensional Coarse Space},
@@ -695,6 +701,26 @@ References
 }
 
 # submitted
+
+@techreport{Heinlein:2022:MLE,
+    author = {Alexander Heinlein and Oliver Rheinbach and Friederike R\"over},
+    title = {A Multi-Level Extension of the GDSW Overlapping Schwarz Preconditioner},
+    note = {Submitted August 2022},
+    abstract = {},
+    preprint = {},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@techreport{Heinlein:2022:FAR,
+    author = {Alexander Heinlein and Kathrin Smetana},
+    title = {A fully algebraic and robust two-level Schwarz method based on optimal local approximation spaces},
+    note = {Submitted August 2022},
+    abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
+    preprint = {https://arxiv.org/abs/2207.05559},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
 
 @techreport{Frei:2022:TPT,
     author = {Stefan Frei and Alexander Heinlein},
@@ -723,15 +749,5 @@ References
     abstract = {In order to make the numerical simulation of atherosclerotic plaque growth feasible, a temporal homogenization approach is employed. The resulting macro-scale problem for the plaque growth can be further accelerated by using parallel time integration schemes, such as the parareal algorithm. However, the parallel scalability is dominated by the computational cost of the coarse propagator. Therefore, in this paper, an interpolation-based coarse propagator, which uses growth values from previously computed micro-scale problems, is introduced. For a simple model problem, it is shown that this approach reduces both the computational work for a single parareal iteration as well as the required number of parareal iterations.},
     preprint = {https://arxiv.org/abs/2207.02081},
     keywords = {submitted},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2022:FAR,
-    author = {Alexander Heinlein and Kathrin Smetana},
-    title = {A fully algebraic and robust two-level Schwarz method based on optimal local approximation spaces},
-    note = {Submitted August 2022},
-    abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
-    preprint = {https://arxiv.org/abs/2207.05559},
-    keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
