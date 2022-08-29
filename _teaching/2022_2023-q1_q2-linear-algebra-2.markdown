@@ -1,11 +1,11 @@
 ---
 layout: page_course
 university: tud
-semester: Q1 & Q2 2022/2023
+semester: Q1 2022/2023
 title: Linear Algebra 2 (AM2010)
-instructors: Alexander Heinlein and Matthias Möller
+instructors: Alexander Heinlein and Domenico Lahaye
 runningindex: 16
 nolink: true
 category: course
-status: planned
+status: ongoing
 ---
