@@ -8,6 +8,6 @@ student:
 runningindex: 11
 nolink: false
 redirect: /assets/pdf/thesis_projects/2022/2022-nrg_heinlein_toshniwal-ai_turbulence_modeling.pdf
-category: thesis
+category: master_thesis
 status: open
 ---

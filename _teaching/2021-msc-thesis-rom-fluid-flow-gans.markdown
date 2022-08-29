@@ -7,6 +7,6 @@ student: Mirko Kemna
 runningindex: 3
 nolink: false
 redirect: /assets/pdf/thesis_projects/2021/2021-heinlein-gan_pdes.pdf
-category: thesis
+category: master_thesis
 status: ongoing
 ---

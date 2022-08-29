@@ -7,6 +7,6 @@ title: >
 runningindex: 1
 nolink: false
 redirect: /assets/pdf/thesis_projects/2021/2021-heinlein-frosch_multiplicative_coloring.pdf
-category: thesis
+category: master_thesis
 status: open
 ---

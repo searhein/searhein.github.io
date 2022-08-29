@@ -13,6 +13,6 @@ interim_thesis: /assets/pdf/thesis_projects/2021/2021-dwarka_heinlein-ddm_helmho
 interim_presentation: /assets/pdf/thesis_projects/2021/2021-dwarka_heinlein-ddm_helmholtz/interim_presentation.pdf
 final_thesis:
 final_presentation:
-category: thesis
+category: master_thesis
 status: ongoing
 ---

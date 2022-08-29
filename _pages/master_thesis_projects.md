@@ -1,7 +1,7 @@
 ---
 layout: page
-title: thesis projects
-permalink: /thesis_projects/
+title: master thesis projects
+permalink: /master_thesis_projects/
 description: Collection of master projects supervised by Alexander Heinlein.
 nav: false
 ---
@@ -11,7 +11,7 @@ nav: false
 <div class="grid">
   {% assign sorted_teaching = site.teaching | sort: "runningindex" | reverse %}
   {% for teaching in sorted_teaching %}
-    {% if teaching.category == "thesis" and teaching.status == "ongoing" %}
+    {% if teaching.category == "master_thesis" and teaching.status == "ongoing" %}
       {% include theses.html %}
     {% endif %}
   {% endfor %}
@@ -21,7 +21,7 @@ nav: false
 <div class="grid">
   {% assign sorted_teaching = site.teaching | sort: "runningindex" | reverse %}
   {% for teaching in sorted_teaching %}
-    {% if teaching.category == "thesis" and teaching.status == "open" %}
+    {% if teaching.category == "master_thesis" and teaching.status == "open" %}
       {% include theses.html %}
     {% endif %}
   {% endfor %}
@@ -31,7 +31,7 @@ nav: false
 <div class="grid">
   {% assign sorted_teaching = site.teaching | sort: "runningindex" | reverse %}
   {% for teaching in sorted_teaching %}
-    {% if teaching.category == "thesis" and teaching.status == "archive" %}
+    {% if teaching.category == "master_thesis" and teaching.status == "archive" %}
       {% include theses.html %}
     {% endif %}
   {% endfor %}

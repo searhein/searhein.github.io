@@ -4,8 +4,10 @@ title: teaching
 nav: true
 dropdown: true
 children:
-    - title: thesis projects
-      permalink: /thesis_projects/
+    - title: bachelor thesis projects
+      permalink: /bachelor_thesis_projects/
+    - title: master thesis projects
+      permalink: /master_thesis_projects/
     - title: divider
     - title: courses
       permalink: /courses/

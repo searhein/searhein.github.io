@@ -7,6 +7,6 @@ co-supervisor: Oriol Colomés (TU Delft, Offshore Engineering)
 runningindex: 4
 nolink: false
 redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_colomes-block_preconditioners_floating_structures.pdf
-category: thesis
+category: master_thesis
 status: open
 ---
