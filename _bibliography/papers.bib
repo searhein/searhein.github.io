@@ -18,7 +18,7 @@ References
     abstract = {The parallel performance of the three-level fast and robust overlapping Schwarz (FROSch) preconditioners is investigated for linear elasticity. The FROSch framework is part of the Trilinos software library and contains a parallel implementation of different preconditioners with energy minimizing coarse spaces of generalized Dryja--Smith--Widlund type. The three-level extension is constructed by a recursive application of the FROSch preconditioner to the coarse problem. In this paper, the additional steps in the implementation in order to apply the FROSch preconditioner recursively are described in detail. Furthermore, it is shown that no explicit geometric information is needed in the recursive application of the preconditioner. In particular, the rigid body modes, including the rotations, can be interpolated on the coarse level without additional geometric information. Parallel results for a three-dimensional linear elasticity problem obtained on the Theta supercomputer (Argonne Leadership Computing Facility, Argonne, IL) using up to 220 000 cores are discussed and compared to results obtained on the SuperMUC-NG supercomputer (Leibniz Supercomputing Centre, Garching, Germany). Notably, it can be observed that a hierarchical communication operation in FROSch related to the coarse operator starts to dominate the computing time on Theta, which has a dragonfly interconnect, for 100 000 message passing interface (MPI) ranks or more. The same operation, however, scales well and stays within the order of a second in all experiments performed on SuperMUC-NG, which uses a fat tree network. Using hybrid MPI/OpenMP parallelization, the onset of the MPI communication problem on Theta can be delayed. Further analysis of the performance of FROSch on large supercomputers with dragonfly interconnects will be necessary.},
     url = {https://epubs.siam.org/doi/pdf/10.1137/21M1431205},
     preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-03.pdf},
-    keywords = {published, reviewed, selected, recent},
+    keywords = {published, reviewed, selected},
     bibtex_show = {true}
 }
 
@@ -707,6 +707,16 @@ References
 }
 
 # submitted
+
+@techreport{Yamazaki:2022:EST,
+    author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
+    title = {An Experimental Study of Two-level Schwarz Domain-Decomposition Preconditioner on GPUs},
+    note = {Submitted October 2022},
+    abstract = {Generalized Dryja--Smith--Widlund (GDSW) preconditioners are two-level overlapping Schwarz domain decomposition (DD) preconditioners that couple a classical one-level overlapping Schwarz preconditioner with an energy-minimizing coarse space, in an additive way. When used together with Krylov subspace methods, the GDSW preconditioners become robust and scalable choice for solving sparse linear equation systems arising from the discretization of a wide range of partial different equations. However, an efficient implementation of this challenging problem for GPU architectures has not been presented so far. The problem presents several challenges with wide variety of algorithm and implementation choices. To address this gap, in this paper, we present the FROSch (Fast and Robust Schwarz) domain decomposition solver package, which implements GDSW algorithms for CPUs and GPUs  within the Trilinos software framework. We use a novel decomposition to run multiple MPI processes on each GPU, allowing us to reduce both computational and storage costs of the DD solver, significantly and improve convergence. This allows the GPU implementation to be competitive or better than the CPU implementations. We demonstrate the performance of FROSch on the Summit supercomputer with NVIDIA V100 GPUs, where we used NVIDIA Multi-Process Service (MPS) to implement our decomposition strategy. We conduct a thorough experimental study varying solvers and their options for solving the local overlapping subdomain and coarse problems including their exact solution based on the direct sparse LU factorization on a GPU with multiple direct solvers,  incomplete factorizations on GPU and their approximate solution based on the iterative variant of incomplete LU factorization and sparse-triangular solve. We also discuss the effect of using lower precision for computing the whole FROSch preconditioner. Overall, the solve time was reduced by factor of 2 when comparing a GPU node to a CPU node, while the numerical setup times remained about the same.},
+    preprint = {},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
 
 @techreport{Mache:2022:PIN,
     author = {Ramiyou Karim Mache and Michael Langguth and Alexander Heinlein and Scarlet Stadtler and Martin G. Schultz and Axel Klawonn},
