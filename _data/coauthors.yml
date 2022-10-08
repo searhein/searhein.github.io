@@ -26,6 +26,10 @@ Knepper:
   - firstname: ["Jascha", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/j-knepper-m-sc
 
+Kemna:
+  - firstname: ["Mirko", "M."]
+    url:
+
 Kühn:
   - firstname: ["Martin", "M."]
     url: https://www.dlr.de/sc/desktopdefault.aspx/tabid-1192/1635_read-38447/sortby-b_city/
@@ -100,6 +104,10 @@ Steinberger:
 Uhlmann:
   - firstname: ["Klemens", "K."]
     url: http://www.lkm.rub.de/institut/team/uhlmann.html
+
+Vuik:
+  - firstname: ["Cornelis", "C.", "Kees", "K."]
+    url: http://ta.twi.tudelft.nl/users/vuik/Welcome.html
 
 Weber:
   - firstname: ["Janine", "J."]
