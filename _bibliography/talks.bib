@@ -23,7 +23,7 @@ References
     note = {SIAM Conference on Mathematics of Data Science, SIAM MDS22, San Diego (Hybrid), USA, September 26 - 30},
     abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities. In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed. In particular, the geometry of the computational domain is the input of the neural network, and the flow and pressure fields are the output. In order to construct accurate surrogate models, U-Net type convolutional neural networks are employed and the architecture and hyper parameters are optimized to this application. As a first step, a fully supervised approach, which requires the availability of simulation results as the training data, is presented. After that, a novel approach is introduced, which does not require CFD simulation results but is based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Moreover, results for the application to geometries of arteries with aneurysms are presented.},
     url = {https://www.siam.org/conferences/cm/conference/mds22},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2022:UDE:RAS,
@@ -33,7 +33,7 @@ References
     abbr = {UDE2022},
     note = {Kolloquium Ingenieurmathematik, Universit\"at Duisburg-Essen, Essen, Germany, September 15},
     abstract = {},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2022:GACM:SMC,
@@ -44,7 +44,7 @@ References
     note = {9th GACM Colloquium on Computational Mechanics 2022, Essen, Germany, September 21-23},
     abstract = {CFD simulations are very costly to compute and have to be repeated if the geometry changes even slightly. Recently there have been a number of attempts to speed up this process using neural networks. Among these is the use of Convolutional Neural Networks (CNN) as surrogate models for CFD simulations with varying geometries. Here, the model is trained on images of high-fidelity simulation results. However, the generation of training data is expensive and this approach usually requires a large data set. Thus, it is of interest to be able to train a CNN in the absence of abundant training data with the help of physical constraints. First results have already been achieved for the heat equation on a fixed geometry and flow problems in parameterizable geometries. In this talk, we present a physics-aware approach to train CNNs as surrogate models for CFD simulations in varying geometries. The employed CNN takes an imags of the geometry as input and returns images of the associated CFD simulation results, i.e., velocity and pressure, as output. Our CNN architecture is based on the structure of U-Net. Since the model is trained on pixel images, it can be applied to a variety of different geometries. We show results for two-dimensional flows around obstacles of varying size and placement and in non-rectangular geometries, esp. arteries and aneurysms.},
     url = {https://colloquia.gacm.de/organisation},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2022:GAMM:PCF,
@@ -55,7 +55,7 @@ References
     note = {92nd GAMM Annual Meeting, Aachen, Germany, August 15-19},
     abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In cardiovascular applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities, such as the maximum velocity or the wall shear stresses at certain locations. In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed; cf. [1, 2]. Using this approach, which is inspired by [3], it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. In order to construct accurate surrogate models, U-Net [4] type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed, and the architecture and hyper parameters are optimized to this application. Two different approaches are compared: a fully supervised approach, where the model is trained using high fidelity simulation data, and a novel approach, where the model is trained based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Then, the framework is applied to geometries of arteries with aneurysms are presented. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes.},
     url = {https://jahrestagung.gamm-ev.de/},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2022:DD27:RAS,
