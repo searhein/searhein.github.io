@@ -6,7 +6,12 @@ co-supervisor:
 student: Sylle Hoogeveen
 runningindex: 10
 nolink: false
-redirect: /assets/pdf/thesis_projects/2021/2021-heinlein-cnn_transient_mor.pdf
+redirect:
+project_description: /assets/pdf/thesis_projects/2021/2021-heinlein-cnn_transient_mor.pdf
+interim_thesis:
+interim_presentation:
+final_thesis: http://resolver.tudelft.nl/uuid:45bffaf0-5ae0-48a2-9fe7-5ebfe2594cb5
+final_presentation:
 category: master_thesis
-status: ongoing
+status: archive
 ---
