@@ -6,6 +6,10 @@ Deparis:
   - firstname: ["Simone", "S."]
     url: https://people.epfl.ch/Simone.Deparis?lang=en
 
+Dolean:
+  - firstname: ["Victorita", "V."]
+    url: http://www.victoritadolean.com/
+
 Frei:
   - firstname: ["Stefan", "S."]
     url: https://www.math.uni-konstanz.de/~frei/
@@ -44,6 +48,14 @@ Lanser:
 
 Mache:
   - firstname: ["Ramiyou Karim", "R. K."]
+
+Mishra:
+  - firstname: ["Siddhartha", "Sid", "S."]
+    url: https://math.ethz.ch/sam/the-institute/people/siddhartha-mishra.html
+
+Moseley:
+  - firstname: ["Ben", "B."]
+    url: https://math.ethz.ch/sam/the-institute/people.html?u=bmosele
 
 Perego:
   - firstname: ["Mauro", "M."]
