@@ -5,6 +5,38 @@ References
 
 # published
 
+@inproceedings{Heinlein:2023:TLE,
+    author = {Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and Friederike R\"over},
+    title = {A Three-Level Extension for Fast and Robust Overlapping Schwarz (FROSch) Preconditioners with Reduced Dimensional Coarse Space},
+    booktitle = {Domain Decomposition Methods in Science and Engineering XXVI},
+    pages = {},
+    publisher = {Springer International Publishing},
+    year = {2023},
+    doi = {},
+    abbr = {Springer LNCSE},
+    abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
+    url = {},
+    preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-02.pdf},
+    keywords = {accepted, reviewed},
+    bibtex_show = {true}
+}
+
+@inproceedings{Heinlein:2023:PGL,
+    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
+    title = {Predicting the geometric location of critical edges in adaptive GDSW overlapping domain decomposition methods using deep learning},
+    booktitle = {Domain Decomposition Methods in Science and Engineering XXVI},
+    pages = {},
+    publisher = {Springer International Publishing},
+    year = {2023},
+    doi = {},
+    abbr = {Springer LNCSE},
+    abstract = {Overlapping GDSW domain decomposition methods are considered for diffusion problems in two dimensions discretized by finite elements. For a diffusion coefficient with high contrast, the condition number is usually dependent on it. A remedy is given by adaptive domain decomposition methods, where the coarse space is enhanced by additional coarse basis functions. These are chosen problem-dependently by solving small local eigenvalue problems. Here, the eigenvalue problems (EVPs) are associated with the edges of the domain decomposition interface; edges, where these EVPs have to be solved are denoted as critical edges. For many applications, not all edges are critical and the solution of the EVPs is not necessary. In an earlier work, a strategy to predict the location of critical edges, based on deep learning, has been proposed for adaptive FETI-DP, a class of nonoverlapping methods. In the present work, this strategy is successfully applied to  adaptive GDSW; differences in the classification process for this overlapping method are described. Choosing the classification threshold has been a challenge in all these approaches. Here, for the first time, a heuristic based on the receiver operating characteristic (ROC) curve and the precision-recall graph is discussed. Results for a challenging realistic coefficient function are presented.},
+    url = {},
+    preprint = {https://kups.ub.uni-koeln.de/36257},
+    keywords = {accepted, reviewed},
+    bibtex_show = {true}
+}
+
 @article{Heinlein:2022:PST,
     author = {Alexander Heinlein and Oliver Rheinbach and Friederike R{\"o}ver},
     title = {Parallel Scalability of Three-Level FROSch Preconditioners to 220 000 Cores using the Theta Supercomputer},
@@ -684,35 +716,26 @@ References
 
 # accepted
 
-@techreport{Heinlein:2021:TLE,
-    author = {Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and Friederike R\"over},
-    title = {A Three-Level Extension for Fast and Robust Overlapping Schwarz (FROSch) Preconditioners with Reduced Dimensional Coarse Space},
-    note = {Accepted for publication in the proceedings of the DD26 conference. August 2021.},
-    abbr = {Springer LNCSE},
-    abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
-    preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-02.pdf},
-    keywords = {accepted, reviewed},
-    bibtex_show = {true}
-}
 
-@techreport{Heinlein:2021:PGL,
-    author = {Alexander Heinlein and Axel Klawonn and Martin Lanser and Janine Weber},
-    title = {Predicting the geometric location of critical edges in adaptive GDSW overlapping domain decomposition methods using deep learning},
-    note = {Accepted for publication in the proceedings of the DD26 conference. August 2021.},
-    abbr = {Springer LNCSE},
-    abstract = {Overlapping GDSW domain decomposition methods are considered for diffusion problems in two dimensions discretized by finite elements. For a diffusion coefficient with high contrast, the condition number is usually dependent on it. A remedy is given by adaptive domain decomposition methods, where the coarse space is enhanced by additional coarse basis functions. These are chosen problem-dependently by solving small local eigenvalue problems. Here, the eigenvalue problems (EVPs) are associated with the edges of the domain decomposition interface; edges, where these EVPs have to be solved are denoted as critical edges. For many applications, not all edges are critical and the solution of the EVPs is not necessary. In an earlier work, a strategy to predict the location of critical edges, based on deep learning, has been proposed for adaptive FETI-DP, a class of nonoverlapping methods. In the present work, this strategy is successfully applied to  adaptive GDSW; differences in the classification process for this overlapping method are described. Choosing the classification threshold has been a challenge in all these approaches. Here, for the first time, a heuristic based on the receiver operating characteristic (ROC) curve and the precision-recall graph is discussed. Results for a challenging realistic coefficient function are presented.},
-    preprint = {https://kups.ub.uni-koeln.de/36257},
-    keywords = {accepted, reviewed},
-    bibtex_show = {true}
-}
 
 # submitted
+
+@techreport{Grimm:2022:SHS,
+    author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
+    title = {A short note on solving partial differential
+equations using convolutional neural networks},
+    note = {Submitted November 2022},
+    abstract = {The approach of using physics-based machine learning to solve PDEs has recently become very popular. A recent approach to solve PDEs based on CNNs uses finite difference stencils to include the residual of the partial differential equation into the loss function. In this work, the relation between the network training and the solution of a respective finite difference linear system of equations using classical numerical solvers is discussed. It turns out that many beneficial properties of the linear equation system are neglected in the network training. Finally, numerical results which underline the benefits of classical numerical solvers are presented.},
+    preprint = {http://kups.ub.uni-koeln.de/id/eprint/64227},
+    keywords = {submitted, recent},
+    bibtex_show = {true}
+}
 
 @techreport{Dolean:2022:FBP,
     author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
     title = {Finite basis physics-informed neural networks as a Schwarz domain decomposition method},
     note = {Submitted November 2022},
-    abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs. },
+    abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs.},
     preprint = {https://arxiv.org/abs/2211.05560},
     keywords = {submitted, recent},
     bibtex_show = {true}
@@ -754,7 +777,7 @@ References
     note = {Submitted September 2022},
     abstract = {The Navier-Stokes equations represent a set of partial differential equations which describe the motion of viscous fluids  and which form the basis for modeling the dynamics of the atmosphere and the ocean. Classical numerical methods are the most common approaches for solving these equations, but they are computationally expensive and cannot seamlessly incorporate observational data. With the availability of large amounts of data, researchers have recently started to explore purely data-driven approaches that ignore the governing equations. Physics-informed neural networks (PINNs) are a hybrid approach that incorporates the governing equations into data-driven neural networks warranting physical consistency. In this paper, we explore the use of PINNs in meteorological applications. For this purpose, we consider a simplified version of the Navier-Stokes equations, that is, the nonlinear barotropic vorticity equation (BVE) on a rotating sphere. The BVE involves the Rossby-Haurwitz wave pattern which constitutes a large-scale feature of upper-level atmospheric dynamics on the Earth. We perform detailed numerical studies and evaluate the ability of PINNs to capture Rossby-Haurwitz wave patterns with various initial conditions in an idealized framework. It is demonstrated that several adaptions of the standard PINN are required to ensure accurate approximations for a broad range of wave patterns. In addition to the deployment of a self-adaptive weighting of the loss components, the usage of the Swish activation function together with further parameter fine-tuning yields significant improvements in terms of domain-specific evaluation metrics and in capturing the conservation properties of the system. The proposed adaptions are considered to build a basis for later applications of PINNs on more sophisticated variants of the Navier-Stokes equations in meteorology.},
     preprint = {},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -764,7 +787,7 @@ References
     note = {Submitted August 2022},
     abstract = {},
     preprint = {},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -774,7 +797,7 @@ References
     note = {Submitted August 2022},
     abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
     preprint = {https://arxiv.org/abs/2207.05559},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -784,7 +807,7 @@ References
     note = {Submitted March 2022},
     abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro scale reaction-diffusion problem instead of the micro scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
     preprint = {https://arxiv.org/abs/2203.06526},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
