@@ -5,7 +5,7 @@ collaboration: COMSOL
 title: Improving Nonlinear Solver Convergence Using Machine Learning
 co-supervisor: Tycho van Noorden (COMSOL)
 student:
-runningindex: 12
+runningindex: 13
 nolink: false
 redirect: /assets/pdf/thesis_projects/2022/2022-heinlein_van_noorden-nonlinear_convergence_ml.pdf
 project_description:

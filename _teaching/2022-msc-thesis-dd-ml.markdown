@@ -5,7 +5,7 @@ collaboration: SNL
 title: Domain Decomposition for Machine Learning Based Medical Imaging
 co-supervisor: Eric Cyr (Sandia National Laboratories, USA)
 student:
-runningindex: 12
+runningindex: 14
 nolink: false
 redirect: /assets/pdf/thesis_projects/2022/2022-heinlein_cyr-dd_ml.pdf
 project_description:
