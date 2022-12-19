@@ -5,6 +5,27 @@ References
 
 # talks
 
+@misc{Heinlein:2023:CDS:FRO,
+    title = {Fast and Robust Overlapping Schwarz Preconditioners in Trilinos -- Highly Scalable Algorithms and Their Efficient Implementation},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {CDS},
+    note = {Invited seminar talk. Center for Data and Simulation Science (CDS), Universit\"at zu K\"oln, K\"oln, Germany, January 18},
+    abstract = {The Trilinos library is an object-oriented software framework for the solution of large-scale, complex multi-physics engineering and scientific problems on new and emerging high-performance computing (HPC) architectures. It provides a collection of interoperable software packages enabling the development of algorithms reaching parallel scalability up to the largest supercomputers available. This talk will discuss different aspects of Trilinos for the example of the FROSch (Fast and Robust Overlapping Schwarz) preconditioning framework, which is part of the Trilinos package ShyLU. FROSch implements multilevel Schwarz preconditioners, which are algebraic, i.e., which can be constructed using only the fully assembled parallel distributed system matrix. Making use of the software infrastructure of Trilinos, FROSch allows for the parallel solution of extremely large problems. Numerical results for various problems indicating parallel scalability up to more than 200,000 MPI ranks will be presented. Moreover, node-level parallelization on CPUs as well as GPUs using the Kokkos programming model through the Tpetra linear algebra framework will be discussed.},
+    url = {https://cds.uni-koeln.de/en/labs/hpc/hpc-seminar-series/talk20230118},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:SimTech:NNP,
+    title = {Neural networks with physical constraints, domain decomposition-based training strategies, and model order reduction},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {SimTech},
+    note = {Invited seminar talk. SimTech ML-Session, Universit\"at Stuttgart, Stuttgart, Germany, January 11},
+    abstract = {The Trilinos library is an object-oriented software framework for the solution of large-scale, complex multi-physics engineering and scientific problems on new and emerging high-performance computing (HPC) architectures. It provides a collection of interoperable software packages enabling the development of algorithms reaching parallel scalability up to the largest supercomputers available. This talk will discuss different aspects of Trilinos for the example of the FROSch (Fast and Robust Overlapping Schwarz) preconditioning framework, which is part of the Trilinos package ShyLU. FROSch implements multilevel Schwarz preconditioners, which are algebraic, i.e., which can be constructed using only the fully assembled parallel distributed system matrix. Making use of the software infrastructure of Trilinos, FROSch allows for the parallel solution of extremely large problems. Numerical results for various problems indicating parallel scalability up to more than 200,000 MPI ranks will be presented. Moreover, node-level parallelization on CPUs as well as GPUs using the Kokkos programming model through the Tpetra linear algebra framework will be discussed.},
+    keywords = {}
+}w
+
 @misc{Heinlein:2022:Glasgow:NNP,
     title = {Neural networks with physical constraints, domain decomposition-based training strategies, and model order reduction},
     author = {Alexander Heinlein},
@@ -20,7 +41,7 @@ References
     year = {2022},
     abbr = {LUH2022},
     note = {Seminar talk. Leibniz Universit\"at Hannover, Hannover, Germany, December 1},
-    abstract = {The Trilinos library is an object-oriented software framework for the solution of large-scale, complex multi-physics engineering and scientific problems on new and emerging high-performance computing (HPC) architectures. It provides a collection of interoperable software packages enabling the development of algorithms reaching parallel scalability up to the largest supercomputers available. This talk will discuss different aspects of Trilinos for the example of the FROSch (Fast and Robust Overlapping Schwarz) preconditioning framework, which is part of the Trilinos package ShyLU. FROSch implements multilevel Schwarz preconditioners, which are algebraic, i.e., which can be constructed using only the fully assembled parallel distributed system matrix. Making use of the software infrastructure of Trilinos, FROSch allows for the parallel solution of extremely large problems. Numerical results for various problems indicating parallel scalability up to more than 200,000 MPI ranks will be presented. Moreover, node-level parallelization on CPUs as well as GPUs using the Kokkos programming model through the Tpetra linear algebra framework will be discussed.},
+    abstract = {Coarse spaces are an important component in domain decomposition preconditioners since they are, in general, necessary to obtain numerical scalability and robustness. This talk will focus on presenting an algorithmic framework for the construction of coarse spaces for Schwarz preconditioners which is based on the generalized Dryja--Smith--Widlund (GDSW) coarse space. In particular, the coarse basis functions are extensions from the interface into the interior of a corresponding nonoverlapping domain decomposition by solving the homogeneous partial differential equation (PDE) with a given trace on the interface. This makes the coarse spaces very practical since they can be constructed in an algebraic way, that is, using only the fully assembled system matrix. This algorithmic framework is the basis for the highly-scalable FROSch (Fast and Robust Schwarz) solver package, which is part of the Trilinos software library. The FROSch package provides a parallel software framework to construct algebraic Schwarz preconditioners that are robust as well as numerically and parallel scalable for a wide range of problems. It provides a multi-level implementation to extend parallel scalability. Moreover, using extension-based coarse spaces, robust monolithic solvers for saddle-point problems, such as the (Navier--)Stokes equations and multi-physics problems in land ice simulations, can be constructed. Solving appropriate local eigenvalue problems on a partition of the interface to compute the traces of the coarse basis yields provably robust extension-based coarse spaces, even for highly heterogeneous model problems with large coefficient jumps. These adaptive coarse spaces are generally not algebraic since the eigenvalue problems require local Neumann matrices. However, by solving two local eigenvalue problems for each interface component instead, an algebraic and adaptive coarse space can be obtained. Finally, the framework can also be employed in nonlinear Schwarz preconditioning.},
     keywords = {}
 }
 
