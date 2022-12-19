@@ -716,7 +716,25 @@ References
 
 # accepted
 
+@techreport{Yamazaki:2022:EST,
+    author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
+    title = {An Experimental Study of Two-level Schwarz Domain-Decomposition Preconditioners on GPUs},
+    note = {Accepted for publication in the IPDPS’23 proceedings. December 2022},
+    abbr = {IPDPS},
+    abstract = {Generalized Dryja--Smith--Widlund (GDSW) preconditioners are two-level overlapping Schwarz domain decomposition (DD) preconditioners that couple a classical one-level overlapping Schwarz preconditioner with an energy-minimizing coarse space. When used together with Krylov subspace methods, GDSW preconditioners are robust and scalable for solving sparse linear systems arising from the discretization of a wide range of partial different equations. However, the solver has a wide variety of algorithmic and implementation choices, which poses several challenges for its GPU implementation, and thus, its GPU implementation has not been presented so far. To address this gap, in this paper, we present FROSch (Fast and Robust Schwarz), a domain decomposition solver package which implements GDSW algorithms for both CPU and GPU clusters. In order to improve the solver performance on GPUs, we use a novel decomposition to run multiple MPI processes on each GPU, reducing both computational and storage costs of the DD solver, and potentially improving the solver convergence rate. This allows the GPU implementation to be competitive or faster than the CPU implementations. We demonstrate the performance of FROSch on the Summit supercomputer with NVIDIA V100 GPUs, where we used NVIDIA Multi-Process Service (MPS) to implement our decomposition strategy. We conduct a thorough experimental study with different solver options including the exact or inexact solution of the local overlapping subdomain problems based on the sparse direct or incomplete factorizations on a GPU, respectively. We also discuss the effect of using the iterative variant of the incomplete LU factorization and sparse-triangular solve as the approximate local solver and using lower precision for computing the whole FROSch preconditioner. Overall, the solve time was reduced by factors of about 2x using GPUs, while the effects on the numerical setup time depend on the solver options and the local matrix sizes.},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
 
+@techreport{Kemna:2022:FST,
+    author = {Mirko Kemna and Alexander Heinlein and Cornelis Vuik},
+    title = {Reduced order fluid modeling with generative adversarial networks},
+    note = {Accepted for publication in PAMM. December 2022},
+    abbr = {PAMM},
+    abstract = {Surrogate models based on convolutional neural networks (CNNs) for computational fluid dynamics (CFD) simulations are investigated. In particular, the flow field inside two-dimensional channels with a sudden expansion and an obstacle is predicted using an image representation of the geometry as the input. Generative adversarial neural networks (GANs) have been shown to excel at such image-to-image translation tasks. This motivates the focus of this work on investigating the specific effect of adversarial training on model performance. Numerical results show that the overall accuracy of the GANs is generally lower compared to an identical generator model trained directly on the ground truth using an L1 data loss. On the other hand, GAN predictions are often visually more convincing and exhibit a lower continuity residual.},
+    keywords = {accepted, recent},
+    bibtex_show = {true}
+}
 
 # submitted
 
@@ -741,33 +759,12 @@ equations using convolutional neural networks},
     bibtex_show = {true}
 }
 
-@techreport{Kemna:2022:FST,
-    author = {Mirko Kemna and Alexander Heinlein and Cornelis Vuik},
-    title = {Reduced order fluid modeling with generative adversarial networks},
-    note = {Submitted October 2022},
-    abstract = {Surrogate models based on convolutional neural networks (CNNs) for computational fluid dynamics (CFD) simulations are investigated. In particular, the flow field inside two-dimensional channels with a sudden expansion and an obstacle is predicted using an image representation of the geometry as the input. Generative adversarial neural networks (GANs) have been shown to excel at such image-to-image translation tasks. This motivates the focus of this work on investigating the specific effect of adversarial training on model performance. Numerical results show that the overall accuracy of the GANs is generally lower compared to an identical generator model trained directly on the ground truth using an L1 data loss. On the other hand, GAN predictions are often visually more convincing and exhibit a lower continuity residual.},
-    preprint = {},
-    keywords = {submitted, recent},
-    bibtex_show = {true}
-}
-
 @techreport{Ramesh:2022:FST,
     author = {Sharan Nurani Ramesh and Klemens Uhlmann and Lea Sa{\ss}mannshausen and Oliver Rheinbach and Axel Klawonn and Alexander Heinlein and Daniel Balzani},
     title = {First steps towards modeling the interaction of cardiovascular agents and smooth muscle activation in arterial walls},
     note = {Submitted October 2022},
     abstract = {Numerical simulation of the response of healthy and pathological arteries to cardiovascular agents can provide valuable information to the physician in the treatment of diseases such as hypertension, atherosclerosis, and the Marfan syndrome. Here, we provide a first step towards a computational framework to model the effects of antihypertensive agents on the mechanical response of arterial walls. A material model is developed by extending an existing formulation for wall tissue to incorporate the effects of calcium-ion channel blockers. The resulting coupled deformation-diffusion problem is then solved using the finite element method. Simulation results with drug activity show that, indeed, an increased lumen diameter due to reduced contraction is obtained. Additionally, a decrease in the rate of arterial contraction is observed, which is also consistent with expected behavior. Finally, we compare results for an implicit or explicit treatment of the the deformation-diffusion coupling, and we observe that both coupling schemes yield comparable results for a wide range of time step sizes.},
-    preprint = {},
     keywords = {submitted, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Yamazaki:2022:EST,
-    author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
-    title = {An Experimental Study of Two-level Schwarz Domain-Decomposition Preconditioners on GPUs},
-    note = {Submitted October 2022},
-    abstract = {Generalized Dryja--Smith--Widlund (GDSW) preconditioners are two-level overlapping Schwarz domain decomposition (DD) preconditioners that couple a classical one-level overlapping Schwarz preconditioner with an energy-minimizing coarse space. When used together with Krylov subspace methods, GDSW preconditioners are robust and scalable for solving sparse linear systems arising from the discretization of a wide range of partial different equations. However, the solver has a wide variety of algorithmic and implementation choices, which poses several challenges for its GPU implementation, and thus, its GPU implementation has not been presented so far. To address this gap, in this paper, we present FROSch (Fast and Robust Schwarz), a domain decomposition solver package which implements GDSW algorithms for both CPU and GPU clusters. In order to improve the solver performance on GPUs, we use a novel decomposition to run multiple MPI processes on each GPU, reducing both computational and storage costs of the DD solver, and potentially improving the solver convergence rate. This allows the GPU implementation to be competitive or faster than the CPU implementations. We demonstrate the performance of FROSch on the Summit supercomputer with NVIDIA V100 GPUs, where we used NVIDIA Multi-Process Service (MPS) to implement our decomposition strategy. We conduct a thorough experimental study with different solver options including the exact or inexact solution of the local overlapping subdomain problems based on the sparse direct or incomplete factorizations on a GPU, respectively. We also discuss the effect of using the iterative variant of the incomplete LU factorization and sparse-triangular solve as the approximate local solver and using lower precision for computing the whole FROSch preconditioner. Overall, the solve time was reduced by factors of about 2x using GPUs, while the effects on the numerical setup time depend on the solver options and the local matrix sizes.},
-    preprint = {},
-    keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
 
@@ -776,7 +773,6 @@ equations using convolutional neural networks},
     title = {Physics-informed neural networks for nonlinear vorticity equation on a rotating sphere},
     note = {Submitted September 2022},
     abstract = {The Navier-Stokes equations represent a set of partial differential equations which describe the motion of viscous fluids  and which form the basis for modeling the dynamics of the atmosphere and the ocean. Classical numerical methods are the most common approaches for solving these equations, but they are computationally expensive and cannot seamlessly incorporate observational data. With the availability of large amounts of data, researchers have recently started to explore purely data-driven approaches that ignore the governing equations. Physics-informed neural networks (PINNs) are a hybrid approach that incorporates the governing equations into data-driven neural networks warranting physical consistency. In this paper, we explore the use of PINNs in meteorological applications. For this purpose, we consider a simplified version of the Navier-Stokes equations, that is, the nonlinear barotropic vorticity equation (BVE) on a rotating sphere. The BVE involves the Rossby-Haurwitz wave pattern which constitutes a large-scale feature of upper-level atmospheric dynamics on the Earth. We perform detailed numerical studies and evaluate the ability of PINNs to capture Rossby-Haurwitz wave patterns with various initial conditions in an idealized framework. It is demonstrated that several adaptions of the standard PINN are required to ensure accurate approximations for a broad range of wave patterns. In addition to the deployment of a self-adaptive weighting of the loss components, the usage of the Swish activation function together with further parameter fine-tuning yields significant improvements in terms of domain-specific evaluation metrics and in capturing the conservation properties of the system. The proposed adaptions are considered to build a basis for later applications of PINNs on more sophisticated variants of the Navier-Stokes equations in meteorology.},
-    preprint = {},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
@@ -785,8 +781,6 @@ equations using convolutional neural networks},
     author = {Alexander Heinlein and Oliver Rheinbach and Friederike R\"over},
     title = {A Multi-Level Extension of the GDSW Overlapping Schwarz Preconditioner},
     note = {Submitted August 2022},
-    abstract = {},
-    preprint = {},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
