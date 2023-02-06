@@ -16,4 +16,5 @@ group :jekyll_plugins do
     gem 'kramdown-parser-gfm'
     gem 'unicode_utils'
     gem 'webrick'
+    gem 'faraday-retry'
 end
