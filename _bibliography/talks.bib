@@ -5,6 +5,65 @@ References
 
 # talks
 
+@misc{Heinlein:2023:CFC:PDD,
+    title = {Parallel Domain Decomposition Preconditioning Techniques for Incompressible Fluid Flow Problems},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {CFC 2023},
+    note = {22nd IACM Computational Fluids Conference (CFC), Cannes, France, April 25-38},
+    abstract = {Monolithic GDSW (generalized Dryja–Smith–Wildund) preconditioners are two-level Schwarz domain decomposition preconditioners for block systems. They are robust because they account for the coupling terms in the system matrix on both levels, that is, in the local and coarse problems. Block preconditioners, mostly based on block-diagonal and block-triangular preconditioners, such as the famous SIMPLE (semi-implicit method for pressure linked equations) preconditioner, often yield higher iteration counts wile coming at a lower setup cost compared to monolithic approaches. In this talk, the parallel performance of the different preconditioning techniques for incompressible fluid flow problems is investigated and compared using a finite element implementation based on the FEDDLib finite element software and Schwarz preconditioners from the Trilinos package FROSch.},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:CFC:SMC,
+    title = {Surrogate Models for CFD Simulations Based on Convolutional Neural Networks},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {CFC 2023},
+    note = {22nd IACM Computational Fluids Conference (CFC), Cannes, France, April 25-38},
+    abstract = {Computational fluid dynamics (CFD) simulations are important in many application areas, such as civil and mechanical engineering, meteorology, geosciences, or medical science. However, accurate simulation results come at high computational costs, and they require high-quality meshes describing the computational domain. In this talk, a machine learning-based model order reduction approach for predicting flow fields is presented. After an expensive offline phase, where a surrogate model based on a convolutional neural network (U-Net type architecture) is trained using simulation data, the predictions can be performed much faster than classical numerical simulations. Moreover, the predictions do not require the generation of a complex computational mesh. The surrogate model can be 100 or 10,000 times faster on a CPU or GPU, respectively, of a normal workstation. Numerical results investigating the accuracy and efficiency for varying types of geometries from different application areas are presented. Moreover, different aspects to improve the performance such as the choice of more sophisticated loss functions are discussed.},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:IGCM:NNP,
+    title = {Neural networks with physical constraints, domain decomposition-based training strategies, and model order reduction},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {IGCM 2023},
+    note = {Invited talk. Indo-German conference on Computational Mathematics: Challenges and Opportunities towards scientific computing and machine learning (IGCM), Department of Computational and Data Sciences, Indian Institute of Science, Bangalore, India, March 27-30},
+    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. The network models be can trained in a data-driven and/or physics-informed way, that is, using reference data (from simulations or measurements) or a loss function based on the PDE, respectively. In physics-informed neural networks (PINNs), simple feedforward neural networks are employed to discretize the PDEs, and a single network is trained to approximate the solution of one specific boundary value problem. The loss function may include a combination of data and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large iteration counts. Therefore, in the first part of the talk, domain decomposition-based training strategies improving the training performance using the finite basis physics-informed neural network (FBPINN) approach will be discussed. In the second part of the talk, surrogate models for computational fluid dynamics (CFD) simulations based on convolutional neural networks (CNNs) will be discussed. In particular, the network is trained to approximate a solution operator, taking a representation of the geometry as input and the solution field(s) as output. In contrast to the classical PINN approach, a single network is trained to approximate a variety of boundary value problems. This makes the approach potentially very efficient. As in the PINN approach, data as well as PDE may be used in the loss function for training the network.},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:HLRS:NNP,
+    title = {Neural networks with physical constraints, domain decomposition-based training strategies, and model order reduction},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {NVIDIA/HLRS},
+    note = {Invited talk. NVIDIA/HLRS SciML GPU Bootcamp, Stuttgart (virtual), Germany, April 26-27},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:SIAMCSE:DDM,
+    title = {Domain Decomposition Training Strategies for Physics-Informed Neural Networks},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {SIAM CSE23},
+    note = {SIAM Conference on Computational Science and Engineering (CSE23). RAI Congress Centre, Amsterdam, The Netherlands, February 26 - March 3},
+    abstract = {Two-level domain decomposition methods, such as two-level Schwarz, finite element tearing and interconnecting - dual primal (FETI-DP), or balancing domain decomposition by constraints (BDDC) methods, are scalable for a large class of homogeneous problems. However, in the presence of highly-heterogeneous coefficients, convergence generally deteriorates. If the coarse space is enhanced by adapted coarse basis functions, robustness can be regained. Similar observations can be made for highly-heterogeneous nonlinear problems, where both the linear and the nonlinear convergence maybe affected; in this context, a combination of nonlinear domain decomposition methods and robust coarse spaces can recover good linear and nonlinear solver performance. In this talk, preconditioning techniques for highly-heterogeneous linear and nonlinear problems will be discussed and numerical results for various problems will be reported; the focus is on Schwarz domain decomposition methods, but many approaches can be - with small modifications - applied to other domain decomposition methods as well.},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:CTU:DDM,
+    title = {Domain decomposition methods for highly-heterogeneous problems - Robust coarse spaces and nonlinear preconditioning},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {CTU},
+    note = {Invited seminar talk. Czech Technical University in Prague, Prague, Czech Republic, February 13},
+    abstract = {Two-level domain decomposition methods, such as two-level Schwarz, finite element tearing and interconnecting - dual primal (FETI-DP), or balancing domain decomposition by constraints (BDDC) methods, are scalable for a large class of homogeneous problems. However, in the presence of highly-heterogeneous coefficients, convergence generally deteriorates. If the coarse space is enhanced by adapted coarse basis functions, robustness can be regained. Similar observations can be made for highly-heterogeneous nonlinear problems, where both the linear and the nonlinear convergence maybe affected; in this context, a combination of nonlinear domain decomposition methods and robust coarse spaces can recover good linear and nonlinear solver performance. In this talk, preconditioning techniques for highly-heterogeneous linear and nonlinear problems will be discussed and numerical results for various problems will be reported; the focus is on Schwarz domain decomposition methods, but many approaches can be - with small modifications - applied to other domain decomposition methods as well.},
+    keywords = {}
+}
+
 @misc{Heinlein:2023:CDS:FRO,
     title = {Fast and Robust Overlapping Schwarz Preconditioners in Trilinos -- Highly Scalable Algorithms and Their Efficient Implementation},
     author = {Alexander Heinlein},
@@ -13,6 +72,7 @@ References
     note = {Invited seminar talk. Center for Data and Simulation Science (CDS), Universit\"at zu K\"oln, K\"oln, Germany, January 18},
     abstract = {The Trilinos library is an object-oriented software framework for the solution of large-scale, complex multi-physics engineering and scientific problems on new and emerging high-performance computing (HPC) architectures. It provides a collection of interoperable software packages enabling the development of algorithms reaching parallel scalability up to the largest supercomputers available. This talk will discuss different aspects of Trilinos for the example of the FROSch (Fast and Robust Overlapping Schwarz) preconditioning framework, which is part of the Trilinos package ShyLU. FROSch implements multilevel Schwarz preconditioners, which are algebraic, i.e., which can be constructed using only the fully assembled parallel distributed system matrix. Making use of the software infrastructure of Trilinos, FROSch allows for the parallel solution of extremely large problems. Numerical results for various problems indicating parallel scalability up to more than 200,000 MPI ranks will be presented. Moreover, node-level parallelization on CPUs as well as GPUs using the Kokkos programming model through the Tpetra linear algebra framework will be discussed.},
     url = {https://cds.uni-koeln.de/en/labs/hpc/hpc-seminar-series/talk20230118},
+    slides = {2023-heinlein-cds-fro/2023-heinlein-trilinos_frosch.pdf},
     keywords = {}
 }
 
@@ -23,6 +83,7 @@ References
     abbr = {SimTech},
     note = {Invited seminar talk. SimTech ML-Session, Universit\"at Stuttgart, Stuttgart, Germany, January 11},
     abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. One major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using machine learning models and, in particular, neural networks. The network models be can trained in a data-driven or physics-informed way, that is, using reference data (from simulations or measurements) or a loss function based on the PDE, respectively. In this talk, two approaches for approximating the solutions of PDEs using neural networks are discussed: physics-informed neural networks (PINNs) and surrogate models based on convolutional neural networks (CNNs). In PINNs, simple feedforward neural networks are employed to discretize the PDEs, and a single network is trained to approximate the solution of one specific boundary value problem. The loss function may include a combination of reference data and the residual of the PDE. Challenging applications, such as multiscale problems, require the use of neural networks with high capacity, and the training of the models is often not robust and may take large iteration counts. Therefore, domain decomposition-based training strategies improving the training performance using the finite basis physics-informed neural network (FBPINN) approach will be discussed. In the second part of the talk, surrogate models for computational fluid dynamics (CFD) simulations based on CNNs are discussed. In particular, the network is trained to approximate a solution operator, taking a representation of the geometry as input and the solution field(s) as output. In contrast to the classical PINN approach and similar to other operator learning approaches, a single network is therefore trained to approximate a variety of boundary value problems. This makes the surrogate modeling approach potentially very efficient. As in the PINN approach, data as well as physics may be used in the loss function for training the network.},
+    slides = {2023-heinlein-simtech-nnp/2023-heinlein-pinns.pdf},
     keywords = {}
 }
 
@@ -53,7 +114,7 @@ References
     abbr = {NVIDIA/HLRS},
     note = {Invited talk. NVIDIA/HLRS SciML GPU Bootcamp, Stuttgart (virtual), Germany, October 24-25},
     url = {https://www.hlrs.de/training/2022/bc-sciml-nv},
-    slides = {heinlein-2022-hlrs-nnp/2022-heinlein-pinns.pdf},
+    slides = {2022-heinlein-hlrs-nnp/2022-heinlein-pinns.pdf},
     video = {https://drive.google.com/file/d/1J25FL21A89zcWy-ZQF0rssHqJOcTv6LN/view},
     keywords = {selected}
 }
@@ -109,7 +170,7 @@ References
     note = {Invited plenary lecture. 27th International Conference on Domain Decomposition Methods, Prague, Czech Republic, July 25-29},
     abstract = {Coarse spaces are an important component in domain decomposition preconditioners since they are, in general, necessary to obtain numerical scalability and robustness. This talk will focus on presenting an algorithmic framework for the construction of coarse spaces for Schwarz preconditioners which is based on the generalized Dryja--Smith--Widlund (GDSW) coarse space. In particular, the coarse basis functions are extensions from the interface into the interior of a corresponding nonoverlapping domain decomposition by solving the homogeneous partial differential equation (PDE) with a given trace on the interface. This makes the coarse spaces very practical since they can be constructed in an algebraic way, that is, using only the fully assembled system matrix. This algorithmic framework is the basis for the highly-scalable FROSch (Fast and Robust Schwarz) solver package, which is part of the Trilinos software library. The FROSch package provides a parallel software framework to construct algebraic Schwarz preconditioners that are robust as well as numerically and parallel scalable for a wide range of problems. It provides a multi-level implementation to extend parallel scalability. Moreover, using extension-based coarse spaces, robust monolithic solvers for saddle-point problems, such as the (Navier--)Stokes equations and multi-physics problems in land ice simulations, can be constructed. Solving appropriate local eigenvalue problems on a partition of the interface to compute the traces of the coarse basis yields provably robust extension-based coarse spaces, even for highly heterogeneous model problems with large coefficient jumps. These adaptive coarse spaces are generally not algebraic since the eigenvalue problems require local Neumann matrices. However, by solving two local eigenvalue problems for each interface component instead, an algebraic and adaptive coarse space can be obtained. Finally, the framework can also be employed in nonlinear Schwarz preconditioning.},
     url = {https://www.dd27.cz/},
-    slides = {heinlein-2022-dd27-ras/2022-heinlein-schwarz.pdf},
+    slides = {2022-heinlein-dd27-ras/2022-heinlein-schwarz.pdf},
     video = {https://drive.google.com/file/d/1_cTipqycwK9YiXP5K7urXcomKVRh8ECJ/view?usp=sharing},
     keywords = {selected}
 }
@@ -174,7 +235,7 @@ References
     note = {Invited talk. ICMS@Strathclyde: Solvers for frequency-domain wave problems and applications, Glasgow, UK, June 20 - 24},
     abstract = {Discretizing partial differential equations often results in sparse systems of linear equations. High spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, for instance, in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. The development of spectral coarse spaces for domain decomposition methods has been a very active topic within the last decade. However, until recently, the algebraic construction of robust spectral coarse spaces, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information, has still been on open problem. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. An algebraic and robust spectral coarse space is then constructed by solving two eigenvalue problems on each edge of a two-dimensional domain decomposition. One of them is based on optimal local approximation spaces that are also successfully employed in the construction of multiscale discretizations. The resulting condition number bound is independent of the contrast of the coefficient function, indicating the robustness of the method. In order investigate the robustness of this new method numerically, numerical results for different coefficient distributions with large jumps are presented, including typical examples with channels, random distributions, and coefficient distributions generated from the SPE10 benchmark.},
     url = {https://www.icms.org.uk/workshops/2022/icmsstrathclyde-solvers-frequency-domain-wave-problems-and-applications},
-    slides = {heinlein-2022-icms-fas/2022-heinlein-adaptive.pdf},
+    slides = {2022-heinlein-icms-fas/2022-heinlein-adaptive.pdf},
     keywords = {selected}
 }
 
@@ -186,7 +247,7 @@ References
     note = {Introductory lecture. 8th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS Congress 2022), Oslo, Norway, June 5 - 9},
     abstract = {},
     url = {https://www.eccomas2022.org/frontal/},
-    slides = {heinlein-2022-eccomas-psd/2022-heinlein-frosch.pdf},
+    slides = {2022-heinlein-eccomas-psd/2022-heinlein-frosch.pdf},
     keywords = {}
 }
 
@@ -251,7 +312,7 @@ References
     note = {Trilinos User-Developer Group Meeting 2021 (Virtual), November 30-December 2},
     abstract = {},
     url = {https://trilinos.github.io/trilinos_user-developer_group_meeting_2021.html},
-    slides = {heinlein-2021-tug-fro/2021-heinlein-frosch_land_ice_simulations.pdf},
+    slides = {2021-heinlein-tug-fro/2021-heinlein-frosch_land_ice_simulations.pdf},
     keywords = {selected}
 }
 
@@ -263,7 +324,7 @@ References
     note = {Summer school on advanced DD methods, Politecnico di Milano, Milano, Italy, November 24-26},
     abstract = {Schwarz methods are an algorithmic framework for a large class of domain decomposition methods. The software FROSch (Fast and Robust Overlapping Schwarz), which is part of the Trilinos package ShyLU, provides a highly scalable implementation of the Schwarz framework, and the resulting solvers are based on the construction and combination of the relevant Schwarz operators. FROSch currently focusses on Schwarz operators that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension-based coarse spaces, such as generalized Dryja-Smith-Widlund (GDSW) type coarse spaces. In this lab session, the FROSch software framework will be introduced, and its usage will be explained based on simple model problems. The examples provided will allow investigating the influence of important algorithmic aspects of Schwarz methods, such as the variation of the width of the overlap or adding a coarse level, on the convergence of a preconditioned Krylov solver.},
     url = {https://gciara.wordpress.com/summer-school-on-dd-methods/},
-    slides = {heinlein-2021-ddss-esf/2021-heinlein-frosch.pdf},
+    slides = {2021-heinlein-ddss-esf/2021-heinlein-frosch.pdf},
     keywords = {}
 }
 

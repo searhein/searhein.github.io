@@ -100,7 +100,7 @@ References
     abstract = {A new reduced-dimension adaptive generalized Dryja--Smith--Widlund (GDSW) overlapping Schwarz method for linear second-order elliptic problems in three dimensions is introduced. It is robust with respect to large contrasts of the coefficients of the partial differential equations. The condition number bound of the new method is shown to be independent of the coefficient contrast and only dependent on a user-prescribed tolerance. The interface of the nonoverlapping domain decomposition is partitioned into nonoverlapping patches. The new coarse space is obtained by selecting a few eigenvectors of certain local eigenproblems which are defined on these patches. These eigenmodes are energy-minimally extended to the interior of the nonoverlapping subdomains and added to the coarse space. By using a new interface decomposition, the reduced-dimension adaptive GDSW overlapping Schwarz method usually has a smaller coarse space than existing GDSW and adaptive GDSW domain decomposition methods. A robust condition number estimate is proven for the new reduced-dimension adaptive GDSW method which is also valid for existing adaptive GDSW methods. Numerical results for the equations of isotropic linear elasticity in three dimensions confirming the theoretical findings are presented.},
     url = {https://doi.org/10.1137/20M1364540},
     preprint = {https://kups.ub.uni-koeln.de/id/eprint/12113},
-    pdf = {publications/2022/heinlein-2022-agd.pdf},
+    pdf = {publications/2022/2022-heinlein-agd.pdf},
     keywords = {published, reviewed, selected},
     bibtex_show = {true}
 }
@@ -769,10 +769,10 @@ equations using convolutional neural networks},
     bibtex_show = {true}
 }
 
-@techreport{Mache:2022:PIN,
+@techreport{Mache:2023:PIN,
     author = {Ramiyou Karim Mache and Michael Langguth and Alexander Heinlein and Scarlet Stadtler and Martin G. Schultz and Axel Klawonn},
     title = {Physics-informed neural networks for nonlinear vorticity equation on a rotating sphere},
-    note = {Submitted September 2022},
+    note = {Submitted September 2023},
     abstract = {The Navier-Stokes equations represent a set of partial differential equations which describe the motion of viscous fluids  and which form the basis for modeling the dynamics of the atmosphere and the ocean. Classical numerical methods are the most common approaches for solving these equations, but they are computationally expensive and cannot seamlessly incorporate observational data. With the availability of large amounts of data, researchers have recently started to explore purely data-driven approaches that ignore the governing equations. Physics-informed neural networks (PINNs) are a hybrid approach that incorporates the governing equations into data-driven neural networks warranting physical consistency. In this paper, we explore the use of PINNs in meteorological applications. For this purpose, we consider a simplified version of the Navier-Stokes equations, that is, the nonlinear barotropic vorticity equation (BVE) on a rotating sphere. The BVE involves the Rossby-Haurwitz wave pattern which constitutes a large-scale feature of upper-level atmospheric dynamics on the Earth. We perform detailed numerical studies and evaluate the ability of PINNs to capture Rossby-Haurwitz wave patterns with various initial conditions in an idealized framework. It is demonstrated that several adaptions of the standard PINN are required to ensure accurate approximations for a broad range of wave patterns. In addition to the deployment of a self-adaptive weighting of the loss components, the usage of the Swish activation function together with further parameter fine-tuning yields significant improvements in terms of domain-specific evaluation metrics and in capturing the conservation properties of the system. The proposed adaptions are considered to build a basis for later applications of PINNs on more sophisticated variants of the Navier-Stokes equations in meteorology.},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
