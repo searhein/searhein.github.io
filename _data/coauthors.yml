@@ -14,6 +14,10 @@ Frei:
   - firstname: ["Stefan", "S."]
     url: https://www.math.uni-konstanz.de/~frei/
 
+Giammatteo:
+  - firstname: ["Elena", "E."]
+    url: hhttps://people.utwente.nl/e.giammatteo
+
 Grimm:
   - firstname: ["Viktor", "V."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/v-grimm-m-sc
@@ -92,6 +96,10 @@ Sandfeld:
 Saßmannshausen:
   - firstname: ["Lea", "L."]
     url: https://numerik.uni-koeln.de/en/arbeitsgruppe/l-sassmannshausen-m-sc
+
+Schlottbom:
+ - firstname: ["Matthias", "M."]
+   url: https://wwwhome.ewi.utwente.nl/~schlottbomm/
 
 Schröder:
   - firstname: ["Jörg", "J."]

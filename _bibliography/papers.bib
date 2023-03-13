@@ -716,6 +716,17 @@ References
 
 # accepted
 
+@techreport{Dolean:2023:FBP,
+    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
+    title = {Finite basis physics-informed neural networks as a Schwarz domain decomposition method},
+    note = {Accepted for publication in the Domain Decomposition Methods in Science and Engineering XXVII poceedings. February 2023},
+    abbr = {Springer LNCSE},
+    abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs.},
+    preprint = {https://arxiv.org/abs/2211.05560},
+    keywords = {submitted, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Yamazaki:2022:EST,
     author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
     title = {An Experimental Study of Two-level Schwarz Domain-Decomposition Preconditioners on GPUs},
@@ -742,29 +753,28 @@ References
     note = {Accepted for publication in PAMM. December 2022},
     abbr = {PAMM},
     abstract = {Numerical simulation of the response of healthy and pathological arteries to cardiovascular agents can provide valuable information to the physician in the treatment of diseases such as hypertension, atherosclerosis, and the Marfan syndrome. Here, we provide a first step towards a computational framework to model the effects of antihypertensive agents on the mechanical response of arterial walls. A material model is developed by extending an existing formulation for wall tissue to incorporate the effects of calcium-ion channel blockers. The resulting coupled deformation-diffusion problem is then solved using the finite element method. Simulation results with drug activity show that, indeed, an increased lumen diameter due to reduced contraction is obtained. Additionally, a decrease in the rate of arterial contraction is observed, which is also consistent with expected behavior. Finally, we compare results for an implicit or explicit treatment of the the deformation-diffusion coupling, and we observe that both coupling schemes yield comparable results for a wide range of time step sizes.},
-    keywords = {submitted, recent},
+    keywords = {submitted},
     bibtex_show = {true}
 }
 
 # submitted
 
-@techreport{Grimm:2022:SHS,
-    author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
-    title = {A short note on solving partial differential
-equations using convolutional neural networks},
-    note = {Submitted November 2022},
-    abstract = {The approach of using physics-based machine learning to solve PDEs has recently become very popular. A recent approach to solve PDEs based on CNNs uses finite difference stencils to include the residual of the partial differential equation into the loss function. In this work, the relation between the network training and the solution of a respective finite difference linear system of equations using classical numerical solvers is discussed. It turns out that many beneficial properties of the linear equation system are neglected in the network training. Finally, numerical results which underline the benefits of classical numerical solvers are presented.},
-    preprint = {http://kups.ub.uni-koeln.de/id/eprint/64227},
+@techreport{Giammatteo:2023:EAC,
+    author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
+    title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
+    note = {Submitted March 2023},
+    abstract = {An extension of the approximate component mode synthesis (ACMS) method to the heterogeneous Helmholtz equation is proposed. The ACMS method has originally been introduced by Hetmaniuk and Lehoucq as a multiscale method to solve elliptic partial differential equations. The ACMS method uses a domain decomposition to separate the numerical approximation by splitting the variational problem into two independent parts: local Helmholtz problems and a global interface problem. While the former are naturally local and decoupled such that they can be easily solved in parallel, the latter requires the construction of suitable local basis functions relying on local eigenmodes and suitable extensions. We carry out a full error analysis of this approach focusing on the case where the domain decomposition is kept fixed, but the number of eigenfunctions is increased. This complements related results for elliptic problems where the focus is on the refinement of the domain decomposition instead. The theoretical results in this work are supported by numerical experiments verifying algebraic convergence for the interface problems. In certain, practically relevant cases, even exponential convergence for the local Helmholtz problems can be achieved without oversampling.},
+    preprint = {},
     keywords = {submitted, recent},
     bibtex_show = {true}
 }
 
-@techreport{Dolean:2022:FBP,
-    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
-    title = {Finite basis physics-informed neural networks as a Schwarz domain decomposition method},
+@techreport{Grimm:2022:SHS,
+    author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
+    title = {A short note on solving partial differential equations using convolutional neural networks},
     note = {Submitted November 2022},
-    abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs.},
-    preprint = {https://arxiv.org/abs/2211.05560},
+    abstract = {The approach of using physics-based machine learning to solve PDEs has recently become very popular. A recent approach to solve PDEs based on CNNs uses finite difference stencils to include the residual of the partial differential equation into the loss function. In this work, the relation between the network training and the solution of a respective finite difference linear system of equations using classical numerical solvers is discussed. It turns out that many beneficial properties of the linear equation system are neglected in the network training. Finally, numerical results which underline the benefits of classical numerical solvers are presented.},
+    preprint = {http://kups.ub.uni-koeln.de/id/eprint/64227},
     keywords = {submitted, recent},
     bibtex_show = {true}
 }
