@@ -71,9 +71,9 @@
       {% if entry.type == "article" %}
         <em>{{entry.journal}}</em>.
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
+        <em>In {{entry.booktitle}}</em>.
       {% elsif entry.type == "phdthesis" %}
-        <em>{{entry.school}}</em>
+        <em>{{entry.school}}</em>.
       {% endif %}
       {% if entry.month %}
         {{entry.month | capitalize}}
