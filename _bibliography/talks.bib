@@ -5,6 +5,27 @@ References
 
 # talks
 
+@misc{Heinlein:2023:ICIAM:NNP,
+    title = {Efficient Schwarz Preconditioning Techniques for Nonlinear Problems Using FROSch},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {NVIDIA/HLRS},
+    note = {2023 International Congress on Industrial and Applied Mathematics (ICIAM 2023), Waseda University, Tokyo, Japan, August 20-25},
+    abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners in Trilinos. Due an algebraic approach, meaning that the preconditioners can be constructed from a fully assembled matrix, FROSch is applicable to a wide range of problems. This talk is focused on the application to nonlinear problems, including computational fluid dynamics and land ice simulations. Techniques for improving the efficiency and the use of GPU architectures are discussed.},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:COMINDS:NNP,
+    title = {Neural networks with physical constraints -- Domain decomposition-based network architectures, and model order reduction},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {COMINDS},
+    note = {Invited plenary talk. GAMM Workshop on Computational and Mathematical Methods in Data Science, Center for Data and Simulation Science, University of Cologne, Cologne, Germany, May 4-5},
+    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. The network models be can trained in a data-driven and/or physics-informed way, that is, using reference data (from simulations or measurements) or a loss function based on the PDE, respectively. In physics-informed neural networks (PINNs), simple feedforward neural networks are employed to discretize the PDEs, and a single network is trained to approximate the solution of one specific boundary value problem. The loss function may include a combination of data and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large iteration counts. Therefore, in the first part of the talk, domain decomposition-based network architectures improving the training performance using the finite basis physics-informed neural network (FBPINN) approach will be discussed. It is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich). In the second part of the talk, surrogate models for computational fluid dynamics (CFD) simulations based on convolutional neural networks (CNNs) will be discussed. In particular, the network is trained to approximate a solution operator, taking a representation of the geometry as input and the solution field(s) as output. In contrast to the classical PINN approach, a single network is trained to approximate a variety of boundary value problems. This makes the approach potentially very efficient. As in the PINN approach, data as well as the residual of the PDE may be used in the loss function for training the network. The second part of the talk is based on joint work with Matthias Eichinger, Viktor Grimm, and Axel Klawonn (University of Cologne).},
+    url = {https://cds.uni-koeln.de/en/workshops/cominds-2023/home},
+    keywords = {}
+}
+
 @misc{Heinlein:2023:CFC:PDD,
     title = {Parallel Domain Decomposition Preconditioning Techniques for Incompressible Fluid Flow Problems},
     author = {Alexander Heinlein},
@@ -30,9 +51,9 @@ References
     author = {Alexander Heinlein},
     year = {2023},
     abbr = {IGCM 2023},
-    note = {Invited plenary lecture. Indo-German conference on Computational Mathematics: Challenges and Opportunities towards scientific computing and machine learning (IGCM), Department of Computational and Data Sciences, Indian Institute of Science, Bangalore, India, March 27-30},
+    note = {Invited plenary lecture. Indo-German conference on Computational Mathematics 2023 (IGCM-2023), Department of Computational and Data Sciences, Indian Institute of Science, Bangalore, India, March 27-30},
     abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. The network models be can trained in a data-driven and/or physics-informed way, that is, using reference data (from simulations or measurements) or a loss function based on the PDE, respectively. In physics-informed neural networks (PINNs), simple feedforward neural networks are employed to discretize the PDEs, and a single network is trained to approximate the solution of one specific boundary value problem. The loss function may include a combination of data and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large iteration counts. Therefore, in the first part of the talk, domain decomposition-based training strategies improving the training performance using the finite basis physics-informed neural network (FBPINN) approach will be discussed. In the second part of the talk, surrogate models for computational fluid dynamics (CFD) simulations based on convolutional neural networks (CNNs) will be discussed. In particular, the network is trained to approximate a solution operator, taking a representation of the geometry as input and the solution field(s) as output. In contrast to the classical PINN approach, a single network is trained to approximate a variety of boundary value problems. This makes the approach potentially very efficient. As in the PINN approach, data as well as PDE may be used in the loss function for training the network.},
-    keywords = {}
+    keywords = {selected}
 }
 
 @misc{Heinlein:2023:HLRS:NNP,
@@ -41,6 +62,7 @@ References
     year = {2023},
     abbr = {NVIDIA/HLRS},
     note = {Invited talk. NVIDIA/HLRS SciML GPU Bootcamp, Stuttgart (virtual), Germany, April 26-27},
+    url = {https://www.hlrs.de/training/2023/bc-sciml-nv},
     keywords = {}
 }
 
@@ -542,7 +564,7 @@ References
     year = {2019},
     abbr = {EuroTUG},
     note = {European Trilinos User Group Meeting, ETH Zürich, Switzerland, June 11},
-    keywords = {selected}
+    keywords = {}
 }
 
 @misc{Heinlein:2019:DAMUT:DRE,
