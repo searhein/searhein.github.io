@@ -9,5 +9,5 @@ runningindex: 9
 nolink: false
 redirect: /assets/pdf/thesis_projects/2022/2022-heinlein_mehlmann-ml-sea_ice.pdf
 category: master_thesis
-status: ongoin
+status: ongoing
 ---
