@@ -26,6 +26,16 @@ References
     keywords = {}
 }
 
+@misc{Heinlein:2023:MATH+:MDD,
+    title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {COMINDS},
+    note = {Invited talk. Optimization Workshop (Thematic Einstein Semester on Optimization and Machine Learning), Humboldt Universität zu Berlin, Berlin, June 14-16},
+    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. In classical physics-informed neural networks (PINNs) [4], simple feed-forward neural networks are employed to discretize a PDE. The loss function may include a combination of data (e.g., initial, boundary, and/or measurement data) and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large numbers of iterations. In this talk, domain decomposition-based network architectures for PINNs using the finite basis physics-informed neural network (FBPINN) approach [3, 2] will be discussed. In particular, the global network function is constructed as a combination of local network functions defined on an overlapping domain decomposition. Similar to classical domain decomposition methods, the one-level method generally lacks scalability, but scalability can be achieved by introducing a multi-level hierarchy of overlapping domain decompositions. The performance of the multi-level FBPINN [1] method will be investigated based on numerical results for several model problems, showing robust convergence for up to 64 subdomains on the finest level and challenging multi-frequency problems. This talk is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich).},
+    keywords = {}
+}
+
 @misc{Heinlein:2023:COMINDS:NNP,
     title = {Neural networks with physical constraints -- Domain decomposition-based network architectures, and model order reduction},
     author = {Alexander Heinlein},
