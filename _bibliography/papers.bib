@@ -33,7 +33,7 @@ References
     abbr = {PAMM},
     abstract = {A temporal homogenization approach for the numerical simulation of atherosclerotic plaque growth is extended to fully coupled fluid-structure interaction (FSI) simulations. The numerical results indicate that the two-scale approach yields significantly different results compared to a simple heuristic averaging, where only stationary long-scale FSI problems are solved, confirming the importance of incorporating stress variations on small time-scales. In the homogenization approach, a periodic fine-scale problem, which is periodic with respect to the heart beat, has to be solved for each long-scale time step. Even if no exact initial conditions are available, periodicity can be achieved within only 2--3 heart beats by simple time-stepping.},
     url = {https://onlinelibrary.wiley.com/doi/10.1002/pamm.202200133},
-    keywords = {published, recent},
+    keywords = {published},
     bibtex_show = {true}
 }
 
@@ -49,7 +49,7 @@ References
     abstract = {The Fast and Robust Overlapping Schwarz (FROSch) preconditioner framework is part of the Trilinos software library and contains parallel implementations of the Generalized-Dryja-Smith-Widlund (GDSW) type overlapping Schwarz domain decomposition preconditioners. It provides implementations of the classical GDSW coarse space as well as of reduced dimensional GDSW coarse spaces, where the coarse problem is smaller compared to the classical approach. To extend the parallel scalability of these approaches, a three-level extension has recently been introduced into the framework. In this paper, we present results, obtained on the SuperMUC-NG supercomputer using up to 85K MPI ranks. The results indicate superior weak parallel scalability of the three-level method compared to the two-level method.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-95025-5_54},
     preprint = {https://tu-freiberg.de/sites/default/files/media/fakultaet-fuer-mathematik-und-informatik-fakultaet-1-9277/prep/2021-02.pdf},
-    keywords = {published, reviewed, recent},
+    keywords = {published, reviewed},
     bibtex_show = {true}
 }
 
@@ -65,7 +65,7 @@ References
     abstract = {Overlapping GDSW domain decomposition methods are considered for diffusion problems in two dimensions discretized by finite elements. For a diffusion coefficient with high contrast, the condition number is usually dependent on it. A remedy is given by adaptive domain decomposition methods, where the coarse space is enhanced by additional coarse basis functions. These are chosen problem-dependently by solving small local eigenvalue problems. Here, the eigenvalue problems (EVPs) are associated with the edges of the domain decomposition interface; edges, where these EVPs have to be solved are denoted as critical edges. For many applications, not all edges are critical and the solution of the EVPs is not necessary. In an earlier work, a strategy to predict the location of critical edges, based on deep learning, has been proposed for adaptive FETI-DP, a class of nonoverlapping methods. In the present work, this strategy is successfully applied to  adaptive GDSW; differences in the classification process for this overlapping method are described. Choosing the classification threshold has been a challenge in all these approaches. Here, for the first time, a heuristic based on the receiver operating characteristic (ROC) curve and the precision-recall graph is discussed. Results for a challenging realistic coefficient function are presented.},
     url = {https://link.springer.com/chapter/10.1007/978-3-030-95025-5_32},
     preprint = {https://kups.ub.uni-koeln.de/36257},
-    keywords = {published, reviewed, recent},
+    keywords = {published, reviewed},
     bibtex_show = {true}
 }
 
@@ -754,7 +754,7 @@ References
     abbr = {Springer LNCSE},
     abstract = {The approach of using physics-based machine learning to solve PDEs has recently become very popular. A recent approach to solve PDEs based on CNNs uses finite difference stencils to include the residual of the partial differential equation into the loss function. In this work, the relation between the network training and the solution of a respective finite difference linear system of equations using classical numerical solvers is discussed. It turns out that many beneficial properties of the linear equation system are neglected in the network training. Finally, numerical results which underline the benefits of classical numerical solvers are presented.},
     preprint = {http://kups.ub.uni-koeln.de/id/eprint/64227},
-    keywords = {accepted, reviewed, recent},
+    keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
 
@@ -774,7 +774,7 @@ References
     abbr = {Springer LNCSE},
     abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs.},
     preprint = {https://arxiv.org/abs/2211.05560},
-    keywords = {accepted, reviewed, recent},
+    keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
 
@@ -784,7 +784,7 @@ References
     note = {Accepted for publication in the IPDPS’23 proceedings. December 2022},
     abbr = {IPDPS},
     abstract = {Generalized Dryja--Smith--Widlund (GDSW) preconditioners are two-level overlapping Schwarz domain decomposition (DD) preconditioners that couple a classical one-level overlapping Schwarz preconditioner with an energy-minimizing coarse space. When used together with Krylov subspace methods, GDSW preconditioners are robust and scalable for solving sparse linear systems arising from the discretization of a wide range of partial different equations. However, the solver has a wide variety of algorithmic and implementation choices, which poses several challenges for its GPU implementation, and thus, its GPU implementation has not been presented so far. To address this gap, in this paper, we present FROSch (Fast and Robust Schwarz), a domain decomposition solver package which implements GDSW algorithms for both CPU and GPU clusters. In order to improve the solver performance on GPUs, we use a novel decomposition to run multiple MPI processes on each GPU, reducing both computational and storage costs of the DD solver, and potentially improving the solver convergence rate. This allows the GPU implementation to be competitive or faster than the CPU implementations. We demonstrate the performance of FROSch on the Summit supercomputer with NVIDIA V100 GPUs, where we used NVIDIA Multi-Process Service (MPS) to implement our decomposition strategy. We conduct a thorough experimental study with different solver options including the exact or inexact solution of the local overlapping subdomain problems based on the sparse direct or incomplete factorizations on a GPU, respectively. We also discuss the effect of using the iterative variant of the incomplete LU factorization and sparse-triangular solve as the approximate local solver and using lower precision for computing the whole FROSch preconditioner. Overall, the solve time was reduced by factors of about 2x using GPUs, while the effects on the numerical setup time depend on the solver options and the local matrix sizes.},
-    keywords = {accepted, reviewed, recent},
+    keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
 
@@ -799,6 +799,16 @@ References
 }
 
 # submitted
+
+@techreport{Ehlers:2023:MLP,
+    author = {Svenja Ehlers and Marco Klein and Alexander Heinlein and Mathies Wedler and Nicolas Desmars and Norbert Hoffmann and Merten Stender},
+    title = {Machine learning for phase-resolved reconstruction of nonlinear ocean wave surface elevations from sparse remote sensing data},
+    note = {Submitted May 2023},
+    abstract = {Accurate short-term prediction of phase-resolved water wave conditions is crucial for decision-making in ocean engineering. However, the initialization of remote-sensing-based wave prediction models first requires a reconstruction of wave surfaces from sparse measurements like radar. Existing reconstruction methods either rely on computationally intensive optimization procedures or simplistic modeling assumptions that compromise real-time capability or accuracy of the entire prediction process. We therefore address these issues by proposing a novel approach for phase-resolved wave surface reconstruction using neural networks based on the U-Net and Fourier neural operator (FNO) architectures. Our approach utilizes synthetic yet highly realistic training data on uniform one-dimensional grids, that is generated by the high-order spectral method for wave simulation and a geometric radar modeling approach. The investigation reveals that both models deliver accurate wave reconstruction results and show good generalization for different sea states when trained with spatio-temporal radar data containing multiple historic radar snapshots in each input. Notably, the FNO-based network performs better in handling the data structure imposed by wave physics due to its global approach to learn the mapping between input and desired output in Fourier space.},
+    preprint = {https://arxiv.org/abs/2305.11913},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
 
 @techreport{Giammatteo:2023:EAC,
     author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
