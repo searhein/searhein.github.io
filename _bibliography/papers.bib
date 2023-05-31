@@ -5,6 +5,22 @@ References
 
 # published
 
+@inproceedings{Kemna:2023:FST,
+    author = {Mirko Kemna and Alexander Heinlein and Cornelis Vuik},
+    title = {Reduced order fluid modeling with generative adversarial networks},
+    booktitle = {Proc. Appl. Math. Mech.},
+    volume = {23},
+    number = {1},
+    pages = {e202200241},
+    year = {2023},
+    doi = {10.1002/pamm.202200241},
+    abbr = {PAMM},
+    abstract = {Surrogate models based on convolutional neural networks (CNNs) for computational fluid dynamics (CFD) simulations are investigated. In particular, the flow field inside two-dimensional channels with a sudden expansion and an obstacle is predicted using an image representation of the geometry as the input. Generative adversarial neural networks (GANs) have been shown to excel at such image-to-image translation tasks. This motivates the focus of this work on investigating the specific effect of adversarial training on model performance. Numerical results show that the overall accuracy of the GANs is generally lower compared to an identical generator model trained directly on the ground truth using an L1 data loss. On the other hand, GAN predictions are often visually more convincing and exhibit a lower continuity residual.},
+    url = {https://onlinelibrary.wiley.com/doi/10.1002/pamm.202200241},
+    keywords = {published, recent},
+    bibtex_show = {true}
+}
+
 @article{Balzani:2023:CAW,
     author = {Daniel Balzani and Alexander Heinlein and Axel Klawonn and Oliver Rheinbach and J{\"o}rg Schr{\"o}der},
     title = {Comparison of Arterial Wall Models in Fluid-Structure Interaction Simulations},
@@ -785,16 +801,6 @@ References
     abbr = {IPDPS},
     abstract = {Generalized Dryja--Smith--Widlund (GDSW) preconditioners are two-level overlapping Schwarz domain decomposition (DD) preconditioners that couple a classical one-level overlapping Schwarz preconditioner with an energy-minimizing coarse space. When used together with Krylov subspace methods, GDSW preconditioners are robust and scalable for solving sparse linear systems arising from the discretization of a wide range of partial different equations. However, the solver has a wide variety of algorithmic and implementation choices, which poses several challenges for its GPU implementation, and thus, its GPU implementation has not been presented so far. To address this gap, in this paper, we present FROSch (Fast and Robust Schwarz), a domain decomposition solver package which implements GDSW algorithms for both CPU and GPU clusters. In order to improve the solver performance on GPUs, we use a novel decomposition to run multiple MPI processes on each GPU, reducing both computational and storage costs of the DD solver, and potentially improving the solver convergence rate. This allows the GPU implementation to be competitive or faster than the CPU implementations. We demonstrate the performance of FROSch on the Summit supercomputer with NVIDIA V100 GPUs, where we used NVIDIA Multi-Process Service (MPS) to implement our decomposition strategy. We conduct a thorough experimental study with different solver options including the exact or inexact solution of the local overlapping subdomain problems based on the sparse direct or incomplete factorizations on a GPU, respectively. We also discuss the effect of using the iterative variant of the incomplete LU factorization and sparse-triangular solve as the approximate local solver and using lower precision for computing the whole FROSch preconditioner. Overall, the solve time was reduced by factors of about 2x using GPUs, while the effects on the numerical setup time depend on the solver options and the local matrix sizes.},
     keywords = {accepted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Kemna:2022:FST,
-    author = {Mirko Kemna and Alexander Heinlein and Cornelis Vuik},
-    title = {Reduced order fluid modeling with generative adversarial networks},
-    note = {Accepted for publication in PAMM. December 2022},
-    abbr = {PAMM},
-    abstract = {Surrogate models based on convolutional neural networks (CNNs) for computational fluid dynamics (CFD) simulations are investigated. In particular, the flow field inside two-dimensional channels with a sudden expansion and an obstacle is predicted using an image representation of the geometry as the input. Generative adversarial neural networks (GANs) have been shown to excel at such image-to-image translation tasks. This motivates the focus of this work on investigating the specific effect of adversarial training on model performance. Numerical results show that the overall accuracy of the GANs is generally lower compared to an identical generator model trained directly on the ground truth using an L1 data loss. On the other hand, GAN predictions are often visually more convincing and exhibit a lower continuity residual.},
-    keywords = {accepted},
     bibtex_show = {true}
 }
 
