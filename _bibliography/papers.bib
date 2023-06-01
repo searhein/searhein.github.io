@@ -5,6 +5,20 @@ References
 
 # published
 
+@inproceedings{Frei:2022:ECC,
+    author = {Stefan Frei and Alexander Heinlein},
+    title = {Efficient coarse correction for parallel time-stepping in plaque growth simulations},
+    booktitle = {ECCOMAS2022},
+    year = {2022},
+    doi = {10.23967/eccomas.2022.015},
+    abbr = {WCCM-ECCOMAS},
+    abstract = {In order to make the numerical simulation of atherosclerotic plaque growth feasible, a temporal homogenization approach is employed. The resulting macro-scale problem for the plaque growth can be further accelerated by using parallel time integration schemes, such as the parareal algorithm. However, the parallel scalability is dominated by the computational cost of the coarse propagator. Therefore, in this paper, an interpolation-based coarse propagator, which uses growth values from previously computed micro-scale problems, is introduced. For a simple model problem, it is shown that this approach reduces both the computational work for a single parareal iteration as well as the required number of parareal iterations.},
+    url = {https://www.scipedia.com/public/Frei_et_al_2022a},
+    preprint = {https://arxiv.org/abs/2207.02081},
+    keywords = {published},
+    bibtex_show = {true}
+}
+
 @inproceedings{Kemna:2023:FST,
     author = {Mirko Kemna and Alexander Heinlein and Cornelis Vuik},
     title = {Reduced order fluid modeling with generative adversarial networks},
@@ -852,15 +866,5 @@ References
     abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro scale reaction-diffusion problem instead of the micro scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
     preprint = {https://arxiv.org/abs/2203.06526},
     keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Frei:2022:ECC,
-    author = {Stefan Frei and Alexander Heinlein},
-    title = {Efficient coarse correction for parallel time-stepping in plaque growth simulations},
-    note = {Submitted July 2022},
-    abstract = {In order to make the numerical simulation of atherosclerotic plaque growth feasible, a temporal homogenization approach is employed. The resulting macro-scale problem for the plaque growth can be further accelerated by using parallel time integration schemes, such as the parareal algorithm. However, the parallel scalability is dominated by the computational cost of the coarse propagator. Therefore, in this paper, an interpolation-based coarse propagator, which uses growth values from previously computed micro-scale problems, is introduced. For a simple model problem, it is shown that this approach reduces both the computational work for a single parareal iteration as well as the required number of parareal iterations.},
-    preprint = {https://arxiv.org/abs/2207.02081},
-    keywords = {submitted},
     bibtex_show = {true}
 }
