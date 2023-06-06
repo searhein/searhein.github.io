@@ -6,12 +6,13 @@ References
 # talks
 
 @misc{Heinlein:2023:ICIAM:NNP,
-    title = {Efficient Schwarz Preconditioning Techniques for Nonlinear Problems Using FROSch},
+    title = {Advanced Domain Decomposition Methods -- Parallel Schwarz Preconditioning and an Introduction to FROSch},
     author = {Alexander Heinlein},
     year = {2023},
-    abbr = {NVIDIA/HLRS},
-    note = {2023 International Congress on Industrial and Applied Mathematics (ICIAM 2023), Waseda University, Tokyo, Japan, August 20-25},
-    abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners in Trilinos. Due an algebraic approach, meaning that the preconditioners can be constructed from a fully assembled matrix, FROSch is applicable to a wide range of problems. This talk is focused on the application to nonlinear problems, including computational fluid dynamics and land ice simulations. Techniques for improving the efficiency and the use of GPU architectures are discussed.},
+    abbr = {HPC Summer School},
+    note = {DCSE Summerschool: Numerical Linear Algebra on High Performance Computers, June 5-9},
+    url = {https://www.aanmelder.nl/143287},
+    slides = {2023-heinlein-dcse-frosch/2023-heinlein-frosch.pdf},
     keywords = {}
 }
 
@@ -33,6 +34,18 @@ References
     abbr = {COMINDS},
     note = {Invited talk. Optimization Workshop (Thematic Einstein Semester on Optimization and Machine Learning), Humboldt Universität zu Berlin, Berlin, June 14-16},
     abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. In classical physics-informed neural networks (PINNs) [4], simple feed-forward neural networks are employed to discretize a PDE. The loss function may include a combination of data (e.g., initial, boundary, and/or measurement data) and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large numbers of iterations. In this talk, domain decomposition-based network architectures for PINNs using the finite basis physics-informed neural network (FBPINN) approach [3, 2] will be discussed. In particular, the global network function is constructed as a combination of local network functions defined on an overlapping domain decomposition. Similar to classical domain decomposition methods, the one-level method generally lacks scalability, but scalability can be achieved by introducing a multi-level hierarchy of overlapping domain decompositions. The performance of the multi-level FBPINN [1] method will be investigated based on numerical results for several model problems, showing robust convergence for up to 64 subdomains on the finest level and challenging multi-frequency problems. This talk is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich).},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:DCSE:ESF,
+    title = {Exercise session: FROSch},
+    author = {Alexander Heinlein},
+    year = {2021},
+    abbr = {DD Summer School},
+    note = {Summer school on advanced DD methods, Politecnico di Milano, Milano, Italy, November 24-26},
+    abstract = {Schwarz methods are an algorithmic framework for a large class of domain decomposition methods. The software FROSch (Fast and Robust Overlapping Schwarz), which is part of the Trilinos package ShyLU, provides a highly scalable implementation of the Schwarz framework, and the resulting solvers are based on the construction and combination of the relevant Schwarz operators. FROSch currently focusses on Schwarz operators that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension-based coarse spaces, such as generalized Dryja-Smith-Widlund (GDSW) type coarse spaces. In this lab session, the FROSch software framework will be introduced, and its usage will be explained based on simple model problems. The examples provided will allow investigating the influence of important algorithmic aspects of Schwarz methods, such as the variation of the width of the overlap or adding a coarse level, on the convergence of a preconditioned Krylov solver.},
+    url = {https://gciara.wordpress.com/summer-school-on-dd-methods/},
+    slides = {2021-heinlein-ddss-esf/2021-heinlein-frosch.pdf},
     keywords = {}
 }
 
