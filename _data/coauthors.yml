@@ -6,9 +6,17 @@ Deparis:
   - firstname: ["Simone", "S."]
     url: https://people.epfl.ch/Simone.Deparis?lang=en
 
+Desmars:
+  - firstname: ["Nicolas", "N."]
+    url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/nicolas-desmars
+
 Dolean:
   - firstname: ["Victorita", "V."]
     url: http://www.victoritadolean.com/
+
+Ehlers:
+  - firstname: ["Svenja", "S."]
+    url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/svenja-ehlers
 
 Frei:
   - firstname: ["Stefan", "S."]
@@ -25,6 +33,10 @@ Grimm:
 Hochmuth:
   - firstname: ["Christian", "C."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-c-hochmuth
+
+Hoffmann:
+  - firstname: ["Norbert", "N."]
+    url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/norbert-hoffmann
 
 Klawonn:
   - firstname: ["Axel", "A."]
@@ -121,6 +133,10 @@ Steinberger:
   - firstname: ["Daniel", "D."]
     url: https://tu-freiberg.de/fakult4/imfd/mimm/mitarbeiter/dominik-steinberger
 
+Stender:
+  - firstname: ["Merten", "M."]
+    url: https://www.tu.berlin/en/cpsme
+
 Uhlmann:
   - firstname: ["Klemens", "K."]
     url: http://www.lkm.rub.de/institut/team/uhlmann.html
@@ -130,6 +146,10 @@ Vuik:
     url: http://ta.twi.tudelft.nl/users/vuik/Welcome.html
 
 Weber:
+  - firstname: ["Mathies", "M."]
+    url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/mathies-wedler
+
+Wedler:
   - firstname: ["Janine", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/j-weber-m-sc
 
