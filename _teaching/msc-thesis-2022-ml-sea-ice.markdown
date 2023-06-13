@@ -7,7 +7,12 @@ co-supervisor: Carolin Mehlmann (Otto-von-Guericke University, Max-Planck-Instit
 student: Brendan Analikwu
 runningindex: 9
 nolink: false
-redirect: /assets/pdf/thesis_projects/2022/2022-heinlein_mehlmann-ml-sea_ice.pdf
+redirect:
+project_description: /assets/pdf/thesis_projects/2022/2022-heinlein_mehlmann-ml-sea_ice/project_description.pdf
+interim_thesis:
+interim_presentation:
+final_thesis:
+final_presentation:
 category: master_thesis
 status: ongoing
 ---

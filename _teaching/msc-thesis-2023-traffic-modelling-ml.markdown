@@ -5,10 +5,10 @@ collaboration: CGI
 title: Estimating congestion and traffic patterns when planning road work
 co-supervisor: Leonoor Portengen, Henk van Haaster (CGI)
 student: Vosse Meijssen
-runningindex: 16
+runningindex: 17
 nolink: false
-redirect: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/2023-portengen_heinlein-traffic_modelling-ml.pdf
-project_description:
+redirect:
+project_description: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/project_description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

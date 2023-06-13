@@ -7,7 +7,12 @@ co-supervisor: Edo Frederix (NRG), Deepesh Toshniwal (TU Delft, Numerical Analys
 student:
 runningindex: 11
 nolink: false
-redirect: /assets/pdf/thesis_projects/2022/2022-nrg_heinlein_toshniwal-ai_turbulence_modeling.pdf
+redirect: /assets/pdf/thesis_projects/2022/2022-nrg_heinlein_toshniwal-ai_turbulence_modeling/project_description.pdf
+project_description:
+interim_thesis:
+interim_presentation:
+final_thesis:
+final_presentation:
 category: master_thesis
 status: open
 ---

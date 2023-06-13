@@ -6,7 +6,12 @@ title: Overlapping Schwarz Domain Decomposition Methods for Implicit Ocean Model
 co-supervisor: Jonas Thies (TU Delft, Numerical Analysis)
 runningindex: 2
 nolink: false
-redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_thies-frosch_ocean.pdf
+redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_thies-frosch_ocean/project_description.pdf
+project_description:
+interim_thesis:
+interim_presentation:
+final_thesis:
+final_presentation:
 category: master_thesis
 status: open
 ---

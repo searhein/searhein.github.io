@@ -8,7 +8,7 @@ student: Corné Verburg
 runningindex: 14
 nolink: false
 redirect:
-project_description: /assets/pdf/thesis_projects/2022/2022-heinlein_cyr-dd_ml.pdf
+project_description: /assets/pdf/thesis_projects/2022/2022-heinlein_cyr-dd_ml/project_description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

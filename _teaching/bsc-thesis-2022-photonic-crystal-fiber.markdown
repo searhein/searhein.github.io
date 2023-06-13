@@ -8,7 +8,11 @@ student: Lisanne Abutan
 runningindex: 12
 nolink: false
 redirect:
+project_description:
+interim_thesis:
+interim_presentation:
 final_thesis:
+final_presentation:
 category: bachelor_thesis
 status: archive
 ---
