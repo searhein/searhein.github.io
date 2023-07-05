@@ -11,8 +11,8 @@ redirect:
 project_description:
 interim_thesis:
 interim_presentation:
-final_thesis:
+final_thesis: https://repository.tudelft.nl/islandora/object/uuid:bfec0be5-11c9-4570-9c93-66952fadd0a0
 final_presentation:
 category: master_thesis
-status: ongoing
+status: archive
 ---

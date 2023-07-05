@@ -2,7 +2,7 @@
 layout: post
 title: Exercise Session - Parallel Preconditioning with FROSch
 date: 2021-11-13 11:00:00
-description: Summer school on advanced DD methods at the Politecnico di Milano from 24.11.2021 to 26.11.2021
+description: Summer school on advanced DD methods at the Politecnico di Milano from November 24-26, 2021
 tags: frosch trilinos tutorial docker
 categories: FROSch
 ---
