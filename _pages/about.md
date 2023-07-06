@@ -2,11 +2,12 @@
 layout: about
 title: about
 permalink: /
-description:
+subtitle:
 
 profile:
   align: right
-  image: prof_pic3.jpeg
+  image: prof_pic3a.jpeg
+  image_circular: false # crops the image to make it circular
   address: >
     <p>TU Delft</p>
     <p>DIAM, Faculty of EEMCS</p>
@@ -15,27 +16,15 @@ profile:
     <p>Room HB 03.290</p>
     <p style="margin-top: 5px">Tel.: +31 (0)15 27 89135</p>
 
-    <!-- <p>University of Stuttgart</p>
-    <p>Pfaffenwaldring 57</p>
-    <p>70569 Stuttgart, Germany</p>
-    <p>Room 7.157</p>
-    <p style="margin-top: 5px">Tel.: +49-(0)711 685-62040</p>
-    <p>Fax : +49-(0)711 685-65507</p> -->
-
-
-    <!-- Faculty of Electrical Engineering, Mathematics and Computer Science (EEMCS)
-    Delft Institute of Applied Mathematics
-    Numerical Analysis
-    Building 36
-    Mekelweg 4
-    2628 CD Delft
-    a.heinlein@tudelft.nl -->
-
 news: true  # includes a list of news items
 recent_papers: true # includes a list of papers marked as "recent={true}"
 email_before_news: false
 social_before_news: true
-social_bottom: false  # includes social icons at the bottom of the page
+# social_bottom: false  # includes social icons at the bottom of the page
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
+disable_badges: true
 ---
 
 Alexander Heinlein is assistant professor in the <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/numerical-analysis" target="_blank">Numerical Analysis group</a> of the <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics" target="_blank">Delft Institute of Applied Mathematics (DIAM)</a>, <a href="https://www.tudelft.nl/en/eemcs" target="_blank">Faculty of Electrical Engineering, Mathematics & Computer Science (EEMCS)</a>, at the <a href="https://www.tudelft.nl/en/" target="_blank">Delft University of Technology (TU Delft)</a>.

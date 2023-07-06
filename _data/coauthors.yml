@@ -1,158 +1,158 @@
-Balzani:
+"Balzani":
   - firstname: ["Daniel", "D."]
     url: http://www.lkm.rub.de/institut/team/Balzani.html
 
-Deparis:
+"Deparis":
   - firstname: ["Simone", "S."]
     url: https://people.epfl.ch/Simone.Deparis?lang=en
 
-Desmars:
+"Desmars":
   - firstname: ["Nicolas", "N."]
     url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/nicolas-desmars
 
-Dolean:
+"Dolean":
   - firstname: ["Victorita", "V."]
     url: http://www.victoritadolean.com/
 
-Ehlers:
+"Ehlers":
   - firstname: ["Svenja", "S."]
     url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/svenja-ehlers
 
-Frei:
+"Frei":
   - firstname: ["Stefan", "S."]
     url: https://www.math.uni-konstanz.de/~frei/
 
-Giammatteo:
+"Giammatteo":
   - firstname: ["Elena", "E."]
     url: hhttps://people.utwente.nl/e.giammatteo
 
-Grimm:
+"Grimm":
   - firstname: ["Viktor", "V."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/v-grimm-m-sc
 
-Hochmuth:
+"Hochmuth":
   - firstname: ["Christian", "C."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-c-hochmuth
 
-Hoffmann:
+"Hoffmann":
   - firstname: ["Norbert", "N."]
     url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/norbert-hoffmann
 
-Klawonn:
+"Klawonn":
   - firstname: ["Axel", "A."]
     url: https://numerik.uni-koeln.de
 
-Knepper:
+"Knepper":
   - firstname: ["Jascha", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/j-knepper-m-sc
 
-Kemna:
+"Kemna":
   - firstname: ["Mirko", "M."]
     url:
 
-Kühn:
+"Kühn":
   - firstname: ["Martin", "M."]
     url: https://www.dlr.de/sc/desktopdefault.aspx/tabid-1192/1635_read-38447/sortby-b_city/
 
-Langguth:
+"Langguth":
   - firstname: ["Michael", "M."]
     url: https://www.fz-juelich.de/profile/langguth_m
 
-Lanser:
+"Lanser":
   - firstname: ["Martin", "M."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-m-lanser
 
-Mache:
+"Mache":
   - firstname: ["Ramiyou Karim", "R. K."]
 
-Mishra:
+"Mishra":
   - firstname: ["Siddhartha", "Sid", "S."]
     url: https://math.ethz.ch/sam/the-institute/people/siddhartha-mishra.html
 
-Moseley:
+"Moseley":
   - firstname: ["Ben", "B."]
     url: https://math.ethz.ch/sam/the-institute/people.html?u=bmosele
 
-Perego:
+"Perego":
   - firstname: ["Mauro", "M."]
     url: https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/profile.cfm?mperego
 
-Quarteroni:
+"Quarteroni":
   - firstname: ["Alfio", "A."]
     url: https://mox.polimi.it/people/alfio-quarteroni/
 
-Ramesh:
+"Ramesh":
   - firstname: ["Sharan Nurani", "S. N.", "Sharan", "S"]
     url:
 
-Rajamanickam:
+"Rajamanickam":
   - firstname: ["Sivasankaran", "Siva", "S."]
     url: https://www.sandia.gov/~srajama/index.html
 
-Rheinbach:
+"Rheinbach":
   - firstname: ["Oliver", "O."]
     url: https://tu-freiberg.de/fakult1/nmo/rheinbach
 
-Richter:
+"Richter":
   - firstname: ["Thomas", "T."]
     url: https://www.math.uni-magdeburg.de/~richter/
 
-Röver:
+"Röver":
   - firstname: ["Friederike", "F."]
     url: https://tu-freiberg.de/fakult1/nmo/roever
 
-Sandfeld:
+"Sandfeld":
   - firstname: ["Stefan", "S."]
     url: https://tu-freiberg.de/fakult4/imfd/mimm/mitarbeiter/stefan-sandfeld
 
-Saßmannshausen:
+"Saßmannshausen":
   - firstname: ["Lea", "L."]
     url: https://numerik.uni-koeln.de/en/arbeitsgruppe/l-sassmannshausen-m-sc
 
-Schlottbom:
+"Schlottbom":
  - firstname: ["Matthias", "M."]
    url: https://wwwhome.ewi.utwente.nl/~schlottbomm/
 
-Schröder:
+"Schröder":
   - firstname: ["Jörg", "J."]
     url: https://www.uni-due.de/mechanika/index.php
 
-Schultz:
+"Schultz":
   - firstname: ["Martin G.", "Martin", "M."]
     url: https://www.fz-juelich.de/en/ias/jsc/about-us/structure/research-groups/esde
 
-Smetana:
+"Smetana":
   - firstname: ["Kathrin", "K."]
     url: https://faculty.stevens.edu/ksmetana
 
-Stadtler:
+"Stadtler":
   - firstname: ["Scarlet", "S."]
     url: https://www.fz-juelich.de/profile/stadtler_s
 
-Steinberger:
+"Steinberger":
   - firstname: ["Daniel", "D."]
     url: https://tu-freiberg.de/fakult4/imfd/mimm/mitarbeiter/dominik-steinberger
 
-Stender:
+"Stender":
   - firstname: ["Merten", "M."]
     url: https://www.tu.berlin/en/cpsme
 
-Uhlmann:
+"Uhlmann":
   - firstname: ["Klemens", "K."]
     url: http://www.lkm.rub.de/institut/team/uhlmann.html
 
-Vuik:
+"Vuik":
   - firstname: ["Cornelis", "C.", "Kees", "K."]
     url: http://ta.twi.tudelft.nl/users/vuik/Welcome.html
 
-Weber:
-  - firstname: ["Mathies", "M."]
-    url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/mathies-wedler
-
-Wedler:
+"Weber":
   - firstname: ["Janine", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/j-weber-m-sc
 
-Widlund:
+"Wedler":
+  - firstname: ["Mathies", "M."]
+    url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/mathies-wedler
+
+"Widlund":
   - firstname: ["Olof B.", "O. B.", "Olof", "O."]
     url: https://cs.nyu.edu/widlund/

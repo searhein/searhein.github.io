@@ -6,7 +6,7 @@ title: Fundamentals of AI - Ranking for Recommender Systems
 instructors: Alexander Heinlein and Martin van Gijzen
 runningindex: 17
 category: course
-status: ongoing
+status: archive
 ---
 
 ### Lecture videos

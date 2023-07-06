@@ -1,0 +1,73 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Alexander Heinlein
+    - name: Languages
+      value: English, German
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Dipl.-Math.
+      institution: University of Duisburg-Essen, Germany
+      year: 2011
+      description:
+        - [Thesis "Parallel Overlapping Schwarz Preconditioners and Multiscale Discretizations
+with Applications to Fluid-Structure Interaction and Highly Heterogeneous Problems"]
+    - title: Dr. rer. nat.
+      institution: University of Cologne, Germany
+      year: 2016
+      description:
+        - [Thesis "Spezielle Finite-Elemente-Methoden für stark heterogene Probleme"]
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Assistant Professor for Numerical Analysis
+      institution: Delft Institute of Applied Mathematics (DIAM), Delft University of Technology (TU Delft), The Netherlands
+      year: 2021 - now
+    - title: Acting Professor for Numerical Mathematics for High Performance Computing
+      institution: Institute of Applied Analysis and Numerical Simulation, University of Stuttgart, Germany
+      year: 2020 - 2021
+    - title: Managing Coordinator
+      institution: Center for Data and Simulation Science, University of Cologne, Germany
+      year: 2018 - 2020
+    - title: Postdoc
+      institution: Mathematical Institute, University of Cologne, Germany
+      year: 2016 - 2020
+
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+#
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items:
+#         - Nobel Prize in Physics
+#         - Matteucci Medal
+#     - year: 2029
+#       items:
+#         - Max Planck Medal
+#
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
