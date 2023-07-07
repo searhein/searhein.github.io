@@ -309,7 +309,7 @@ scholar:
   group_by: type, year
   group_order: ascending, descending
   type_order: [article,inproceedings,thesis,techreport]
-  type_names: { misc: Talks }
+  type_names: { misc: Talks, inproceedings: Conference Proceedings }
 
 badges: # Display different badges for your publications
   altmetric_badge: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
