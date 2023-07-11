@@ -5,7 +5,7 @@ collaboration:
 title: Domain Decomposition Techniques for the Helmholtz Equation - HPC Implementation
 co-supervisor: Vandana Dwarka (TU Delft, Numerical Analysis)
 student:
-runningindex: 18
+runningindex: 21
 nolink: false
 redirect: /assets/pdf/thesis_projects/2023/2023-dwarka_heinlein-ddm_helmholtz-parallel/project_description.pdf
 project_description:
