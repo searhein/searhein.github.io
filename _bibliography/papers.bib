@@ -5,6 +5,44 @@ References
 
 # published
 
+@article{Frei:2023:TPT,
+    author = {Stefan Frei and Alexander Heinlein},
+    title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
+    journal = {Journal of Computational Physics},
+    number = {},
+    pages = {112347},
+    volume = {},
+    year = {2023},
+    issn = {0021-9991},
+    doi = {10.1016/j.jcp.2023.112347},
+    abbr = {JCOMP},
+    abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro-scale reaction-diffusion problem instead of the micro-scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
+    url = {https://www.sciencedirect.com/science/article/pii/S0021999123004424},
+    altmetric = {},
+    dimensions = {true},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@article{Heinlein:2023:MLE,
+    author = {Alexander Heinlein and Oliver Rheinbach and Friederike R\"over},
+    title = {A Multi-Level Extension of the GDSW Overlapping Schwarz Preconditioner},
+    journal = {Computational Methods in Applied Mathematics},
+    number = {},
+    pages = {},
+    volume = {},
+    year = {2023},
+    issn = {},
+    doi = {10.1515/cmam-2022-0168},
+    abbr = {CMAM},
+    abstract = {Multilevel extensions of overlapping Schwarz domain decomposition preconditioners of Generalized Dryja–Smith–Widlund (GDSW) type are considered in this paper. The original GDSW preconditioner is a two-level overlapping Schwarz domain decomposition preconditioner, which can be constructed algebraically from the fully assembled stiffness matrix. The FROSch software, which belongs to the ShyLU package of the Trilinos software library, provides parallel implementations of different variants of GDSW preconditioners. The coarse problem can limit the parallel scalability of two-level GDSW preconditioners. As a remedy, in the past, three-level GDSW approaches have been proposed, which can significantly extend the range of scalability. Here, a multilevel extension of the GDSW preconditioner is introduced and analyzed. Finally, parallel results for the implementation in FROSch for up to 40 000 cores of the SuperMUC-NG supercomputer at Leibniz Supercomputing Centre (LRZ) and to 48 000 cores of the JUWELS supercomputer at Jülich Supercomputing Centre (JSC) are presented.},
+    url = {https://doi.org/10.1515/cmam-2022-0168},
+    altmetric = {},
+    dimensions = {true},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @inproceedings{Frei:2022:ECC,
     author = {Stefan Frei and Alexander Heinlein},
     title = {Efficient coarse correction for parallel time-stepping in plaque growth simulations},
@@ -33,7 +71,7 @@ References
     abstract = {Surrogate models based on convolutional neural networks (CNNs) for computational fluid dynamics (CFD) simulations are investigated. In particular, the flow field inside two-dimensional channels with a sudden expansion and an obstacle is predicted using an image representation of the geometry as the input. Generative adversarial neural networks (GANs) have been shown to excel at such image-to-image translation tasks. This motivates the focus of this work on investigating the specific effect of adversarial training on model performance. Numerical results show that the overall accuracy of the GANs is generally lower compared to an identical generator model trained directly on the ground truth using an L1 data loss. On the other hand, GAN predictions are often visually more convincing and exhibit a lower continuity residual.},
     url = {https://onlinelibrary.wiley.com/doi/10.1002/pamm.202200241},
     dimensions = {true},
-    keywords = {published, recent},
+    keywords = {published},
     bibtex_show = {true}
 }
 
@@ -51,7 +89,7 @@ References
     preprint = {http://kups.ub.uni-koeln.de/id/eprint/55586},
     altmetric={148711121},
     dimensions={true},
-    keywords = {published, reviewed, recent},
+    keywords = {published, reviewed},
     bibtex_show = {true}
 }
 
@@ -832,20 +870,6 @@ References
 
 # accepted
 
-@techreport{Frei:2023:TPT,
-    author = {Stefan Frei and Alexander Heinlein},
-    title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
-    year = {},
-    abbr = {JCOMP},
-    year = {2023},
-    month = {July},
-    note = {Accepted for publication in the Journal of Computational Physics},
-    abstract = {The numerical simulation of atherosclerotic plaque growth is computationally prohibitive, since it involves a complex cardiovascular fluid-structure interaction (FSI) problem with a characteristic time scale of milliseconds to seconds, as well as a plaque growth process governed by reaction-diffusion equations, which takes place over several months. In this work we combine a temporal homogenization approach, which separates the problem in computationally expensive FSI problems on a micro scale and a reaction-diffusion problem on the macro scale, with parallel time-stepping algorithms. It has been found in the literature that parallel time-stepping algorithms do not perform well when applied directly to the FSI problem. To circumvent this problem, a parareal algorithm is applied on the macro scale reaction-diffusion problem instead of the micro scale FSI problem. We investigate modifications in the coarse propagator of the parareal algorithm, in order to further reduce the number of costly micro problems to be solved. The approaches are tested in detailed numerical investigations based on serial simulations.},
-    preprint = {https://arxiv.org/abs/2203.06526},
-    keywords = {accepted, reviewed, recent},
-    bibtex_show = {true}
-}
-
 @techreport{Grimm:2022:SHS,
     author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
     title = {A short note on solving partial differential equations using convolutional neural networks},
@@ -856,17 +880,6 @@ References
     note = {Accepted for publication in the Domain Decomposition Methods in Science and Engineering XXVII poceedings},
     preprint = {http://kups.ub.uni-koeln.de/id/eprint/64227},
     keywords = {accepted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2023:MLE,
-    author = {Alexander Heinlein and Oliver Rheinbach and Friederike R\"over},
-    title = {A Multi-Level Extension of the GDSW Overlapping Schwarz Preconditioner},
-    year = {2023},
-    month = {May},
-    abbr = {CMAM},
-    note = {Accepted for publication in Computational Methods in Applied Mathematics},
-    keywords = {accepted, reviewed, recent},
     bibtex_show = {true}
 }
 
@@ -929,7 +942,7 @@ References
     abstract = {Accurate short-term prediction of phase-resolved water wave conditions is crucial for decision-making in ocean engineering. However, the initialization of remote-sensing-based wave prediction models first requires a reconstruction of wave surfaces from sparse measurements like radar. Existing reconstruction methods either rely on computationally intensive optimization procedures or simplistic modeling assumptions that compromise real-time capability or accuracy of the entire prediction process. We therefore address these issues by proposing a novel approach for phase-resolved wave surface reconstruction using neural networks based on the U-Net and Fourier neural operator (FNO) architectures. Our approach utilizes synthetic yet highly realistic training data on uniform one-dimensional grids, that is generated by the high-order spectral method for wave simulation and a geometric radar modeling approach. The investigation reveals that both models deliver accurate wave reconstruction results and show good generalization for different sea states when trained with spatio-temporal radar data containing multiple historic radar snapshots in each input. Notably, the FNO-based network performs better in handling the data structure imposed by wave physics due to its global approach to learn the mapping between input and desired output in Fourier space.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2305.11913},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
