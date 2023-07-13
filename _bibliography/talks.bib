@@ -5,14 +5,34 @@ References
 
 # talks
 
-@misc{Heinlein:2023:ICIAM:NNP,
-    title = {Advanced Domain Decomposition Methods -- Parallel Schwarz Preconditioning and an Introduction to FROSch},
+@misc{Heinlein:2023:ICIAM:ESP,
+    title = {Efficient Schwarz Preconditioning Techniques for Nonlinear Problems Using FROSch},
     author = {Alexander Heinlein},
     year = {2023},
-    abbr = {HPC Summer School},
-    note = {DCSE Summerschool: Numerical Linear Algebra on High Performance Computers, TU Delft, June 5-9},
-    url = {https://www.aanmelder.nl/143287},
-    slides = {2023-heinlein-dcse-frosch/2023-heinlein-frosch.pdf},
+    abbr = {ICIAM},
+    note = {10th International Congress on Industrial and Applied Mathematics (ICIAM), Waseda University, Tokyo, Japan, August 20-25, 2023},
+    abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners in Trilinos. Due an algebraic approach, meaning that the preconditioners can be constructed from a fully assembled matrix, FROSch is applicable to a wide range of problems. This talk is focused on the application to nonlinear problems, including computational fluid dynamics and land ice simulations. Techniques for improving the efficiency and the use of GPU architectures are discussed.},
+    url = {https://iciam2023.org/},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:DLR:NNP,
+    title = {Neural networks with physical constraints -- Domain decomposition-based network architectures, and model order reduction},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {DLR},
+    note = {Invited seminar talk, German Aerospace Center (DLR), July 18},
+    abstract = {},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:TUM:NNP,
+    title = {Neural networks with physical constraints -- Domain decomposition-based network architectures, and model order reduction},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {TUM},
+    note = {Invited seminar talk, Technical University of Munich, July 13},
+    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. The network models be can trained in a data-driven and/or physics-informed way, that is, using reference data (from simulations or measurements) or a loss function based on the PDE, respectively. In physics-informed neural networks (PINNs), simple feedforward neural networks are employed to discretize the PDEs, and a single network is trained to approximate the solution of one specific boundary value problem. The loss function may include a combination of data and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large iteration counts. Therefore, in the first part of the talk, domain decomposition-based network architectures improving the training performance using the finite basis physics-informed neural network (FBPINN) approach will be discussed. It is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich). In the second part of the talk, surrogate models for computational fluid dynamics (CFD) simulations based on convolutional neural networks (CNNs) will be discussed. In particular, the network is trained to approximate a solution operator, taking a representation of the geometry as input and the solution field(s) as output. In contrast to the classical PINN approach, a single network is trained to approximate a variety of boundary value problems. This makes the approach potentially very efficient. As in the PINN approach, data as well as the residual of the PDE may be used in the loss function for training the network. The second part of the talk is based on joint work with Matthias Eichinger, Viktor Grimm, and Axel Klawonn (University of Cologne).},
     keywords = {}
 }
 
@@ -27,25 +47,47 @@ References
     keywords = {}
 }
 
+@misc{Heinlein:2023:EUROTUG:TT,
+    title = {Trilinos Tutorial},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {EuroTUG2023},
+    note = {European Trilinos User Group Meeting 2023 (EuroTUG2023), TU Delft, June 28},
+    abstract = {},
+    url = {https://eurotug.github.io/},
+    slides = {},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:4TUAMI:SRI,
+    title = {SRI Bridging numerical analysis and machine learninge},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {4TU.AMI},
+    note = {4TU.AMI summer event 2023, TU Delft, June 27},
+    url = {https://www.4tu.nl/ami/Agenda-Events/summer-event-2023/},
+    keywords = {}
+}
+
 @misc{Heinlein:2023:MATH+:MDD,
     title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
     author = {Alexander Heinlein},
     year = {2023},
     abbr = {COMINDS},
     note = {Invited talk. Optimization Workshop (Thematic Einstein Semester on Optimization and Machine Learning), Humboldt Universität zu Berlin, Berlin, June 14-16},
-    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. In classical physics-informed neural networks (PINNs) [4], simple feed-forward neural networks are employed to discretize a PDE. The loss function may include a combination of data (e.g., initial, boundary, and/or measurement data) and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large numbers of iterations. In this talk, domain decomposition-based network architectures for PINNs using the finite basis physics-informed neural network (FBPINN) approach [3, 2] will be discussed. In particular, the global network function is constructed as a combination of local network functions defined on an overlapping domain decomposition. Similar to classical domain decomposition methods, the one-level method generally lacks scalability, but scalability can be achieved by introducing a multi-level hierarchy of overlapping domain decompositions. The performance of the multi-level FBPINN [1] method will be investigated based on numerical results for several model problems, showing robust convergence for up to 64 subdomains on the finest level and challenging multi-frequency problems. This talk is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich).},
+    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. In classical physics-informed neural networks (PINNs), simple feed-forward neural networks are employed to discretize a PDE. The loss function may include a combination of data (e.g., initial, boundary, and/or measurement data) and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large numbers of iterations. In this talk, domain decomposition-based network architectures for PINNs using the finite basis physics-informed neural network (FBPINN) approach will be discussed. In particular, the global network function is constructed as a combination of local network functions defined on an overlapping domain decomposition. Similar to classical domain decomposition methods, the one-level method generally lacks scalability, but scalability can be achieved by introducing a multi-level hierarchy of overlapping domain decompositions. The performance of the multi-level FBPINN method will be investigated based on numerical results for several model problems, showing robust convergence for up to 64 subdomains on the finest level and challenging multi-frequency problems. This talk is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich).},
     keywords = {}
 }
 
-@misc{Heinlein:2023:DCSE:ESF,
-    title = {Exercise session: FROSch},
+@misc{Heinlein:2023:DCSE:ADD,
+    title = {Advanced Domain Decomposition Methods -- Parallel Schwarz Preconditioning and an Introduction to FROSch},
     author = {Alexander Heinlein},
-    year = {2021},
-    abbr = {DD Summer School},
-    note = {Summer school on advanced DD methods, Politecnico di Milano, Milano, Italy, November 24-26},
-    abstract = {Schwarz methods are an algorithmic framework for a large class of domain decomposition methods. The software FROSch (Fast and Robust Overlapping Schwarz), which is part of the Trilinos package ShyLU, provides a highly scalable implementation of the Schwarz framework, and the resulting solvers are based on the construction and combination of the relevant Schwarz operators. FROSch currently focusses on Schwarz operators that are algebraic in the sense that they can be constructed from a fully assembled, parallel distributed matrix. This is facilitated by the use of extension-based coarse spaces, such as generalized Dryja-Smith-Widlund (GDSW) type coarse spaces. In this lab session, the FROSch software framework will be introduced, and its usage will be explained based on simple model problems. The examples provided will allow investigating the influence of important algorithmic aspects of Schwarz methods, such as the variation of the width of the overlap or adding a coarse level, on the convergence of a preconditioned Krylov solver.},
-    url = {https://gciara.wordpress.com/summer-school-on-dd-methods/},
-    slides = {2021-heinlein-ddss-esf/2021-heinlein-frosch.pdf},
+    year = {2023},
+    abbr = {HPC Summer School},
+    note = {DCSE Summerschool: Numerical Linear Algebra on High Performance Computers, TU Delft, June 5-9},
+    abstract = {},
+    url = {https://www.aanmelder.nl/143287},
+    slides = {2023-heinlein-dcse-frosch/2023-heinlein-frosch.pdf},
     keywords = {}
 }
 
@@ -57,7 +99,7 @@ References
     note = {Invited plenary talk. GAMM Workshop on Computational and Mathematical Methods in Data Science, Center for Data and Simulation Science, University of Cologne, Cologne, Germany, May 4-5},
     abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. The network models be can trained in a data-driven and/or physics-informed way, that is, using reference data (from simulations or measurements) or a loss function based on the PDE, respectively. In physics-informed neural networks (PINNs), simple feedforward neural networks are employed to discretize the PDEs, and a single network is trained to approximate the solution of one specific boundary value problem. The loss function may include a combination of data and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large iteration counts. Therefore, in the first part of the talk, domain decomposition-based network architectures improving the training performance using the finite basis physics-informed neural network (FBPINN) approach will be discussed. It is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich). In the second part of the talk, surrogate models for computational fluid dynamics (CFD) simulations based on convolutional neural networks (CNNs) will be discussed. In particular, the network is trained to approximate a solution operator, taking a representation of the geometry as input and the solution field(s) as output. In contrast to the classical PINN approach, a single network is trained to approximate a variety of boundary value problems. This makes the approach potentially very efficient. As in the PINN approach, data as well as the residual of the PDE may be used in the loss function for training the network. The second part of the talk is based on joint work with Matthias Eichinger, Viktor Grimm, and Axel Klawonn (University of Cologne).},
     url = {https://cds.uni-koeln.de/en/workshops/cominds-2023/home},
-    keywords = {}
+    keywords = {selected}
 }
 
 @misc{Heinlein:2023:CFC:PDD,
@@ -77,6 +119,16 @@ References
     abbr = {CFC 2023},
     note = {22nd IACM Computational Fluids Conference (CFC 2023), Cannes, France, April 25-38},
     abstract = {Computational fluid dynamics (CFD) simulations are important in many application areas, such as civil and mechanical engineering, meteorology, geosciences, or medical science. However, accurate simulation results come at high computational costs, and they require high-quality meshes describing the computational domain. In this talk, a machine learning-based model order reduction approach for predicting flow fields is presented. After an expensive offline phase, where a surrogate model based on a convolutional neural network (U-Net type architecture) is trained using simulation data, the predictions can be performed much faster than classical numerical simulations. Moreover, the predictions do not require the generation of a complex computational mesh. The surrogate model can be 100 or 10,000 times faster on a CPU or GPU, respectively, of a normal workstation. Numerical results investigating the accuracy and efficiency for varying types of geometries from different application areas are presented. Moreover, different aspects to improve the performance such as the choice of more sophisticated loss functions are discussed.},
+    keywords = {}
+}
+
+@misc{Heinlein:2023:Sandia:NNP,
+    title = {Neural networks with physical constraints, domain decomposition-based network architectures, and model order reduction},
+    author = {Alexander Heinlein},
+    year = {2023},
+    abbr = {Sandia},
+    note = {Seminar talk, Sandia National Laboratories, USA, April 4},
+    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. The network models be can trained in a data-driven and/or physics-informed way, that is, using reference data (from simulations or measurements) or a loss function based on the PDE, respectively. In physics-informed neural networks (PINNs), simple feedforward neural networks are employed to discretize the PDEs, and a single network is trained to approximate the solution of one specific boundary value problem. The loss function may include a combination of data and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large iteration counts. Therefore, in the first part of the talk, domain decomposition-based training strategies improving the training performance using the finite basis physics-informed neural network (FBPINN) approach will be discussed. In the second part of the talk, surrogate models for computational fluid dynamics (CFD) simulations based on convolutional neural networks (CNNs) will be discussed. In particular, the network is trained to approximate a solution operator, taking a representation of the geometry as input and the solution field(s) as output. In contrast to the classical PINN approach, a single network is trained to approximate a variety of boundary value problems. This makes the approach potentially very efficient. As in the PINN approach, data as well as PDE may be used in the loss function for training the network.},
     keywords = {}
 }
 
@@ -217,7 +269,7 @@ References
     year = {2022},
     abbr = {GAMM2022},
     note = {92nd GAMM Annual Meeting, Aachen, Germany, August 15-19},
-    abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In cardiovascular applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities, such as the maximum velocity or the wall shear stresses at certain locations. In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed; cf. [1, 2]. Using this approach, which is inspired by [3], it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. In order to construct accurate surrogate models, U-Net [4] type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed, and the architecture and hyper parameters are optimized to this application. Two different approaches are compared: a fully supervised approach, where the model is trained using high fidelity simulation data, and a novel approach, where the model is trained based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Then, the framework is applied to geometries of arteries with aneurysms are presented. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes.},
+    abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In cardiovascular applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities, such as the maximum velocity or the wall shear stresses at certain locations. In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed. Using this approach, it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. In order to construct accurate surrogate models, U-Net type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed, and the architecture and hyper parameters are optimized to this application. Two different approaches are compared: a fully supervised approach, where the model is trained using high fidelity simulation data, and a novel approach, where the model is trained based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Then, the framework is applied to geometries of arteries with aneurysms are presented. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes.},
     url = {https://jahrestagung.gamm-ev.de/},
     keywords = {}
 }
@@ -241,7 +293,7 @@ References
     year = {2022},
     abbr = {DD XXVII},
     note = {27th International Conference on Domain Decomposition Methods, Prague, Czech Republic, July 25-29},
-    abstract = {In this talk, nonlinear left-preconditioning by nonlinear Schwarz domain decomposition methods is considered. In particular, the focus is on the restricted additive Schwarz preconditioned exact Newton (RASPEN) method. It is based on additive Schwarz preconditioned Newton (ASPEN) method, which has been introduced together with the corresponding inexact method, ASPIN. Nonlinear domain decomposition methods can improve nonlinear as well as linear convergence. However, as in linear domain decomposition methods, scalability and robustness for difficult problems, such as highly heterogeneous problems, generally requires adding a coarse space. The coarse space can be integrated in an additive or multiplicative way using a Galerkin projection, as described in [5]. This approach has proven to be very flexible, allowing for the use of different types of coarse spaces, such as classical Lagrangian or multiscale finite element method (MsFEM) type coarse spaces. Furthermore, to obtain robustness for heterogeneous problems, spectral coarse spaces, such as the adaptive generalized Dryja–Smith–Wildund (GDSW) coarse space can be employed. The main goal of this talk is to investigate the effectiveness of different coarse spaces, including GDSW, MsFEM, adaptive GDSW, and approximate component mode synthesis-based (OS-ACMS) adaptive coarse spaces for different nonlinear model problems and depending on the domain decomposition as well as heterogeneity of the problem.},
+    abstract = {In this talk, nonlinear left-preconditioning by nonlinear Schwarz domain decomposition methods is considered. In particular, the focus is on the restricted additive Schwarz preconditioned exact Newton (RASPEN) method. It is based on additive Schwarz preconditioned Newton (ASPEN) method, which has been introduced together with the corresponding inexact method, ASPIN. Nonlinear domain decomposition methods can improve nonlinear as well as linear convergence. However, as in linear domain decomposition methods, scalability and robustness for difficult problems, such as highly heterogeneous problems, generally requires adding a coarse space. The coarse space can be integrated in an additive or multiplicative way using a Galerkin projection. This approach has proven to be very flexible, allowing for the use of different types of coarse spaces, such as classical Lagrangian or multiscale finite element method (MsFEM) type coarse spaces. Furthermore, to obtain robustness for heterogeneous problems, spectral coarse spaces, such as the adaptive generalized Dryja–Smith–Wildund (GDSW) coarse space can be employed. The main goal of this talk is to investigate the effectiveness of different coarse spaces, including GDSW, MsFEM, adaptive GDSW, and approximate component mode synthesis-based (OS-ACMS) adaptive coarse spaces for different nonlinear model problems and depending on the domain decomposition as well as heterogeneity of the problem.},
     url = {https://www.dd27.cz/},
     keywords = {}
 }
