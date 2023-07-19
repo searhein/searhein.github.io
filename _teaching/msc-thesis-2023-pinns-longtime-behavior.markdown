@@ -2,7 +2,7 @@
 layout: page_thesis
 university: tud
 collaboration:
-title: Numerical techniques for efficiently solving a nonlinear model for salt intrusion in rivers
+title: Separating longtime behavior and learning of mechanisms
 co-supervisor: Cordula Reisch (TU Braunschweig)
 student:
 runningindex: 22
