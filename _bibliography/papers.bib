@@ -5,6 +5,22 @@ References
 
 # published
 
+@inproceedings{Yamazaki:2023:EST,
+    author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
+    title = {An Experimental Study of Two-level Schwarz Domain-Decomposition Preconditioners on GPUs},
+    booktitle={2023 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+    pages = {680-689},
+    year = {2023},
+    doi = {10.1109/IPDPS54959.2023.00073},
+    abbr = {IPDPS},
+    abstract = {The generalized Dryja–Smith–Widlund (GDSW) preconditioner is a two-level overlapping Schwarz domain decomposition (DD) preconditioner that couples a classical one-level overlapping Schwarz preconditioner with an energy-minimizing coarse space. When used to accelerate the convergence rate of Krylov subspace iterative methods, the GDSW preconditioner provides robustness and scalability for the solution of sparse linear systems arising from the discretization of a wide range of partial different equations. In this paper, we present FROSch (Fast and Robust Schwarz), a domain decomposition solver package which implements GDSW-type preconditioners for both CPU and GPU clusters. To improve the solver performance on GPUs, we use a novel decomposition to run multiple MPI processes on each GPU, reducing both solver’s computational and storage costs and potentially improving the convergence rate. This allowed us to obtain competitive or faster performance using GPUs compared to using CPUs alone. We demonstrate the performance of FROSch on the Summit supercomputer with NVIDIA V100 GPUs, where we used NVIDIA Multi-Process Service (MPS) to implement our decomposition strategy.The solver has a wide variety of algorithmic and implementation choices, which poses both opportunities and challenges for its GPU implementation. We conduct a thorough experimental study with different solver options including the exact or inexact solution of the local overlapping subdomain problems on a GPU. We also discuss the effect of using the iterative variant of the incomplete LU factorization and sparse-triangular solve as the approximate local solver, and using lower precision for computing the whole FROSch preconditioner. Overall, the solve time was reduced by factors of about 2× using GPUs, while the GPU acceleration of the numerical setup time depend on the solver options and the local matrix sizes.},
+    url = {https://ieeexplore.ieee.org/document/10177474},
+    altmetric = {},
+    dimensions = {true},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @article{Frei:2023:TPT,
     author = {Stefan Frei and Alexander Heinlein},
     title = {Towards parallel time-stepping for the numerical simulation of atherosclerotic plaque growth},
@@ -892,18 +908,6 @@ References
     abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs.},
     note = {Accepted for publication in the Domain Decomposition Methods in Science and Engineering XXVII poceedings},
     preprint = {https://arxiv.org/abs/2211.05560},
-    keywords = {accepted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Yamazaki:2022:EST,
-    author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
-    title = {An Experimental Study of Two-level Schwarz Domain-Decomposition Preconditioners on GPUs},
-    year = {2022},
-    month = {December},
-    abbr = {IPDPS},
-    abstract = {Generalized Dryja--Smith--Widlund (GDSW) preconditioners are two-level overlapping Schwarz domain decomposition (DD) preconditioners that couple a classical one-level overlapping Schwarz preconditioner with an energy-minimizing coarse space. When used together with Krylov subspace methods, GDSW preconditioners are robust and scalable for solving sparse linear systems arising from the discretization of a wide range of partial different equations. However, the solver has a wide variety of algorithmic and implementation choices, which poses several challenges for its GPU implementation, and thus, its GPU implementation has not been presented so far. To address this gap, in this paper, we present FROSch (Fast and Robust Schwarz), a domain decomposition solver package which implements GDSW algorithms for both CPU and GPU clusters. In order to improve the solver performance on GPUs, we use a novel decomposition to run multiple MPI processes on each GPU, reducing both computational and storage costs of the DD solver, and potentially improving the solver convergence rate. This allows the GPU implementation to be competitive or faster than the CPU implementations. We demonstrate the performance of FROSch on the Summit supercomputer with NVIDIA V100 GPUs, where we used NVIDIA Multi-Process Service (MPS) to implement our decomposition strategy. We conduct a thorough experimental study with different solver options including the exact or inexact solution of the local overlapping subdomain problems based on the sparse direct or incomplete factorizations on a GPU, respectively. We also discuss the effect of using the iterative variant of the incomplete LU factorization and sparse-triangular solve as the approximate local solver and using lower precision for computing the whole FROSch preconditioner. Overall, the solve time was reduced by factors of about 2x using GPUs, while the effects on the numerical setup time depend on the solver options and the local matrix sizes.},
-    note = {Accepted for publication in the IPDPS’23 proceedings},
     keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
