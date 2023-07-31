@@ -914,6 +914,18 @@ References
 
 # submitted
 
+@techreport{Heinlein:2023:CDS,
+    author = {Alexander Heinlein and Bj{\"o}rn Kiefer and Stefan Pr{\"u}ger and Oliver Rheinbach and Friederike R{\"o}ver},
+    title = {A Comparison Of Direct Solvers In FROSch Applied To Chemo-Mechanics},
+    year = {2023},
+    month = {July},
+    abstract = {Sparse direct linear solvers are at the computational core of domain decomposition preconditioners and therefore have a strong impact on their performance. In this paper, we consider  the Fast and Robust Overlapping Schwarz (FROSch) solver framework of the Trilinos software library, which contains a parallel implementations of the GDSW domain decomposition preconditioner. We compare three different sparse direct solvers used to solve the subdomain problems in FROSch. The preconditioner is applied to different model problems; linear elasticity and more complex fully-coupled deformation diffusion-boundary value problems from chemo-mechanics. We employ FROSch in fully algebraic mode, and therefore, we do not expect numerical scalability. Strong scalability is studied from 64 to 4096 cores, where good scaling results are obtained up to 1728 cores. The increasing size of the coarse problem increases the solution time for all sparse direct solvers.},
+    note = {Submitted},
+    preprint = {},
+    keywords = {submitted, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Balzani:2023:CFP,
     author = {Daniel Balzani and Alexander Heinlein and Axel Klawonn and Jascha Knepper and Sharan Nurani Ramesh and Oliver Rheinbach and Lea Sa{\ss}mannshausen and Klemens Uhlmann},
     title = {A computational framework for pharmaco-mechanical interactions in arterial walls using parallel monolithic domain decomposition methods},

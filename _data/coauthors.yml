@@ -38,6 +38,10 @@
   - firstname: ["Norbert", "N."]
     url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/norbert-hoffmann
 
+"Kiefer":
+  - firstname: ["Björn", "B."]
+    url:
+
 "Klawonn":
   - firstname: ["Axel", "A."]
     url: https://numerik.uni-koeln.de
@@ -76,6 +80,10 @@
 "Perego":
   - firstname: ["Mauro", "M."]
     url: https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/profile.cfm?mperego
+
+"Prüger":
+  - firstname: ["Stefan", "S."]
+    url:
 
 "Quarteroni":
   - firstname: ["Alfio", "A."]
