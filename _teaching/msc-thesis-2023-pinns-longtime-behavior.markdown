@@ -1,7 +1,7 @@
 ---
 layout: page_thesis
 university: tud
-collaboration:
+collaboration: TU Braunschweig
 title: Separating longtime behavior and learning of mechanisms
 co-supervisor: Cordula Reisch (TU Braunschweig)
 student:

@@ -1,7 +1,7 @@
 ---
 layout: page_thesis
 university: tud
-collaboration: SNL
+collaboration: Sandia National Laboratories
 title: Domain Decomposition for Machine Learning Based Medical Imaging
 co-supervisor: Eric Cyr (Sandia National Laboratories, USA)
 student: Corné Verburg
