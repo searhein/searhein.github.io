@@ -56,7 +56,7 @@ References
     url = {https://doi.org/10.1515/cmam-2022-0168},
     altmetric = {},
     dimensions = {true},
-    keywords = {published, reviewed, recent},
+    keywords = {published, reviewed},
     bibtex_show = {true}
 }
 
@@ -915,6 +915,18 @@ References
 
 # submitted
 
+@techreport{Zandbergen:2023:IPT,
+    author = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},
+    title = {Improving Pseudo-Time Stepping Convergence for CFD Simulations With Neural Networks},
+    year = {2023},
+    month = {October},
+    abstract = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the Navier--Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier--Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier--Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-transient continuation is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow through a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD module of COMSOL Multiphysics® is employed.},
+    note = {Submitted},
+    preprint = {},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Grimm:2023:LSO,
     author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
     title = {Learning the solution operator of two-dimensional incompressible Navier-Stokes equations using physics-aware convolutional neural networks},
@@ -935,7 +947,7 @@ References
     abstract = {Sparse direct linear solvers are at the computational core of domain decomposition preconditioners and therefore have a strong impact on their performance. In this paper, we consider  the Fast and Robust Overlapping Schwarz (FROSch) solver framework of the Trilinos software library, which contains a parallel implementations of the GDSW domain decomposition preconditioner. We compare three different sparse direct solvers used to solve the subdomain problems in FROSch. The preconditioner is applied to different model problems; linear elasticity and more complex fully-coupled deformation diffusion-boundary value problems from chemo-mechanics. We employ FROSch in fully algebraic mode, and therefore, we do not expect numerical scalability. Strong scalability is studied from 64 to 4096 cores, where good scaling results are obtained up to 1728 cores. The increasing size of the coarse problem increases the solution time for all sparse direct solvers.},
     note = {Submitted},
     preprint = {},
-    keywords = {submitted, recent},
+    keywords = {submitted},
     bibtex_show = {true}
 }
 
@@ -947,7 +959,7 @@ References
     abstract = {A computational framework is presented to numerically simulate the effects of antihypertensive drugs, in particular calcium channel blockers, on the mechanical response of arterial walls. A stretch-dependent smooth muscle model by Uhlmann and Balzani is modified to describe the interaction of pharmacological drugs and the inhibition of smooth muscle activation. The coupled deformation-diffusion problem is then solved using the finite element software FEDDLib and overlapping Schwarz preconditioners from the Trilinos package FROSch. These preconditioners include highly scalable parallel GDSW (generalized Dryja–Smith–Widlund) and RGDSW (reduced GDSW) preconditioners. Simulation results show the expected increase in the lumen diameter of an idealized artery due to the drug-induced reduction of smooth muscle contraction, as well as a decrease in the rate of arterial contraction in the presence of calcium channel blockers. Strong and weak parallel scalability of the resulting computational implementation are also analyzed.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2307.02972},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -959,7 +971,7 @@ References
     abstract = {Physics-informed neural networks (PINNs) are a popular and powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this paper, the FBPINN approach is extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Furthermore, analogous to typical tests for classical DDMs, strong and weak scaling studies designed for measuring how the accuracy of PINNs and FBPINNs behaves with respect to computational effort and solution complexity are carried out. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the scalability of FBPINNs to large numbers of subdomains by aiding global communication between subdomains.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2306.05486},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -979,7 +991,7 @@ References
     author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
     title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
     year = {2023},
-    month = {March},
+    month = {October},
     abstract = {An extension of the approximate component mode synthesis (ACMS) method to the heterogeneous Helmholtz equation is proposed. The ACMS method has originally been introduced by Hetmaniuk and Lehoucq as a multiscale method to solve elliptic partial differential equations. The ACMS method uses a domain decomposition to separate the numerical approximation by splitting the variational problem into two independent parts: local Helmholtz problems and a global interface problem. While the former are naturally local and decoupled such that they can be easily solved in parallel, the latter requires the construction of suitable local basis functions relying on local eigenmodes and suitable extensions. We carry out a full error analysis of this approach focusing on the case where the domain decomposition is kept fixed, but the number of eigenfunctions is increased. This complements related results for elliptic problems where the focus is on the refinement of the domain decomposition instead. The theoretical results in this work are supported by numerical experiments verifying algebraic convergence for the interface problems. In certain, practically relevant cases, even exponential convergence for the local Helmholtz problems can be achieved without oversampling.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2303.06671},

@@ -149,6 +149,10 @@
   - firstname: ["Klemens", "K."]
     url: http://www.lkm.rub.de/institut/team/uhlmann.html
 
+"van Noorden":
+  - firstname: ["Tycho", "T."]
+    url:
+
 "Vuik":
   - firstname: ["Cornelis", "C.", "Kees", "K."]
     url: http://ta.twi.tudelft.nl/users/vuik/Welcome.html
@@ -164,3 +168,7 @@
 "Widlund":
   - firstname: ["Olof B.", "O. B.", "Olof", "O."]
     url: https://cs.nyu.edu/widlund/
+
+"Zandbergen":
+  - firstname: ["Anouk", "A."]
+    url: https://www.tu.berlin/en/cpsme/about/team/anouk-zandbergen-1
