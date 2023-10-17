@@ -1,11 +1,11 @@
 ---
 layout: page_course
 university: tud
-semester: Q3 & Q4 2022/2023
+semester: Q3 & Q4 2023/2024
 title: Computational Fluid Dynamics
-instructors: Alexander Heinlein and Shobhit Jain
+instructors: Alexander Heinlein and Artur Palha
 description:
-runningindex: 18
+runningindex: 21
 nolink: true
 category: course
 status: archive
