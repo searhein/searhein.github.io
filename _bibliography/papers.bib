@@ -5,6 +5,20 @@ References
 
 # published
 
+@inproceedings{Heinlein:2023:CDS,
+    author = {Alexander Heinlein and Bj{\"o}rn Kiefer and Stefan Pr{\"u}ger and Oliver Rheinbach and Friederike R{\"o}ver},
+    title = {A Comparison Of Direct Solvers In FROSch Applied To Chemo-Mechanics},
+    booktitle = {10th edition of the International Conference on Computational Methods for Coupled Problems in Science and Engineering},
+    year = {2023},
+    doi = {10.23967/c.coupled.2023.008},
+    abbr = {Coupled2023},
+    abstract = {Sparse direct linear solvers are at the computational core of domain decomposition preconditioners and therefore have a strong impact on their performance. In this paper, we consider  the Fast and Robust Overlapping Schwarz (FROSch) solver framework of the Trilinos software library, which contains a parallel implementations of the GDSW domain decomposition preconditioner. We compare three different sparse direct solvers used to solve the subdomain problems in FROSch. The preconditioner is applied to different model problems; linear elasticity and more complex fully-coupled deformation diffusion-boundary value problems from chemo-mechanics. We employ FROSch in fully algebraic mode, and therefore, we do not expect numerical scalability. Strong scalability is studied from 64 to 4096 cores, where good scaling results are obtained up to 1728 cores. The increasing size of the coarse problem increases the solution time for all sparse direct solvers.},
+    url = {https://www.scipedia.com/public/_2023i},
+    preprint = {https://arxiv.org/abs/2310.12659},
+    keywords = {published, recent},
+    bibtex_show = {true}
+}
+
 @article{Ehlers:2023:MLP,
     author = {Svenja Ehlers and Marco Klein and Alexander Heinlein and Mathies Wedler and Nicolas Desmars and Norbert Hoffmann and Merten Stender},
     title = {Machine learning for phase-resolved reconstruction of nonlinear ocean wave surface elevations from sparse remote sensing data},
@@ -954,18 +968,6 @@ References
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2308.02137},
     keywords = {submitted, reviewed, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2023:CDS,
-    author = {Alexander Heinlein and Bj{\"o}rn Kiefer and Stefan Pr{\"u}ger and Oliver Rheinbach and Friederike R{\"o}ver},
-    title = {A Comparison Of Direct Solvers In FROSch Applied To Chemo-Mechanics},
-    year = {2023},
-    month = {July},
-    abstract = {Sparse direct linear solvers are at the computational core of domain decomposition preconditioners and therefore have a strong impact on their performance. In this paper, we consider  the Fast and Robust Overlapping Schwarz (FROSch) solver framework of the Trilinos software library, which contains a parallel implementations of the GDSW domain decomposition preconditioner. We compare three different sparse direct solvers used to solve the subdomain problems in FROSch. The preconditioner is applied to different model problems; linear elasticity and more complex fully-coupled deformation diffusion-boundary value problems from chemo-mechanics. We employ FROSch in fully algebraic mode, and therefore, we do not expect numerical scalability. Strong scalability is studied from 64 to 4096 cores, where good scaling results are obtained up to 1728 cores. The increasing size of the coarse problem increases the solution time for all sparse direct solvers.},
-    note = {Submitted},
-    preprint = {},
-    keywords = {submitted},
     bibtex_show = {true}
 }
 
