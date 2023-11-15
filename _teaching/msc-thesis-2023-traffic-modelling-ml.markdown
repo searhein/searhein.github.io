@@ -9,8 +9,8 @@ runningindex: 17
 nolink: false
 redirect:
 project_description: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/project_description.pdf
-interim_thesis:
-interim_presentation:
+interim_thesis: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/interim_thesis.pdf
+interim_presentation: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/interim_presentation.pdf
 final_thesis:
 final_presentation:
 category: master_thesis
