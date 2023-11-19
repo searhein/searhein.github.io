@@ -9,8 +9,8 @@ runningindex: 5
 nolink: false
 redirect:
 project_description: /assets/pdf/thesis_projects/2021/2021-heinlein_vermolen-neural_networks_burn_injuries/project_description.pdf
-interim_thesis:
-interim_presentation:
+interim_thesis: /assets/pdf/thesis_projects/2021/2021-heinlein_vermolen-neural_networks_burn_injuries/interim_thesis.pdf
+interim_presentation: /assets/pdf/thesis_projects/2021/2021-heinlein_vermolen-neural_networks_burn_injuries/interim_presentation.pdf
 final_thesis:
 final_presentation:
 category: master_thesis
