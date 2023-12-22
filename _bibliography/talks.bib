@@ -5,6 +5,102 @@ References
 
 # talks
 
+@misc{Heinlein:2024:P24:TBA,
+    title = {TBA},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {SU},
+    note = {Invited talk. Workshop on Scientific Machine Learning, Strasbourg University, Strasbourg, France, July 8-12},
+    abstract = {TBA},
+    keywords = {workshop}
+}
+
+@misc{Heinlein:2024:P24:TBA,
+    title = {TBA},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {Precond 24},
+    note = {Invited plenary lecture. International Conference On Preconditioning Techniques For Scientific and Industrial Applications (Precond 24), Georgia Institute of Technology, Atlanta, USA , June 10-12},
+    abstract = {TBA},
+    keywords = {plenary}
+}
+
+@misc{Heinlein:2024:ECCOMAS2024:DDN,
+    title = {Domain decomposition for neural networks},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {ECCOMAS2024},
+    note = {9th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS Congress 2024), Lisbon, Portugal, June 3-7},
+    abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. In this context, this talks focuses on the enhancement of machine learning using classical numerical methods, in particular, on improving neural networks using domain decomposition-inspired architectures. In the first part of this talk, the domain decomposition paradigm is applied to the approximation of the solutions of partial differential equations (PDEs) using physics-informed neural networks (PINNs). It is observed that network architectures inspired by multi-level Schwarz domain decomposition methods can improve the performance for certain challenging problems, such as multiscale problems. This part of the talk is based on joint work with Victorita Dolean (University of Strathclyde, Côte d’Azur University), Siddhartha Mishra, and Ben Moseley (ETH Zürich). Moreover, a classical machine learning task is considered, that is, image segmentation using convolutional neural networks (CNNs). Domain decomposition techniques offer a way of scaling up common CNN architectures, such as the U-Net. In particular, local subdomain networks learn local features and are coupled via a coarse network which incorporates global features. The second part of this talk is based on joint work with Eric Cyr (Sandia National Laboratories)and Corné Verburg (Delft University of Technology).},
+    keywords = {minisymposium}
+}
+
+@misc{Heinlein:2024:HPCSE2024:TBA,
+    title = {TBA},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {HPCSE 2024},
+    note = {Invited plenary lecture. High Performance Computing in Science and Engineering 2024 conference (HPCSE 2024), Beskydy, Czech Republic, May 20 - 23},
+    abstract = {TBA},
+    keywords = {plenary}
+}
+
+@misc{Heinlein:2024:SIAMPP:ESP,
+    title = {Efficient Schwarz Preconditioning Techniques on Current Hardware Using FROSch},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {SIAMPP},
+    note = {SIAM Conference on Parallel Processing for Scientific Computing (PP24), Baltimore, USA, March 5 - 8},
+    abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners in Trilinos. It is applicable to a wide range of problems due to its algebraic approach, which allows the preconditioners to be constructed from a fully assembled, parallel distributed matrix. This is enabled by the use of extension-based coarse spaces instead of classical coarse spaces. FROSch also features a variety of algorithmic variants that extend its applicability and scalability. These include monolithic preconditioning for block systems and multi-level extensions. This talk will focus on recent developments in FROSch that improve the efficiency of Schwarz preconditioners for current hardware architectures. These include techniques for reducing communication and global work, lower precision preconditioning, as well as techniques for facilitating GPUs. The performance of the different techniques will be demonstrated for different application problems and using different state-of-the-art supercomputers.},
+    keywords = {minisymposium}
+}
+
+@misc{Heinlein:2024:SIAMPP:ESP,
+    title = {Efficient Schwarz Preconditioning Techniques on Current Hardware Using FROSch},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {SIAMPP},
+    note = {SIAM Conference on Parallel Processing for Scientific Computing (PP24), Baltimore, USA, March 5 - 8},
+    abstract = {FROSch (Fast and Robust Overlapping Schwarz) is a framework for parallel Schwarz domain decomposition preconditioners in Trilinos. It is applicable to a wide range of problems due to its algebraic approach, which allows the preconditioners to be constructed from a fully assembled, parallel distributed matrix. This is enabled by the use of extension-based coarse spaces instead of classical coarse spaces. FROSch also features a variety of algorithmic variants that extend its applicability and scalability. These include monolithic preconditioning for block systems and multi-level extensions. This talk will focus on recent developments in FROSch that improve the efficiency of Schwarz preconditioners for current hardware architectures. These include techniques for reducing communication and global work, lower precision preconditioning, as well as techniques for facilitating GPUs. The performance of the different techniques will be demonstrated for different application problems and using different state-of-the-art supercomputers.},
+    keywords = {minisymposium}
+}
+
+@misc{Heinlein:2024:DD28:SCS,
+    title = {Scalable coarse spaces for monolithic Schwarz preconditioners},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {DD28},
+    note = {28th International Conference on Domain Decomposition Methods (DD28), KAUST, in Saudi Arabia, January 28 - February 1},
+    abstract = {Monolithic GDSW (generalized Dryja–Smith–Wildund) preconditioners are scalable two-level Schwarz preconditioners for block systems. Compared with block domain decomposition preconditioners, monolithic domain decomposition preconditioners often yield faster convergence since they account for the coupling within the subdomain and coarse problems. In this talk, the focus is on computational fluid dynamics (CFD) simulations, in particular, saddle point problem resulting from the discretization of the (Navier-)Stokes equations. In this case, numerical results show that fast convergence and scalability of monolithic Schwarz preconditioners strongly depends on the choice of an appropriate pair of the velocity and pressure coarse spaces; in particular, there seem to be parallels to inf-sup stable discretizations. Whereas inf-sup stable Lagrangian coarse spaces, for instance, based on Taylor-Hood elements, yield scalable monolithic preconditioners, they are limited in their applicability to complicated geometries and unstructured domain decompositions. GDSW-type coarse spaces are well-suited for those cases, but, in general, an extension of the GDSW approach is required to construct appropriate pairs of velocity and pressure coarse spaces. Therefore, in this talk, a wider class of extension-based coarse spaces using various interface partitions of unity is explored. The numerical and parallel scalability for (Navier-)Stokes problems is then investigated using the parallel FROSch (Fast and Robust Overlapping Schwarz) preconditioner framework in Trilinos.},
+    keywords = {minisymposium}
+}
+
+@misc{Heinlein:2024:DD28:MLD,
+    title = {Multi-level domain decomposition-based physics-informed neural networks},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {DD28},
+    note = {28th International Conference on Domain Decomposition Methods (DD28), KAUST, in Saudi Arabia, January 28 - February 1},
+    abstract = {Scientific machine learning (SciML) is a rapidly growing field that combines scientific computing and machine learning to solve complex scientific problems. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. One popular example are physics-informed neural networks (PINNs), which are trained by minimizing a loss function that may include both a data error and a residual error, the latter of which enforces the governing PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity and often lead to challenges in the training. In this talk, multi-level domain decomposition-based approaches for PINNs will be discussed. Therefore, on each level, the domain is decomposed into overlapping subdomains, and a separate network is constructed on each subdomain. The networks are then trained using a monolithic optimization loop, where the subdomain networks are coupled in an additive way using partition of unity functions. Numerical results for several model problems, including challenging multiscale problems, that demonstrate the robust convergence of the multi-level domain decomposition approach are presented.},
+    keywords = {minisymposium}
+}
+
+@misc{Heinlein:2024:DD28:ESP,
+    title = {Efficient Schwarz preconditioning techniques for nonlinear problems},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {DD28},
+    note = {28th International Conference on Domain Decomposition Methods (DD28), KAUST, in Saudi Arabia, January 28 - February 1},
+    abstract = {This talk discusses several techniques for efficiently solving nonlinear problems using Schwarz methods. Newton-Krylov methods are widely used to solve nonlinear problems numerically. These methods linearize the system using Newton's method and solve the resulting linearized systems using a (preconditioned) Krylov method. When using domain decomposition preconditioners, the efficiency can be enhanced if information about the preconditioner from previous linearizations is reused. This includes structural information, such as the domain decomposition, certain index sets, and symbolic factorizations of the subdomain and coarse problems, but also certain components of the preconditioner, such as the coarse space. This typically leads to a speedup in the setup phase, resulting in a dominance of the time required for the solve phase; the solve phase can then be sped up by assign computations to GPUs. As an alternative to Newton-Krylov methods, nonlinear Schwarz preconditioning techniques can be employed to speed up both the nonlinear and linear convergence. In order to facilitate numerical scalability to large numbers of subdomains, a multi-level approach has to be employed; this leads to nonlinear multi-level Schwarz methods. The aforementioned approaches are being discussed and investigated in numerical experiments.},
+    keywords = {minisymposium}
+}
+
+
+
+
+
+
+
 @misc{Heinlein:2023:SIMULA:ICP,
     title = {Improving the convergence of pseudo-transient continuation for CFD simulations using neural networks},
     author = {Alexander Heinlein},
