@@ -13,5 +13,5 @@ interim_thesis:
 interim_presentation:
 final_thesis:
 category: bachelor_thesis
-status: ongoing
+status: archive
 ---

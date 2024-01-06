@@ -4,7 +4,7 @@ permalink: /talks/
 title: talks
 description: Alexander Heinlein's talks in reversed chronological order.
 nav: true
-nav_order: 2
+nav_order: 3
 disable_badges: true
 ---
 

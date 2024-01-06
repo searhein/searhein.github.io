@@ -9,17 +9,17 @@
 - title: Education
   type: time_table
   contents:
+    - title: Dr. rer. nat.
+      institution: University of Cologne, Germany
+      year: 2016
+      description:
+        - [Thesis "Spezielle Finite-Elemente-Methoden für stark heterogene Probleme"]
     - title: Dipl.-Math.
       institution: University of Duisburg-Essen, Germany
       year: 2011
       description:
         - [Thesis "Parallel Overlapping Schwarz Preconditioners and Multiscale Discretizations
 with Applications to Fluid-Structure Interaction and Highly Heterogeneous Problems"]
-    - title: Dr. rer. nat.
-      institution: University of Cologne, Germany
-      year: 2016
-      description:
-        - [Thesis "Spezielle Finite-Elemente-Methoden für stark heterogene Probleme"]
 
 - title: Experience
   type: time_table

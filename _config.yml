@@ -47,7 +47,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -175,6 +175,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  group_members:
+    output: true
+    permalink: /group_members/:path/
   projects:
     output: true
     permalink: /projects/:path/
@@ -379,6 +382,7 @@ enable_tooltips:            false  # enables automatic tooltip links generated
 enable_darkmode:            true   # enables switching between light/dark modes
 enable_navbar_social:       true   # enables displaying social links in the
                                    # navbar on the about page
+enable_group_categories:    true   # enables categorization of projects into
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
