@@ -8,8 +8,9 @@ email: a.heinlein@tudelft.nl
 website: https://searhein.github.io/
 img: assets/img/prof_pic3a.jpeg
 project:
+cv: /cv
 nolink: true
 redirect:
-importance: 
+importance:
 category: lead
 ---
