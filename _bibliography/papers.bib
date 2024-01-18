@@ -5,6 +5,22 @@ References
 
 # published
 
+@article{Balzani:2024:CFP,
+    author = {Daniel Balzani and Alexander Heinlein and Axel Klawonn and Jascha Knepper and Sharan Nurani Ramesh and Oliver Rheinbach and Lea Sa{\ss}mannshausen and Klemens Uhlmann},
+    title = {A computational framework for pharmaco-mechanical interactions in arterial walls using parallel monolithic domain decomposition methods},
+    journal = {GAMM-Mitteilungen},
+    year = {2024},
+    pages = {e202100001},
+    doi = {10.1002/gamm.202370002},
+    month = {November},
+    abbr = {GAMM-Mitteilungen},
+    abstract = {A computational framework is presented to numerically simulate the effects of antihypertensive drugs, in particular calcium channel blockers, on the mechanical response of arterial walls. A stretch-dependent smooth muscle model by Uhlmann and Balzani is modified to describe the interaction of pharmacological drugs and the inhibition of smooth muscle activation. The coupled deformation-diffusion problem is then solved using the finite element software FEDDLib and overlapping Schwarz preconditioners from the Trilinos package FROSch. These preconditioners include highly scalable parallel GDSW (generalized Dryja–Smith–Widlund) and RGDSW (reduced GDSW) preconditioners. Simulation results show the expected increase in the lumen diameter of an idealized artery due to the drug-induced reduction of smooth muscle contraction, as well as a decrease in the rate of arterial contraction in the presence of calcium channel blockers. Strong and weak parallel scalability of the resulting computational implementation are also analyzed.},
+    note = {Accepted for publication in GAMM-Mitteilungen},
+    preprint = {https://arxiv.org/abs/2307.02972},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @inproceedings{Heinlein:2023:CDS,
     author = {Alexander Heinlein and Bj{\"o}rn Kiefer and Stefan Pr{\"u}ger and Oliver Rheinbach and Friederike R{\"o}ver},
     title = {A Comparison Of Direct Solvers In FROSch Applied To Chemo-Mechanics},
@@ -920,19 +936,6 @@ References
 
 # accepted
 
-@techreport{Balzani:2023:CFP,
-    author = {Daniel Balzani and Alexander Heinlein and Axel Klawonn and Jascha Knepper and Sharan Nurani Ramesh and Oliver Rheinbach and Lea Sa{\ss}mannshausen and Klemens Uhlmann},
-    title = {A computational framework for pharmaco-mechanical interactions in arterial walls using parallel monolithic domain decomposition methods},
-    year = {2023},
-    month = {November},
-    abbr = {GAMM-Mitteilungen},
-    abstract = {A computational framework is presented to numerically simulate the effects of antihypertensive drugs, in particular calcium channel blockers, on the mechanical response of arterial walls. A stretch-dependent smooth muscle model by Uhlmann and Balzani is modified to describe the interaction of pharmacological drugs and the inhibition of smooth muscle activation. The coupled deformation-diffusion problem is then solved using the finite element software FEDDLib and overlapping Schwarz preconditioners from the Trilinos package FROSch. These preconditioners include highly scalable parallel GDSW (generalized Dryja–Smith–Widlund) and RGDSW (reduced GDSW) preconditioners. Simulation results show the expected increase in the lumen diameter of an idealized artery due to the drug-induced reduction of smooth muscle contraction, as well as a decrease in the rate of arterial contraction in the presence of calcium channel blockers. Strong and weak parallel scalability of the resulting computational implementation are also analyzed.},
-    note = {Accepted for publication in GAMM-Mitteilungen},
-    preprint = {https://arxiv.org/abs/2307.02972},
-    keywords = {accepted, reviewed, recent},
-    bibtex_show = {true}
-}
-
 @techreport{Grimm:2022:SHS,
     author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
     title = {A short note on solving partial differential equations using convolutional neural networks},
@@ -960,6 +963,18 @@ References
 }
 
 # submitted
+
+@techreport{Heinlein:2024:MDD,
+    author = {Alexander Heinlein and Amanda A. Howard and Damien Beecroft and Panos Stinis},
+    title = {Multifidelity domain decomposition-based physics-informed neural networks for time-dependent problems},
+    year = {2024},
+    month = {January},
+    abstract = {Multiscale problems are challenging for neural network-based discretizations of differential equations, such as physics-informed neural networks (PINNs). This can be (partly) attributed to the so-called spectral bias of neural networks. To improve the performance of PINNs for time-dependent problems, a combination of multifidelity stacking PINNs and domain decomposition-based finite basis PINNs are employed. In particular, to learn the high-fidelity part of the multifidelity model, a domain decomposition in time is employed. The performance is investigated for a pendulum and a two-frequency problem as well as the Allen-Cahn equation. It can be observed that the domain decomposition approach clearly improves the PINN and stacking PINN approaches.},
+    note = {Submitted},
+    preprint = {https://arxiv.org/abs/2401.07888},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
 
 @techreport{Zandbergen:2023:IPT,
     author = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},

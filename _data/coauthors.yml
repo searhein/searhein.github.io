@@ -2,6 +2,10 @@
   - firstname: ["Daniel", "D."]
     url: http://www.lkm.rub.de/institut/team/Balzani.html
 
+"Beecroft":
+  - firstname: ["Damien", "D."]
+    url: https://amath.washington.edu/people/damien-beecroft
+
 "Deparis":
   - firstname: ["Simone", "S."]
     url: https://people.epfl.ch/Simone.Deparis?lang=en
@@ -37,6 +41,10 @@
 "Hoffmann":
   - firstname: ["Norbert", "N."]
     url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/norbert-hoffmann
+
+"Howard":
+  - firstname: ["Amanda A.", "A. A."]
+    url: https://www.pnnl.gov/people/amanda-howard
 
 "Kiefer":
   - firstname: ["Björn", "B."]
@@ -144,6 +152,10 @@
 "Stender":
   - firstname: ["Merten", "M."]
     url: https://www.tu.berlin/en/cpsme
+
+"Stinis":
+  - firstname: ["Panos", "P."]
+    url: https://www.pnnl.gov/people/panos-stinis
 
 "Uhlmann":
   - firstname: ["Klemens", "K."]
