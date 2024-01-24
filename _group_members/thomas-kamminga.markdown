@@ -7,9 +7,9 @@ address:
 email:
 website:
 img:
-project:
+project: /teaching/msc-thesis-2024-outlier-removal-ml
 nolink: true
 redirect:
-importance: 
+importance:
 category: master students
 ---
