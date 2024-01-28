@@ -45,6 +45,16 @@ References
     keywords = {plenary}
 }
 
+@misc{Heinlein:2024:CRUNCH:TBA,
+    title = {Domain decomposition for physics-informed neural networks},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {CRUNCH},
+    note = {Invited seminar talk. CRUNCH seminar, CRUNCH Group, Division of Applied Mathematics, Brown University, USA, March 22},
+    abstract = {Physics-informed neural networks (PINNs) are a class of methods for solving differential equation-based problems using a neural network as the discretization. They have been introduced by Raissi et al. and combine the pioneering collocation approach for neural network functions introduced by Lagaris et al. with the incorporation of data via an additional loss term. PINNs are very versatile as they do not require an explicit mesh, allow for the solution of parameter identification problems, and are well-suited for high-dimensional problems. However, the training of a PINN model is generally not very robust and may require a lot of hyper parameter tuning. In particular, due to the so-called spectral bias, the training of PINN models is notoriously difficult when scaling up to large computational domains as well as for multiscale problems.  In this talk, overlapping domain decomposition-based techniques for PINNs are being discussed. Compared with other domain decomposition techniques for PINNs, in the finite basis physics-informed neural networks (FBPINNs) approach, the coupling is done implicitly via the overlapping regions and does not require additional loss terms. Using the classical Schwarz domain decomposition framework, a very general framework, that also allows for mult-level extensions, can be introduced. The method outperforms classical PINNs on several types of problems, including multiscale problems, both in terms of accuracy and efficiency. Furthermore, the combination of the multi-level domain decomposition strategy with multifidelity stacking PINNs for time-dependent problems will be discussed. It can be observed that the combination of multifidelity stacking PINNs with a domain decomposition in time clearly improves the reference results without a domain decomposition.},
+    keywords = {seminar}
+}
+
 @misc{Heinlein:2024:SIAMPP:ESP,
     title = {Efficient Schwarz Preconditioning Techniques on Current Hardware Using FROSch},
     author = {Alexander Heinlein},
