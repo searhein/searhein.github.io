@@ -92,14 +92,9 @@ References
     abbr = {DD28},
     note = {28th International Conference on Domain Decomposition Methods (DD28), KAUST, Saudi Arabia, January 28 - February 1},
     abstract = {This talk discusses several techniques for efficiently solving nonlinear problems using Schwarz methods. Newton-Krylov methods are widely used to solve nonlinear problems numerically. These methods linearize the system using Newton's method and solve the resulting linearized systems using a (preconditioned) Krylov method. When using domain decomposition preconditioners, the efficiency can be enhanced if information about the preconditioner from previous linearizations is reused. This includes structural information, such as the domain decomposition, certain index sets, and symbolic factorizations of the subdomain and coarse problems, but also certain components of the preconditioner, such as the coarse space. This typically leads to a speedup in the setup phase, resulting in a dominance of the time required for the solve phase; the solve phase can then be sped up by assign computations to GPUs. As an alternative to Newton-Krylov methods, nonlinear Schwarz preconditioning techniques can be employed to speed up both the nonlinear and linear convergence. In order to facilitate numerical scalability to large numbers of subdomains, a multi-level approach has to be employed; this leads to nonlinear multi-level Schwarz methods. The aforementioned approaches are being discussed and investigated in numerical experiments.},
+    slides = {2024-heinlein-dd28-nonlinear_schwarz/2024-heinlein-nonlinear_schwarz.pdf},
     keywords = {minisymposium}
 }
-
-
-
-
-
-
 
 @misc{Heinlein:2023:SIMULA:ICP,
     title = {Improving the convergence of pseudo-transient continuation for CFD simulations using neural networks},
@@ -118,7 +113,7 @@ References
     abbr = {DUCOMS},
     note = {Dutch Computational Sciences (DUCOMS) Day 2023, Netherlands, November 11},
     abstract = {Scientific machine learning (SciML) is a rapidly evolving field of research that combines techniques from scientific computing and machine learning. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. In classical physics-informed neural networks (PINNs), simple feed-forward neural networks are employed to discretize a PDE. The loss function may include a combination of data (e.g., initial, boundary, and/or measurement data) and the residual of the PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity, and the training is often not robust and may take large numbers of iterations. In this talk, domain decomposition-based network architectures for PINNs using the finite basis physics-informed neural network (FBPINN) approach will be discussed. In particular, the global network function is constructed as a combination of local network functions defined on an overlapping domain decomposition. Similar to classical domain decomposition methods, the one-level method generally lacks scalability, but scalability can be achieved by introducing a multi-level hierarchy of overlapping domain decompositions. The performance of the multi-level FBPINN method will be investigated based on numerical results for several model problems, showing robust convergence for up to 64 subdomains on the finest level and challenging multi-frequency problems.},
-    slides = {2023-heinlein-docums-dpi/2023-heinlein-fbpinns-short.pdf},
+    slides = {2023-heinlein-ducoms-dpi/2023-heinlein-fbpinns-short.pdf},
     keywords = {contributed}
 }
 
