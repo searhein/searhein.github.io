@@ -5,7 +5,7 @@ description: Predicting the flow in patient-specific aneurysm geometries using c
 img:
 redirect: https://www.hds-lee.de
 importance: 3
-category: active
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.
