@@ -35,6 +35,16 @@ References
     keywords = {}
 }
 
+@misc{Heinlein:2023:CAS:DDP,
+    title = {Domain decomposition for physics-informed neural networks},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {Seminar},
+    note = {Invited seminar talk. Institute of Mathematics of the Czech Academy of Sciences, Prague, Czech Republic, May 24},
+    abstract = {Physics-informed neural networks (PINNs) are a class of methods for solving differential equation-based problems using a neural network as the discretization. PINNs have been introduced by Raissi et al. and combine the pioneering collocation approach for neural network functions introduced by Lagaris et al. with the incorporation of data via an additional loss term. PINNs are very versatile as they do not require an explicit mesh, allow for the solution of parameter identification problems, and are well-suited for high-dimensional problems. However, the training of a PINN model is generally not very robust and may require careful hyper parameter tuning. In particular, due to the so-called spectral bias, the training of PINN models is notoriously difficult when scaling up to large computational domains as well as for multiscale problems. In this talk, overlapping domain decomposition-based techniques for PINNs are being discussed. One way to incorporate the domain decomposition approach is to introduce an outer Schwarz iteration and solve the local subdomain problems using a PINN model. This approach has been introduced as the deep learning-based domain decomposition (DeepDDM) method. On the other hand, in the finite basis physics-informed neural networks (FBPINNs) approach, the domain decomposition  is introduced via the network architecture, and the coupling is performed implicitly without introducing additional loss terms. Inspired by the space decomposition of classical Schwarz methods, a general framework, that also allows for multilevel extensions, can be introduced. The multilevel FBPINN method outperforms classical PINNs on several types of problems, including multiscale problems, both in terms of accuracy and efficiency. Finally, the combination of the multilevel domain decomposition strategy with multifidelity stacking PINNs, introduced as stacking FBPINNs for time-dependent problems, will be discussed. It can be observed that the combination of multifidelity stacking PINNs with a domain decomposition in time clearly improves the reference results without a domain decomposition.},
+    keywords = {}
+}
+
 @misc{Heinlein:2024:HPCSE2024:TBA,
     title = {TBA},
     author = {Alexander Heinlein},
