@@ -14,5 +14,5 @@ interim_presentation: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-t
 final_thesis:
 final_presentation:
 category: master_thesis
-status: ongoing
+status: archive
 ---

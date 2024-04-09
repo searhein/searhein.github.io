@@ -14,5 +14,5 @@ interim_presentation: /assets/pdf/thesis_projects/2022/2022-heinlein_cyr-dd_ml/i
 final_thesis:
 final_presentation:
 category: master_thesis
-status: ongoing
+status: archive
 ---
