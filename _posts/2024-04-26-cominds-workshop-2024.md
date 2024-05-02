@@ -36,7 +36,7 @@ Most parts of the workshop took place in the Collegezaal in the DUWO building, w
     Group photo in the Collegezaal.
 </div>
 
-With 45 participants, 4 keynote presentations by [Christoph Brune (University of Twente)](https://people.utwente.nl/c.brune), [Victorita Dolean (TU Eindhoven)](http://www.victoritadolean.com/), [Olga Mula (TU Eindhoven)](https://omula.gitlab.io/) , and [Thomas Richter (Otto von Guericke University Magdeburg)](https://numerics.ovgu.de/), 10 contributed talks, and 10 poster presentations, there was a very extensive technical program; the full program can be found [here](https://searhein.github.io/gamm-cominds-2024/). There were lively discussions after the talks, in the breaks, as well as at the poster session during the Thursday's lunch break. Among many topics in the context of computational and mathematical methods in data science, **scientific machine learning** was one of the dominant themes throughout the workshop.
+With **45 participants**, **4 keynote presentations** by [Christoph Brune (University of Twente)](https://people.utwente.nl/c.brune), [Victorita Dolean (TU Eindhoven)](http://www.victoritadolean.com/), [Olga Mula (TU Eindhoven)](https://omula.gitlab.io/) , and [Thomas Richter (Otto von Guericke University Magdeburg)](https://numerics.ovgu.de/), **10 contributed talks**, and **10 poster presentations**, the technical program was very rich and covered many aspects of computational and mathematical methods in data science; the full program can be found [here](https://searhein.github.io/gamm-cominds-2024/). There were many lively discussions after the talks, in the breaks, as well as at the poster session during the Thursday's lunch break. Among many topics, **scientific machine learning** was the dominant themes throughout the workshop.
 
 <div class="row mt-2">
     <div class="col-sm mt-3 mt-md-0">
@@ -57,13 +57,13 @@ Part of the program were presentation of the [Strategic Research Initiative “B
 
 <div class="row mt-2">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2024-cominds/impressions-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/2024-cominds/impression-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2024-cominds/impressions-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/2024-cominds/impression-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2024-cominds/impressions-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.html path="assets/img/2024-cominds/impression-3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <!-- <div class="caption">
