@@ -19,7 +19,7 @@ featured: true
     Group photo in the Collegezaal.
 </div> -->
 
-The **Workshop on Computational and Mathematical Methods in Data Science 2024** was organized at the Delft University of Technology on April 25 & 26, 2024 with financial support of the [4TU Applied Mathematics Institute (AMI)](https://www.4tu.nl/ami/) and the [TU Delft Institute for Computational Science and Engineering (DCSE)](https://www.tudelft.nl/en/tu-delft-institute-for-computational-science-and-engineering). The workshop was
+The [**Workshop on Computational and Mathematical Methods in Data Science 2024**](https://searhein.github.io/gamm-cominds-2024/) was organized at the Delft University of Technology on April 25 & 26, 2024 with financial support of the [4TU Applied Mathematics Institute (AMI)](https://www.4tu.nl/ami/) and the [TU Delft Institute for Computational Science and Engineering (DCSE)](https://www.tudelft.nl/en/tu-delft-institute-for-computational-science-and-engineering). The workshop was
 
 + a meeting of the [Strategic Research Initiative “Bridging Numerical Analysis and Machine Learning”](https://www.4tu.nl/ami/Research/sri-bridgingNAML/) of the [4TU Applied Mathematics Institute (AMI)](https://www.4tu.nl/ami/),
 + the 2024 edition of the annual workshop of the [GAMM Activity Group on “Computational and Mathematical Methods in Data Science” (COMinDS)](https://www.tu-chemnitz.de/mathematik/wire/cominds/), and
@@ -53,7 +53,7 @@ With **45 participants**, **4 keynote presentations** by [Christoph Brune (Unive
     Discussions at the poster session on Thursday.
 </div>
 
-Part of the program were presentation of the [Strategic Research Initiative “Bridging Numerical Analysis and Machine Learning”](https://www.4tu.nl/ami/Research/sri-bridgingNAML/) of the [4TU Applied Mathematics Institute (AMI)](https://www.4tu.nl/ami/) and the new [EMS Topical Activity Group Scientific Machine Learning](https://ems-tag-sciml.github.io/) as well as the business meeting of the [GAMM Activity Group on “Computational and Mathematical Methods in Data Science” (COMinDS)](https://www.tu-chemnitz.de/mathematik/wire/cominds/). At the business meeting, [Martin Stoll](https://www.tu-chemnitz.de/mathematik/wire/prof.php) volunteered to organize next year's edition of the annual workshop of the [GAMM Activity Group on “Computational and Mathematical Methods in Data Science” (COMinDS)](https://www.tu-chemnitz.de/mathematik/wire/cominds/) the [TU Chemnitz](https://www.tu-chemnitz.de/index.html.en).
+Part of the program were presentations of the [Strategic Research Initiative “Bridging Numerical Analysis and Machine Learning”](https://www.4tu.nl/ami/Research/sri-bridgingNAML/) of the [4TU Applied Mathematics Institute (AMI)](https://www.4tu.nl/ami/) and the new [EMS Topical Activity Group Scientific Machine Learning](https://ems-tag-sciml.github.io/) as well as the business meeting of the [GAMM Activity Group on “Computational and Mathematical Methods in Data Science” (COMinDS)](https://www.tu-chemnitz.de/mathematik/wire/cominds/). At the business meeting, [Martin Stoll](https://www.tu-chemnitz.de/mathematik/wire/prof.php) volunteered to organize next year's edition of the annual workshop of the [GAMM Activity Group on “Computational and Mathematical Methods in Data Science” (COMinDS)](https://www.tu-chemnitz.de/mathematik/wire/cominds/) at [TU Chemnitz](https://www.tu-chemnitz.de/index.html.en).
 
 <div class="row mt-2">
     <div class="col-sm mt-3 mt-md-0">
