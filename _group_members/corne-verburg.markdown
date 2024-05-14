@@ -7,9 +7,9 @@ address:
 email:
 website:
 img:
-project: /teaching/msc-thesis-2022-ddm-ml
+project: 
 nolink: true
 redirect:
-importance: 
-category: master students
+importance:
+category: phd students
 ---

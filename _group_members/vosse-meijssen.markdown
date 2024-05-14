@@ -10,6 +10,6 @@ img:
 project: /teaching/msc-thesis-2023-traffic-modelling-ml
 nolink: true
 redirect:
-importance: 
-category: master students
+importance:
+category: former members
 ---
