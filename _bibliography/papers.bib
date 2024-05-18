@@ -5,6 +5,40 @@ References
 
 # published
 
+@inproceedings{Grimm:2024:SHS,
+    author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
+    title = {A short note on solving partial differential equations using convolutional neural networks},
+    booktitle = {Domain Decomposition Methods in Science and Engineering XXVII},
+    pages = {3-14},
+    publisher = {Springer International Publishing},
+    year = {2024},
+    doi = {10.1007/978-3-031-50769-4_1},
+    abbr = {Springer LNCSE},
+    abstract = {The approach of using physics-based machine learning to solve PDEs has recently become very popular. A recent approach to solve PDEs based on CNNs uses finite difference stencils to include the residual of the partial differential equation into the loss function. In this work, the relation between the network training and the solution of a respective finite difference linear system of equations using classical numerical solvers is discussed. It turns out that many beneficial properties of the linear equation system are neglected in the network training. Finally, numerical results which underline the benefits of classical numerical solvers are presented.},
+    url = {https://link.springer.com/chapter/10.1007/978-3-031-50769-4_1},
+    preprint = {http://kups.ub.uni-koeln.de/id/eprint/64227},
+    dimensions = {true},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@inproceedings{Dolean:2024:FBP,
+    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
+    title = {Finite basis physics-informed neural networks as a Schwarz domain decomposition method},
+    booktitle = {Domain Decomposition Methods in Science and Engineering XXVII},
+    pages = {165-172},
+    publisher = {Springer International Publishing},
+    year = {2024},
+    doi = {10.1007/978-3-031-50769-4_19},
+    abbr = {Springer LNCSE},
+    abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs.},
+    url = {https://link.springer.com/chapter/10.1007/978-3-031-50769-4_19},
+    preprint = {https://arxiv.org/abs/2211.05560},
+    dimensions = {true},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @article{Balzani:2024:CFP,
     author = {Daniel Balzani and Alexander Heinlein and Axel Klawonn and Jascha Knepper and Sharan Nurani Ramesh and Oliver Rheinbach and Lea Sa{\ss}mannshausen and Klemens Uhlmann},
     title = {A computational framework for pharmaco-mechanical interactions in arterial walls using parallel monolithic domain decomposition methods},
@@ -15,11 +49,10 @@ References
     pages = {e202100001},
     year = {2024},
     doi = {10.1002/gamm.202370002},
-    month = {November},
     abbr = {GAMM-Mitteilungen},
     abstract = {A computational framework is presented to numerically simulate the effects of antihypertensive drugs, in particular calcium channel blockers, on the mechanical response of arterial walls. A stretch-dependent smooth muscle model by Uhlmann and Balzani is modified to describe the interaction of pharmacological drugs and the inhibition of smooth muscle activation. The coupled deformation-diffusion problem is then solved using the finite element software FEDDLib and overlapping Schwarz preconditioners from the Trilinos package FROSch. These preconditioners include highly scalable parallel GDSW (generalized Dryja–Smith–Widlund) and RGDSW (reduced GDSW) preconditioners. Simulation results show the expected increase in the lumen diameter of an idealized artery due to the drug-induced reduction of smooth muscle contraction, as well as a decrease in the rate of arterial contraction in the presence of calcium channel blockers. Strong and weak parallel scalability of the resulting computational implementation are also analyzed.},
     preprint = {https://arxiv.org/abs/2307.02972},
-    keywords = {accepted, reviewed, recent},
+    keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
 
@@ -33,7 +66,7 @@ References
     abstract = {Sparse direct linear solvers are at the computational core of domain decomposition preconditioners and therefore have a strong impact on their performance. In this paper, we consider  the Fast and Robust Overlapping Schwarz (FROSch) solver framework of the Trilinos software library, which contains a parallel implementations of the GDSW domain decomposition preconditioner. We compare three different sparse direct solvers used to solve the subdomain problems in FROSch. The preconditioner is applied to different model problems; linear elasticity and more complex fully-coupled deformation diffusion-boundary value problems from chemo-mechanics. We employ FROSch in fully algebraic mode, and therefore, we do not expect numerical scalability. Strong scalability is studied from 64 to 4096 cores, where good scaling results are obtained up to 1728 cores. The increasing size of the coarse problem increases the solution time for all sparse direct solvers.},
     url = {https://www.scipedia.com/public/_2023i},
     preprint = {https://arxiv.org/abs/2310.12659},
-    keywords = {published, recent},
+    keywords = {published},
     bibtex_show = {true}
 }
 
@@ -51,7 +84,7 @@ References
     abstract = {Accurate short-term prediction of phase-resolved water wave conditions is crucial for decision-making in ocean engineering. However, the initialization of remote-sensing-based wave prediction models first requires a reconstruction of wave surfaces from sparse measurements like radar. Existing reconstruction methods either rely on computationally intensive optimization procedures or simplistic modeling assumptions that compromise real-time capability or accuracy of the entire prediction process. We therefore address these issues by proposing a novel approach for phase-resolved wave surface reconstruction using neural networks based on the U-Net and Fourier neural operator (FNO) architectures. Our approach utilizes synthetic yet highly realistic training data on uniform one-dimensional grids, that is generated by the high-order spectral method for wave simulation and a geometric radar modeling approach. The investigation reveals that both models deliver accurate wave reconstruction results and show good generalization for different sea states when trained with spatio-temporal radar data containing multiple historic radar snapshots in each input. Notably, the FNO-based network performs better in handling the data structure imposed by wave physics due to its global approach to learn the mapping between input and desired output in Fourier space.},
     url = {https://www.sciencedirect.com/science/article/pii/S0029801823024435},
     preprint = {https://arxiv.org/abs/2305.11913},
-    keywords = {published, reviewed, recent},
+    keywords = {published, reviewed},
     bibtex_show = {true}
 }
 
@@ -938,33 +971,33 @@ References
 
 # accepted
 
-@techreport{Grimm:2022:SHS,
-    author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
-    title = {A short note on solving partial differential equations using convolutional neural networks},
-    year = {2023},
-    month = {February},
-    abbr = {Springer LNCSE},
-    abstract = {The approach of using physics-based machine learning to solve PDEs has recently become very popular. A recent approach to solve PDEs based on CNNs uses finite difference stencils to include the residual of the partial differential equation into the loss function. In this work, the relation between the network training and the solution of a respective finite difference linear system of equations using classical numerical solvers is discussed. It turns out that many beneficial properties of the linear equation system are neglected in the network training. Finally, numerical results which underline the benefits of classical numerical solvers are presented.},
-    note = {Accepted for publication in the Domain Decomposition Methods in Science and Engineering XXVII poceedings},
-    preprint = {http://kups.ub.uni-koeln.de/id/eprint/64227},
-    keywords = {accepted, reviewed},
-    bibtex_show = {true}
-}
 
-@techreport{Dolean:2023:FBP,
-    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
-    title = {Finite basis physics-informed neural networks as a Schwarz domain decomposition method},
-    year = {2023},
-    month = {February},
-    abbr = {Springer LNCSE},
-    abstract = {Physics-informed neural networks (PINNs) [4, 10] are an approach for solving boundary value problems based on differential equations (PDEs). The key idea of PINNs is to use a neural network to approximate the solution to the PDE and to incorporate the residual of the PDE as well as boundary conditions into its loss function when training it. This provides a simple and mesh-free approach for solving problems relating to PDEs. However, a key limitation of PINNs is their lack of accuracy and efficiency when solving problems with larger domains and more complex, multi-scale solutions. In a more recent approach, finite basis physics-informed neural networks (FBPINNs) [8] use ideas from domain decomposition to accelerate the learning process of PINNs and improve their accuracy. In this work, we show how Schwarz-like additive, multiplicative, and hybrid iteration methods for training FBPINNs can be developed. We present numerical experiments on the influence of these different training strategies on convergence and accuracy. Furthermore, we propose and evaluate a preliminary implementation of coarse space correction for FBPINNs.},
-    note = {Accepted for publication in the Domain Decomposition Methods in Science and Engineering XXVII poceedings},
-    preprint = {https://arxiv.org/abs/2211.05560},
-    keywords = {accepted, reviewed},
-    bibtex_show = {true}
-}
 
 # submitted
+
+@techreport{Dolean:2023:MDD,
+    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
+    title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
+    year = {2023},
+    month = {June},
+    abstract = {Physics-informed neural networks (PINNs) are a popular and powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this paper, the FBPINN approach is extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Furthermore, analogous to typical tests for classical DDMs, strong and weak scaling studies designed for measuring how the accuracy of PINNs and FBPINNs behaves with respect to computational effort and solution complexity are carried out. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the scalability of FBPINNs to large numbers of subdomains by aiding global communication between subdomains.},
+    note = {Submitted},
+    preprint = {https://arxiv.org/abs/2306.05486},
+    keywords = {submitted, reviewed},
+    bibtex_show = {true}
+}
+
+@techreport{Heinlein:2022:FAR,
+    author = {Alexander Heinlein and Kathrin Smetana},
+    title = {A fully algebraic and robust two-level Schwarz method based on optimal local approximation spaces},
+    year = {2023},
+    month = {August},
+    abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
+    note = {Submitted},
+    preprint = {https://arxiv.org/abs/2207.05559},
+    keywords = {submitted, reviewed, highlighted3},
+    bibtex_show = {true}
+}
 
 @techreport{Heinlein:2024:MDD,
     author = {Alexander Heinlein and Amanda A. Howard and Damien Beecroft and Panos Stinis},
@@ -978,11 +1011,11 @@ References
     bibtex_show = {true}
 }
 
-@techreport{Zandbergen:2023:IPT,
+@techreport{Zandbergen:2024:IPT,
     author = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},
     title = {Improving Pseudo-Time Stepping Convergence for CFD Simulations With Neural Networks},
-    year = {2023},
-    month = {October},
+    year = {2024},
+    month = {May},
     abstract = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the Navier--Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier--Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier--Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-transient continuation is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow through a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD module of COMSOL Multiphysics® is employed.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2310.06717},
@@ -1002,18 +1035,6 @@ References
     bibtex_show = {true}
 }
 
-@techreport{Dolean:2023:MDD,
-    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
-    title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
-    year = {2023},
-    month = {June},
-    abstract = {Physics-informed neural networks (PINNs) are a popular and powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this paper, the FBPINN approach is extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Furthermore, analogous to typical tests for classical DDMs, strong and weak scaling studies designed for measuring how the accuracy of PINNs and FBPINNs behaves with respect to computational effort and solution complexity are carried out. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the scalability of FBPINNs to large numbers of subdomains by aiding global communication between subdomains.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2306.05486},
-    keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
 @techreport{Giammatteo:2023:EAC,
     author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
     title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
@@ -1023,17 +1044,5 @@ References
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2303.06671},
     keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2022:FAR,
-    author = {Alexander Heinlein and Kathrin Smetana},
-    title = {A fully algebraic and robust two-level Schwarz method based on optimal local approximation spaces},
-    year = {2023},
-    month = {August},
-    abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2207.05559},
-    keywords = {submitted, reviewed, highlighted3},
     bibtex_show = {true}
 }
