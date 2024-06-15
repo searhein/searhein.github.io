@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Thomas Kamminga
+first_name: Thomas
+last_name: Kamminga
 university: Delft University of Technology
 department: Delft Institute of Applied Mathematics
 address:
@@ -10,6 +11,5 @@ img:
 project: /teaching/msc-thesis-2024-outlier-removal-ml
 nolink: true
 redirect:
-importance:
 category: master students
 ---

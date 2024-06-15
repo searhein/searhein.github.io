@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Michael Aldorf
+first_name: Michael
+last_name: Aldorf
 university: Delft University of Technology
 department: Delft Institute of Applied Mathematics
 address:
@@ -10,6 +11,5 @@ img:
 project: /teaching/msc-thesis-2024-data-driven-metrology
 nolink: true
 redirect:
-importance:
 category: master students
 ---

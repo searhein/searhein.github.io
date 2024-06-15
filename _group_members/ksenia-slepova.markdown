@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Ksenia Slepova
+first_name: Ksenia
+last_name: Slepova
 university: Delft University of Technology
 department: Delft Institute of Applied Mathematics
 address: Mekelweg 4, 2628 CD Delft, The Netherlands
@@ -10,6 +11,5 @@ img: https://filelist.tudelft.nl/_processed_/7/3/csm_wl16nq_af1236d89b.webp
 project:
 nolink: true
 redirect:
-importance:
 category: phd students
 ---

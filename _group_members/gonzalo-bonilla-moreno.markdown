@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Gonzalo Bonilla Moreno
+first_name: Gonzalo
+last_name: Bonilla Moreno
 university: Delft University of Technology
 department: Delft Institute of Applied Mathematics
 address:
@@ -10,6 +11,5 @@ img:
 project: /teaching/msc-thesis-2022-turbulence-ml
 nolink: true
 redirect:
-importance: 
 category: master students
 ---

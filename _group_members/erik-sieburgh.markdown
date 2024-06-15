@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Erik Sieburgh
+first_name: Erik
+last_name: Sieburgh
 university:
 department:
 address:
@@ -10,6 +11,5 @@ img:
 project: /teaching/msc-thesis-2021-ddm-helmholtz
 nolink: true
 redirect:
-importance: 
 category: former members
 ---

@@ -20,7 +20,7 @@
           </div>
           <div class="col-md-7">
               <div class="card-body">
-                <h2 class="card-title text-lowercase">{{ group_member.name }}</h2>
+                <h2 class="card-title text-lowercase">{{ group_member.first_name }} {{ group_member.last_name }}</h2>
                 {%- if group_member.university -%}
                     <p class="card-text"> {{ group_member.university }} </p>
                 {% endif %}

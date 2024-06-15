@@ -13,7 +13,7 @@ horizontal: false
 <div class="group_members">
   <h2 class="category"></h2>
   {%- assign categorized_group_members = site.group_members | where: "category", "lead" -%}
-  {%- assign sorted_group_members = categorized_group_members | sort: "importance" %}
+  {%- assign sorted_group_members = categorized_group_members | sort: "last_name" %}
   {% if page.horizontal -%}
 <div class="container">
   <div class="row row-cols-2">
@@ -34,7 +34,7 @@ horizontal: false
   {%- for category in page.display_categories %}
   <h2 class="category">{{ category }}</h2>
   {%- assign categorized_group_members = site.group_members | where: "category", category -%}
-  {%- assign sorted_group_members = categorized_group_members | sort: "importance" %}
+  {%- assign sorted_group_members = categorized_group_members | sort: "last_name" %}
   <!-- Generate cards for each group_member -->
   {% if page.horizontal -%}
   <div class="container">

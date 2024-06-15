@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Mirko Kemna
+first_name: Mirko
+last_name: Kemna
 university:
 department:
 address:
@@ -10,6 +11,5 @@ img:
 project: /teaching/msc-thesis-2021-rom-fluid-flow-gans
 nolink: true
 redirect:
-importance: 
 category: former members
 ---

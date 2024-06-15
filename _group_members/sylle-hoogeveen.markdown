@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Sylle Hoogeveen
+first_name: Sylle
+last_name: Hoogeveen
 university:
 department:
 address:
@@ -10,6 +11,5 @@ img:
 project: /teaching/msc-thesis-2021-rom-fluid-flow-transient
 nolink: true
 redirect:
-importance: 
 category: former members
 ---

@@ -1,6 +1,7 @@
 ---
 layout: page
-name: Anouk Zandbergen
+first_name: Anouk
+last_name: Zandbergen
 university: Technische Universität Berlin
 department: Chair of Cyber-Physical Systems in Mechanical Engineering
 address: Straße des 17. Juni 135, 10623 Berlin, Germany
@@ -10,6 +11,5 @@ img:
 project: /teaching/msc-thesis-2022-ml-solver-parameters
 nolink: true
 redirect:
-importance: 
 category: former members
 ---
