@@ -971,7 +971,19 @@ References
 
 # accepted
 
-@techreport{Dolean:2023:MDD,
+@techreport{Heinlein:2024:MDD,
+    author = {Alexander Heinlein and Amanda A. Howard and Damien Beecroft and Panos Stinis},
+    title = {Multifidelity domain decomposition-based physics-informed neural networks and operators for time-dependent problems},
+    year = {2024},
+    month = {January},
+    abstract = {Multiscale problems are challenging for neural network-based discretizations of differential equations, such as physics-informed neural networks (PINNs). This can be (partly) attributed to the so-called spectral bias of neural networks. To improve the performance of PINNs for time-dependent problems, a combination of multifidelity stacking PINNs and domain decomposition-based finite basis PINNs is employed. In particular, to learn the high-fidelity part of the multifidelity model, a domain decomposition in time is employed. The performance is investigated for a pendulum and a two-frequency problem as well as the Allen-Cahn equation. It can be observed that the domain decomposition approach clearly improves the PINN and stacking PINN approaches. Finally, it is demonstrated that the FBPINN approach can be extended to multifidelity physics-informed deep operator networks.},
+    note = {Accepted for publication},
+    preprint = {https://arxiv.org/abs/2401.07888},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@techreport{Dolean:2024:MDD,
     author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
     title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
     year = {2024},
@@ -994,18 +1006,6 @@ References
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2207.05559},
     keywords = {submitted, reviewed, highlighted3},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2024:MDD,
-    author = {Alexander Heinlein and Amanda A. Howard and Damien Beecroft and Panos Stinis},
-    title = {Multifidelity domain decomposition-based physics-informed neural networks for time-dependent problems},
-    year = {2024},
-    month = {January},
-    abstract = {Multiscale problems are challenging for neural network-based discretizations of differential equations, such as physics-informed neural networks (PINNs). This can be (partly) attributed to the so-called spectral bias of neural networks. To improve the performance of PINNs for time-dependent problems, a combination of multifidelity stacking PINNs and domain decomposition-based finite basis PINNs are employed. In particular, to learn the high-fidelity part of the multifidelity model, a domain decomposition in time is employed. The performance is investigated for a pendulum and a two-frequency problem as well as the Allen-Cahn equation. It can be observed that the domain decomposition approach clearly improves the PINN and stacking PINN approaches.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2401.07888},
-    keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
 
