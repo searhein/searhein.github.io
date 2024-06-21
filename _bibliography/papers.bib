@@ -5,6 +5,23 @@ References
 
 # published
 
+@article{Dolean:2024:MDD,
+    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
+    title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
+    journal = {Computer Methods in Applied Mechanics and Engineering},
+    volume = {429},
+    number = {1},
+    pages = {117116},
+    year = {2024},
+    doi = {10.1016/j.cma.2024.117116},
+    abbr = {CMAME},
+    abstract = {Physics-informed neural networks (PINNs) are a powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this work, FBPINNs are extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Analogous to typical tests for classical DDMs, we assess how the accuracy of PINNs, FBPINNs and multilevel FBPINNs scale with respect to computational effort and solution complexity by carrying out strong and weak scaling tests. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the accuracy of FBPINNs when using large numbers of subdomains by aiding global communication between subdomains.},
+    url = {https://www.sciencedirect.com/science/article/pii/S0045782524003724?via%3Dihub},
+    preprint = {https://arxiv.org/abs/2306.05486},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @inproceedings{Grimm:2024:SHS,
     author = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
     title = {A short note on solving partial differential equations using convolutional neural networks},
@@ -46,11 +63,11 @@ References
     volume = {47},
     number = {1},
     pages = {e202370002},
-    pages = {e202100001},
     year = {2024},
     doi = {10.1002/gamm.202370002},
     abbr = {GAMM-Mitteilungen},
     abstract = {A computational framework is presented to numerically simulate the effects of antihypertensive drugs, in particular calcium channel blockers, on the mechanical response of arterial walls. A stretch-dependent smooth muscle model by Uhlmann and Balzani is modified to describe the interaction of pharmacological drugs and the inhibition of smooth muscle activation. The coupled deformation-diffusion problem is then solved using the finite element software FEDDLib and overlapping Schwarz preconditioners from the Trilinos package FROSch. These preconditioners include highly scalable parallel GDSW (generalized Dryja–Smith–Widlund) and RGDSW (reduced GDSW) preconditioners. Simulation results show the expected increase in the lumen diameter of an idealized artery due to the drug-induced reduction of smooth muscle contraction, as well as a decrease in the rate of arterial contraction in the presence of calcium channel blockers. Strong and weak parallel scalability of the resulting computational implementation are also analyzed.},
+    url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/gamm.202370002},
     preprint = {https://arxiv.org/abs/2307.02972},
     keywords = {published, reviewed},
     bibtex_show = {true}
@@ -979,18 +996,6 @@ References
     abstract = {Multiscale problems are challenging for neural network-based discretizations of differential equations, such as physics-informed neural networks (PINNs). This can be (partly) attributed to the so-called spectral bias of neural networks. To improve the performance of PINNs for time-dependent problems, a combination of multifidelity stacking PINNs and domain decomposition-based finite basis PINNs is employed. In particular, to learn the high-fidelity part of the multifidelity model, a domain decomposition in time is employed. The performance is investigated for a pendulum and a two-frequency problem as well as the Allen-Cahn equation. It can be observed that the domain decomposition approach clearly improves the PINN and stacking PINN approaches. Finally, it is demonstrated that the FBPINN approach can be extended to multifidelity physics-informed deep operator networks.},
     note = {Accepted for publication},
     preprint = {https://arxiv.org/abs/2401.07888},
-    keywords = {accepted, reviewed, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Dolean:2024:MDD,
-    author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
-    title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
-    year = {2024},
-    abbr = {CMAME},
-    abstract = {Physics-informed neural networks (PINNs) are a popular and powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this paper, the FBPINN approach is extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Furthermore, analogous to typical tests for classical DDMs, strong and weak scaling studies designed for measuring how the accuracy of PINNs and FBPINNs behaves with respect to computational effort and solution complexity are carried out. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the scalability of FBPINNs to large numbers of subdomains by aiding global communication between subdomains.},
-    note = {Accepted for publication in Computer Methods in Applied Mechanics and Engineering},
-    preprint = {https://arxiv.org/abs/2306.05486},
     keywords = {accepted, reviewed, recent},
     bibtex_show = {true}
 }
