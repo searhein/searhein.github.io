@@ -57,14 +57,14 @@ References
     keywords = {}
 }
 
-@misc{Heinlein:2024:DLNMWorkshop:DDP,
+@misc{Heinlein:2024:DLNM:DDP,
     title = {Domain decomposition for physics-informed neural networks},
     author = {Alexander Heinlein},
     year = {2024},
     abbr = {XJU},
     note = {Invited talk. International Workshop on Deep Learning and Numerical Methods for PDEs, Xi’an, China, June 21-23},
     abstract = {Physics-informed neural networks (PINNs) are a class of methods for solving differential equation-based problems using a neural network as the discretization. PINNs have been introduced by Raissi et al. and combine the pioneering collocation approach for neural network functions introduced by Lagaris et al. with the incorporation of data via an additional loss term. PINNs are very versatile as they do not require an explicit mesh, allow for the solution of parameter identification problems, and are well-suited for high-dimensional problems. However, the training of a PINN model is generally not very robust and may require careful hyper parameter tuning. In particular, due to the so-called spectral bias, the training of PINN models is notoriously difficult when scaling up to large computational domains as well as for multiscale problems. In this talk, overlapping domain decomposition-based techniques for PINNs are being discussed. One way to incorporate the domain decomposition approach is to introduce an outer Schwarz iteration and solve the local subdomain problems using a PINN model. This approach has been introduced as the deep learning-based domain decomposition (DeepDDM) method. On the other hand, in the finite basis physics-informed neural networks (FBPINNs) approach, the domain decomposition is introduced via the network architecture, and the coupling is performed implicitly without introducing additional loss terms. Inspired by the space decomposition of classical Schwarz methods, a general framework, that also allows for multilevel extensions, can be introduced. The multilevel FBPINN method outperforms classical PINNs on several types of problems, including multiscale problems, both in terms of accuracy and efficiency. Finally, the combination of the multilevel domain decomposition strategy with multifidelity stacking PINNs, introduced as stacking FBPINNs for time-dependent problems, will be discussed. It can be observed that the combination of multifidelity stacking PINNs with a domain decomposition in time clearly improves the reference results without a domain decomposition.},
-    url = {https://www.nhr4ces.de/2024/01/26/nhr-conference-2024/},
+    slides = {2024/2024-heinlein-dlnm-ddp/2024-heinlein-dd_pinns.pdf},
     keywords = {}
 }
 
@@ -248,7 +248,7 @@ References
     author = {Alexander Heinlein},
     year = {2023},
     abbr = {TUG 2023},
-    note = {Trilinos User-Developer Group Meeting 2021 (Hybrid), CSRI, Sandia National Laboratories, Albuquerque, USA, October 30-November 2},
+    note = {Trilinos User-Developer Group Meeting 2023 (Hybrid), CSRI, Sandia National Laboratories, Albuquerque, USA, October 30-November 2},
     url = {https://trilinos.github.io/trilinos_user-developer_group_meeting_2023.html},
     slides = {2023/2023-heinlein-tug-fro/2023-heinlein-frosch.pdf},
     keywords = {}
@@ -628,7 +628,7 @@ References
     author = {Alexander Heinlein},
     year = {2022},
     abbr = {ICMS@Strathclyde},
-    note = {Invited talk. ICMS@Strathclyde: Solvers for frequency-domain wave problems and applications, Glasgow, UK, June 20 - 24},
+    note = {Invited talk. ICMS@Strathclyde: Solvers for frequency-domain wave problems and applications, Glasgow, UK, June 20-24},
     abstract = {Discretizing partial differential equations often results in sparse systems of linear equations. High spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, for instance, in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. The development of spectral coarse spaces for domain decomposition methods has been a very active topic within the last decade. However, until recently, the algebraic construction of robust spectral coarse spaces, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information, has still been on open problem. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. An algebraic and robust spectral coarse space is then constructed by solving two eigenvalue problems on each edge of a two-dimensional domain decomposition. One of them is based on optimal local approximation spaces that are also successfully employed in the construction of multiscale discretizations. The resulting condition number bound is independent of the contrast of the coefficient function, indicating the robustness of the method. In order investigate the robustness of this new method numerically, numerical results for different coefficient distributions with large jumps are presented, including typical examples with channels, random distributions, and coefficient distributions generated from the SPE10 benchmark.},
     url = {https://www.icms.org.uk/workshops/2022/icmsstrathclyde-solvers-frequency-domain-wave-problems-and-applications},
     slides = {2022/2022-heinlein-icms-fas/2022-heinlein-adaptive.pdf},
@@ -640,7 +640,7 @@ References
     author = {Alexander Heinlein},
     year = {2022},
     abbr = {ECCOMAS2022},
-    note = {Introductory lecture. 8th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS Congress 2022), Oslo, Norway, June 5 - 9},
+    note = {Introductory lecture. 8th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS Congress 2022), Oslo, Norway, June 5-9},
     url = {https://www.eccomas2022.org/frontal/},
     slides = {2022/2022-heinlein-eccomas-psd/2022-heinlein-frosch.pdf},
     keywords = {}
@@ -651,7 +651,7 @@ References
     author = {Alexander Heinlein},
     year = {2022},
     abbr = {ECCOMAS2022},
-    note = {8th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS Congress 2022), Oslo, Norway, June 5 - 9},
+    note = {8th European Congress on Computational Methods in Applied Sciences and Engineering (ECCOMAS Congress 2022), Oslo, Norway, June 5-9},
     abstract = {Computational fluid dynamics (CFD) simulations are important in many application areas, such as civil and mechanical engineering, meteorology, geosciences, or medical science. However, accurate simulation results come at high computational costs, and they require high-quality meshes describing the computational domain. In this talk, a machine learning-based model order reduction approach for predicting flow fields is presented. After an expensive offline phase, where a surrogate model based on a convolutional neural network (U-Net type architecture) is trained using simulation data, the predictions can be performed much faster than classical numerical simulations. Moreover, the predictions do not require the generation of a complex computational mesh. The surrogate model can be 10^2 or 10^4 times faster on a CPU or GPU, respectively, of a normal workstation. Numerical results investigating the accuracy and efficiency for varying types of geometries from different application areas are presented. Moreover, different aspects to improve the performance such as the choice of more sophisticated loss functions are discussed.},
     url = {https://www.eccomas2022.org/frontal/},
     keywords = {}
