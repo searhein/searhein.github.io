@@ -1002,6 +1002,18 @@ References
 
 # submitted
 
+@techreport{Yamazaki:2024:PCB,
+    author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
+    title = {Predicting Coarse Basis Functions for Two-Level Domain Decomposition Methods Using Graph Neural Networks},
+    year = {2024},
+    month = {July},
+    abstract = {For the robustness and numerical scalability of domain decomposition-based linear solvers, the incorporation of a coarse level, which provides global transport of information, is crucial. State-of-the-art spectral, or adaptive, methods can generate the basis functions of the coarse space, which are adapted to the specific properties of the target problem, and yield provably robust convergence for certain classes of problems.
+However, their construction is computationally expensive and requires non-algebraic information. To improve the practicability of the solver, in this paper, we design a hierarchical math-informed local Graph Neural Network (GNN) to generate effective coarse-space basis functions. Our GNN uses only the local subdomain matrices available as the input to the algebraic linear solvers. This approach has several advantages including: 1) it is algebraic; 2) it is local and therefore as scalable as the classical domain decomposition solvers; and 3) the cost for training, inference, and generating data sets is much lower than that needed for approaches relying on the global matrix.
+To study the potential of our GNN architecture, we present numerical results with homogeneous and heterogeneous problems.},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Howard:2024:FBK,
     author = {Amanda A. Howard and Bruno Jacob and Sarah H. Murphy and Alexander Heinlein and Panos Stinis},
     title = {Finite basis Kolmogorov-Arnold networks: domain decomposition for data-driven and physics-informed problems},
