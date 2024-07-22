@@ -2,8 +2,8 @@
 layout: page
 first_name: Vosse
 last_name: Meijssen
-university: Delft University of Technology
-department: Delft Institute of Applied Mathematics
+university: CGI
+department:
 address:
 email:
 website:

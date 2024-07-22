@@ -2,7 +2,7 @@
 layout: page
 first_name: Mirko
 last_name: Kemna
-university:
+university: Gradyent
 department:
 address:
 email:
