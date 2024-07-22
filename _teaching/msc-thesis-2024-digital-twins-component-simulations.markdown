@@ -1,8 +1,8 @@
 ---
 layout: page_thesis
 university: tud
-collaboration:
-title: Digital Twins
+collaboration: Vanderlande
+title: Integrating Component Simulations in Digital Twins with Machine Learning
 co-supervisor:
 student: Hangyu Xia
 runningindex: 29
