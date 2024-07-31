@@ -1002,6 +1002,16 @@ References
 
 # submitted
 
+@techreport{Verburg:2024:DDU,
+    author = {Corné Verburg and Alexander Heinlein and Eric C. Cyr},
+    title = {DDU-Net: A Domain Decomposition-based CNN for High-Resolution Image Segmentation on Multiple GPUs},
+    year = {2024},
+    month = {July},
+    abstract = {The segmentation of ultra-high resolution images poses challenges such as loss of spatial information or computational inefficiency. In this work, a novel approach that combines encoder-decoder architectures with domain decomposition strategies to address these challenges is proposed. Specifically, a domain decomposition-based U-Net (DDU-Net) architecture is introduced, which partitions input images into non-overlapping patches that can be processed independently on separate devices. A communication network is added to facilitate inter-patch information exchange to enhance the understanding of spatial context. Experimental validation is performed on a synthetic dataset that is designed to measure the effectiveness of the communication network. Then, the performance is tested on the DeepGlobe land cover classification dataset as a real-world benchmark data set. The results demonstrate that the approach, which includes inter-patch communication for images divided into 16x16 non-overlapping subimages, achieves a 2-3% higher intersection over union (IoU) score compared to the same network without inter-patch communication. The performance of the network which includes communication is equivalent to that of a baseline U-Net trained on the full image, showing that our model provides an effective solution for segmenting ultra-high-resolution images while preserving spatial context. The code is available at https://github.com/corne00/HiRes-Seg-CNN.},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Yamazaki:2024:PCB,
     author = {Ichitaro Yamazaki and Alexander Heinlein and Sivasankaran Rajamanickam},
     title = {Predicting Coarse Basis Functions for Two-Level Domain Decomposition Methods Using Graph Neural Networks},
