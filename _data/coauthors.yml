@@ -1,3 +1,7 @@
+"Alves":
+  - firstname: ["Filipe A. C. S. ", "Filipe", "F."]
+    url:
+
 "Balzani":
   - firstname: ["Daniel", "D."]
     url: http://www.lkm.rub.de/institut/team/Balzani.html
@@ -5,6 +9,14 @@
 "Beecroft":
   - firstname: ["Damien", "D."]
     url: https://amath.washington.edu/people/damien-beecroft
+
+"Bruno":
+  - firstname: ["Jacob", "J."]
+    url: https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=11973
+
+"Cyr":
+  - firstname: ["Eric C.", "E. C.", "Eric", "E."]
+    url: https://www.sandia.gov/ccr/staff/eric-christopher-cyr/
 
 "Deparis":
   - firstname: ["Simone", "S."]
@@ -17,6 +29,10 @@
 "Dolean":
   - firstname: ["Victorita", "V."]
     url: http://www.victoritadolean.com/
+
+"Dwarka":
+  - firstname: ["Vandana", "V."]
+    url:
 
 "Ehlers":
   - firstname: ["Svenja", "S."]
@@ -33,6 +49,10 @@
 "Grimm":
   - firstname: ["Viktor", "V."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/v-grimm-m-sc
+
+"Hajibeygi":
+  - firstname: ["Hadi", "H."]
+    url: https://www.tudelft.nl/citg/over-faculteit/afdelingen/geoscience-engineering/sections/reservoir-engineering/staff/academic-staff/profdr-h-hajibeygi
 
 "Hochmuth":
   - firstname: ["Christian", "C."]
@@ -137,6 +157,10 @@
   - firstname: ["Martin G.", "Martin", "M."]
     url: https://www.fz-juelich.de/en/ias/jsc/about-us/structure/research-groups/esde
 
+"Sieburgh":
+  - firstname: ["Erik", "E."]
+    url:
+
 "Smetana":
   - firstname: ["Kathrin", "K."]
     url: https://faculty.stevens.edu/ksmetana
@@ -163,6 +187,10 @@
 
 "van Noorden":
   - firstname: ["Tycho", "T."]
+    url:
+
+"Verburg":
+  - firstname: ["Corné", "Corne", "C."]
     url:
 
 "Vuik":
