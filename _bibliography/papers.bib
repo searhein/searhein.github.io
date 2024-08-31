@@ -1002,12 +1002,54 @@ References
 
 # submitted
 
+@techreport{Dolean:2024:DDM,
+    author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
+    title = {Domain decomposition method with randomized neural networks},
+    year = {2024},
+    month = {August},
+    abstract = {An approach for integrating randomized neural networks (RaNNs) with an overlapping Schwarz domain decomposition technique is developed to address multi-scale problems. Neural networks within each subdomain are interconnected using local window functions, enabling the construction of a global solution that serves as an approximation to the solution of the partial differential equation (PDE). Via a constraining operator the boundary conditions are enforced in a straightforward manner. The optimization of the parameters in the last layer of the RaNN yields a least-squares problem, leading to accurate solutions for the PDE. The introduction of a two-level domain decomposition method allows for capturing diverse scaling information, thereby enhancing the performance of the method.},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@techreport{Heinlein:2024:NTL,
+    author = {Alexander Heinlein and Kyrill Ho and Axel Klawonn and Martin Lanser},
+    title = {Nonlinear Two-Level Schwarz Methods: A Parallel Implementation in FROSch},
+    year = {2024},
+    month = {August},
+    abstract = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton'’'s method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia’s Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@techreport{Dolean:2024:TDD,
+    author = {Victorita Dolean and Serge Gratton and Alexander Heinlein and Valentin Mercier},
+    title = {Two-level deep domain decomposition method},
+    year = {2024},
+    month = {August},
+    abstract = {This study presents a two-level Deep Domain Decomposition Method (Deep-DDM) augmented with a coarse-level network for solving boundary value problems using physics-informed neural networks (PINNs). The addition of the coarse level network improves scalability and convergence rates compared to the single level method. Tested on a Poisson equation with Dirichlet boundary conditions, the two-level deep DDM demonstrates superior performance, maintaining efficient convergence regardless of the number of subdomains. This advance provides a more scalable and effective approach to solving complex partial differential equations with machine learning.},
+    preprint = {https://arxiv.org/abs/2408.12198},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@techreport{Kinnewig:2024:CDF,
+    author = {Sebastian Kinnewig and Alexander Heinlein and Thomas Wick},
+    title = {Coupling deal.II and FROSch: A Sustainable and Accessible (O)RAS Preconditioner},
+    year = {2024},
+    month = {August},
+    abstract = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Alves:2024:CSA,
     author = {Filipe A. C. S. Alves and Alexander Heinlein and Hadi Hajibeygi},
     title = {A computational study of algebraic coarse spaces for two-level overlapping additive Schwarz preconditioners},
     year = {2024},
     month = {August},
     abstract = {The two-level overlapping additive Schwarz method offers a robust and scalable preconditioner for various linear systems resulting from elliptic problems. One of the key to these properties is the construction of the coarse space used to solve a global coupling problem, which traditionally requires information about the underlying discretization. An algebraic formulation of the coarse space reduces the complexity of its assembly. Furthermore, well-chosen coarse basis functions within this space can better represent changes in the problem's properties. Here we introduce an algebraic formulation of the multiscale finite element method (MsFEM) based on the algebraic multiscale solver (AMS) in the context of the two-level Schwarz method. We show how AMS is related to other energy-minimizing coarse spaces. Furthermore, we compare the AMS with other algebraic energy-minimizing spaces: the generalized Dryja--Smith--Widlund (GDSW), and the reduced dimension GDSW (RGDSW).},
+    preprint = {https://arxiv.org/abs/2408.08187},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
