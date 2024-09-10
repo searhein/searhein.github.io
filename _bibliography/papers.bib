@@ -988,6 +988,19 @@ References
 
 # accepted
 
+@techreport{Giammatteo:2024:EAC,
+    author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
+    title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
+    year = {2024},
+    month = {October},
+    abbr = {IMAJNA},
+    abstract = {An extension of the approximate component mode synthesis (ACMS) method to the heterogeneous Helmholtz equation is proposed. The ACMS method has originally been introduced by Hetmaniuk and Lehoucq as a multiscale method to solve elliptic partial differential equations. The ACMS method uses a domain decomposition to separate the numerical approximation by splitting the variational problem into two independent parts: local Helmholtz problems and a global interface problem. While the former are naturally local and decoupled such that they can be easily solved in parallel, the latter requires the construction of suitable local basis functions relying on local eigenmodes and suitable extensions. We carry out a full error analysis of this approach focusing on the case where the domain decomposition is kept fixed, but the number of eigenfunctions is increased. This complements related results for elliptic problems where the focus is on the refinement of the domain decomposition instead. The theoretical results in this work are supported by numerical experiments verifying algebraic convergence for the interface problems. In certain, practically relevant cases, even exponential convergence for the local Helmholtz problems can be achieved without oversampling.},
+    note = {Accepted for publication in the IMA Journal of Numerical Analysis},
+    preprint = {https://arxiv.org/abs/2303.06671},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Heinlein:2024:MDD,
     author = {Alexander Heinlein and Amanda A. Howard and Damien Beecroft and Panos Stinis},
     title = {Multifidelity domain decomposition-based physics-informed neural networks and operators for time-dependent problems},
@@ -1018,6 +1031,7 @@ References
     year = {2024},
     month = {August},
     abstract = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton'’'s method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia’s Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
+    note = {Submitted},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
@@ -1028,6 +1042,7 @@ References
     year = {2024},
     month = {August},
     abstract = {This study presents a two-level Deep Domain Decomposition Method (Deep-DDM) augmented with a coarse-level network for solving boundary value problems using physics-informed neural networks (PINNs). The addition of the coarse level network improves scalability and convergence rates compared to the single level method. Tested on a Poisson equation with Dirichlet boundary conditions, the two-level deep DDM demonstrates superior performance, maintaining efficient convergence regardless of the number of subdomains. This advance provides a more scalable and effective approach to solving complex partial differential equations with machine learning.},
+    note = {Submitted},
     preprint = {https://arxiv.org/abs/2408.12198},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
@@ -1039,6 +1054,7 @@ References
     year = {2024},
     month = {August},
     abstract = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
+    note = {Submitted},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
@@ -1049,6 +1065,7 @@ References
     year = {2024},
     month = {August},
     abstract = {The two-level overlapping additive Schwarz method offers a robust and scalable preconditioner for various linear systems resulting from elliptic problems. One of the key to these properties is the construction of the coarse space used to solve a global coupling problem, which traditionally requires information about the underlying discretization. An algebraic formulation of the coarse space reduces the complexity of its assembly. Furthermore, well-chosen coarse basis functions within this space can better represent changes in the problem's properties. Here we introduce an algebraic formulation of the multiscale finite element method (MsFEM) based on the algebraic multiscale solver (AMS) in the context of the two-level Schwarz method. We show how AMS is related to other energy-minimizing coarse spaces. Furthermore, we compare the AMS with other algebraic energy-minimizing spaces: the generalized Dryja--Smith--Widlund (GDSW), and the reduced dimension GDSW (RGDSW).},
+    note = {Submitted},
     preprint = {https://arxiv.org/abs/2408.08187},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
@@ -1060,6 +1077,7 @@ References
     year = {2024},
     month = {August},
     abstract = {The development of scalable and wavenumber-robust iterative solvers for Helmholtz problems is challenging but also relevant for various application fields. In this work, two-level Schwarz domain decomposition preconditioners are enhanced by coarse space constructed using higher-order B\'ezier interpolation. The numerical results indicate numerical scalability and robustness with respect the wavenumber, as long as the wavenumber times the element size of the coarse mesh is sufficiently low.},
+    note = {Submitted},
     preprint = {https://arxiv.org/abs/2408.03571},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
@@ -1071,6 +1089,7 @@ References
     year = {2024},
     month = {July},
     abstract = {The segmentation of ultra-high resolution images poses challenges such as loss of spatial information or computational inefficiency. In this work, a novel approach that combines encoder-decoder architectures with domain decomposition strategies to address these challenges is proposed. Specifically, a domain decomposition-based U-Net (DDU-Net) architecture is introduced, which partitions input images into non-overlapping patches that can be processed independently on separate devices. A communication network is added to facilitate inter-patch information exchange to enhance the understanding of spatial context. Experimental validation is performed on a synthetic dataset that is designed to measure the effectiveness of the communication network. Then, the performance is tested on the DeepGlobe land cover classification dataset as a real-world benchmark data set. The results demonstrate that the approach, which includes inter-patch communication for images divided into 16x16 non-overlapping subimages, achieves a 2-3% higher intersection over union (IoU) score compared to the same network without inter-patch communication. The performance of the network which includes communication is equivalent to that of a baseline U-Net trained on the full image, showing that our model provides an effective solution for segmenting ultra-high-resolution images while preserving spatial context. The code is available at https://github.com/corne00/HiRes-Seg-CNN.},
+    note = {Submitted},
     preprint = {https://arxiv.org/abs/2407.21266},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
@@ -1084,7 +1103,8 @@ References
     abstract = {For the robustness and numerical scalability of domain decomposition-based linear solvers, the incorporation of a coarse level, which provides global transport of information, is crucial. State-of-the-art spectral, or adaptive, methods can generate the basis functions of the coarse space, which are adapted to the specific properties of the target problem, and yield provably robust convergence for certain classes of problems.
 However, their construction is computationally expensive and requires non-algebraic information. To improve the practicability of the solver, in this paper, we design a hierarchical math-informed local Graph Neural Network (GNN) to generate effective coarse-space basis functions. Our GNN uses only the local subdomain matrices available as the input to the algebraic linear solvers. This approach has several advantages including: 1) it is algebraic; 2) it is local and therefore as scalable as the classical domain decomposition solvers; and 3) the cost for training, inference, and generating data sets is much lower than that needed for approaches relying on the global matrix.
 To study the potential of our GNN architecture, we present numerical results with homogeneous and heterogeneous problems.},
-    keywords = {submitted, reviewed, recent},
+    note = {Submitted},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1095,7 +1115,7 @@ To study the potential of our GNN architecture, we present numerical results wit
     month = {June},
     abstract = {Kolmogorov-Arnold networks (KANs) have attracted attention recently as an alternative to multilayer perceptrons (MLPs) for scientific machine learning. However, KANs can be expensive to train, even for relatively small networks. Inspired by finite basis physics-informed neural networks (FBPINNs), in this work, we develop a domain decomposition method for KANs that allows for several small KANs to be trained in parallel to give accurate solutions for multiscale problems. We show that finite basis KANs (FBKANs) can provide accurate results with noisy data and for physics-informed training.},
     preprint = {https://arxiv.org/abs/2406.19662},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1131,18 +1151,6 @@ To study the potential of our GNN architecture, we present numerical results wit
     abstract = {In recent years, the concept of introducing physics to machine learning has become widely popular. Most physics-inclusive ML-techniques however are still limited to a single geometry or a set of parametrizable geometries. Thus, there remains the need to train a new model for a new geometry, even if it is only slightly modified. With this work we introduce a technique with which it is possible to learn approximate solutions to the steady-state Navier--Stokes equations in varying geometries without the need of parametrization. This technique is based on a combination of a U-Net-like CNN and well established discretization methods from the field of the finite difference method. The results of our physics-aware CNN are compared to a state-of-the-art data-based approach. Additionally, it is also shown how our approach performs when combined with the data-based approach.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2308.02137},
-    keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Giammatteo:2023:EAC,
-    author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
-    title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
-    year = {2023},
-    month = {October},
-    abstract = {An extension of the approximate component mode synthesis (ACMS) method to the heterogeneous Helmholtz equation is proposed. The ACMS method has originally been introduced by Hetmaniuk and Lehoucq as a multiscale method to solve elliptic partial differential equations. The ACMS method uses a domain decomposition to separate the numerical approximation by splitting the variational problem into two independent parts: local Helmholtz problems and a global interface problem. While the former are naturally local and decoupled such that they can be easily solved in parallel, the latter requires the construction of suitable local basis functions relying on local eigenmodes and suitable extensions. We carry out a full error analysis of this approach focusing on the case where the domain decomposition is kept fixed, but the number of eigenfunctions is increased. This complements related results for elliptic problems where the focus is on the refinement of the domain decomposition instead. The theoretical results in this work are supported by numerical experiments verifying algebraic convergence for the interface problems. In certain, practically relevant cases, even exponential convergence for the local Helmholtz problems can be achieved without oversampling.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2303.06671},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
