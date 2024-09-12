@@ -14,5 +14,5 @@ interim_presentation: /assets/pdf/thesis_projects/2021/2021-heinlein_vermolen-ne
 final_thesis:
 final_presentation:
 category: master_thesis
-status: ongoing
+status: archive
 ---
