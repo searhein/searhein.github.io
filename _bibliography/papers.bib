@@ -18,7 +18,7 @@ References
     abstract = {Physics-informed neural networks (PINNs) are a powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this work, FBPINNs are extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Analogous to typical tests for classical DDMs, we assess how the accuracy of PINNs, FBPINNs and multilevel FBPINNs scale with respect to computational effort and solution complexity by carrying out strong and weak scaling tests. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the accuracy of FBPINNs when using large numbers of subdomains by aiding global communication between subdomains.},
     url = {https://www.sciencedirect.com/science/article/pii/S0045782524003724?via%3Dihub},
     preprint = {https://arxiv.org/abs/2306.05486},
-    keywords = {published, reviewed, recent},
+    keywords = {published, reviewed},
     bibtex_show = {true}
 }
 
@@ -1015,12 +1015,24 @@ References
 
 # submitted
 
+@techreport{Giammatteo:2024:DDM,
+    author = {Elena Giammatteo and Alexander Heinlein and Philip L. Lederer and Matthias Schlottbom},
+    title = {High-order discretized ACMS method for the simulation of finite-size two-dimensional photonic crystals},
+    year = {2024},
+    month = {October},
+    abstract = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp–finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
+    note = {Submitted},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Dolean:2024:DDM,
     author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
     title = {Domain decomposition method with randomized neural networks},
     year = {2024},
     month = {August},
     abstract = {An approach for integrating randomized neural networks (RaNNs) with an overlapping Schwarz domain decomposition technique is developed to address multi-scale problems. Neural networks within each subdomain are interconnected using local window functions, enabling the construction of a global solution that serves as an approximation to the solution of the partial differential equation (PDE). Via a constraining operator the boundary conditions are enforced in a straightforward manner. The optimization of the parameters in the last layer of the RaNN yields a least-squares problem, leading to accurate solutions for the PDE. The introduction of a two-level domain decomposition method allows for capturing diverse scaling information, thereby enhancing the performance of the method.},
+    note = {Submitted},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }

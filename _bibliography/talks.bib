@@ -16,6 +16,26 @@ References
     keywords = {}
 }
 
+@misc{Heinlein:2025:SML:TBA,
+    title = {TBA},
+    author = {Alexander Heinlein},
+    year = {2025},
+    abbr = {Seminar},
+    note = {Invited talk. Workshop "Scientific machine learning: error estimation and analysis", Besançon, France, January 15-16},
+    abstract = {TBA},
+    keywords = {selected}
+}
+
+@misc{Heinlein:2025:IMG:TBA,
+    title = {TBA},
+    author = {Alexander Heinlein},
+    year = {2025},
+    abbr = {Seminar},
+    note = {Invited plenary talk. International Multigrid Conference (IMG) 2025, King Abdullah University of Science and Technology (KAUST), Saudi Arabia, February 3-5},
+    abstract = {TBA},
+    keywords = {selected}
+}
+
 @misc{Heinlein:2024:CASML:TBA,
     title = {TBA},
     author = {Alexander Heinlein},
@@ -23,7 +43,7 @@ References
     abbr = {Seminar},
     note = {Invited plenary talk. International Conference on Applied AI and Scientific Machine Learning (CASML 2024), Indian Institute of Science (IISc), Bangalore, India, December 14-18},
     abstract = {TBA},
-    keywords = {}
+    keywords = {selected}
 }
 
 @misc{Heinlein:2024:HeielbergU:TBA,
@@ -73,6 +93,15 @@ References
     abbr = {IGHASC},
     note = {Indo-German Workshop on Hardware-aware Scientific Computing. Heidelberg University, Heidelberg, Germany, October 28-30},
     abstract = {TBA},
+    keywords = {}
+}
+
+@misc{Heinlein:2024:MarburgKolloquium:RAS,
+    title = {Domain decomposition techniques for high-performance scientific computing},
+    author = {Alexander Heinlein},
+    year = {2024},
+    abbr = {Colloquium},
+    note = {Kolloquium des Fachbereichs Mathematik und Informatik, Universit\"at Marburg, Marburg, Germany, October 10},
     keywords = {}
 }
 
@@ -256,7 +285,7 @@ References
     author = {Alexander Heinlein},
     year = {2024},
     abbr = {DD28},
-    note = {28th International Conference on Domain Decomposition Methods (DD28), KAUST, Saudi Arabia, January 28 - February 1},
+    note = {28th International Conference on Domain Decomposition Methods (DD28), King Abdullah University of Science and Technology (KAUST), Saudi Arabia, January 28 - February 1},
     abstract = {Monolithic GDSW (generalized Dryja–Smith–Wildund) preconditioners are scalable two-level Schwarz preconditioners for block systems. Compared with block domain decomposition preconditioners, monolithic domain decomposition preconditioners often yield faster convergence since they account for the coupling within the subdomain and coarse problems. In this talk, the focus is on computational fluid dynamics (CFD) simulations, in particular, saddle point problem resulting from the discretization of the (Navier-)Stokes equations. In this case, numerical results show that fast convergence and scalability of monolithic Schwarz preconditioners strongly depends on the choice of an appropriate pair of the velocity and pressure coarse spaces; in particular, there seem to be parallels to inf-sup stable discretizations. Whereas inf-sup stable Lagrangian coarse spaces, for instance, based on Taylor-Hood elements, yield scalable monolithic preconditioners, they are limited in their applicability to complicated geometries and unstructured domain decompositions. GDSW-type coarse spaces are well-suited for those cases, but, in general, an extension of the GDSW approach is required to construct appropriate pairs of velocity and pressure coarse spaces. Therefore, in this talk, a wider class of extension-based coarse spaces using various interface partitions of unity is explored. The numerical and parallel scalability for (Navier-)Stokes problems is then investigated using the parallel FROSch (Fast and Robust Overlapping Schwarz) preconditioner framework in Trilinos.},
     url = {https://dd28.kaust.edu.sa/},
     keywords = {}
@@ -267,7 +296,7 @@ References
     author = {Alexander Heinlein},
     year = {2024},
     abbr = {DD28},
-    note = {28th International Conference on Domain Decomposition Methods (DD28), KAUST, Saudi Arabia, January 28 - February 1},
+    note = {28th International Conference on Domain Decomposition Methods (DD28), King Abdullah University of Science and Technology (KAUST), Saudi Arabia, January 28 - February 1},
     abstract = {Scientific machine learning (SciML) is a rapidly growing field that combines scientific computing and machine learning to solve complex scientific problems. A major branch of SciML is the approximation of the solutions of partial differential equations (PDEs) using neural networks. One popular example are physics-informed neural networks (PINNs), which are trained by minimizing a loss function that may include both a data error and a residual error, the latter of which enforces the governing PDE. Challenging applications, such as multiscale problems, require neural networks with high capacity and often lead to challenges in the training. In this talk, multi-level domain decomposition-based approaches for PINNs will be discussed. Therefore, on each level, the domain is decomposed into overlapping subdomains, and a separate network is constructed on each subdomain. The networks are then trained using a monolithic optimization loop, where the subdomain networks are coupled in an additive way using partition of unity functions. Numerical results for several model problems, including challenging multiscale problems, that demonstrate the robust convergence of the multi-level domain decomposition approach are presented.},
     url = {https://dd28.kaust.edu.sa/},
     slides = {2024/2024-heinlein-dd28-fbpinns/2024-heinlein-fbpinns.pdf},
@@ -279,7 +308,7 @@ References
     author = {Alexander Heinlein},
     year = {2024},
     abbr = {DD28},
-    note = {28th International Conference on Domain Decomposition Methods (DD28), KAUST, Saudi Arabia, January 28 - February 1},
+    note = {28th International Conference on Domain Decomposition Methods (DD28), King Abdullah University of Science and Technology (KAUST), Saudi Arabia, January 28 - February 1},
     abstract = {This talk discusses several techniques for efficiently solving nonlinear problems using Schwarz methods. Newton-Krylov methods are widely used to solve nonlinear problems numerically. These methods linearize the system using Newton's method and solve the resulting linearized systems using a (preconditioned) Krylov method. When using domain decomposition preconditioners, the efficiency can be enhanced if information about the preconditioner from previous linearizations is reused. This includes structural information, such as the domain decomposition, certain index sets, and symbolic factorizations of the subdomain and coarse problems, but also certain components of the preconditioner, such as the coarse space. This typically leads to a speedup in the setup phase, resulting in a dominance of the time required for the solve phase; the solve phase can then be sped up by assign computations to GPUs. As an alternative to Newton-Krylov methods, nonlinear Schwarz preconditioning techniques can be employed to speed up both the nonlinear and linear convergence. In order to facilitate numerical scalability to large numbers of subdomains, a multi-level approach has to be employed; this leads to nonlinear multi-level Schwarz methods. The aforementioned approaches are being discussed and investigated in numerical experiments.},
     url = {https://dd28.kaust.edu.sa/},
     slides = {2024/2024-heinlein-dd28-nonlinear_schwarz/2024-heinlein-nonlinear_schwarz.pdf},
