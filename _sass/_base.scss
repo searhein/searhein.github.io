@@ -185,6 +185,10 @@ blockquote {
       color: white;
       background-color: $tud-color;
     }
+    .tubraunschweig {
+      color: white;
+      background-color: $tubraunschweig-color;
+    }
 }
 
 
@@ -1003,6 +1007,12 @@ footer.sticky-bottom {
       }
       .tud {
         background-color: $tud-color;
+      }
+      .tubraunschweig {
+        background-color: $tubraunschweig-color;
+      }
+      .vua {
+        background-color: $vua-color;
       }
     }
     a {

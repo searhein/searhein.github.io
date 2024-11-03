@@ -1,7 +1,7 @@
 ---
 layout: page_thesis
-university: tud
-collaboration: TU Braunschweig
+university: tubraunschweig
+collaboration: TU Delft
 title: Separating longtime behavior and learning of mechanisms
 co-supervisor: Cordula Reisch (TU Braunschweig)
 student: Tirtho Sarathi Saha

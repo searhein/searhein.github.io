@@ -1,7 +1,7 @@
 ---
 layout: page_thesis
-university: tud
-collaboration: Vrije Universiteit Amsterdam
+university: vua
+collaboration: TU Delft
 title: Geometry Learning for Complex Shaped Cells
 co-supervisor: Qiyao Peng (Vrije Universiteit Amsterdam)
 student: Ikhlasse Ouadah
