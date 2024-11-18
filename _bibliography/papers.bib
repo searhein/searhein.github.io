@@ -988,6 +988,19 @@ References
 
 # accepted
 
+@techreport{Heinlein:2024:FAR,
+    author = {Alexander Heinlein and Kathrin Smetana},
+    title = {Algebraic construction of adaptive coarse spaces for two-level Schwarz preconditioners},
+    year = {2024},
+    month = {November},
+    abbr = {SISC},
+    abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
+    note = {Accepted for publication in the SIAM Journal on Scientific Computing},
+    preprint = {https://arxiv.org/abs/2207.05559},
+    keywords = {accepted, reviewed, recent, highlighted3},
+    bibtex_show = {true}
+}
+
 @techreport{Giammatteo:2024:EAC,
     author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
     title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
@@ -1021,7 +1034,7 @@ References
     year = {2024},
     month = {November},
     abstract = {During the COVID-19 crisis, mechanistic models have been proven fundamental to guide evidence-based decision making. However, time-critical decisions in a dynamically changing environment restrict  the time available for modelers to gather supporting evidence. As infectious disease dynamics are often heterogeneous on a spatial or demographic scale, models should be resolved accordingly. In addition, with a large number of potential interventions, all scenarios can barely be computed on time, even when using supercomputing facilities. We suggest to combine complex mechanistic models with data-driven surrogate models to allow for on-the-fly model adaptations by public health experts. We build upon a spatially and demographically resolved infectious disease model and train a graph neural network for data sets representing early phases of the pandemic. The resulting networks reached an execution time of less than a second, a significant speedup compared to the metapopulation approach. The suggested approach yields potential for on-the-fly execution and, thus, integration of disease dynamics models in low-barrier website applications. For the approach to be used with decision-making, datasets with larger variance will have to be considered.},
-    preprint = {https://arxiv.org/abs/},
+    preprint = {https://arxiv.org/abs/2411.06500},
     keywords = {submitted, recent},
     bibtex_show = {true}
 }
@@ -1125,9 +1138,7 @@ References
     title = {Predicting Coarse Basis Functions for Two-Level Domain Decomposition Methods Using Graph Neural Networks},
     year = {2024},
     month = {July},
-    abstract = {For the robustness and numerical scalability of domain decomposition-based linear solvers, the incorporation of a coarse level, which provides global transport of information, is crucial. State-of-the-art spectral, or adaptive, methods can generate the basis functions of the coarse space, which are adapted to the specific properties of the target problem, and yield provably robust convergence for certain classes of problems.
-However, their construction is computationally expensive and requires non-algebraic information. To improve the practicability of the solver, in this paper, we design a hierarchical math-informed local Graph Neural Network (GNN) to generate effective coarse-space basis functions. Our GNN uses only the local subdomain matrices available as the input to the algebraic linear solvers. This approach has several advantages including: 1) it is algebraic; 2) it is local and therefore as scalable as the classical domain decomposition solvers; and 3) the cost for training, inference, and generating data sets is much lower than that needed for approaches relying on the global matrix.
-To study the potential of our GNN architecture, we present numerical results with homogeneous and heterogeneous problems.},
+    abstract = {For the robustness and numerical scalability of domain decomposition-based linear solvers, the incorporation of a coarse level, which provides global transport of information, is crucial. State-of-the-art spectral, or adaptive, methods can generate the basis functions of the coarse space, which are adapted to the specific properties of the target problem, and yield provably robust convergence for certain classes of problems. However, their construction is computationally expensive and requires non-algebraic information. To improve the practicability of the solver, in this paper, we design a hierarchical math-informed local Graph Neural Network (GNN) to generate effective coarse-space basis functions. Our GNN uses only the local subdomain matrices available as the input to the algebraic linear solvers. This approach has several advantages including: 1) it is algebraic; 2) it is local and therefore as scalable as the classical domain decomposition solvers; and 3) the cost for training, inference, and generating data sets is much lower than that needed for approaches relying on the global matrix. To study the potential of our GNN architecture, we present numerical results with homogeneous and heterogeneous problems.},
     note = {Submitted},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
@@ -1141,18 +1152,6 @@ To study the potential of our GNN architecture, we present numerical results wit
     abstract = {Kolmogorov-Arnold networks (KANs) have attracted attention recently as an alternative to multilayer perceptrons (MLPs) for scientific machine learning. However, KANs can be expensive to train, even for relatively small networks. Inspired by finite basis physics-informed neural networks (FBPINNs), in this work, we develop a domain decomposition method for KANs that allows for several small KANs to be trained in parallel to give accurate solutions for multiscale problems. We show that finite basis KANs (FBKANs) can provide accurate results with noisy data and for physics-informed training.},
     preprint = {https://arxiv.org/abs/2406.19662},
     keywords = {submitted},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2022:FAR,
-    author = {Alexander Heinlein and Kathrin Smetana},
-    title = {A fully algebraic and robust two-level Schwarz method based on optimal local approximation spaces},
-    year = {2023},
-    month = {August},
-    abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2207.05559},
-    keywords = {submitted, reviewed, highlighted3},
     bibtex_show = {true}
 }
 
