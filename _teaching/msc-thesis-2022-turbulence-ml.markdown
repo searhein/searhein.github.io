@@ -11,7 +11,7 @@ redirect: /assets/pdf/thesis_projects/2022/2022-nrg_heinlein_toshniwal-ai_turbul
 project_description:
 interim_thesis:
 interim_presentation:
-final_thesis:
+final_thesis: https://repository.tudelft.nl/record/uuid:013df562-f8a7-44e6-8009-9d711bcbbb41
 final_presentation:
 category: master_thesis
 status: archive
