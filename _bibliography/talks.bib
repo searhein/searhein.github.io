@@ -48,13 +48,14 @@ References
     keywords = {selected}
 }
 
-@misc{Heinlein:2024:CASML:TBA,
-    title = {TBA},
+@misc{Heinlein:2024:CASML:GCM,
+    title = {Geometric Challenges in Machine Learning-Based Surrogate Models},
     author = {Alexander Heinlein},
     year = {2024},
-    abbr = {Seminar},
+    abbr = {CASML@2024},
     note = {Invited plenary talk. International Conference on Applied AI and Scientific Machine Learning (CASML 2024), Indian Institute of Science (IISc), Bangalore, India, December 14-18},
-    abstract = {TBA},
+    abstract = {A key topic in scientific machine learning is the development of surrogate models—machine learning models designed to replace complex and computationally expensive numerical simulations. These models are particularly relevant for parametrized problems, predicting solutions across a range of parameter configurations. While much work focuses on low-dimensional parameterizations, such as constant material properties, higher-dimensional parameterizations—spatially or temporally varying initial or boundary conditions, material distributions, or source terms—pose significant methodological and computational challenges. These cases are especially important, as the potential benefits of the resulting surrogate models are even more pronounced. This talk explores geometric aspects in machine learning-based surrogate modeling, focusing on convolutional neural networks, graph neural networks, and neural operators such as deep operator networks (DeepONets) and integrating data-driven and/or physics-informed loss terms. We explore methods for representing spatial distributions with complex structure, addressing variations in computational domains, and enhancing operator performance through spatial decomposition. Applications include computational fluid dynamics, epidemiological models, and computational biomechanics.},
+    url = {https://casml.iisc.ac.in/},
     keywords = {selected}
 }
 
@@ -72,7 +73,7 @@ References
     title = {When One Level Is Not Enough -- Multilevel Domain Decomposition Methods for Physics and Data-Driven Problems},
     author = {Alexander Heinlein},
     year = {2024},
-    abbr = {Seminar},
+    abbr = {CASA},
     note = {Invited seminar talk. CASA colloquium, TU Eindhoven, Eindhoven, The Netherlands, November 20},
     abstract = {Domain decomposition methods (DDMs) solve boundary value problems by decomposing them into smaller subproblems defined on an overlapping or non-overlapping decomposition of the computational domain. Their divide-and-conquer approach makes DDMs well-suited for large-scale problems and parallel computing. However, achieving robust convergence for challenging problems and scalability to large numbers of subdomains generally requires (global) information transport. This can be achieved by incorporating well-designed coarse levels, transforming DDMs from one- into multi-level algorithms. This talk highlights the importance of using multiple levels in domain decomposition methods. In the first part of the talk, coarse spaces for domain decomposition-based preconditioners will be discussed. They can provide robustness and scalability to Schwarz preconditioners for a wide range of challenging problems exhibiting, for instance, strong heterogeneities, multiple coupled physics, and/or strong nonlinearities. Numerical results using the FROSch (Fast and Robust Overlapping Schwarz) package, which is part of the Trilinos library, demonstrate the effectiveness and efficiency of these Schwarz preconditioners. The second part of the talk will explore the application of DDMs to neural networks (NNs), demonstrating improvements in terms of accuracy, computation time, and/or memory efficiency. Similar to classical domain decomposition methods, coarse levels, here in the form of small global NNs, ensure global information transport, enabling scalability. This talk will cover the application of DDMs in solving partial differential equations using physics-informed NNs (PINNs) and in image segmentation using convolutional NNs (CNNs).},
     url = {https://casa.win.tue.nl/home/event/colloquium-alexander-heinlein-tu-delft},
