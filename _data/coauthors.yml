@@ -34,6 +34,10 @@
   - firstname: ["Vandana", "V."]
     url:
 
+"Egberts":
+  - firstname: ["Ginger", "G."]
+    url: https://www.uhasselt.be/nl/wie-is-wie/detail/ginger-egberts
+
 "Ehlers":
   - firstname: ["Svenja", "S."]
     url: https://cgi.tu-harburg.de/~dynwww/cgi-bin/members/svenja-ehlers
@@ -45,6 +49,10 @@
 "Giammatteo":
   - firstname: ["Elena", "E."]
     url: hhttps://people.utwente.nl/e.giammatteo
+
+"Giovanardi":
+  - firstname: ["Bianca", "B."]
+    url: https://sites.google.com/view/biancagiovanardi/home
 
 "Grimm":
   - firstname: ["Viktor", "V."]
@@ -192,6 +200,10 @@
 "Verburg":
   - firstname: ["Corné", "Corne", "C."]
     url:
+
+"Vermolen":
+  - firstname: ["Fred", "F."]
+    url: https://www.uhasselt.be/en/who-is-who/fred-vermolen
 
 "Vuik":
   - firstname: ["Cornelis", "C.", "Kees", "K."]
