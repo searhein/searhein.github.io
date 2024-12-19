@@ -1,10 +1,10 @@
 ---
 layout: page_thesis
 university: tud
-collaboration: Brown University, Università della Svizzera italiana
+collaboration: University of Toulouse
 title: Decomposing Graph Neural Networks
-co-supervisor: Alena Kopaničáková (Brown University, Università della Svizzera italiana)
-student: Mirte van Loenen
+co-supervisor: Alena Kopaničáková (University of Toulouse)
+student:
 runningindex: 23
 nolink: false
 redirect:
@@ -14,5 +14,5 @@ interim_presentation:
 final_thesis:
 final_presentation:
 category: master_thesis
-status: ongoing
+status: open
 ---
