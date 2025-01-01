@@ -993,6 +993,7 @@ References
     title={Towards Model Discovery Using Domain Decomposition and PINNs}, 
     year = {2024},
     month = {October},
+    abbr = {MATHMOD2025},
     abstract = {We enhance machine learning algorithms for learning model parameters in complex systems represented by ordinary differential equations (ODEs) with domain decomposition methods. The study evaluates the performance of two approaches, namely (vanilla) Physics-Informed Neural Networks (PINNs) and Finite Basis Physics-Informed Neural Networks (FBPINNs), in learning the dynamics of test models with a quasi-stationary longtime behavior. We test the approaches for data sets in different dynamical regions and with varying noise level. As results, we find a better performance for the FBPINN approach compared to the vanilla PINN approach, even in cases with data from only a quasi-stationary time domain with few dynamics.},
     note = {Accepted as Full Contribution for presentation at the 11th Vienna International Conference on Mathematical Modelling (MATHMOD 2025)},
     preprint = {https://arxiv.org/abs/2410.01599},
@@ -1105,7 +1106,7 @@ References
     month = {August},
     abstract = {An approach for integrating randomized neural networks (RaNNs) with an overlapping Schwarz domain decomposition technique is developed to address multi-scale problems. Neural networks within each subdomain are interconnected using local window functions, enabling the construction of a global solution that serves as an approximation to the solution of the partial differential equation (PDE). Via a constraining operator the boundary conditions are enforced in a straightforward manner. The optimization of the parameters in the last layer of the RaNN yields a least-squares problem, leading to accurate solutions for the PDE. The introduction of a two-level domain decomposition method allows for capturing diverse scaling information, thereby enhancing the performance of the method.},
     note = {Submitted},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1116,7 +1117,7 @@ References
     month = {August},
     abstract = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton'’'s method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia’s Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
     note = {Submitted},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1128,7 +1129,7 @@ References
     abstract = {This study presents a two-level Deep Domain Decomposition Method (Deep-DDM) augmented with a coarse-level network for solving boundary value problems using physics-informed neural networks (PINNs). The addition of the coarse level network improves scalability and convergence rates compared to the single level method. Tested on a Poisson equation with Dirichlet boundary conditions, the two-level deep DDM demonstrates superior performance, maintaining efficient convergence regardless of the number of subdomains. This advance provides a more scalable and effective approach to solving complex partial differential equations with machine learning.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2408.12198},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1140,7 +1141,7 @@ References
     abstract = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2410.22871},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1152,7 +1153,7 @@ References
     abstract = {The two-level overlapping additive Schwarz method offers a robust and scalable preconditioner for various linear systems resulting from elliptic problems. One of the key to these properties is the construction of the coarse space used to solve a global coupling problem, which traditionally requires information about the underlying discretization. An algebraic formulation of the coarse space reduces the complexity of its assembly. Furthermore, well-chosen coarse basis functions within this space can better represent changes in the problem's properties. Here we introduce an algebraic formulation of the multiscale finite element method (MsFEM) based on the algebraic multiscale solver (AMS) in the context of the two-level Schwarz method. We show how AMS is related to other energy-minimizing coarse spaces. Furthermore, we compare the AMS with other algebraic energy-minimizing spaces: the generalized Dryja--Smith--Widlund (GDSW), and the reduced dimension GDSW (RGDSW).},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2408.08187},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1164,7 +1165,7 @@ References
     abstract = {The development of scalable and wavenumber-robust iterative solvers for Helmholtz problems is challenging but also relevant for various application fields. In this work, two-level Schwarz domain decomposition preconditioners are enhanced by coarse space constructed using higher-order B\'ezier interpolation. The numerical results indicate numerical scalability and robustness with respect the wavenumber, as long as the wavenumber times the element size of the coarse mesh is sufficiently low.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2408.03571},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1176,7 +1177,7 @@ References
     abstract = {The segmentation of ultra-high resolution images poses challenges such as loss of spatial information or computational inefficiency. In this work, a novel approach that combines encoder-decoder architectures with domain decomposition strategies to address these challenges is proposed. Specifically, a domain decomposition-based U-Net (DDU-Net) architecture is introduced, which partitions input images into non-overlapping patches that can be processed independently on separate devices. A communication network is added to facilitate inter-patch information exchange to enhance the understanding of spatial context. Experimental validation is performed on a synthetic dataset that is designed to measure the effectiveness of the communication network. Then, the performance is tested on the DeepGlobe land cover classification dataset as a real-world benchmark data set. The results demonstrate that the approach, which includes inter-patch communication for images divided into 16x16 non-overlapping subimages, achieves a 2-3% higher intersection over union (IoU) score compared to the same network without inter-patch communication. The performance of the network which includes communication is equivalent to that of a baseline U-Net trained on the full image, showing that our model provides an effective solution for segmenting ultra-high-resolution images while preserving spatial context. The code is available at https://github.com/corne00/HiRes-Seg-CNN.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2407.21266},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
