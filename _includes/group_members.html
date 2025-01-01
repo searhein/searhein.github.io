@@ -17,47 +17,52 @@
                 path=group_member.img
                 alt="group_member thumbnail" -%}
               {%- endif %}
+              {%- if group_member.note -%}
+              <div class="card-body">
+                <p class="card-text"> {{ group_member.note }} </p>
+              </div>
+              {%- endif %}
           </div>
           <div class="col-md-7">
-              <div class="card-body">
-                <h2 class="card-title text-lowercase">{{ group_member.first_name }} {{ group_member.last_name }}</h2>
-                {%- if group_member.university -%}
-                    <p class="card-text"> {{ group_member.university }} </p>
-                {% endif %}
-                {%- if group_member.department -%}
-                    <p class="card-text"> {{ group_member.department }} </p>
-                {% endif %}
-                {%- if group_member.address -%}
-                    <p class="card-text"> {{ group_member.address }} </p>
-                {% endif %}
-                {%- if group_member.email -%}
-                    <p class="card-text"> Email: <a href="mailto:{{ group_member.email }}" title="email"><i class="fas fa-envelope"></i></a>  </p>
-                {% endif %}
-                {%- if group_member.website -%}
-                    <p class="card-text"> Website: <a href="{{ group_member.website }}" title="website"><i class="fas fa-globe"></i></a> </p>
-                {% endif %}
-                {%- if group_member.project -%}
-                    <p class="card-text"> <a href="{{ group_member.project }}" title="project">Project</a> </p>
-                {% endif %}
-                {%- if group_member.cv -%}
-                    <p class="card-text"> CV: <a href="{{ group_member.cv }}" title="cv"><i class="fas fa-file"></i></a> </p>
-                {% endif %}
-                <div class="row ml-1 mr-1 p-0">
-                  {%- if group_member.github -%}
-                  <div class="github-icon">
-                    <div class="icon" data-toggle="tooltip" title="Code Repository">
-                      <a href="{{ group_member.github }}"><i class="fab fa-github gh-icon"></i></a>
-                    </div>
-                    {%- if group_member.github_stars -%}
-                    <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                      <i class="fas fa-star"></i>
-                      <span id="{{ group_member.github_stars }}-stars"></span>
-                    </span>
-                    {%- endif %}
+            <div class="card-body">
+              <h2 class="card-title text-lowercase">{{ group_member.first_name }} {{ group_member.last_name }}</h2>
+              {%- if group_member.university -%}
+                  <p class="card-text"> {{ group_member.university }} </p>
+              {% endif %}
+              {%- if group_member.department -%}
+                  <p class="card-text"> {{ group_member.department }} </p>
+              {% endif %}
+              {%- if group_member.address -%}
+                  <p class="card-text"> {{ group_member.address }} </p>
+              {% endif %}
+              {%- if group_member.email -%}
+                  <p class="card-text"> Email: <a href="mailto:{{ group_member.email }}" title="email"><i class="fas fa-envelope"></i></a>  </p>
+              {% endif %}
+              {%- if group_member.website -%}
+                  <p class="card-text"> Website: <a href="{{ group_member.website }}" title="website"><i class="fas fa-globe"></i></a> </p>
+              {% endif %}
+              {%- if group_member.project -%}
+                  <p class="card-text"> <a href="{{ group_member.project }}" title="project">Project</a> </p>
+              {% endif %}
+              {%- if group_member.cv -%}
+                  <p class="card-text"> CV: <a href="{{ group_member.cv }}" title="cv"><i class="fas fa-file"></i></a> </p>
+              {% endif %}
+              <div class="row ml-1 mr-1 p-0">
+                {%- if group_member.github -%}
+                <div class="github-icon">
+                  <div class="icon" data-toggle="tooltip" title="Code Repository">
+                    <a href="{{ group_member.github }}"><i class="fab fa-github gh-icon"></i></a>
                   </div>
+                  {%- if group_member.github_stars -%}
+                  <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                    <i class="fas fa-star"></i>
+                    <span id="{{ group_member.github_stars }}-stars"></span>
+                  </span>
                   {%- endif %}
                 </div>
+                {%- endif %}
               </div>
+            </div>
           </div>
         </div>
 

@@ -7,9 +7,9 @@ department: Delft Institute of Applied Mathematics
 address:
 email:
 website:
-img:
-project: /teaching/msc-thesis-2021-neural_networks_burn_injuries
+img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
+project: /teaching/msc-theses/neural_networks_burn_injuries
 nolink: true
 redirect:
-category: master students
+category: former members
 ---

@@ -7,9 +7,9 @@ department: Delft Institute of Applied Mathematics
 address:
 email:
 website:
-img:
-project: /teaching/msc-thesis-2022-ml-sea-ice
+img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
+project: /teaching/msc-theses/ml-sea-ice
 nolink: true
 redirect:
-category: master students
+category: former members
 ---

@@ -12,7 +12,7 @@ project_description: /assets/pdf/thesis_projects/2022/2022-heinlein_mehlmann-ml-
 interim_thesis:
 interim_presentation:
 final_thesis:
-final_presentation:
+final_presentation: https://repository.tudelft.nl/record/uuid:566f2247-3827-4b0c-aed5-bd54ee0259f2
 category: master_thesis
 status: archive
 ---

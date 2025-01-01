@@ -988,6 +988,18 @@ References
 
 # accepted
 
+@techreport{Saha:2024:TMD,
+    author={Tirtho S. Saha and Alexander Heinlein and Cordula Reisch},
+    title={Towards Model Discovery Using Domain Decomposition and PINNs}, 
+    year = {2024},
+    month = {October},
+    abstract = {We enhance machine learning algorithms for learning model parameters in complex systems represented by ordinary differential equations (ODEs) with domain decomposition methods. The study evaluates the performance of two approaches, namely (vanilla) Physics-Informed Neural Networks (PINNs) and Finite Basis Physics-Informed Neural Networks (FBPINNs), in learning the dynamics of test models with a quasi-stationary longtime behavior. We test the approaches for data sets in different dynamical regions and with varying noise level. As results, we find a better performance for the FBPINN approach compared to the vanilla PINN approach, even in cases with data from only a quasi-stationary time domain with few dynamics.},
+    note = {Accepted as Full Contribution for presentation at the 11th Vienna International Conference on Mathematical Modelling (MATHMOD 2025)},
+    preprint = {https://arxiv.org/abs/2410.01599},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Heinlein:2024:FAR,
     author = {Alexander Heinlein and Kathrin Smetana},
     title = {Algebraic construction of adaptive coarse spaces for two-level Schwarz preconditioners},
@@ -1027,6 +1039,18 @@ References
 }
 
 # submitted
+
+@techreport{Shang:2024:DDM,
+    author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
+    title = {Overlapping Schwarz Preconditioners for Randomized Neural Networks with Domain Decomposition},
+    year = {2024},
+    month = {December},
+    abstract = {Randomized neural networks (RaNNs), in which hidden layers remain fixed after random initialization, provide an efficient alternative for parameter optimization compared to fully parameterized networks. In this paper, RaNNs are integrated with overlapping Schwarz domain decomposition in two (main) ways: first, to formulate the least-squares problem with localized basis functions, and second, to construct overlapping preconditioners for the resulting linear systems. In particular, neural networks are initialized randomly in each subdomain based on a uniform distribution and linked through a partition of unity, forming a global solution that approximates the solution of the partial differential equation. Boundary conditions are enforced through a constraining operator, eliminating the need for a penalty term to handle them. Principal component analysis (PCA) is employed to reduce the number of basis functions in each subdomain, yielding a linear system with a lower condition number. By constructing additive and restricted additive Schwarz preconditioners, the least-squares problem is solved efficiently using the Conjugate Gradient (CG) and Generalized Minimal Residual (GMRES) methods, respectively. Our numerical results demonstrate that the proposed approach significantly reduces computational time for multi-scale and time-dependent problems. Additionally, a three-dimensional problem is presented to demonstrate the efficiency of using the CG method with an AS preconditioner, compared to an QR decomposition, in solving the least-squares problem.},
+    note = {Submitted},
+    preprint = {https://arxiv.org/abs/2412.19207},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
 
 @techreport{Visser:2024:PAC,
     author = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
@@ -1070,18 +1094,6 @@ References
     abstract = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp–finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2410.07723},
-    keywords = {submitted, reviewed, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Saha:2024:TMD,
-    author={Tirtho S. Saha and Alexander Heinlein and Cordula Reisch},
-    title={Towards Model Discovery Using Domain Decomposition and PINNs}, 
-    year = {2024},
-    month = {October},
-    abstract = {We enhance machine learning algorithms for learning model parameters in complex systems represented by ordinary differential equations (ODEs) with domain decomposition methods. The study evaluates the performance of two approaches, namely (vanilla) Physics-Informed Neural Networks (PINNs) and Finite Basis Physics-Informed Neural Networks (FBPINNs), in learning the dynamics of test models with a quasi-stationary longtime behavior. We test the approaches for data sets in different dynamical regions and with varying noise level. As results, we find a better performance for the FBPINN approach compared to the vanilla PINN approach, even in cases with data from only a quasi-stationary time domain with few dynamics.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2410.01599},
     keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }

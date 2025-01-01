@@ -9,6 +9,7 @@ email: F.A.CumaruSilvaAlves@tudelft.nl
 website:
 img: https://filelist.tudelft.nl/_processed_/4/8/csm_cumaru_f_de4f165110.webp
 project:
+note: Co-supervisor Hadi Hajibeygi
 nolink: true
 redirect:
 category: phd students

@@ -9,6 +9,7 @@ email: K.Slepova@tudelft.nl
 website:
 img: https://filelist.tudelft.nl/_processed_/7/3/csm_wl16nq_af1236d89b.webp
 project:
+note: Main supervisor Martin van Gijzen
 nolink: true
 redirect:
 category: phd students
