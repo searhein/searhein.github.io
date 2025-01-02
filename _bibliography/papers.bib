@@ -5,6 +5,22 @@ References
 
 # published
 
+@techreport{Giammatteo:2024:EAC,
+    author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
+    title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
+    journal = {IMA Journal of Numerical Analysis},
+    pages = {drae076},
+    year = {2024},
+    doi = {10.1093/imanum/drae076},
+    abbr = {IMAJNA},
+    abstract = {In this work, we propose and analyze an extension of the approximate component mode synthesis (ACMS) method to the two-dimensional heterogeneous Helmholtz equation. The ACMS method has originally been introduced by Hetmaniuk and Lehoucq as a multiscale method to solve elliptic partial differential equations. The ACMS method uses a domain decomposition to separate the numerical approximation by splitting the variational problem into two independent parts: local Helmholtz problems and a global interface problem. While the former are naturally local and decoupled such that they can be easily solved in parallel, the latter requires the construction of suitable local basis functions relying on local eigenmodes and suitable extensions. We carry out a full error analysis of this approach focusing on the case where the domain decomposition is kept fixed, but the number of eigenfunctions is increased. The theoretical results in this work are supported by numerical experiments verifying algebraic convergence for the method. In certain, practically relevant cases, even super-algebraic convergence for the local Helmholtz problems can be achieved without oversampling.},
+    note = {Accepted for publication in the IMA Journal of Numerical Analysis},
+    url = {https://doi.org/10.1093/imanum/drae076},
+    preprint = {https://arxiv.org/abs/2303.06671},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @article{Dolean:2024:MDD,
     author = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and Ben Moseley},
     title = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
@@ -1011,19 +1027,6 @@ References
     note = {Accepted for publication in the SIAM Journal on Scientific Computing},
     preprint = {https://arxiv.org/abs/2207.05559},
     keywords = {accepted, reviewed, recent, highlighted3},
-    bibtex_show = {true}
-}
-
-@techreport{Giammatteo:2024:EAC,
-    author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
-    title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
-    year = {2024},
-    month = {October},
-    abbr = {IMAJNA},
-    abstract = {An extension of the approximate component mode synthesis (ACMS) method to the heterogeneous Helmholtz equation is proposed. The ACMS method has originally been introduced by Hetmaniuk and Lehoucq as a multiscale method to solve elliptic partial differential equations. The ACMS method uses a domain decomposition to separate the numerical approximation by splitting the variational problem into two independent parts: local Helmholtz problems and a global interface problem. While the former are naturally local and decoupled such that they can be easily solved in parallel, the latter requires the construction of suitable local basis functions relying on local eigenmodes and suitable extensions. We carry out a full error analysis of this approach focusing on the case where the domain decomposition is kept fixed, but the number of eigenfunctions is increased. This complements related results for elliptic problems where the focus is on the refinement of the domain decomposition instead. The theoretical results in this work are supported by numerical experiments verifying algebraic convergence for the interface problems. In certain, practically relevant cases, even exponential convergence for the local Helmholtz problems can be achieved without oversampling.},
-    note = {Accepted for publication in the IMA Journal of Numerical Analysis},
-    preprint = {https://arxiv.org/abs/2303.06671},
-    keywords = {accepted, reviewed, recent},
     bibtex_show = {true}
 }
 
