@@ -5,7 +5,7 @@ semester: Q3 & Q4 2024/2025
 title: Computational Fluid Dynamics
 instructors: Alexander Heinlein and Artur Palha
 description:
-runningindex: 24
+runningindex: 25
 nolink: true
 category: course
 status: planned
