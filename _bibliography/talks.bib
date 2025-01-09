@@ -5,14 +5,24 @@ References
 
 # talks
 
-@misc{Heinlein:2024:ISCL:TBA,
+@misc{Heinlein:2025:GAMM:DDR,
+    title = {Domain Decomposition for Randomized Neural Networks},
+    author = {Alexander Heinlein},
+    year = {2025},
+    abbr = {GAMM 2025},
+    note = {95th Annual Meeting of the International Association of Applied Mathematics and Mechanics (GAMM 2025), Poznan, Poland, April 7-11},
+    abstract = {Neural network architectures based on overlapping domain decomposition approaches have emerged as a powerful framework for enhancing the efficiency, scalability, and robustness of physics-informed neural networks (PINNs). In this work, we apply this approach to randomized neural networks (RaNNs) for solving partial differential equations (PDEs). A separate neural network is independently initialized on each subdomain using a uniform distribution, and the networks are combined via a partition of unity. Unlike classical PINNs, only the final layers of these networks are trained, which strongly impacts the resulting optimization problem. The resulting optimization problem, for linear PDEs, reduces to a least-squares formulation, which can be solved using direct solvers for small systems or iterative solvers for larger ones. However, the least-squares problems are generally ill-conditioned, and iterative solvers converge slowly without appropriate preconditioning. To address this, we first apply singular value decomposition (SVD) to remove components with low singular values, improving the conditioning of the system. Additionally, we employ a second type of overlapping domain decomposition in the form of additive and restricted additive Schwarz preconditioners for the least-squares problem, further enhancing solver efficiency. Numerical experiments demonstrate that this dual use of domain decomposition significantly reduces computational time while maintaining accuracy, particularly for multi-scale and time-dependent problems.},
+    url = {https://jahrestagung.gamm.org/annual-meeting-2025/95th-annual-meeting-2/},
+    keywords = {}
+}
+
+@misc{Heinlein:2025:ISCL:TBA,
     title = {TBA},
     author = {Alexander Heinlein},
     year = {2025},
     abbr = {ISCL},
     note = {Invited seminar talk. ISCL Seminar Series, Pennsylvania State University, USA, March 14},
     abstract = {TBA},
-    video = {https://www.youtube.com/watch?v=087Y9pLFNqI},
     keywords = {}
 }
 
@@ -686,7 +696,7 @@ References
     title = {Predicting Cardiovascular Flow Using Convolutional Autoencoder Neural Networks and Physical Constraints},
     author = {Alexander Heinlein},
     year = {2022},
-    abbr = {GAMM2022},
+    abbr = {GAMM 2022},
     note = {92nd GAMM Annual Meeting, Aachen, Germany, August 15-19},
     abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In cardiovascular applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities, such as the maximum velocity or the wall shear stresses at certain locations. In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed. Using this approach, it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. In order to construct accurate surrogate models, U-Net type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed, and the architecture and hyper parameters are optimized to this application. Two different approaches are compared: a fully supervised approach, where the model is trained using high fidelity simulation data, and a novel approach, where the model is trained based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Then, the framework is applied to geometries of arteries with aneurysms are presented. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes.},
     url = {https://jahrestagung.gamm.org/annual-meeting-2022/annual-meeting/},
