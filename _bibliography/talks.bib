@@ -70,14 +70,15 @@ References
     keywords = {}
 }
 
-@misc{Heinlein:2025:AICOMAS:DDE,
-    title = {Domain decomposition and energy natural gradient descent optimization for physics-informed neural networks},
+@misc{Heinlein:2025:AICOMAS:DDR,
+    title = {Domain Decomposition for Randomized Neural Networks},
     author = {Alexander Heinlein},
     year = {2025},
     abbr = {AICOMAS},
     note = {3rd IACM Digital Twins in Engineering Conference (DTE 2025) \& 1st ECCOMAS Artificial Intelligence and Computational Methods in Applied Science (AICOMAS 2025), Paris, France, February 17-21},
-    abstract = {Energy natural gradient descent is an optimization algorithm for physics-informed neural networks (PINNs) which leverages a natural gradient approach with respect to a Hessian-induced Riemannian metric. The resulting update direction in function space aligns with the Newton direction modulo an orthogonal projection onto the model's tangent space. It can significantly improve accuracy, yielding solutions with errors several orders of magnitude smaller than those obtained using standard optimizers such as the gradient descent, Adam, or Broyden--Fletcher--Goldfarb--Shanno algorithms. Unfortunately, the method has a computational drawback: each iteration requires solving a tangent system involving a dense and highly ill-conditioned matrix, posing challenges for large-scale and multiscale problems that necessitate larger neural networks. To address this, we explore domain decomposition-based neural network architectures, which have been shown to enhance the performance of PINNs for such problems. These architectures also introduce sparsity into the tangent matrix, making the solution of the tangent system computationally feasible in practice. The performance gains of using a combination of domain decomposition techniques and an energy natural gradient descent optimizer for PINNs will be demonstrated for several model problems.},
+    abstract = {Neural network architectures based on overlapping domain decomposition approaches have emerged as a powerful framework for enhancing the efficiency, scalability, and robustness of physics-informed neural networks (PINNs). In this work, we apply this approach to randomized neural networks (RaNNs) for solving partial differential equations (PDEs). A separate neural network is independently initialized on each subdomain using a uniform distribution, and the networks are combined via a partition of unity. Unlike classical PINNs, only the final layers of these networks are trained, which strongly impacts the resulting optimization problem. The resulting optimization problem, for linear PDEs, reduces to a least-squares formulation, which can be solved using direct solvers for small systems or iterative solvers for larger ones. However, the least-squares problems are generally ill-conditioned, and iterative solvers converge slowly without appropriate preconditioning. To address this, we first apply singular value decomposition (SVD) to remove components with low singular values, improving the conditioning of the system. Additionally, we employ a second type of overlapping domain decomposition in the form of additive and restricted additive Schwarz preconditioners for the least-squares problem, further enhancing solver efficiency. Numerical experiments demonstrate that this dual use of domain decomposition significantly reduces computational time while maintaining accuracy, particularly for multi-scale and time-dependent problems.},
     url = {https://dte_aicomas_2025.iacm.info/},
+    slides = {2025/2025-heinlein-aicomas-ddr/2025-heinlein-dd-ranns.pdf},
     keywords = {}
 }
 
