@@ -5,7 +5,7 @@ References
 
 # published
 
-@techreport{Giammatteo:2024:EAC,
+@article{Giammatteo:2024:EAC,
     author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
     title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
     journal = {IMA Journal of Numerical Analysis},
@@ -14,10 +14,9 @@ References
     doi = {10.1093/imanum/drae076},
     abbr = {IMAJNA},
     abstract = {In this work, we propose and analyze an extension of the approximate component mode synthesis (ACMS) method to the two-dimensional heterogeneous Helmholtz equation. The ACMS method has originally been introduced by Hetmaniuk and Lehoucq as a multiscale method to solve elliptic partial differential equations. The ACMS method uses a domain decomposition to separate the numerical approximation by splitting the variational problem into two independent parts: local Helmholtz problems and a global interface problem. While the former are naturally local and decoupled such that they can be easily solved in parallel, the latter requires the construction of suitable local basis functions relying on local eigenmodes and suitable extensions. We carry out a full error analysis of this approach focusing on the case where the domain decomposition is kept fixed, but the number of eigenfunctions is increased. The theoretical results in this work are supported by numerical experiments verifying algebraic convergence for the method. In certain, practically relevant cases, even super-algebraic convergence for the local Helmholtz problems can be achieved without oversampling.},
-    note = {Accepted for publication in the IMA Journal of Numerical Analysis},
     url = {https://doi.org/10.1093/imanum/drae076},
     preprint = {https://arxiv.org/abs/2303.06671},
-    keywords = {published, reviewed, recent},
+    keywords = {published, reviewed},
     bibtex_show = {true}
 }
 
@@ -1013,7 +1012,7 @@ References
     abstract = {We enhance machine learning algorithms for learning model parameters in complex systems represented by ordinary differential equations (ODEs) with domain decomposition methods. The study evaluates the performance of two approaches, namely (vanilla) Physics-Informed Neural Networks (PINNs) and Finite Basis Physics-Informed Neural Networks (FBPINNs), in learning the dynamics of test models with a quasi-stationary longtime behavior. We test the approaches for data sets in different dynamical regions and with varying noise level. As results, we find a better performance for the FBPINN approach compared to the vanilla PINN approach, even in cases with data from only a quasi-stationary time domain with few dynamics.},
     note = {Accepted as Full Contribution for presentation at the 11th Vienna International Conference on Mathematical Modelling (MATHMOD 2025)},
     preprint = {https://arxiv.org/abs/2410.01599},
-    keywords = {accepted, reviewed, recent},
+    keywords = {accepted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1043,6 +1042,30 @@ References
 }
 
 # submitted
+
+@techreport{Yang:2025:NSH,
+    author = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
+    title = {Numerical study on hyper parameter settings for neural network approximation to partial differential equations},
+    year = {2025},
+    month = {March},
+    abstract = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyper parameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyper parameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyper parameter settings are known to be different for different model problems and currently no universal rule for the choice of hyper parameters is known. In this paper, for second order elliptic model problems, various hyper parameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyper parameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
+    note = {Submitted},
+    preprint = {},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
+
+@techreport{Mayr:2025:TES,
+    author = {Matthias Mayr and Alexander Heinlein and Christian Glusa and Sivasankaran Rajamanickam and Maarten Arnst and Roscoe A. Bartlett and Luc Berger-Vergiat and Erik G. Boman and Karen Devine and Graham Harper and Michael Heroux and Mark Hoemmen and Jonathan Hu and Brian Kelley and Kyungjoo Kim and Drew P. Kouri and Paul Kuberry and Kim Liegeois and Curtis C. Ober and Roger Pawlowski and Carl Pearson and Mauro Perego and Eric Phipps and Denis Ridzal and Nathan V. Roberts and Christopher M. Siefert and Heidi K. Thornquist and Romin Tomasetti and Christian R. Trott and Raymond S. Tuminaro and James M. Willenbring and Michael M. Wolf and Ichitaro Yamazaki},
+    title = {Trilinos: Enabling Scientific Computing Across Diverse Hardware Architectures at Scale},
+    year = {2025},
+    month = {March},
+    abstract = {Trilinos is a community-developed, open-source software framework that facilitates building large-scale, complex, multiscale, multiphysics simulation code bases for scientific and engineering problems. Since the Trilinos framework has undergone substantial changes to support new applications and new hardware architectures, this document is an update to ``An Overview of the Trilinos project'' by Heroux et al. (ACM Transactions on Mathematical Software, 31(3):397--423, 2005). It describes the design of Trilinos, introduces its new organization in product areas, and highlights established and new features available in Trilinos. Particular focus is put on the modernized software stack based on the Kokkos ecosystem to deliver performance portability across heterogeneous hardware architectures. This paper also outlines the organization of the Trilinos community and the contribution model to help onboard interested users and contributors.},
+    note = {Submitted},
+    preprint = {},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
 
 @techreport{Shang:2024:DDM,
     author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
@@ -1075,7 +1098,7 @@ References
     abstract = {Burn injuries present a significant global health challenge. Among the most severe long-term consequences are contractures, which can lead to functional impairments and disfigurement. Understanding and predicting the evolution of post-burn wounds is essential for developing effective treatment strategies. Traditional mathematical models, while accurate, are often computationally expensive and time-consuming, limiting their practical application. Recent advancements in machine learning, particularly in deep learning, offer promising alternatives for accelerating these predictions. This study explores the use of a deep operator network (DeepONet), a type of neural operator, as a surrogate model for finite element simulations, aimed at predicting post-burn contraction across multiple wound shapes. A DeepONet was trained on three distinct initial wound shapes, with enhancement made to the architecture by incorporating initial wound shape information and applying sine augmentation to enforce boundary conditions. The performance of the trained DeepONet was evaluated on a test set including finite element simulations based on convex combinations of the three basic wound shapes. The model achieved an $R^2$ score of $0.99$, indicating strong predictive accuracy and generalization. Moreover, the model provided reliable predictions over an extended period of up to one year, with speedups of up to 128-fold on CPU and 235-fold on GPU, compared to the numerical model. These findings suggest that DeepONets can effectively serve as a surrogate for traditional finite element methods in simulating post-burn wound evolution, with potential applications in medical treatment planning.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2411.14555},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1086,7 +1109,7 @@ References
     month = {November},
     abstract = {During the COVID-19 crisis, mechanistic models have been proven fundamental to guide evidence-based decision making. However, time-critical decisions in a dynamically changing environment restrict  the time available for modelers to gather supporting evidence. As infectious disease dynamics are often heterogeneous on a spatial or demographic scale, models should be resolved accordingly. In addition, with a large number of potential interventions, all scenarios can barely be computed on time, even when using supercomputing facilities. We suggest to combine complex mechanistic models with data-driven surrogate models to allow for on-the-fly model adaptations by public health experts. We build upon a spatially and demographically resolved infectious disease model and train a graph neural network for data sets representing early phases of the pandemic. The resulting networks reached an execution time of less than a second, a significant speedup compared to the metapopulation approach. The suggested approach yields potential for on-the-fly execution and, thus, integration of disease dynamics models in low-barrier website applications. For the approach to be used with decision-making, datasets with larger variance will have to be considered.},
     preprint = {https://arxiv.org/abs/2411.06500},
-    keywords = {submitted, recent},
+    keywords = {submitted},
     bibtex_show = {true}
 }
 
@@ -1098,7 +1121,7 @@ References
     abstract = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp–finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2410.07723},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
