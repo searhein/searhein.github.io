@@ -11,7 +11,7 @@ References
     year = {2025},
     abbr = {DD29},
     note = {29th International Conference on Domain Decomposition Methods (DD29), Politecnico di Milano, Milan, Italy, June 23-27, 2025},
-    abstract = {TBA},
+    abstract = {Physics-Informed Neural Networks (PINNs) offer a flexible, mesh-free approach to solving differential equations using neural networks. While their implementation is straightforward, training remains challenging due to sensitivity to weight initialization and hyperparameter selection. Additionally, issues such as scalability, spectral bias, and ill-conditioning pose significant challenges. This talk explores how overlapping domain decomposition (DD) techniques can improve the convergence and efficiency of PINNs. Three primary cases are investigated. First, classical PINNs are discussed, where solutions to specific initial-boundary value problems are approximated using standard feedforward neural networks. To enhance performance, DD-based architectures are introduced. Second, randomized neural networks are considered, where hidden layer weights are randomly initialized and fixed, leaving only the final layer to be trained. For linear differential operators, this approach reduces the problem to a linear least-squares formulation, which can be efficiently solved using classical numerical techniques. In this context, DD-based architectures are implemented alongside overlapping Schwarz preconditioning to accelerate convergence. Finally, improvements in physics-informed neural operators through DD-based architectures are studied. Unlike solving a single initial-boundary value problem, neural operators approximate solution operators for parameterized problems. Numerical experiments conducted on various model problems, including multiscale and wave phenomena, demonstrate the effectiveness of domain decomposition techniques for enhancing PINNs. These results highlight the potential of DD methods to improve computational efficiency and accuracy in physics-informed machine learning.},
     url = {https://www.dd29.polimi.it/},
     keywords = {}
 }
@@ -50,12 +50,13 @@ References
 }
 
 @misc{Heinlein:2025:ISCL:TBA,
-    title = {TBA},
+    title = {Domain decomposition for physics-informed neural networks: linear and nonlinear function approximation and operator learning},
     author = {Alexander Heinlein},
     year = {2025},
     abbr = {ISCL},
     note = {Invited seminar talk. ISCL Seminar Series, Pennsylvania State University, USA, March 14},
-    abstract = {TBA},
+    abstract = {Physics-Informed Neural Networks (PINNs) provide a flexible, mesh-free approach to solving differential equations. While their implementation is straightforward and they hold great potential for high-dimensional, inverse, and nonlinear problems, training remains challenging due to their sensitivity to weight initialization, hyperparameter selection, scalability issues, spectral bias, and ill-conditioning. This talk explores how overlapping domain decomposition (DD) techniques can improve the convergence and efficiency of PINNs. Different strategies for integrating DD with PINNs are investigated. First, classical PINNs are enhanced using multilevel DD-based architectures to improve performance. Additionally, this strategy is combined with multifidelity stacking PINNs for time-dependent problems, demonstrating clear improvements over reference results without DD. Second, randomized neural networks are considered, where hidden layer weights are randomly initialized and fixed, reducing the problem to a linear least-squares formulation for linear differential operators. In this setting, DD-based architectures, combined with overlapping Schwarz preconditioning, accelerate convergence. Finally, improvements in physics-informed neural operators through DD-based architectures are explored, enabling the efficient approximation of solution operators for parameterized problems. Numerical experiments on multiscale and wave phenomena demonstrate the effectiveness of DD techniques in PINNs. These results highlight the potential of DD methods to significantly enhance computational efficiency and accuracy in physics-informed machine learning.},
+    url = {https://sites.google.com/view/iscl-seminar-series/},
     keywords = {}
 }
 
