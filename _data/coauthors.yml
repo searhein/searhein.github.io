@@ -54,6 +54,9 @@
   - firstname: ["Bianca", "B."]
     url: https://sites.google.com/view/biancagiovanardi/home
 
+"Glusa":
+  - firstname: ["Christian A.", "Christian", "C."]
+
 "Grimm":
   - firstname: ["Viktor", "V."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/v-grimm-m-sc
@@ -77,6 +80,10 @@
 "Kiefer":
   - firstname: ["Björn", "B."]
     url:
+
+"Kim":
+  - firstname: ["Hyea Hyun", "Hyea H.", "Hyea", "H."]
+    url: https://khu.elsevierpure.com/en/persons/hyea-hyun-kim
 
 "Klawonn":
   - firstname: ["Axel", "A."]
@@ -104,6 +111,10 @@
 
 "Mache":
   - firstname: ["Ramiyou Karim", "R. K."]
+
+"Mayr":
+  - firstname: ["Matthias", "M."]
+    url: https://www.unibw.de/imcs-en/team/mayr
 
 "Mishra":
   - firstname: ["Siddhartha", "Sid", "S."]
