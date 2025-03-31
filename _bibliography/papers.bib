@@ -5,6 +5,24 @@ References
 
 # published
 
+@article{Saha:2025:TMD,
+    author={Tirtho S. Saha and Alexander Heinlein and Cordula Reisch},
+    title={Towards Model Discovery Using Domain Decomposition and PINNs}, 
+    journal = {IFAC-PapersOnLine},
+    volume = {59},
+    number = {1},
+    pages = {37-42},
+    year = {2025},
+    doi = {10.1016/j.ifacol.2025.03.008},
+    abbr = {MATHMOD2025},
+    abstract = {We enhance machine learning algorithms for learning model parameters in complex systems represented by differential equations with domain decomposition methods. The study evaluates the performance of two approaches, namely (vanilla) Physics-Informed Neural Networks (PINNs) and Finite Basis Physics-Informed Neural Networks (FBPINNs), in learning the dynamics of test models with a quasi-stationary longtime behavior. We test the approaches for data sets in different dynamical regions and with varying noise level. As results, the FBPINN approach better captures the overall dynamical behavior compared to the vanilla PINN approach, even in cases with data only from a time domain with quasi-stationary dynamics.},
+    note = {11th Vienna International Conference on Mathematical Modelling MATHMOD 2025},
+    url = {https://www.sciencedirect.com/science/article/pii/S2405896325002253},
+    preprint = {https://arxiv.org/abs/2410.01599},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @article{Giammatteo:2024:EAC,
     author = {Elena Giammatteo and Alexander Heinlein and Matthias Schlottbom},
     title = {An extension of the approximate component mode synthesis method to the heterogeneous Helmholtz equation},
@@ -1003,16 +1021,16 @@ References
 
 # accepted
 
-@techreport{Saha:2024:TMD,
-    author={Tirtho S. Saha and Alexander Heinlein and Cordula Reisch},
-    title={Towards Model Discovery Using Domain Decomposition and PINNs}, 
-    year = {2024},
-    month = {October},
-    abbr = {MATHMOD2025},
-    abstract = {We enhance machine learning algorithms for learning model parameters in complex systems represented by ordinary differential equations (ODEs) with domain decomposition methods. The study evaluates the performance of two approaches, namely (vanilla) Physics-Informed Neural Networks (PINNs) and Finite Basis Physics-Informed Neural Networks (FBPINNs), in learning the dynamics of test models with a quasi-stationary longtime behavior. We test the approaches for data sets in different dynamical regions and with varying noise level. As results, we find a better performance for the FBPINN approach compared to the vanilla PINN approach, even in cases with data from only a quasi-stationary time domain with few dynamics.},
-    note = {Accepted as Full Contribution for presentation at the 11th Vienna International Conference on Mathematical Modelling (MATHMOD 2025)},
-    preprint = {https://arxiv.org/abs/2410.01599},
-    keywords = {accepted, reviewed},
+@techreport{Verburg:2025:DDU,
+    author = {Corné Verburg and Alexander Heinlein and Eric C. Cyr},
+    title = {DDU-Net: A Domain Decomposition-based CNN for High-Resolution Image Segmentation on Multiple GPUs},
+    year = {2025},
+    month = {March},
+    abbr = {IEEE Access},
+    abstract = {The segmentation of ultra-high resolution images poses challenges such as loss of spatial information or computational inefficiency. In this work, a novel approach that combines encoder-decoder architectures with domain decomposition strategies to address these challenges is proposed. Specifically, a domain decomposition-based U-Net (DDU-Net) architecture is introduced, which partitions input images into non-overlapping patches that can be processed independently on separate devices. A communication network is added to facilitate inter-patch information exchange to enhance the understanding of spatial context. Experimental validation is performed on a synthetic dataset that is designed to measure the effectiveness of the communication network. Then, the performance is tested on the DeepGlobe land cover classification dataset as a real-world benchmark data set. The results demonstrate that the approach, which includes inter-patch communication for images divided into 16x16 non-overlapping subimages, achieves a 2-3% higher intersection over union (IoU) score compared to the same network without inter-patch communication. The performance of the network which includes communication is equivalent to that of a baseline U-Net trained on the full image, showing that our model provides an effective solution for segmenting ultra-high-resolution images while preserving spatial context. The code is available at https://github.com/corne00/HiRes-Seg-CNN.},
+    note = {Accepted for publication in the IEEE Access journal},
+    preprint = {https://arxiv.org/abs/2407.21266},
+    keywords = {accepted, reviewed, recent},
     bibtex_show = {true}
 }
 
@@ -1191,18 +1209,6 @@ References
     abstract = {The development of scalable and wavenumber-robust iterative solvers for Helmholtz problems is challenging but also relevant for various application fields. In this work, two-level Schwarz domain decomposition preconditioners are enhanced by coarse space constructed using higher-order B\'ezier interpolation. The numerical results indicate numerical scalability and robustness with respect the wavenumber, as long as the wavenumber times the element size of the coarse mesh is sufficiently low.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2408.03571},
-    keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Verburg:2024:DDU,
-    author = {Corné Verburg and Alexander Heinlein and Eric C. Cyr},
-    title = {DDU-Net: A Domain Decomposition-based CNN for High-Resolution Image Segmentation on Multiple GPUs},
-    year = {2024},
-    month = {July},
-    abstract = {The segmentation of ultra-high resolution images poses challenges such as loss of spatial information or computational inefficiency. In this work, a novel approach that combines encoder-decoder architectures with domain decomposition strategies to address these challenges is proposed. Specifically, a domain decomposition-based U-Net (DDU-Net) architecture is introduced, which partitions input images into non-overlapping patches that can be processed independently on separate devices. A communication network is added to facilitate inter-patch information exchange to enhance the understanding of spatial context. Experimental validation is performed on a synthetic dataset that is designed to measure the effectiveness of the communication network. Then, the performance is tested on the DeepGlobe land cover classification dataset as a real-world benchmark data set. The results demonstrate that the approach, which includes inter-patch communication for images divided into 16x16 non-overlapping subimages, achieves a 2-3% higher intersection over union (IoU) score compared to the same network without inter-patch communication. The performance of the network which includes communication is equivalent to that of a baseline U-Net trained on the full image, showing that our model provides an effective solution for segmenting ultra-high-resolution images while preserving spatial context. The code is available at https://github.com/corne00/HiRes-Seg-CNN.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2407.21266},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
