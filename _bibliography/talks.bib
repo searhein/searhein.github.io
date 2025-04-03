@@ -49,6 +49,17 @@ References
     keywords = {}
 }
 
+@misc{Heinlein:2025:GDS:ADD,
+    title = {Algebraic Domain Decomposition Solvers for Large-Scale Problems Using Graph Techniques},
+    author = {Alexander Heinlein},
+    year = {2025},
+    abbr = {Graphs&Data},
+    note = {Invited seminar talk. Graphs{\&}Data@TUDelft Seminar, Delft University of Technology, April 3},
+    abstract = {Domain decomposition methods (DDMs) solve science and engineering problems by decomposing them into smaller subproblems defined on an overlapping or non-overlapping decomposition of the computational domain. Overlapping Schwarz DDMs are particularly effective for complex problems. However, achieving fast convergence in large-scale problems with large numbers of subdomains requires incorporating additional coarse solver components. The FROSch (Fast and Robust Overlapping Schwarz) package, part of the Trilinos library, implements algebraic domain decomposition methods (DDMs). These methods require only the fully assembled system matrix and minimal geometric information, making them versatile for various applications. The construction of FROSch solvers begins with a non-overlapping domain decomposition obtained via graph partitioning, expanding into overlapping subdomains based on the system matrix's sparsity pattern. The coarse scale components are constructed from local solutions of the non-overlapping domain decomposition. This talk covers FROSch's features and recent updates, including the use of inexact local solvers on GPUs and CPUs for faster computation, extending the framework to multiscale and multiphysics problems, and employing machine learning techniques, such as graph neural networks, to improve coarse grid construction. Performance is evaluated on various problems, from simple models to real-world applications.},
+    slides = {2025/2025-heinlein-gds-add/2025-heinlein-ddm-graphs.pdf},
+    keywords = {}
+}
+
 @misc{Heinlein:2025:ASML:DDM,
     title = {Domain Decomposition Methods for Scientific Computing and Machine Learning},
     author = {Alexander Heinlein},
