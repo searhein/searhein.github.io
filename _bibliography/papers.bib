@@ -7,7 +7,7 @@ References
 
 @article{Saha:2025:TMD,
     author={Tirtho S. Saha and Alexander Heinlein and Cordula Reisch},
-    title={Towards Model Discovery Using Domain Decomposition and PINNs}, 
+    title={Towards Model Discovery Using Domain Decomposition and PINNs},
     journal = {IFAC-PapersOnLine},
     volume = {59},
     number = {1},
@@ -1021,6 +1021,19 @@ References
 
 # accepted
 
+@techreport{Shang:2025:DDM,
+    author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
+    title = {Overlapping Schwarz Preconditioners for Randomized Neural Networks with Domain Decomposition},
+    year = {2025},
+    month = {April},
+    abbr = {CMAME},
+    abstract = {Randomized neural networks (RaNNs), in which hidden layers remain fixed after random initialization, provide an efficient alternative for parameter optimization compared to fully parameterized networks. In this paper, RaNNs are integrated with overlapping Schwarz domain decomposition in two (main) ways: first, to formulate the least-squares problem with localized basis functions, and second, to construct overlapping preconditioners for the resulting linear systems. In particular, neural networks are initialized randomly in each subdomain based on a uniform distribution and linked through a partition of unity, forming a global solution that approximates the solution of the partial differential equation. Boundary conditions are enforced through a constraining operator, eliminating the need for a penalty term to handle them. Principal component analysis (PCA) is employed to reduce the number of basis functions in each subdomain, yielding a linear system with a lower condition number. By constructing additive and restricted additive Schwarz preconditioners, the least-squares problem is solved efficiently using the Conjugate Gradient (CG) and Generalized Minimal Residual (GMRES) methods, respectively. Our numerical results demonstrate that the proposed approach significantly reduces computational time for multi-scale and time-dependent problems. Additionally, a three-dimensional problem is presented to demonstrate the efficiency of using the CG method with an AS preconditioner, compared to an QR decomposition, in solving the least-squares problem.},
+    note = {Accepted for publication in Computer Methods in Applied Mechanics and Engineering},
+    preprint = {https://arxiv.org/abs/2412.19207},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Verburg:2025:DDU,
     author = {Corné Verburg and Alexander Heinlein and Eric C. Cyr},
     title = {DDU-Net: A Domain Decomposition-based CNN for High-Resolution Image Segmentation on Multiple GPUs},
@@ -1085,18 +1098,6 @@ References
     bibtex_show = {true}
 }
 
-@techreport{Shang:2024:DDM,
-    author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
-    title = {Overlapping Schwarz Preconditioners for Randomized Neural Networks with Domain Decomposition},
-    year = {2024},
-    month = {December},
-    abstract = {Randomized neural networks (RaNNs), in which hidden layers remain fixed after random initialization, provide an efficient alternative for parameter optimization compared to fully parameterized networks. In this paper, RaNNs are integrated with overlapping Schwarz domain decomposition in two (main) ways: first, to formulate the least-squares problem with localized basis functions, and second, to construct overlapping preconditioners for the resulting linear systems. In particular, neural networks are initialized randomly in each subdomain based on a uniform distribution and linked through a partition of unity, forming a global solution that approximates the solution of the partial differential equation. Boundary conditions are enforced through a constraining operator, eliminating the need for a penalty term to handle them. Principal component analysis (PCA) is employed to reduce the number of basis functions in each subdomain, yielding a linear system with a lower condition number. By constructing additive and restricted additive Schwarz preconditioners, the least-squares problem is solved efficiently using the Conjugate Gradient (CG) and Generalized Minimal Residual (GMRES) methods, respectively. Our numerical results demonstrate that the proposed approach significantly reduces computational time for multi-scale and time-dependent problems. Additionally, a three-dimensional problem is presented to demonstrate the efficiency of using the CG method with an AS preconditioner, compared to an QR decomposition, in solving the least-squares problem.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2412.19207},
-    keywords = {submitted, reviewed, recent},
-    bibtex_show = {true}
-}
-
 @techreport{Visser:2024:PAC,
     author = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
     title = {PACMANN: Point Adaptive Collocation Method for Artificial Neural Networks},
@@ -1104,7 +1105,7 @@ References
     month = {November},
     abstract = {Physics-Informed Neural Networks (PINNs) are an emerging tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, adaptive collocation point sampling methods have been proposed, which have been reported to scale poorly to higher dimensions. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). Inspired by classic optimization problems, this approach incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the squared residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems; the best performance is observed for the Adam optimizer. Key features of the method include its low computational cost and simplicity of integration in existing physics-informed neural network pipelines.},
     preprint = {https://arxiv.org/abs/2411.19632},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1120,14 +1121,14 @@ References
     bibtex_show = {true}
 }
 
-@techreport{Schmidt:2024:TGNN,
+@techreport{Schmidt:2025:TGNN,
     author = {Agatha Schmidt and Henrik Zunker and Alexander Heinlein and Martin J. K\"uhn},
     title = {Towards Graph Neural Network Surrogates Leveraging Mechanistic Expert Knowledge for Pandemic Response},
-    year = {2024},
-    month = {November},
+    year = {2025},
+    month = {April},
     abstract = {During the COVID-19 crisis, mechanistic models have been proven fundamental to guide evidence-based decision making. However, time-critical decisions in a dynamically changing environment restrict  the time available for modelers to gather supporting evidence. As infectious disease dynamics are often heterogeneous on a spatial or demographic scale, models should be resolved accordingly. In addition, with a large number of potential interventions, all scenarios can barely be computed on time, even when using supercomputing facilities. We suggest to combine complex mechanistic models with data-driven surrogate models to allow for on-the-fly model adaptations by public health experts. We build upon a spatially and demographically resolved infectious disease model and train a graph neural network for data sets representing early phases of the pandemic. The resulting networks reached an execution time of less than a second, a significant speedup compared to the metapopulation approach. The suggested approach yields potential for on-the-fly execution and, thus, integration of disease dynamics models in low-barrier website applications. For the approach to be used with decision-making, datasets with larger variance will have to be considered.},
     preprint = {https://arxiv.org/abs/2411.06500},
-    keywords = {submitted},
+    keywords = {submitted, recent},
     bibtex_show = {true}
 }
 
