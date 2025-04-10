@@ -5,6 +5,23 @@ References
 
 # published
 
+@article{Heinlein:2025:ACA,
+    author = {Alexander Heinlein and Kathrin Smetana},
+    title = {Algebraic Construction of Adaptive Coarse Spaces for Two-Level Schwarz Preconditioners},
+    journal = {SIAM Journal on Scientific Computing},
+    volume = {47},
+    number = {2},
+    pages = {A1170-A1197},
+    year = {2025},
+    doi = {10.1137/23M1618193},
+    abbr = {SISC},
+    abstract = { Abstract. Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems with a rapidly varying coefficient function, the condition number of the preconditioned system generally depends on the contrast of the coefficient function. As a result, the convergence may deteriorate. Enhancing the coarse space by functions constructed from suitable local eigenvalue problems restores robust, contrast-independent convergence; these coarse spaces are often denoted as adaptive or spectral coarse spaces. However, these eigenvalue problems typically rely on nonalgebraic information such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space which relies on the \(a\)-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the elliptic PDE with some trace and FE functions that are zero on the boundary is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja–Smith–Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix, allowing for an algebraic construction. By combining arguments from multiscale and domain decomposition methods, we derive a contrast-independent upper bound for the condition number. While we restrict ourselves here to a two-dimensional diffusion problem discretized by low-order FEs on regular meshes, the proposed framework is general, and we conjecture that the approach can be readily extended, for instance, to other elliptic problems, three dimensions, or, under mild assumptions, higher-order discretizations. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the nonalgebraic AGDSW coarse space as well as for those cases where the convergence of the classical algebraic generalized Dryja–Smith–Widlund coarse space deteriorates. Moreover, the coarse space dimension is the same as or comparable to the AGDSW coarse space for all numerical experiments.},
+    url = {https://doi.org/10.1137/23M1618193},
+    preprint = {https://arxiv.org/abs/2207.05559},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @article{Saha:2025:TMD,
     author={Tirtho S. Saha and Alexander Heinlein and Cordula Reisch},
     title={Towards Model Discovery Using Domain Decomposition and PINNs},
@@ -1044,19 +1061,6 @@ References
     note = {Accepted for publication in the IEEE Access journal},
     preprint = {https://arxiv.org/abs/2407.21266},
     keywords = {accepted, reviewed, recent},
-    bibtex_show = {true}
-}
-
-@techreport{Heinlein:2024:FAR,
-    author = {Alexander Heinlein and Kathrin Smetana},
-    title = {Algebraic construction of adaptive coarse spaces for two-level Schwarz preconditioners},
-    year = {2024},
-    month = {November},
-    abbr = {SISC},
-    abstract = {Two-level domain decomposition preconditioners lead to fast convergence and scalability of iterative solvers. However, for highly heterogeneous problems, where the coefficient function is varying rapidly on several possibly non-separated scales, the condition number of the preconditioned system generally depends on the contrast of the coefficient function leading to a deterioration of convergence. Enhancing the methods by coarse spaces constructed from suitable local eigenvalue problems, also denoted as adaptive or spectral coarse spaces, restores robust, contrast-independent convergence. However, these eigenvalue problems typically rely on non-algebraic information, such that the adaptive coarse spaces cannot be constructed from the fully assembled system matrix. In this paper, a novel algebraic adaptive coarse space, which relies on the a-orthogonal decomposition of (local) finite element (FE) spaces into functions that solve the partial differential equation (PDE) with some trace and FE functions that are zero on the boundary, is proposed. In particular, the basis is constructed from eigenmodes of two types of local eigenvalue problems associated with the edges of the domain decomposition. To approximate functions that solve the PDE locally, we employ a transfer eigenvalue problem, which has originally been proposed for the construction of optimal local approximation spaces for multiscale methods. In addition, we make use of a Dirichlet eigenvalue problem that is a slight modification of the Neumann eigenvalue problem used in the adaptive generalized Dryja-Smith-Widlund (AGDSW) coarse space. Both eigenvalue problems rely solely on local Dirichlet matrices, which can be extracted from the fully assembled system matrix. By combining arguments from multiscale and domain decomposition methods we derive a contrast-independent upper bound for the condition number. The robustness of the method is confirmed numerically for a variety of heterogeneous coefficient distributions, including binary random distributions and a coefficient function constructed from the SPE10 benchmark. The results are comparable to those of the non-algebraic AGDSW coarse space, also for those cases where the convergence of the classical algebraic generalized Dryja-Smith-Widlund (GDSW) coarse space deteriorates. Moreover, the coarse space dimension is the same or comparable to the AGDSW coarse space for all numerical experiments.},
-    note = {Accepted for publication in the SIAM Journal on Scientific Computing},
-    preprint = {https://arxiv.org/abs/2207.05559},
-    keywords = {accepted, reviewed, recent, highlighted3},
     bibtex_show = {true}
 }
 
