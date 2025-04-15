@@ -5,6 +5,17 @@ References
 
 # talks
 
+@misc{Heinlein:2025:ACOMEN:ASP,
+    title = {Adaptive sampling for physics-informed neural networks},
+    author = {Alexander Heinlein},
+    year = {2025},
+    abbr = {ACOMEN2025},
+    note = {9th International Conference on Advanced COmputational Methods in ENgineering and Applied Mathematics, Ghent, Belgium, September 15-19},
+    abstract = {},
+    url = {https://cage.ugent.be/acomen2025/},
+    keywords = {}
+}
+
 @misc{Heinlein:2025:DD29:DDP,
     title = {Domain decomposition for physics-informed neural networks: linear and nonlinear function approximation and operator learning},
     author = {Alexander Heinlein},
@@ -27,14 +38,23 @@ References
     keywords = {}
 }
 
-@misc{Heinlein:2025:ACOMEN:ASP,
-    title = {Adaptive sampling for physics-informed neural networks},
+@misc{Heinlein:2025:STNN:DDP,
+    title = {Domain Decomposition for Physics-Informed Neural Networks: Linear and Nonlinear Function Approximation and Operator Learning},
     author = {Alexander Heinlein},
     year = {2025},
-    abbr = {ACOMEN2025},
-    note = {9th International Conference on Advanced COmputational Methods in ENgineering and Applied Mathematics, Ghent, Belgium, September 15-19},
-    abstract = {},
-    url = {https://cage.ugent.be/acomen2025/},
+    abbr = {Workshop},
+    note = {Invited talk. Workshop on the Statistical Theory of Neural Networks, Egmond aan Zee, The Netherlands, May 5 - 8, 2025},
+    abstract = {Physics-Informed Neural Networks (PINNs) provide a flexible, mesh-free approach to solving differential equations. While their implementation is straightforward and they hold great potential for high-dimensional, inverse, and nonlinear problems, training remains challenging due to their sensitivity to weight initialization, hyperparameter selection, scalability issues, spectral bias, and ill-conditioning. This talk explores how overlapping domain decomposition (DD) techniques can improve the convergence and efficiency of PINNs. Different strategies for integrating DD with PINNs are investigated. First, classical PINNs are enhanced using multilevel DD-based architectures to improve performance. Additionally, this strategy is combined with multifidelity stacking PINNs for time-dependent problems, demonstrating clear improvements over reference results without DD. Second, randomized neural networks are considered, where hidden layer weights are randomly initialized and fixed, reducing the problem to a linear least-squares formulation for linear differential operators. In this setting, DD-based architectures, combined with overlapping Schwarz preconditioning, accelerate convergence. Finally, improvements in physics-informed neural operators through DD-based architectures are explored, enabling the efficient approximation of solution operators for parameterized problems. Numerical experiments on multiscale and wave phenomena demonstrate the effectiveness of DD techniques in PINNs. These results highlight the potential of DD methods to significantly enhance computational efficiency and accuracy in physics-informed machine learning.},
+    keywords = {}
+}
+
+@misc{Heinlein:2025:SDT:GCM,
+    title = {Towards Physics-Informed Machine Learning-Based Surrogate Models for Challenging Problems},
+    author = {Alexander Heinlein},
+    year = {2025},
+    abbr = {SDT Talks},
+    note = {Invited seminar talk. Siemens Simulation and Digital Twin Tech Talks (Virtual), Siemens, April 28, 2025},
+    abstract = {Surrogate models—machine learning models designed to approximate complex and computationally expensive numerical simulations—are a central topic in scientific machine learning. These models are especially relevant for parametrized problems, where the goal is to predict solutions across a range of parameter configurations. While much existing research focuses on low-dimensional parameterizations, such as constant material properties, high-dimensional parameterizations—spatially or temporally varying initial or boundary conditions, material distributions, or source terms—introduce significant methodological and computational challenges. Notably, these cases offer even greater potential benefits, making them particularly important. This talk focuses on the spatial and temporal challenges of machine learning-based surrogate modeling. We examine difficulties in training such models for problems with complex features, including variable geometries and multiscale structures. Key topics include convolutional neural network-based surrogate models tailored to complex domains, adaptive sampling strategies to improve learning efficiency, and the use of spatio-temporal domain decomposition to enhance the scalability and accuracy of operator-based approaches. Applications in multiscale and wave-dominated phenomena, as well as computational fluid dynamics, will illustrate the effectiveness and potential of these methods.},
     keywords = {}
 }
 
