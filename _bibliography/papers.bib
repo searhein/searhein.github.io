@@ -5,6 +5,22 @@ References
 
 # published
 
+@article{Shang:2025:DDM,
+    author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
+    title = {Overlapping {Schwarz} preconditioners for randomized neural networks with domain decomposition},
+    journal = {Computer Methods in Applied Mechanics and Engineering},
+    volume = {442},
+    pages = {118011},
+    year = {2025},
+    doi = {10.1016/j.cma.2025.118011},
+    abbr = {CMAME},
+    abstract = {Randomized neural networks (RaNNs), characterized by fixed hidden layers after random initialization, offer a computationally efficient alternative to fully parameterized neural networks trained using stochastic gradient descent-type algorithms. In this paper, we integrate RaNNs with overlapping Schwarz domain decomposition in two primary ways: firstly, to formulate the least-squares problem with localized basis functions, and secondly, to construct effective overlapping Schwarz preconditioners for solving the resulting linear systems. Specifically, neural networks are randomly initialized in each subdomain following a uniform distribution, and these localized solutions are combined through a partition of unity, providing a global approximation to the solution of the partial differential equation. Boundary conditions are imposed via a constraining operator, eliminating the necessity for penalty methods. Furthermore, we apply principal component analysis (PCA) within each subdomain to reduce the number of basis functions, thereby significantly improving the conditioning of the resulting linear system. By constructing additive Schwarz (AS) and restricted AS preconditioners, we efficiently solve the least-squares problems using iterative solvers such as the Conjugate Gradient (CG) and generalized minimal residual methods. Numerical experiments clearly demonstrate that the proposed methodology substantially reduces computational time, particularly for multi-scale and time-dependent PDE problems. Additionally, we present a three-dimensional numerical example illustrating the superior efficiency of employing the CG method combined with an AS preconditioner over direct methods like QR decomposition for solving the associated least-squares system.},
+    url = {https://www.sciencedirect.com/science/article/pii/S004578252500283X},
+    preprint = {https://arxiv.org/abs/2412.19207},
+    keywords = {published, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @incollection{Heinlein:2025:MDD,
     author = {Alexander Heinlein and Amanda A. Howard and Damien Beecroft and Panos Stinis},
     title = {Multifidelity domain decomposition-based physics-informed neural networks and operators for time-dependent problems},
@@ -1080,20 +1096,7 @@ References
     abstract = {In recent years, the concept of introducing physics to machine learning has become widely popular. Most physics-inclusive ML-techniques however are still limited to a single geometry or a set of parametrizable geometries. Thus, there remains the need to train a new model for a new geometry, even if it is only slightly modified. With this work we introduce a technique with which it is possible to learn approximate solutions to the steady-state Navier--Stokes equations in varying geometries without the need of parametrization. This technique is based on a combination of a U-Net-like CNN and well established discretization methods from the field of the finite difference method. The results of our physics-aware CNN are compared to a state-of-the-art data-based approach. Additionally, it is also shown how our approach performs when combined with the data-based approach.},
     note = {Accepted for publication in the Journal of Computational Physics},
     preprint = {https://arxiv.org/abs/2308.02137},
-    keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Shang:2025:DDM,
-    author = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
-    title = {Overlapping Schwarz Preconditioners for Randomized Neural Networks with Domain Decomposition},
-    year = {2025},
-    month = {April},
-    abbr = {CMAME},
-    abstract = {Randomized neural networks (RaNNs), in which hidden layers remain fixed after random initialization, provide an efficient alternative for parameter optimization compared to fully parameterized networks. In this paper, RaNNs are integrated with overlapping Schwarz domain decomposition in two (main) ways: first, to formulate the least-squares problem with localized basis functions, and second, to construct overlapping preconditioners for the resulting linear systems. In particular, neural networks are initialized randomly in each subdomain based on a uniform distribution and linked through a partition of unity, forming a global solution that approximates the solution of the partial differential equation. Boundary conditions are enforced through a constraining operator, eliminating the need for a penalty term to handle them. Principal component analysis (PCA) is employed to reduce the number of basis functions in each subdomain, yielding a linear system with a lower condition number. By constructing additive and restricted additive Schwarz preconditioners, the least-squares problem is solved efficiently using the Conjugate Gradient (CG) and Generalized Minimal Residual (GMRES) methods, respectively. Our numerical results demonstrate that the proposed approach significantly reduces computational time for multi-scale and time-dependent problems. Additionally, a three-dimensional problem is presented to demonstrate the efficiency of using the CG method with an AS preconditioner, compared to an QR decomposition, in solving the least-squares problem.},
-    note = {Accepted for publication in Computer Methods in Applied Mechanics and Engineering},
-    preprint = {https://arxiv.org/abs/2412.19207},
-    keywords = {accepted, reviewed, recent},
+    keywords = {submitted, reviewed, recent},
     bibtex_show = {true}
 }
 
