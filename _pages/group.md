@@ -5,7 +5,7 @@ permalink: /group/
 description:
 nav: true
 nav_order: 1
-display_categories: [phd students, master students, bachelor students, former members]
+display_categories: [phd candidates, master students, bachelor students, former members]
 horizontal: false
 ---
 

@@ -5,7 +5,7 @@ collaboration: Pacific Northwest National Laboratory
 title: Domain decomposition-based neural networks for complex shaped domains
 co-supervisor: Amanda Howard (Pacific Northwest National Laboratory)
 student: Wanxin Chen
-runningindex: 35
+runningindex: 34
 nolink: true
 redirect:
 project_description:

@@ -12,5 +12,5 @@ project:
 note: Main supervisor Martin van Gijzen
 nolink: true
 redirect:
-category: phd students
+category: phd candidates
 ---

@@ -12,5 +12,5 @@ project:
 note: Co-supervisor Hadi Hajibeygi
 nolink: true
 redirect:
-category: phd students
+category: phd candidates
 ---

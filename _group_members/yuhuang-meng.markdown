@@ -7,10 +7,10 @@ department: Delft Institute of Applied Mathematics
 address: Mekelweg 4, 2628 CD Delft, The Netherlands
 email: Y.Meng@tudelft.nl
 website:
-img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
+img: https://filelist.tudelft.nl/_processed_/d/6/csm_Meng_Yuhuang_f96b1f07ef.webp
 project:
 note: Co-supervisor Jing Zhao
 nolink: true
 redirect:
-category: phd students
+category: phd candidates
 ---

@@ -3,9 +3,9 @@ layout: page_thesis
 university: tud
 collaboration:
 title: Investigation of the convergence of deep operator networks
-co-supervisor: 
+co-supervisor:
 student: Johannes Taraz
-runningindex: 37
+runningindex: 36
 nolink: false
 redirect:
 project_description:

@@ -8,7 +8,7 @@ address:
 email:
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
-project: /teaching/msc-theses/spectral-neural-operators
+project: /teaching/msc-theses/38-spectral-neural-operators
 nolink: true
 redirect:
 category: master students

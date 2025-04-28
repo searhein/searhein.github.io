@@ -5,7 +5,7 @@ collaboration:
 title: Deep Learning the Nonlinear Dynamics of Mechanical Systems
 co-supervisor: Shobhit Jain (TU Delft, Numerical Analysis)
 student: Bram Wigmans
-runningindex: 2
+runningindex: 3
 nolink: false
 redirect:
 project_description:

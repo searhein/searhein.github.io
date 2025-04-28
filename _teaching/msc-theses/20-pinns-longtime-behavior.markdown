@@ -5,7 +5,7 @@ collaboration: TU Delft
 title: Separating longtime behavior and learning of mechanisms
 co-supervisor: Cordula Reisch (TU Braunschweig)
 student: Tirtho Sarathi Saha
-runningindex: 22
+runningindex: 20
 nolink: false
 redirect: /assets/pdf/thesis_projects/2023/2023-heinlein_reisch-pinns-longtime_behavior/project_description.pdf
 project_description: /assets/pdf/thesis_projects/2023/2023-heinlein_reisch-pinns-longtime_behavior/project_description.pdf

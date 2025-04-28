@@ -5,7 +5,7 @@ collaboration: CASA, TU/e
 title: Blending Neural Operators and Relaxation Methods in PDE Numerical Solvers
 co-supervisor: Victorita Dolean (TU/e, CASA)
 student: Yuhan Wu
-runningindex: 31
+runningindex: 30
 nolink: true
 redirect:
 project_description:

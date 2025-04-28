@@ -5,7 +5,7 @@ collaboration: Boskalis
 title: Investigation of the Convergence of Domain Decomposition Preconditioners for Heterogeneous Problems
 co-supervisor: Oscar van der Ven (Boskalis)
 student: Marius Kielhöfer
-runningindex: 34
+runningindex: 33
 nolink: true
 redirect:
 project_description:

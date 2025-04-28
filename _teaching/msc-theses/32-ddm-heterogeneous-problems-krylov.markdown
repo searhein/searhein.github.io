@@ -1,11 +1,11 @@
 ---
 layout: page_thesis
 university: tud
-collaboration: 
+collaboration:
 title: Investigation of the Convergence of Domain Decomposition Preconditioners for Heterogeneous Problems
 co-supervisor: Filipe Antônio Cumaru Silva Alves (TU Delft, DIAM)
 student: Philip Soliman
-runningindex: 33
+runningindex: 32
 nolink: true
 redirect:
 project_description:

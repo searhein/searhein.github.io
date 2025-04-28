@@ -1,6 +1,6 @@
 ---
 layout: page
-first_name: Konstantinos 
+first_name: Konstantinos
 last_name: Kevopoulos
 university: Delft University of Technology
 department: BioMechanical Engineering
@@ -12,5 +12,5 @@ project:
 note: Main supervisor Mathias Peirlinck
 nolink: true
 redirect:
-category: phd students
+category: phd candidates
 ---

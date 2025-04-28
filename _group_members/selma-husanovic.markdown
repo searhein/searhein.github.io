@@ -8,7 +8,7 @@ address:
 email:
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
-project: /teaching/msc-theses/neural_networks_burn_injuries
+project: /teaching/msc-theses/5-neural_networks_burn_injuries
 nolink: true
 redirect:
 category: former members

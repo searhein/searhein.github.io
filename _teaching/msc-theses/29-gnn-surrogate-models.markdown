@@ -5,7 +5,7 @@ collaboration: Flow Physics and Technology, TU Delft
 title: CFD surrogate models based on graph neural networks
 co-supervisor: Richard Dwight (TU Delft, Flow Physics and Technology)
 student: Mitchell Maassen van den Brink
-runningindex: 31
+runningindex: 29
 nolink: true
 redirect:
 project_description:

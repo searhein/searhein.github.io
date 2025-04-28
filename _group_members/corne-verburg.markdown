@@ -1,6 +1,6 @@
 ---
 layout: page
-first_name: Corné  
+first_name: Corné
 last_name: Verburg
 university: Delft University of Technology
 department: Delft Institute of Applied Mathematics
@@ -12,5 +12,5 @@ project:
 note: Main supervisor Neil Budko
 nolink: true
 redirect:
-category: phd students
+category: phd candidates
 ---

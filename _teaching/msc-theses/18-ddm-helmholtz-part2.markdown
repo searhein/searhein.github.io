@@ -5,7 +5,7 @@ collaboration:
 title: Domain Decomposition Techniques for the Helmholtz Equation
 co-supervisor: Vandana Dwarka (TU Delft, Numerical Analysis)
 student:
-runningindex: 19
+runningindex: 18
 nolink: false
 redirect: /assets/pdf/thesis_projects/2023/2023-dwarka_heinlein-ddm_helmholtz/project_description.pdf
 project_description: /assets/pdf/thesis_projects/2023/2023-dwarka_heinlein-ddm_helmholtz/project_description.pdf

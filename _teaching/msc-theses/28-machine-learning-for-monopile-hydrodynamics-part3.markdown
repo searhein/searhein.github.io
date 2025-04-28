@@ -5,7 +5,7 @@ collaboration: Offshore and Dredging Engineering, TU Delft
 title: Machine-Learning Surrogate Models for CFD - Predicting Turbulence in the Wake of Perforated Monopiles
 co-supervisor: Oriol Colomés (TU Delft, Offshore Engineering), Jan Modderman (TU Delft, Offshore Engineering)
 student: Felix Daxecker
-runningindex: 30
+runningindex: 28
 nolink: true
 redirect:
 project_description:

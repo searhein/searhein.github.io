@@ -8,7 +8,7 @@ address:
 email:
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
-project: /teaching/msc-theses/turbulence-ml-part2
+project: /teaching/msc-theses/11-turbulence-ml-part2
 nolink: true
 redirect:
 category: former members

@@ -8,8 +8,8 @@ address:
 email:
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
-project: /teaching/msc-theses/data-driven-metrology
+project: /teaching/msc-theses/23-data-driven-metrology
 nolink: true
 redirect:
-category: master students
+category: former students
 ---
