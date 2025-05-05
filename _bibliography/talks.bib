@@ -38,16 +38,6 @@ References
     keywords = {}
 }
 
-@misc{Heinlein:2025:STNN:DDP,
-    title = {Domain Decomposition for Physics-Informed Neural Networks: Linear and Nonlinear Function Approximation and Operator Learning},
-    author = {Alexander Heinlein},
-    year = {2025},
-    abbr = {Workshop},
-    note = {Invited talk. Workshop on the Statistical Theory of Neural Networks, Egmond aan Zee, The Netherlands, May 5 - 8, 2025},
-    abstract = {Physics-Informed Neural Networks (PINNs) provide a flexible, mesh-free approach to solving differential equations. While their implementation is straightforward and they hold great potential for high-dimensional, inverse, and nonlinear problems, training remains challenging due to their sensitivity to weight initialization, hyperparameter selection, scalability issues, spectral bias, and ill-conditioning. This talk explores how overlapping domain decomposition (DD) techniques can improve the convergence and efficiency of PINNs. Different strategies for integrating DD with PINNs are investigated. First, classical PINNs are enhanced using multilevel DD-based architectures to improve performance. Additionally, this strategy is combined with multifidelity stacking PINNs for time-dependent problems, demonstrating clear improvements over reference results without DD. Second, randomized neural networks are considered, where hidden layer weights are randomly initialized and fixed, reducing the problem to a linear least-squares formulation for linear differential operators. In this setting, DD-based architectures, combined with overlapping Schwarz preconditioning, accelerate convergence. Finally, improvements in physics-informed neural operators through DD-based architectures are explored, enabling the efficient approximation of solution operators for parameterized problems. Numerical experiments on multiscale and wave phenomena demonstrate the effectiveness of DD techniques in PINNs. These results highlight the potential of DD methods to significantly enhance computational efficiency and accuracy in physics-informed machine learning.},
-    keywords = {}
-}
-
 @misc{Heinlein:2025:SCS:DDN,
     title = {Domain decomposition for neural networks},
     author = {Alexander Heinlein},
@@ -55,6 +45,16 @@ References
     abbr = {Seminar},
     note = {Invited seminar talk. Seminar, IRIT Laboratory, Toulouse, May 22, 2025},
     abstract = {Scientific machine learning (SciML) is a rapidly evolving research field that combines techniques from scientific computing and machine learning. This talk focuses on the application of domain decomposition methods to design neural network architectures and enhance neural network training. In particular, it first explores how domain decomposition techniques can be employed in neural network-based discretizations that can address forward and inverse problems involving partial differential equations, using physics-informed neural networks (PINNs) as well as neural operators. It further discusses domain decomposition-based neural networks and preconditioning strategies for randomized neural networks, where the resulting optimization problem becomes linear in both data-driven settings and PINNs involving linear differential operators. Finally, the talk explores the use of domain decomposition methods for traditional machine learning tasks, such as semantic image segmentation with convolutional neural networks. Computational results show that domain decomposition methods can improve efficiency—both in terms of time and memory—as well as enhance accuracy and robustness.},
+    keywords = {}
+}
+
+@misc{Heinlein:2025:STNN:DDP,
+    title = {Domain Decomposition for Physics-Informed Neural Networks: Linear and Nonlinear Function Approximation and Operator Learning},
+    author = {Alexander Heinlein},
+    year = {2025},
+    abbr = {Workshop},
+    note = {Invited talk. Workshop on the Statistical Theory of Neural Networks, Egmond aan Zee, The Netherlands, May 5 - 8, 2025},
+    abstract = {Physics-Informed Neural Networks (PINNs) provide a flexible, mesh-free approach to solving differential equations. While their implementation is straightforward and they hold great potential for high-dimensional, inverse, and nonlinear problems, training remains challenging due to their sensitivity to weight initialization, hyperparameter selection, scalability issues, spectral bias, and ill-conditioning. This talk explores how overlapping domain decomposition (DD) techniques can improve the convergence and efficiency of PINNs. Different strategies for integrating DD with PINNs are investigated. First, classical PINNs are enhanced using multilevel DD-based architectures to improve performance. Additionally, this strategy is combined with multifidelity stacking PINNs for time-dependent problems, demonstrating clear improvements over reference results without DD. Second, randomized neural networks are considered, where hidden layer weights are randomly initialized and fixed, reducing the problem to a linear least-squares formulation for linear differential operators. In this setting, DD-based architectures, combined with overlapping Schwarz preconditioning, accelerate convergence. Finally, improvements in physics-informed neural operators through DD-based architectures are explored, enabling the efficient approximation of solution operators for parameterized problems. Numerical experiments on multiscale and wave phenomena demonstrate the effectiveness of DD techniques in PINNs. These results highlight the potential of DD methods to significantly enhance computational efficiency and accuracy in physics-informed machine learning.},
     keywords = {}
 }
 
