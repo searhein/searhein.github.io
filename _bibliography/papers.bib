@@ -1087,6 +1087,19 @@ References
 
 # accepted
 
+@techreport{Husanovic:2025:DON,
+    author = {Selma Husanović and Ginger Egberts and Alexander Heinlein and Fred Vermolen},
+    title = {Deep operator network models for predicting post-burn contraction},
+    year = {2025},
+    month = {May},
+    abbr = {JCLB},
+    abstract = {Burn injuries present a significant global health challenge. Among the most severe long-term consequences are contractures, which can lead to functional impairments and disfigurement. Understanding and predicting the evolution of post-burn wounds is essential for developing effective treatment strategies. Traditional mathematical models, while accurate, are often computationally expensive and time-consuming, limiting their practical application. Recent advancements in machine learning, particularly in deep learning, offer promising alternatives for accelerating these predictions. This study explores the use of a deep operator network (DeepONet), a type of neural operator, as a surrogate model for finite element simulations, aimed at predicting post-burn contraction across multiple wound shapes. A DeepONet was trained on three distinct initial wound shapes, with enhancement made to the architecture by incorporating initial wound shape information and applying sine augmentation to enforce boundary conditions. The performance of the trained DeepONet was evaluated on a test set including finite element simulations based on convex combinations of the three basic wound shapes. The model achieved an $R^2$ score of $0.99$, indicating strong predictive accuracy and generalization. Moreover, the model provided reliable predictions over an extended period of up to one year, with speedups of up to 128-fold on CPU and 235-fold on GPU, compared to the numerical model. These findings suggest that DeepONets can effectively serve as a surrogate for traditional finite element methods in simulating post-burn wound evolution, with potential applications in medical treatment planning.},
+    note = {Accepted for publication in Clinical Biomechanics},
+    preprint = {https://arxiv.org/abs/2411.14555},
+    keywords = {accepted, reviewed, recent},
+    bibtex_show = {true}
+}
+
 @techreport{Alves:2024:CSA,
     author = {Filipe A. C. S. Alves and Alexander Heinlein and Hadi Hajibeygi},
     title = {A computational study of algebraic coarse spaces for two-level overlapping additive Schwarz preconditioners},
@@ -1146,18 +1159,6 @@ References
     month = {November},
     abstract = {Physics-Informed Neural Networks (PINNs) are an emerging tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, adaptive collocation point sampling methods have been proposed, which have been reported to scale poorly to higher dimensions. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). Inspired by classic optimization problems, this approach incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the squared residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems; the best performance is observed for the Adam optimizer. Key features of the method include its low computational cost and simplicity of integration in existing physics-informed neural network pipelines.},
     preprint = {https://arxiv.org/abs/2411.19632},
-    keywords = {submitted, reviewed},
-    bibtex_show = {true}
-}
-
-@techreport{Husanovic:2024:DON,
-    author = {Selma Husanović and Ginger Egberts and Alexander Heinlein and Fred Vermolen},
-    title = {Deep operator network models for predicting post-burn contraction},
-    year = {2024},
-    month = {November},
-    abstract = {Burn injuries present a significant global health challenge. Among the most severe long-term consequences are contractures, which can lead to functional impairments and disfigurement. Understanding and predicting the evolution of post-burn wounds is essential for developing effective treatment strategies. Traditional mathematical models, while accurate, are often computationally expensive and time-consuming, limiting their practical application. Recent advancements in machine learning, particularly in deep learning, offer promising alternatives for accelerating these predictions. This study explores the use of a deep operator network (DeepONet), a type of neural operator, as a surrogate model for finite element simulations, aimed at predicting post-burn contraction across multiple wound shapes. A DeepONet was trained on three distinct initial wound shapes, with enhancement made to the architecture by incorporating initial wound shape information and applying sine augmentation to enforce boundary conditions. The performance of the trained DeepONet was evaluated on a test set including finite element simulations based on convex combinations of the three basic wound shapes. The model achieved an $R^2$ score of $0.99$, indicating strong predictive accuracy and generalization. Moreover, the model provided reliable predictions over an extended period of up to one year, with speedups of up to 128-fold on CPU and 235-fold on GPU, compared to the numerical model. These findings suggest that DeepONets can effectively serve as a surrogate for traditional finite element methods in simulating post-burn wound evolution, with potential applications in medical treatment planning.},
-    note = {Submitted},
-    preprint = {https://arxiv.org/abs/2411.14555},
     keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
