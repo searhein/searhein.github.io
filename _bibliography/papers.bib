@@ -1128,6 +1128,18 @@ References
 
 # submitted
 
+
+
+@techreport{Pelzer:2025:FLE,
+    author = {Julia Pelzer and Corné Verburg and Alexander Heinlein and Miriam Schulte},
+    title = {Few-Shot Learning by Explicit Physics Integration: An Application to Groundwater Heat Transport},
+    year = {2025},
+    month = {May},
+    abstract = {Machine learning methods often struggle with real-world applications in science and engineering due to an insufficient amount or quality of training data. In this work, the example of subsurface porous media flow is considered; this corresponds to advection-diffusion processes under heterogeneous flow conditions, i.e., for spatially varying material parameters, and a large number of spatially distributed source terms. This challenge comes at high computing costs for classical simulation methods due to the required high spatio-temporal resolution and large domains. Machine learning-based surrogate models seem to offer a computationally efficient alternative. However, faced with real-world data-limitations, purely data-driven approaches face difficulties in predicting the advection process, which is highly sensitive to input variations and involves long-range interactions. Therefore, in this work, a Local-Global Convolutional Neural Network (LGCNN) approach is introduced, that combines a lightweight numerical surrogate for the global transport process with convolutional neural networks (CNNs) for the remaining local processes. With the LGCNN, we model a city-wide subsurface temperature field, involving a heterogeneous groundwater flow field and one hundred groundwater heat pump injection points forming interacting heat plumes over long distances. In order to first systematically analyze the method, random subsurface input fields are employed. Then, the model is trained on a single cut-out from a real-world subsurface map of the Munich region in Germany. Our model scales to larger cut-outs without retraining by accounting for the global effects with numerical physics models. All datasets, our code, and trained models are published for reproducibility.},
+    note = {Submitted},
+    keywords = {submitted, reviewed, recent},
+    bibtex_show = {true}
+}
 @techreport{Yang:2025:NSH,
     author = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
     title = {Numerical study on hyper parameter settings for neural network approximation to partial differential equations},
@@ -1136,7 +1148,7 @@ References
     abstract = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyper parameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyper parameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyper parameter settings are known to be different for different model problems and currently no universal rule for the choice of hyper parameters is known. In this paper, for second order elliptic model problems, various hyper parameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyper parameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2503.09086},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
@@ -1148,7 +1160,7 @@ References
     abstract = {Trilinos is a community-developed, open-source software framework that facilitates building large-scale, complex, multiscale, multiphysics simulation code bases for scientific and engineering problems. Since the Trilinos framework has undergone substantial changes to support new applications and new hardware architectures, this document is an update to ``An Overview of the Trilinos project'' by Heroux et al. (ACM Transactions on Mathematical Software, 31(3):397--423, 2005). It describes the design of Trilinos, introduces its new organization in product areas, and highlights established and new features available in Trilinos. Particular focus is put on the modernized software stack based on the Kokkos ecosystem to deliver performance portability across heterogeneous hardware architectures. This paper also outlines the organization of the Trilinos community and the contribution model to help onboard interested users and contributors.},
     note = {Submitted},
     preprint = {https://arxiv.org/abs/2503.08126},
-    keywords = {submitted, reviewed, recent},
+    keywords = {submitted, reviewed},
     bibtex_show = {true}
 }
 
