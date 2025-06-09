@@ -8,7 +8,7 @@ address: Mekelweg 4, 2628 CD Delft, The Netherlands
 email: M.C.Bukman@student.tudelft.nl
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
-project: /teaching/msc-theses/13-nonlinear-solver-ml
+project: /teaching/internships/2-nonlinear-solver-ml
 note:
 nolink: true
 redirect:

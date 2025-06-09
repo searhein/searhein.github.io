@@ -11,5 +11,5 @@ img: https://filelist.tudelft.nl/_processed_/5/6/csm_kkjzs6_4261a99015.webp
 project: /teaching/msc-theses/4-block-preconditioners-very-large-floating-structures
 nolink: true
 redirect:
-category: master students
+category: former students
 ---

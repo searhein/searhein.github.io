@@ -7,7 +7,7 @@ department: Delft Institute of Applied Mathematics
 address: Mekelweg 4, 2628 CD Delft, The Netherlands
 email: K.Slepova@tudelft.nl
 website:
-img: https://filelist.tudelft.nl/_processed_/7/3/csm_wl16nq_af1236d89b.webp
+img: https://filelist.tudelft.nl/_processed_/7/3/csm_wl16nq_31763815f4.webp
 project:
 note: Main supervisor Martin van Gijzen
 nolink: true
