@@ -5,6 +5,23 @@ References
 
 # published
 
+@article{Grimm:2025:LSO,
+  abbr        = {JCOMP},
+  abstract    = {In recent years, the concept of introducing physics to machine learning has become widely popular. Most physics-inclusive ML-techniques however are still limited to a single geometry or a set of parametrizable geometries. Thus, there remains the need to train a new model for a new geometry, even if it is only slightly modified. With this work we introduce a technique with which it is possible to learn approximate solutions to the steady-state Navier--Stokes equations in varying geometries without the need of parametrization. This technique is based on a combination of a U-Net-like CNN and well established discretization methods from the field of the finite difference method. The results of our physics-aware CNN are compared to a state-of-the-art data-based approach. Additionally, it is also shown how our approach performs when combined with the data-based approach.},
+  author      = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.jcp.2025.114027},
+  issn        = {0021-9991},
+  journal     = {Journal of Computational Physics},
+  keywords    = {published, reviewed, recent},
+  pages       = {114027},
+  preprint    = {https://arxiv.org/abs/2308.02137},
+  title       = {Learning the solution operator of two-dimensional incompressible Navier-Stokes equations using physics-aware convolutional neural networks},
+  url         = {https://www.sciencedirect.com/science/article/pii/S0021999125003109},
+  volume      = {535},
+  year        = {2025}
+}
+
 @article{Husanovic:2025:DON,
   abbr        = {JCLB},
   abstract    = {Background
@@ -101,7 +118,7 @@ References
   bibtex_show = {true},
   doi         = {10.1016/j.ifacol.2025.03.008},
   journal     = {IFAC-PapersOnLine},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   note        = {11th Vienna International Conference on Mathematical Modelling MATHMOD 2025},
   number      = {1},
   pages       = {37-42},
@@ -1115,7 +1132,7 @@ References
   abstract    = {The two-level overlapping additive Schwarz method offers a robust and scalable preconditioner for various linear systems resulting from elliptic problems. One of the key to these properties is the construction of the coarse space used to solve a global coupling problem, which traditionally requires information about the underlying discretization. An algebraic formulation of the coarse space reduces the complexity of its assembly. Furthermore, well-chosen coarse basis functions within this space can better represent changes in the problem's properties. Here we introduce an algebraic formulation of the multiscale finite element method (MsFEM) based on the algebraic multiscale solver (AMS) in the context of the two-level Schwarz method. We show how AMS is related to other energy-minimizing coarse spaces. Furthermore, we compare the AMS with other algebraic energy-minimizing spaces: the generalized Dryja--Smith--Widlund (GDSW), and the reduced dimension GDSW (RGDSW).},
   author      = {Filipe A. C. S. Alves and Alexander Heinlein and Hadi Hajibeygi},
   bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
+  keywords    = {accepted, reviewed},
   month       = {May},
   note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
   preprint    = {https://arxiv.org/abs/2408.08187},
@@ -1123,20 +1140,17 @@ References
   year        = {2025}
 }
 
-@techreport{Grimm:2025:LSO,
-  abbr        = {JCOMP},
-  abstract    = {In recent years, the concept of introducing physics to machine learning has become widely popular. Most physics-inclusive ML-techniques however are still limited to a single geometry or a set of parametrizable geometries. Thus, there remains the need to train a new model for a new geometry, even if it is only slightly modified. With this work we introduce a technique with which it is possible to learn approximate solutions to the steady-state Navier--Stokes equations in varying geometries without the need of parametrization. This technique is based on a combination of a U-Net-like CNN and well established discretization methods from the field of the finite difference method. The results of our physics-aware CNN are compared to a state-of-the-art data-based approach. Additionally, it is also shown how our approach performs when combined with the data-based approach.},
-  author      = {Viktor Grimm and Alexander Heinlein and Axel Klawonn},
+# submitted
+
+@techreport{Heinlein:2025:MBO,
+  abstract    = {Monolithic preconditioners applied to the linear systems arising during the solution of the discretized incompressible Navier--Stokes equations are typically more robust than preconditioners based on incomplete block factorizations. Lower number of iterations and a reduced sensitivity to parameters like velocity and viscosity can significantly outweigh the additional cost for their setup. Different monolithic preconditioning techniques are introduced and compared to a selection of block preconditioners. In particular, two-level additive overlapping Schwarz methods (OSM) are used to set up monolithic preconditioners and to approximate the inverses arising in the block preconditioners. GDSW-type (Generalized Dryja--Smith--Widlund) coarse spaces are used for the second level. These highly scalable, parallel preconditioners have been implemented in the solver framework FROSch (Fast and Robust Overlapping Schwarz), which is part of the software library Trilinos. The new GDSW-type coarse space GDSW* is introduced; combining it with other techniques results in a robust algorithm. The block preconditioners PCD (Pressure Convection--Diffusion), SIMPLE (Semi-Implicit Method for Pressure Linked Equations), and LSC (Least-Squares Commutator) are considered to various degrees. The OSM for the monolithic as well as the block approach allows the optimized combination of different coarse spaces for the velocity and pressure component, enabling the use of tailored coarse spaces. The numerical and parallel performance of the different preconditioning methods for finite element discretizations of stationary as well as time-dependent incompressible fluid flow problems is investigated and compared. Their robustness is analyzed for a range of Reynolds and Courant-Friedrichs-Lewy (CFL) numbers with respect to a realistic problem setting.},
+  author      = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Lea Sa{\ss}mannshausen},
   bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
-  month       = {April},
-  note        = {Accepted for publication in the Journal of Computational Physics},
-  preprint    = {https://arxiv.org/abs/2308.02137},
-  title       = {Learning the solution operator of two-dimensional incompressible Navier-Stokes equations using physics-aware convolutional neural networks},
+  keywords    = {recent},
+  month       = {June},
+  title       = {Monolithic and Block Overlapping Schwarz Preconditioners for the Incompressible Navier--Stokes Equations},
   year        = {2025}
 }
-
-# submitted
 
 @techreport{Pelzer:2025:FLE,
   abstract    = {Machine learning methods often struggle with real-world applications in science and engineering due to an insufficient amount or quality of training data. In this work, the example of subsurface porous media flow is considered; this corresponds to advection-diffusion processes under heterogeneous flow conditions, i.e., for spatially varying material parameters, and a large number of spatially distributed source terms. This challenge comes at high computing costs for classical simulation methods due to the required high spatio-temporal resolution and large domains. Machine learning-based surrogate models seem to offer a computationally efficient alternative. However, faced with real-world data-limitations, purely data-driven approaches face difficulties in predicting the advection process, which is highly sensitive to input variations and involves long-range interactions. Therefore, in this work, a Local-Global Convolutional Neural Network (LGCNN) approach is introduced, that combines a lightweight numerical surrogate for the global transport process with convolutional neural networks (CNNs) for the remaining local processes. With the LGCNN, we model a city-wide subsurface temperature field, involving a heterogeneous groundwater flow field and one hundred groundwater heat pump injection points forming interacting heat plumes over long distances. In order to first systematically analyze the method, random subsurface input fields are employed. Then, the model is trained on a single cut-out from a real-world subsurface map of the Munich region in Germany. Our model scales to larger cut-outs without retraining by accounting for the global effects with numerical physics models. All datasets, our code, and trained models are published for reproducibility.},
@@ -1148,6 +1162,7 @@ References
   title       = {Few-Shot Learning by Explicit Physics Integration: An Application to Groundwater Heat Transport},
   year        = {2025}
 }
+
 @techreport{Yang:2025:NSH,
   abstract    = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyper parameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyper parameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyper parameter settings are known to be different for different model problems and currently no universal rule for the choice of hyper parameters is known. In this paper, for second order elliptic model problems, various hyper parameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyper parameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
   author      = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
@@ -1187,7 +1202,7 @@ References
   abstract    = {During the COVID-19 crisis, mechanistic models have been proven fundamental to guide evidence-based decision making. However, time-critical decisions in a dynamically changing environment restrict  the time available for modelers to gather supporting evidence. As infectious disease dynamics are often heterogeneous on a spatial or demographic scale, models should be resolved accordingly. In addition, with a large number of potential interventions, all scenarios can barely be computed on time, even when using supercomputing facilities. We suggest to combine complex mechanistic models with data-driven surrogate models to allow for on-the-fly model adaptations by public health experts. We build upon a spatially and demographically resolved infectious disease model and train a graph neural network for data sets representing early phases of the pandemic. The resulting networks reached an execution time of less than a second, a significant speedup compared to the metapopulation approach. The suggested approach yields potential for on-the-fly execution and, thus, integration of disease dynamics models in low-barrier website applications. For the approach to be used with decision-making, datasets with larger variance will have to be considered.},
   author      = {Agatha Schmidt and Henrik Zunker and Alexander Heinlein and Martin J. K\"uhn},
   bibtex_show = {true},
-  keywords    = {submitted, recent},
+  keywords    = {submitted, reviewed},
   month       = {April},
   preprint    = {https://arxiv.org/abs/2411.06500},
   title       = {Towards Graph Neural Network Surrogates Leveraging Mechanistic Expert Knowledge for Pandemic Response},
