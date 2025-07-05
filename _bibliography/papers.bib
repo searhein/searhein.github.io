@@ -1127,6 +1127,18 @@ References
 
 # accepted
 
+@techreport{Zandbergen:2025:IPT,
+  abbr        = {CAMWA},
+  abstract    = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the Navier--Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier--Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier--Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-transient continuation is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow through a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD module of COMSOL Multiphysics® is employed.},
+  author      = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  note        = {Accepted for publication in Computers and Mathematics with Applications},
+  preprint    = {https://arxiv.org/abs/2310.06717},
+  title       = {Improving Pseudo-Time Stepping Convergence for CFD Simulations With Neural Networks},
+  year        = {2025}
+}
+
 @techreport{Alves:2024:CSA,
   abbr        = {Springer LNCSE},
   abstract    = {The two-level overlapping additive Schwarz method offers a robust and scalable preconditioner for various linear systems resulting from elliptic problems. One of the key to these properties is the construction of the coarse space used to solve a global coupling problem, which traditionally requires information about the underlying discretization. An algebraic formulation of the coarse space reduces the complexity of its assembly. Furthermore, well-chosen coarse basis functions within this space can better represent changes in the problem's properties. Here we introduce an algebraic formulation of the multiscale finite element method (MsFEM) based on the algebraic multiscale solver (AMS) in the context of the two-level Schwarz method. We show how AMS is related to other energy-minimizing coarse spaces. Furthermore, we compare the AMS with other algebraic energy-minimizing spaces: the generalized Dryja--Smith--Widlund (GDSW), and the reduced dimension GDSW (RGDSW).},
@@ -1298,17 +1310,5 @@ References
   month       = {June},
   preprint    = {https://arxiv.org/abs/2406.19662},
   title       = {Finite basis Kolmogorov-Arnold networks: domain decomposition for data-driven and physics-informed problems},
-  year        = {2024}
-}
-
-@techreport{Zandbergen:2024:IPT,
-  abstract    = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the Navier--Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier--Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier--Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-transient continuation is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow through a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD module of COMSOL Multiphysics® is employed.},
-  author      = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {June},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2310.06717},
-  title       = {Improving Pseudo-Time Stepping Convergence for CFD Simulations With Neural Networks},
   year        = {2024}
 }
