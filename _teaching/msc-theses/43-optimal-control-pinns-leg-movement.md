@@ -3,7 +3,7 @@ layout: page_thesis
 university: tud
 collaboration:
 title: Optimal Control of Leg Movement Using Phyisics-Informed Neural Networks
-co-supervisor: Mirko Kemna (Gradyent)
+co-supervisor:
 student: Thijs Terwiel
 runningindex: 43
 nolink: true
