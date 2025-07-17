@@ -5,6 +5,22 @@ References
 
 # published
 
+@article{Zandbergen:2025:IPT,
+  abbr        = {CAMWA},
+  abstract    = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the stationary Navier–Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier–Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier–Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-time stepping (also known as pseudo-transient continuation) is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow over a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD Module of COMSOL Multiphysics® is employed.},
+  author      = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},
+  bibtex_show = {true},
+  doi         = {10.1016/j.camwa.2025.07.006},
+  journal     = {Computers & Mathematics with Applications},
+  keywords    = {published, reviewed, recent},
+  pages       = {64-83},
+  preprint    = {https://arxiv.org/abs/2310.06717},
+  title       = {Improving Pseudo-Time Stepping Convergence for CFD Simulations With Neural Networks},
+  url         = {https://www.sciencedirect.com/science/article/pii/S0898122125002871},
+  volume      = {196},
+  year        = {2025}
+}
+
 @article{Grimm:2025:LSO,
   abbr        = {JCOMP},
   abstract    = {In recent years, the concept of introducing physics to machine learning has become widely popular. Most physics-inclusive ML-techniques however are still limited to a single geometry or a set of parametrizable geometries. Thus, there remains the need to train a new model for a new geometry, even if it is only slightly modified. With this work we introduce a technique with which it is possible to learn approximate solutions to the steady-state Navier--Stokes equations in varying geometries without the need of parametrization. This technique is based on a combination of a U-Net-like CNN and well established discretization methods from the field of the finite difference method. The results of our physics-aware CNN are compared to a state-of-the-art data-based approach. Additionally, it is also shown how our approach performs when combined with the data-based approach.},
@@ -52,7 +68,7 @@ References
   bibtex_show = {true},
   doi         = {10.1016/j.cma.2025.118011},
   journal     = {Computer Methods in Applied Mechanics and Engineering},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   pages       = {118011},
   preprint    = {https://arxiv.org/abs/2412.19207},
   title       = {Overlapping {Schwarz} preconditioners for randomized neural networks with domain decomposition},
@@ -68,7 +84,7 @@ References
   bibtex_show = {true},
   booktitle   = {Mathematical {Optimization} for {Machine} {Learning}},
   doi         = {10.1515/9783111376776-006},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   note        = {Section: Mathematical Optimization for Machine Learning},
   pages       = {79--92},
   preprint    = {https://arxiv.org/abs/2401.07888},
@@ -85,7 +101,7 @@ References
   bibtex_show = {true},
   doi         = {10.1109/ACCESS.2025.3561033},
   journal     = {IEEE Access},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   pages       = {66967-66983},
   preprint    = {https://arxiv.org/abs/2407.21266},
   title       = {{DDU}-{Net}: {A} {Domain} {Decomposition}-{Based} {CNN} for {High}-{Resolution} {Image} {Segmentation} on {Multiple} {GPUs}},
@@ -101,7 +117,7 @@ References
   bibtex_show = {true},
   doi         = {10.1137/23M1618193},
   journal     = {SIAM Journal on Scientific Computing},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   number      = {2},
   pages       = {A1170-A1197},
   preprint    = {https://arxiv.org/abs/2207.05559},
@@ -1127,15 +1143,16 @@ References
 
 # accepted
 
-@techreport{Zandbergen:2025:IPT,
-  abbr        = {CAMWA},
-  abstract    = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the Navier--Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier--Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier--Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-transient continuation is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow through a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD module of COMSOL Multiphysics® is employed.},
-  author      = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},
+@techreport{Kinnewig:2025:CDF,
+  abbr        = {ACM TOMS},
+  abstract    = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
+  author      = {Sebastian Kinnewig and Alexander Heinlein and Thomas Wick},
   bibtex_show = {true},
   keywords    = {accepted, reviewed, recent},
-  note        = {Accepted for publication in Computers and Mathematics with Applications},
-  preprint    = {https://arxiv.org/abs/2310.06717},
-  title       = {Improving Pseudo-Time Stepping Convergence for CFD Simulations With Neural Networks},
+  month       = {August},
+  note        = {Accepted for publication in ACM Transactions on Mathematical Software (TOMS)},
+  preprint    = {https://arxiv.org/abs/2410.22871},
+  title       = {Coupling deal.II and FROSch: A Sustainable and Accessible (O)RAS Preconditioner},
   year        = {2025}
 }
 
@@ -1171,6 +1188,7 @@ References
   keywords    = {submitted, reviewed, recent},
   month       = {May},
   note        = {Submitted},
+  preprint    = {https://arxiv.org/abs/2507.06062},
   title       = {Few-Shot Learning by Explicit Physics Integration: An Application to Groundwater Heat Transport},
   year        = {2025}
 }
@@ -1264,18 +1282,6 @@ References
   note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2408.12198},
   title       = {Two-level deep domain decomposition method},
-  year        = {2024}
-}
-
-@techreport{Kinnewig:2024:CDF,
-  abstract    = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
-  author      = {Sebastian Kinnewig and Alexander Heinlein and Thomas Wick},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {August},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2410.22871},
-  title       = {Coupling deal.II and FROSch: A Sustainable and Accessible (O)RAS Preconditioner},
   year        = {2024}
 }
 
