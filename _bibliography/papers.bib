@@ -1143,6 +1143,19 @@ References
 
 # accepted
 
+@techreport{Giammatteo:2025:DDM,
+  abbr        = {CAMWA},
+  abstract    = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp-finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
+  author      = {Elena Giammatteo and Alexander Heinlein and Philip L. Lederer and Matthias Schlottbom},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {July},
+  note        = {Accepted for publication in Computers and Mathematics with Applications},
+  preprint    = {https://arxiv.org/abs/2410.07723},
+  title       = {High-order discretized ACMS method for the simulation of finite-size two-dimensional photonic crystals},
+  year        = {2025}
+}
+
 @techreport{Kinnewig:2025:CDF,
   abbr        = {ACM TOMS},
   abstract    = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
@@ -1237,18 +1250,6 @@ References
   preprint    = {https://arxiv.org/abs/2411.06500},
   title       = {Towards Graph Neural Network Surrogates Leveraging Mechanistic Expert Knowledge for Pandemic Response},
   year        = {2025}
-}
-
-@techreport{Giammatteo:2024:DDM,
-  abstract    = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp–finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
-  author      = {Elena Giammatteo and Alexander Heinlein and Philip L. Lederer and Matthias Schlottbom},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {October},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2410.07723},
-  title       = {High-order discretized ACMS method for the simulation of finite-size two-dimensional photonic crystals},
-  year        = {2024}
 }
 
 @techreport{Shang:2024:DDM,
