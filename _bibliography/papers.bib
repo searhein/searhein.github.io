@@ -1156,6 +1156,57 @@ References
   year        = {2025}
 }
 
+
+@techreport{Heinlein:2025:NTL,
+  abbr        = {Springer LNCSE},
+  abstract    = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton's method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia's Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
+  author      = {Alexander Heinlein and Kyrill Ho and Axel Klawonn and Martin Lanser},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {July},
+  note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
+  title       = {Nonlinear Two-Level Schwarz Methods: A Parallel Implementation in FROSch},
+  year        = {2025}
+}
+
+@techreport{Dolean:2025:TDD,
+  abbr        = {Springer LNCSE},
+  abstract    = {This study presents a two-level Deep Domain Decomposition Method (Deep-DDM) augmented with a coarse-level network for solving boundary value problems using physics-informed neural networks (PINNs). The addition of the coarse level network improves scalability and convergence rates compared to the single level method. Tested on a Poisson equation with Dirichlet boundary conditions, the two-level deep DDM demonstrates superior performance, maintaining efficient convergence regardless of the number of subdomains. This advance provides a more scalable and effective approach to solving complex partial differential equations with machine learning.},
+  author      = {Victorita Dolean and Serge Gratton and Alexander Heinlein and Valentin Mercier},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed},
+  month       = {July},
+  note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
+  preprint    = {https://arxiv.org/abs/2408.12198},
+  title       = {Two-level deep domain decomposition method},
+  year        = {2025}
+}
+
+@techreport{Sieburgh:2025:CSB,
+  abbr        = {Springer LNCSE},
+  abstract    = {The development of scalable and wavenumber-robust iterative solvers for Helmholtz problems is challenging but also relevant for various application fields. In this work, two-level Schwarz domain decomposition preconditioners are enhanced by coarse space constructed using higher-order B\'ezier interpolation. The numerical results indicate numerical scalability and robustness with respect the wavenumber, as long as the wavenumber times the element size of the coarse mesh is sufficiently low.},
+  author      = {Erik Sieburgh and Alexander Heinlein and Vandana Dwarka and Cornelis Vuik},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {July},
+  note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
+  preprint    = {https://arxiv.org/abs/2408.03571},
+  title       = {Coarse Spaces Based on Higher-Order Interpolation for Schwarz Preconditioners for Helmholtz Problems},
+  year        = {2025}
+}
+
+@techreport{Shang:2025:DDM,
+  abbr        = {Springer LNCSE},
+  abstract    = {An approach for integrating randomized neural networks (RaNNs) with an overlapping Schwarz domain decomposition technique is developed to address multi-scale problems. Neural networks within each subdomain are interconnected using local window functions, enabling the construction of a global solution that serves as an approximation to the solution of the partial differential equation (PDE). Via a constraining operator the boundary conditions are enforced in a straightforward manner. The optimization of the parameters in the last layer of the RaNN yields a least-squares problem, leading to accurate solutions for the PDE. The introduction of a two-level domain decomposition method allows for capturing diverse scaling information, thereby enhancing the performance of the method.},
+  author      = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {July},
+  note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
+  title       = {Domain decomposition method with randomized neural networks},
+  year        = {2025}
+}
+
 @techreport{Kinnewig:2025:CDF,
   abbr        = {ACM TOMS},
   abstract    = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
@@ -1245,57 +1296,11 @@ References
   abstract    = {During the COVID-19 crisis, mechanistic models have been proven fundamental to guide evidence-based decision making. However, time-critical decisions in a dynamically changing environment restrict  the time available for modelers to gather supporting evidence. As infectious disease dynamics are often heterogeneous on a spatial or demographic scale, models should be resolved accordingly. In addition, with a large number of potential interventions, all scenarios can barely be computed on time, even when using supercomputing facilities. We suggest to combine complex mechanistic models with data-driven surrogate models to allow for on-the-fly model adaptations by public health experts. We build upon a spatially and demographically resolved infectious disease model and train a graph neural network for data sets representing early phases of the pandemic. The resulting networks reached an execution time of less than a second, a significant speedup compared to the metapopulation approach. The suggested approach yields potential for on-the-fly execution and, thus, integration of disease dynamics models in low-barrier website applications. For the approach to be used with decision-making, datasets with larger variance will have to be considered.},
   author      = {Agatha Schmidt and Henrik Zunker and Alexander Heinlein and Martin J. K\"uhn},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed},
+  keywords    = {reviewed},
   month       = {April},
   preprint    = {https://arxiv.org/abs/2411.06500},
   title       = {Towards Graph Neural Network Surrogates Leveraging Mechanistic Expert Knowledge for Pandemic Response},
   year        = {2025}
-}
-
-@techreport{Shang:2024:DDM,
-  abstract    = {An approach for integrating randomized neural networks (RaNNs) with an overlapping Schwarz domain decomposition technique is developed to address multi-scale problems. Neural networks within each subdomain are interconnected using local window functions, enabling the construction of a global solution that serves as an approximation to the solution of the partial differential equation (PDE). Via a constraining operator the boundary conditions are enforced in a straightforward manner. The optimization of the parameters in the last layer of the RaNN yields a least-squares problem, leading to accurate solutions for the PDE. The introduction of a two-level domain decomposition method allows for capturing diverse scaling information, thereby enhancing the performance of the method.},
-  author      = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {August},
-  note        = {Submitted},
-  title       = {Domain decomposition method with randomized neural networks},
-  year        = {2024}
-}
-
-@techreport{Heinlein:2024:NTL,
-  abstract    = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton'’'s method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia’s Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
-  author      = {Alexander Heinlein and Kyrill Ho and Axel Klawonn and Martin Lanser},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {August},
-  note        = {Submitted},
-  title       = {Nonlinear Two-Level Schwarz Methods: A Parallel Implementation in FROSch},
-  year        = {2024}
-}
-
-@techreport{Dolean:2024:TDD,
-  abstract    = {This study presents a two-level Deep Domain Decomposition Method (Deep-DDM) augmented with a coarse-level network for solving boundary value problems using physics-informed neural networks (PINNs). The addition of the coarse level network improves scalability and convergence rates compared to the single level method. Tested on a Poisson equation with Dirichlet boundary conditions, the two-level deep DDM demonstrates superior performance, maintaining efficient convergence regardless of the number of subdomains. This advance provides a more scalable and effective approach to solving complex partial differential equations with machine learning.},
-  author      = {Victorita Dolean and Serge Gratton and Alexander Heinlein and Valentin Mercier},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {August},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2408.12198},
-  title       = {Two-level deep domain decomposition method},
-  year        = {2024}
-}
-
-@techreport{Sieburgh:2024:CSB,
-  abstract    = {The development of scalable and wavenumber-robust iterative solvers for Helmholtz problems is challenging but also relevant for various application fields. In this work, two-level Schwarz domain decomposition preconditioners are enhanced by coarse space constructed using higher-order B\'ezier interpolation. The numerical results indicate numerical scalability and robustness with respect the wavenumber, as long as the wavenumber times the element size of the coarse mesh is sufficiently low.},
-  author      = {Erik Sieburgh and Alexander Heinlein and Vandana Dwarka and Cornelis Vuik},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {August},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2408.03571},
-  title       = {Coarse Spaces Based on Higher-Order Interpolation for Schwarz Preconditioners for Helmholtz Problems},
-  year        = {2024}
 }
 
 @techreport{Yamazaki:2024:PCB,
