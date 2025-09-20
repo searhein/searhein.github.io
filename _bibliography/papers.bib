@@ -12,7 +12,7 @@ References
   bibtex_show = {true},
   doi         = {10.1016/j.camwa.2025.07.006},
   journal     = {Computers \& Mathematics with Applications},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   pages       = {64-83},
   preprint    = {https://arxiv.org/abs/2310.06717},
   title       = {Improving Pseudo-Time Stepping Convergence for CFD Simulations With Neural Networks},
@@ -29,7 +29,7 @@ References
   doi         = {https://doi.org/10.1016/j.jcp.2025.114027},
   issn        = {0021-9991},
   journal     = {Journal of Computational Physics},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   pages       = {114027},
   preprint    = {https://arxiv.org/abs/2308.02137},
   title       = {Learning the solution operator of two-dimensional incompressible Navier-Stokes equations using physics-aware convolutional neural networks},
@@ -53,7 +53,7 @@ References
   doi         = {10.1016/j.clinbiomech.2025.106558},
   issn        = {0268-0033},
   journal     = {Clinical Biomechanics},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   pages       = {106558},
   preprint    = {https://arxiv.org/abs/2411.14555},
   title       = {Deep operator network models for predicting post-burn contraction},
@@ -1281,15 +1281,16 @@ References
   year        = {2025}
 }
 
-@techreport{Visser:2024:PAC,
-  abstract    = {Physics-Informed Neural Networks (PINNs) are an emerging tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, adaptive collocation point sampling methods have been proposed, which have been reported to scale poorly to higher dimensions. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). Inspired by classic optimization problems, this approach incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the squared residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems; the best performance is observed for the Adam optimizer. Key features of the method include its low computational cost and simplicity of integration in existing physics-informed neural network pipelines.},
+@techreport{Visser:2025:PAC,
+  abstract    = {Physics-Informed Neural Networks (PINNs) have emerged as a tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, available adaptive collocation point sampling methods have been reported to scale poorly in terms of computational cost when applied to high-dimensional problems. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). PACMANN incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the PINN loss function, that is, the squared PDE residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems. Key features of the method include its low computational cost and simplicity of integration into existing physics-informed neural network pipelines. The code is available at \url{https://github.com/CoenVisser/PACMANN}.},
   author      = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {November},
+  keywords    = {submitted, reviewed, recent},
+  month       = {September},
+  note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2411.19632},
   title       = {PACMANN: Point Adaptive Collocation Method for Artificial Neural Networks},
-  year        = {2024}
+  year        = {2025}
 }
 
 @techreport{Schmidt:2025:TGNN,
@@ -1314,13 +1315,13 @@ References
   year        = {2024}
 }
 
-@techreport{Howard:2024:FBK,
-  abstract    = {Kolmogorov-Arnold networks (KANs) have attracted attention recently as an alternative to multilayer perceptrons (MLPs) for scientific machine learning. However, KANs can be expensive to train, even for relatively small networks. Inspired by finite basis physics-informed neural networks (FBPINNs), in this work, we develop a domain decomposition method for KANs that allows for several small KANs to be trained in parallel to give accurate solutions for multiscale problems. We show that finite basis KANs (FBKANs) can provide accurate results with noisy data and for physics-informed training.},
+@techreport{Howard:2025:FBK,
+  abstract    = {Kolmogorov-Arnold networks (KANs) have attracted attention recently as an alternative to multilayer perceptrons (MLPs) for scientific machine learning. However, KANs can be expensive to train, even for relatively small networks. Inspired by finite basis physics-informed neural networks (FBPINNs), in this work, we develop a domain decomposition-based architecture for KANs that allows for several small KANs to be trained in parallel to give accurate solutions for multiscale problems. We denote this new approach as finite basis KANs (FBKANs) and show that it yields accurate results for noisy data as well as physics-informed training.},
   author      = {Amanda A. Howard and Bruno Jacob and Sarah H. Murphy and Alexander Heinlein and Panos Stinis},
   bibtex_show = {true},
-  keywords    = {submitted},
-  month       = {June},
+  keywords    = {submitted, reviewed, recent},
+  month       = {September},
   preprint    = {https://arxiv.org/abs/2406.19662},
   title       = {Finite basis Kolmogorov-Arnold networks: domain decomposition for data-driven and physics-informed problems},
-  year        = {2024}
+  year        = {2025}
 }

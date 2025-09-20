@@ -2,8 +2,8 @@
 layout: page_thesis
 university: tud
 collaboration:
-title: Optimal Control of Leg Movement Using Phyisics-Informed Neural Networks
-co-supervisor:
+title: Domain decomposition Preconditioning with FROSch
+co-supervisor: Filipe Antônio Cumaru Silva Alves (TU Delft, DIAM)
 student: Thijs Terwiel
 runningindex: 43
 nolink: true
