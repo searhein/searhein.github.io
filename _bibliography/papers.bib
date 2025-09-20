@@ -5,9 +5,40 @@ References
 
 # published
 
+@article{Giammatteo:2025:DDM,
+  abbr        = {CAMWA},
+  abstract    = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp–finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
+  author      = {Elena Giammatteo and Alexander Heinlein and Philip L. Lederer and Matthias Schlottbom},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.camwa.2025.08.013},
+  journal     = {Computers & Mathematics with Applications},
+  keywords    = {published, reviewed, recent},
+  pages       = {376-394},
+  preprint    = {https://arxiv.org/abs/2410.07723},
+  title       = {High-order discretized ACMS method for the simulation of finite-size two-dimensional photonic crystals},
+  url         = {https://www.sciencedirect.com/science/article/pii/S0898122125003396},
+  volume      = {196},
+  year        = {2025}
+}
+
+@article{Heinlein:2025:CDF,
+  abbr        = {ACM TOMS},
+  abstract    = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the Trilinos package FROSch (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using deal.II (differential equations analysis library). Therefore, a Tpetra-based interface for coupling deal.II and FROSch is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to FROSch. The deal.II--FROSch interface works for both Lagrange-based and Nédélec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the FROSch-deal.II interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
+  author      = {Heinlein, Alexander and Kinnewig, Sebastian and Wick, Thomas},
+  bibtex_show = {true},
+  doi         = {10.1145/3766906},
+  journal     = {ACM Trans. Math. Softw.},
+  keywords    = {published, reviewed, recent},
+  month       = {September},
+  preprint    = {https://arxiv.org/abs/2410.22871},
+  title       = {Coupling deal.{II} and {FROSch}: {A} {Sustainable} and {Accessible} ({O}){RAS} {Preconditioner}},
+  url         = {https://dl.acm.org/doi/10.1145/3766906},
+  year        = {2025}
+}
+
 @article{Zandbergen:2025:IPT,
   abbr        = {CAMWA},
-  abstract    = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the stationary Navier–Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier–Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier–Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-time stepping (also known as pseudo-transient continuation) is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow over a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD Module of COMSOL Multiphysics® is employed.},
+  abstract    = {Computational fluid dynamics (CFD) simulations of viscous fluids described by the stationary Navier--Stokes equations are considered. Depending on the Reynolds number of the flow, the Navier–Stokes equations may exhibit a highly nonlinear behavior. The system of nonlinear equations resulting from the discretization of the Navier--Stokes equations can be solved using nonlinear iteration methods, such as Newton's method. However, fast quadratic convergence is typically only obtained in a local neighborhood of the solution, and for many configurations, the classical Newton iteration does not converge at all. In such cases, so-called globalization techniques may help to improve convergence. In this paper, pseudo-time stepping (also known as pseudo-transient continuation) is employed in order to improve nonlinear convergence. The classical algorithm is enhanced by a neural network model that is trained to predict a local pseudo-time step. Generalization of the novel approach is facilitated by predicting the local pseudo-time step separately on each element using only local information on a patch of adjacent elements as input. Numerical results for standard benchmark problems, including flow over a backward facing step geometry and Couette flow, show the performance of the machine learning-enhanced globalization approach; as the software for the simulations, the CFD Module of COMSOL Multiphysics® is employed.},
   author      = {Anouk Zandbergen and Tycho {van Noorden} and Alexander Heinlein},
   bibtex_show = {true},
   doi         = {10.1016/j.camwa.2025.07.006},
@@ -1143,20 +1174,6 @@ References
 
 # accepted
 
-@techreport{Giammatteo:2025:DDM,
-  abbr        = {CAMWA},
-  abstract    = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp-finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
-  author      = {Elena Giammatteo and Alexander Heinlein and Philip L. Lederer and Matthias Schlottbom},
-  bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
-  month       = {July},
-  note        = {Accepted for publication in Computers and Mathematics with Applications},
-  preprint    = {https://arxiv.org/abs/2410.07723},
-  title       = {High-order discretized ACMS method for the simulation of finite-size two-dimensional photonic crystals},
-  year        = {2025}
-}
-
-
 @techreport{Heinlein:2025:NTL,
   abbr        = {Springer LNCSE},
   abstract    = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton's method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia's Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
@@ -1204,19 +1221,6 @@ References
   month       = {July},
   note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
   title       = {Domain decomposition method with randomized neural networks},
-  year        = {2025}
-}
-
-@techreport{Kinnewig:2025:CDF,
-  abbr        = {ACM TOMS},
-  abstract    = {In this work, restricted additive Schwarz (RAS) and optimized restricted additive Schwarz (ORAS) preconditioners from the {\trilinos} package {\frosch} (Fast and Robust Overlapping Schwarz) are employed to solve model problems implemented using {\dealii} (differential equations analysis library). Therefore, a {\tpetra}-based interface for coupling {\dealii} and {\frosch} is implemented. While RAS preconditioners have been available before, ORAS preconditioners have been newly added to {\frosch}. The {\dealii}--{\frosch} interface works for both Lagrange-based and N\'ed\'elec finite elements. Here, as model problems, nonstationary, nonlinear, variational-monolithic fluid-structure interaction and the indefinite time-harmonic Maxwell's equations are considered. Several numerical experiments in two and three spatial dimensions confirm the performance of the preconditioners as well as the {\frosch}-{\dealii} interface. In conclusion, the overall software interface is straightforward and easy to use while giving satisfactory solver performances for challenging PDE systems.},
-  author      = {Sebastian Kinnewig and Alexander Heinlein and Thomas Wick},
-  bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
-  month       = {August},
-  note        = {Accepted for publication in ACM Transactions on Mathematical Software (TOMS)},
-  preprint    = {https://arxiv.org/abs/2410.22871},
-  title       = {Coupling deal.II and FROSch: A Sustainable and Accessible (O)RAS Preconditioner},
   year        = {2025}
 }
 
