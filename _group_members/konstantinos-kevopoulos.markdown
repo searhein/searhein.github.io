@@ -7,7 +7,7 @@ department: BioMechanical Engineering
 address: Mekelweg 2, 2628 CD Delft, The Netherlands
 email: K.Kevopoulos@tudelft.nl
 website:
-img: https://peirlincklab.com/images/people_kostas.jpg
+img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
 project:
 note: Main supervisor Mathias Peirlinck
 nolink: true
