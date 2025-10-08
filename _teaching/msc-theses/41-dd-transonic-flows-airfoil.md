@@ -7,8 +7,8 @@ co-supervisor: Simon Wassing (German Aerospace Center)
 student:
 runningindex: 41
 nolink:
-redirect: /assets/pdf/thesis_projects/2025/2025-heinlein-wassing-pinns-dd-transonic_flows_airfoil/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2025/2025-heinlein-wassing-pinns-dd-transonic-flows-airfoil/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2025/2025-heinlein_wassing-pinns-dd-transonic_flows_airfoil/project_description.pdf
+project_description: /assets/pdf/thesis_projects/2025/2025-heinlein_wassing-pinns-dd-transonic_flows_airfoil/project_description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:
