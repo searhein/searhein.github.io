@@ -3,7 +3,7 @@ layout: page_thesis
 university: tud
 collaboration: Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)
 title: Efficient Inexact Subdomain Solvers for Domain Decomposition Methods with RACE
-co-supervisor: Filipe Cumaru, Dane Lacey, Gerhard Wellein
+co-supervisor: Filipe Cumaru (TU Delft), Dane Lacey, and Gerhard Wellein (FAU)
 student:
 runningindex: 48
 nolink: false
