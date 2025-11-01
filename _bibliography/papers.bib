@@ -1179,7 +1179,7 @@ References
   abstract    = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton's method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia's Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
   author      = {Alexander Heinlein and Kyrill Ho and Axel Klawonn and Martin Lanser},
   bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
+  keywords    = {accepted, reviewed},
   month       = {July},
   note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
   title       = {Nonlinear Two-Level Schwarz Methods: A Parallel Implementation in FROSch},
@@ -1204,7 +1204,7 @@ References
   abstract    = {The development of scalable and wavenumber-robust iterative solvers for Helmholtz problems is challenging but also relevant for various application fields. In this work, two-level Schwarz domain decomposition preconditioners are enhanced by coarse space constructed using higher-order B\'ezier interpolation. The numerical results indicate numerical scalability and robustness with respect the wavenumber, as long as the wavenumber times the element size of the coarse mesh is sufficiently low.},
   author      = {Erik Sieburgh and Alexander Heinlein and Vandana Dwarka and Cornelis Vuik},
   bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
+  keywords    = {accepted, reviewed},
   month       = {July},
   note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
   preprint    = {https://arxiv.org/abs/2408.03571},
@@ -1217,7 +1217,7 @@ References
   abstract    = {An approach for integrating randomized neural networks (RaNNs) with an overlapping Schwarz domain decomposition technique is developed to address multi-scale problems. Neural networks within each subdomain are interconnected using local window functions, enabling the construction of a global solution that serves as an approximation to the solution of the partial differential equation (PDE). Via a constraining operator the boundary conditions are enforced in a straightforward manner. The optimization of the parameters in the last layer of the RaNN yields a least-squares problem, leading to accurate solutions for the PDE. The introduction of a two-level domain decomposition method allows for capturing diverse scaling information, thereby enhancing the performance of the method.},
   author      = {Yong Shang and Alexander Heinlein and Siddhartha Mishra and Fei Wang},
   bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
+  keywords    = {accepted, reviewed},
   month       = {July},
   note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
   title       = {Domain decomposition method with randomized neural networks},
@@ -1239,11 +1239,44 @@ References
 
 # submitted
 
+@techreport{Soliman:2025:SCG,
+  abstract    = {We present a new iteration bound for the preconditioned conjugate gradient (PCG) method that accurately captures convergence for systems with clustered eigenspectra, where the classical condition number-based bound is too pessimistic. By using the extremal values of each subcluster in the spectral distribution, our bound is orders of magnitude sharper than the classical bound. We demonstrate its effectiveness on a high-contrast elliptic PDE preconditioned with a two-level overlapping Schwarz method, where it successfully distinguishes between the performance of different (algebraic) preconditioners. A key contribution is theoretical evidence that, for certain high-contrast problems, PCG convergence can make simpler coarse spaces competitive. Conversely, more complex preconditioners are not always necessary. Finally, we show that our bound can be estimated effectively from Ritz values computed during early PCG iterations.},
+  author      = {Philip Soliman and Filipe Cumaru and Alexander Heinlein},
+  bibtex_show = {true},
+  keywords    = {submitted, reviewed, recent},
+  month       = {October},
+  note        = {Submitted},
+  title       = {Sharpened CG Iteration Bound for High-contrast Heterogeneous Scalar Elliptic PDEs},
+  year        = {2025}
+}
+
+@techreport{Heinlein:2025:MST,
+  abstract    = {We introduce a near-field problem as a benchmark for the time-harmonic Maxwell (THM) equations. Therein, the near-field, i.e., the electric field directly around a nanoparticle, is computed using the finite element method (FEM) with N\'ed\'elec elements. Afterwards, this is compared to results with analytical solutions obtained from Mie's scattering theory. By establishing this benchmark, we aim to provide a reliable and reproducible standard for validating numerical methods for the THM equations.},
+  author      = {Alexander Heinlein and Sebastian Kinnewig and Thomas Wick},
+  bibtex_show = {true},
+  keywords    = {submitted, reviewed, recent},
+  month       = {October},
+  note        = {Submitted},
+  title       = {The Mie Scattering Theory as Benchmark Problem for the Time-Harmonic Maxwell's Equations},
+  year        = {2025}
+}
+
+@techreport{Heinlein:2025:DDA,
+  abstract    = {Approximating the solutions of boundary value problems governed by partial differential equations with neural networks is challenging, largely due to the difficult training process. This difficulty can be partly explained by the spectral bias, that is, the slower convergence of high-frequency components, and can be mitigated by localizing neural networks via (overlapping) domain decomposition. We combine this localization with the Gauss--Newton method as the optimizer to obtain faster convergence than gradient-based schemes such as Adam; this comes at the cost of solving an ill-conditioned linear system in each iteration. Domain decomposition induces a block-sparse structure in the otherwise dense Gauss--Newton system, reducing the computational cost per iteration. Our numerical results indicate that combining localization and Gauss--Newton optimization is promising for neural network-based solvers for partial differential equations.},
+  author      = {Alexander Heinlein and Taniya Kapoor},
+  bibtex_show = {true},
+  keywords    = {submitted, reviewed, recent},
+  month       = {October},
+  note        = {Submitted},
+  title       = {Domain decomposition architectures and Gauss--Newton training for physics-informed neural networks},
+  year        = {2025}
+}
+
 @techreport{Heinlein:2025:MBO,
   abstract    = {Monolithic preconditioners applied to the linear systems arising during the solution of the discretized incompressible Navier--Stokes equations are typically more robust than preconditioners based on incomplete block factorizations. Lower number of iterations and a reduced sensitivity to parameters like velocity and viscosity can significantly outweigh the additional cost for their setup. Different monolithic preconditioning techniques are introduced and compared to a selection of block preconditioners. In particular, two-level additive overlapping Schwarz methods (OSM) are used to set up monolithic preconditioners and to approximate the inverses arising in the block preconditioners. GDSW-type (Generalized Dryja--Smith--Widlund) coarse spaces are used for the second level. These highly scalable, parallel preconditioners have been implemented in the solver framework FROSch (Fast and Robust Overlapping Schwarz), which is part of the software library Trilinos. The new GDSW-type coarse space GDSW* is introduced; combining it with other techniques results in a robust algorithm. The block preconditioners PCD (Pressure Convection--Diffusion), SIMPLE (Semi-Implicit Method for Pressure Linked Equations), and LSC (Least-Squares Commutator) are considered to various degrees. The OSM for the monolithic as well as the block approach allows the optimized combination of different coarse spaces for the velocity and pressure component, enabling the use of tailored coarse spaces. The numerical and parallel performance of the different preconditioning methods for finite element discretizations of stationary as well as time-dependent incompressible fluid flow problems is investigated and compared. Their robustness is analyzed for a range of Reynolds and Courant-Friedrichs-Lewy (CFL) numbers with respect to a realistic problem setting.},
   author      = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Lea Sa{\ss}mannshausen},
   bibtex_show = {true},
-  keywords    = {recent},
+  keywords    = {submitted, reviewed, recent},
   month       = {June},
   title       = {Monolithic and Block Overlapping Schwarz Preconditioners for the Incompressible Navier--Stokes Equations},
   year        = {2025}
@@ -1253,7 +1286,7 @@ References
   abstract    = {Machine learning methods often struggle with real-world applications in science and engineering due to an insufficient amount or quality of training data. In this work, the example of subsurface porous media flow is considered; this corresponds to advection-diffusion processes under heterogeneous flow conditions, i.e., for spatially varying material parameters, and a large number of spatially distributed source terms. This challenge comes at high computing costs for classical simulation methods due to the required high spatio-temporal resolution and large domains. Machine learning-based surrogate models seem to offer a computationally efficient alternative. However, faced with real-world data-limitations, purely data-driven approaches face difficulties in predicting the advection process, which is highly sensitive to input variations and involves long-range interactions. Therefore, in this work, a Local-Global Convolutional Neural Network (LGCNN) approach is introduced, that combines a lightweight numerical surrogate for the global transport process with convolutional neural networks (CNNs) for the remaining local processes. With the LGCNN, we model a city-wide subsurface temperature field, involving a heterogeneous groundwater flow field and one hundred groundwater heat pump injection points forming interacting heat plumes over long distances. In order to first systematically analyze the method, random subsurface input fields are employed. Then, the model is trained on a single cut-out from a real-world subsurface map of the Munich region in Germany. Our model scales to larger cut-outs without retraining by accounting for the global effects with numerical physics models. All datasets, our code, and trained models are published for reproducibility.},
   author      = {Julia Pelzer and Corné Verburg and Alexander Heinlein and Miriam Schulte},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
+  keywords    = {submitted, reviewed},
   month       = {May},
   note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2507.06062},
@@ -1289,7 +1322,7 @@ References
   abstract    = {Physics-Informed Neural Networks (PINNs) have emerged as a tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, available adaptive collocation point sampling methods have been reported to scale poorly in terms of computational cost when applied to high-dimensional problems. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). PACMANN incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the PINN loss function, that is, the squared PDE residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems. Key features of the method include its low computational cost and simplicity of integration into existing physics-informed neural network pipelines. The code is available at \url{https://github.com/CoenVisser/PACMANN}.},
   author      = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
+  keywords    = {submitted, reviewed},
   month       = {September},
   note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2411.19632},
@@ -1301,7 +1334,7 @@ References
   abstract    = {During the COVID-19 crisis, mechanistic models have been proven fundamental to guide evidence-based decision making. However, time-critical decisions in a dynamically changing environment restrict  the time available for modelers to gather supporting evidence. As infectious disease dynamics are often heterogeneous on a spatial or demographic scale, models should be resolved accordingly. In addition, with a large number of potential interventions, all scenarios can barely be computed on time, even when using supercomputing facilities. We suggest to combine complex mechanistic models with data-driven surrogate models to allow for on-the-fly model adaptations by public health experts. We build upon a spatially and demographically resolved infectious disease model and train a graph neural network for data sets representing early phases of the pandemic. The resulting networks reached an execution time of less than a second, a significant speedup compared to the metapopulation approach. The suggested approach yields potential for on-the-fly execution and, thus, integration of disease dynamics models in low-barrier website applications. For the approach to be used with decision-making, datasets with larger variance will have to be considered.},
   author      = {Agatha Schmidt and Henrik Zunker and Alexander Heinlein and Martin J. K\"uhn},
   bibtex_show = {true},
-  keywords    = {reviewed},
+  keywords    = {submitted, reviewed},
   month       = {April},
   preprint    = {https://arxiv.org/abs/2411.06500},
   title       = {Towards Graph Neural Network Surrogates Leveraging Mechanistic Expert Knowledge for Pandemic Response},
@@ -1323,7 +1356,7 @@ References
   abstract    = {Kolmogorov-Arnold networks (KANs) have attracted attention recently as an alternative to multilayer perceptrons (MLPs) for scientific machine learning. However, KANs can be expensive to train, even for relatively small networks. Inspired by finite basis physics-informed neural networks (FBPINNs), in this work, we develop a domain decomposition-based architecture for KANs that allows for several small KANs to be trained in parallel to give accurate solutions for multiscale problems. We denote this new approach as finite basis KANs (FBKANs) and show that it yields accurate results for noisy data as well as physics-informed training.},
   author      = {Amanda A. Howard and Bruno Jacob and Sarah H. Murphy and Alexander Heinlein and Panos Stinis},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
+  keywords    = {submitted, reviewed},
   month       = {September},
   preprint    = {https://arxiv.org/abs/2406.19662},
   title       = {Finite basis Kolmogorov-Arnold networks: domain decomposition for data-driven and physics-informed problems},
