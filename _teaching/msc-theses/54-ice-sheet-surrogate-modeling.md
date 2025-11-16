@@ -1,11 +1,11 @@
 ---
 layout: page_thesis
 university: tud
-collaboration: Boskalis
-title: Operator Learning for Loss Parameter Estimation in Dredging Operations
-co-supervisor: Oscar van der Ven (Boskalis)
-student: Marius Kielhöfer
-runningindex: 33
+collaboration: TNO
+title: Ice Sheet Surrogate Modeling with Scientific Machine Learning
+co-supervisor:
+student: Aidan Engelhard
+runningindex: 54
 nolink: true
 redirect:
 project_description:

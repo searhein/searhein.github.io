@@ -8,7 +8,7 @@ address: Van Mourik Broekmanweg 6, 2628 XE Delft, The Netherlands
 email: S.D.Kalvankar@student.tudelft.nl
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
-project:
+project: /teaching/msc-theses/33-pinns-inverse-problems-sensor-data
 note:
 nolink: true
 redirect:
