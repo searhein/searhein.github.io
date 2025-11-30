@@ -12,7 +12,7 @@ References
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.camwa.2025.08.013},
   journal     = {Computers \& Mathematics with Applications},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   pages       = {376-394},
   preprint    = {https://arxiv.org/abs/2410.07723},
   title       = {High-order discretized ACMS method for the simulation of finite-size two-dimensional photonic crystals},
@@ -28,7 +28,7 @@ References
   bibtex_show = {true},
   doi         = {10.1145/3766906},
   journal     = {ACM Trans. Math. Softw.},
-  keywords    = {published, reviewed, recent},
+  keywords    = {published, reviewed},
   month       = {September},
   preprint    = {https://arxiv.org/abs/2410.22871},
   title       = {Coupling deal.{II} and {FROSch}: {A} {Sustainable} and {Accessible} ({O}){RAS} {Preconditioner}},
@@ -1238,6 +1238,28 @@ References
 }
 
 # submitted
+
+@techreport{Cumaru:2025:DDG,
+  abstract    = {Incompressible fluid flow problems appear frequently in different applications. The discretization of such problems may result in large and ill-conditioned systems of linear equations. We consider the case of the Stokes equations discretized using a reduced integration method which approximates the incompressibility constraint by a penalty term thus allowing the problem to be solved only in terms of the velocity unknowns. We investigate the numerical scalability of a two-level overlapping additive Schwarz method with a reduced dimension generalized Dryja-Smith-Widlund (RGDSW) coarse space. In addition, we discuss the parallel implementation of the examples using the Fast and Robust Overlapping Schwarz (FROSch) package for additive Schwarz preconditioners and the NGSolve library, which implements multiple finite element space formulations.},
+  author      = {Filipe Cumaru and Alexander Heinlein and Joachim Sch\"oberl},
+  bibtex_show = {true},
+  keywords    = {submitted, reviewed, recent},
+  month       = {November},
+  note        = {Submitted},
+  title       = {Two-level additive Schwarz preconditioners for reduced integration methods},
+  year        = {2025}
+}
+
+@techreport{Propp:2025:DDG,
+  abstract    = {Accurate yet efficient surrogate models are essential for large-scale simulations of partial differential equations (PDEs), particularly for uncertainty quantification  (UQ) tasks that demand hundreds or thousands of evaluations. We develop a physics-inspired graph neural network (GNN) surrogate that operates directly on unstructured meshes and leverages the flexibility of graph attention. To improve both training efficiency and generalization properties of the model, we introduce a domain decomposition (DD) strategy that partitions the mesh into subdomains, trains local GNN surrogates in parallel, and aggregates their predictions. We then employ transfer learning to fine-tune models across subdomains, accelerating training and improving accuracy in data-limited settings. Applied to ice sheet simulations, our approach accurately predicts full-field velocities on high-resolution meshes, substantially reduces training time relative to a single global surrogate model, and provides a ripe foundation for UQ objectives. Our results demonstrate that graph-based DD, combined with transfer learning, provides a scalable and reliable pathway for training GNN surrogates on massive PDE-governed systems, with broad potential for application beyond ice sheet dynamics.},
+  author      = {Adrienne M. Propp and Mauro Perego and Eric C. Cyr and Anthony Gruber and Amanda Howard and Alexander Heinlein and Panos Stinis and Daniel Tartakovsky},
+  bibtex_show = {true},
+  keywords    = {recent},
+  month       = {November},
+  note        = {},
+  title       = {Domain-Decomposed Graph Neural Network Surrogate Modeling for Ice Sheets},
+  year        = {2025}
+}
 
 @techreport{Soliman:2025:SCG,
   abstract    = {We present a new iteration bound for the preconditioned conjugate gradient (PCG) method that accurately captures convergence for systems with clustered eigenspectra, where the classical condition number-based bound is too pessimistic. By using the extremal values of each subcluster in the spectral distribution, our bound is orders of magnitude sharper than the classical bound. We demonstrate its effectiveness on a high-contrast elliptic PDE preconditioned with a two-level overlapping Schwarz method, where it successfully distinguishes between the performance of different (algebraic) preconditioners. A key contribution is theoretical evidence that, for certain high-contrast problems, PCG convergence can make simpler coarse spaces competitive. Conversely, more complex preconditioners are not always necessary. Finally, we show that our bound can be estimated effectively from Ritz values computed during early PCG iterations.},
