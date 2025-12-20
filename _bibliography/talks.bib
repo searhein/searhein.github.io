@@ -5,7 +5,7 @@ References
 
 # talks
 
-@misc{Heinlein:2026:SIAMPP:TBA,
+@misc{Heinlein:2026:SIAMPP:DDP,
   abbr     = {SIAM PP26},
   abstract = {Physics-informed machine learning incorporates physical knowledge into machine learning to solve boundary value problems governed by differential equations. This talk presents recent advances in domain decomposition (DD) for physics-informed neural networks (PINNs) and physics-informed deep neural operators (PI-DeepONets). While PINNs offer a flexible, mesh-free framework for high-dimensional, nonlinear problems, they suffer from ill-conditioning, limited training robustness, and scalability challenges. We show how DD yields scalable PINN architectures that improve convergence and training robustness. We further show that DD-enhanced PI-DeepONets efficiently and accurately approximate solution operators for parameterized problems. Numerical experiments on multiscale and wave-propagation problems illustrate the scalability and performance benefits of domain decomposition in physics-informed learning.},
   author   = {Alexander Heinlein},
@@ -13,6 +13,36 @@ References
   note     = {SIAM Conference on Parallel Processing for Scientific Computing (PP26), Berlin, Germany, March 3-6},
   title    = {Domain Decomposition for Physics-Informed Machine Learning},
   url      = {https://www.siam.org/conferences-events/siam-conferences/pp26/},
+  year     = {2026}
+}
+
+@misc{Heinlein:2026:FAU:DDP,
+  abbr     = {Seminar},
+  abstract = {This talk highlights how domain decomposition methods—rooted in ideas introduced by Schwarz in the 19th century and later developed into numerical algorithms by Lions in the 1980s—remain highly relevant for modern high-performance computing and scientific machine learning. The central principle is to decompose a global computational domain into subdomains, thereby splitting large-scale problems into smaller, local subproblems that can be solved efficiently and in parallel. We focus on modern overlapping Schwarz preconditioners as implemented in the FROSch (Fast and Robust Overlapping Schwarz) package of the Trilinos library, which have demonstrated robustness and scalability for a wide range of challenging applications on contemporary CPU and GPU architectures. Beyond their classical role in numerical solvers for partial differential equations, we also explore how domain decomposition techniques can be employed to localize neural networks and operator-learning architectures, introducing sparsity, improving scalability, and enhancing training in multiscale settings. The underlying algorithmic ideas are validated on representative test problems, including diffusion, wave propagation, and flow problems, illustrating how domain decomposition provides a unifying framework bridging large-scale numerical simulation and modern scientific machine learning.},
+  author   = {Alexander Heinlein},
+  keywords = {},
+  note     = {NHR PerfLab Seminar, Friedrich-Alexander University of Erlangen-Nuremberg, Erlangen, February 3},
+  title    = {Domain Decomposition-Based Preconditioners and Neural Networks},
+  year     = {2026}
+}
+
+@misc{Heinlein:2026:Goettingen:SOS,
+  abbr     = {Seminar},
+  abstract = {Scientific machine learning (SciML) combines methods from scientific computing and machine learning to solve complex physical problems. This talk presents how domain decomposition (DD) techniques can be used to design scalable, efficient neural network architectures for both physics-informed and data-driven learning tasks. First, domain decomposition-based architectures for physics-informed neural networks (PINNs) are introduced, addressing challenges such as ill-conditioning and limited scalability. To better analyze the training process and explore preconditioning strategies, the networks are simplified to randomized neural networks, where fixing random weights in hidden layers leads to linear least-squares systems that can be efficiently solved and preconditioned using DD methods. These ideas are further extended to Gauss-Newton training for DD-based PINNs, enabling improved convergence compared with standard gradient-based optimizers. Moreover, the arising linear systems share a similar algebraic structure with those of randomized neural networks. Localization via domain decomposition is then applied to learning parameterized problems using (physics-informed) neural operators (DeepONets), where DD-based localization also enhances performance. Numerical experiments across multiscale and wave problems demonstrate how DD strategies systematically improve SciML models. As a final example, it is shown that DD can also increase the efficiency of convolutional neural networks (CNNs) for semantic image segmentation.},
+  author   = {Alexander Heinlein},
+  keywords = {},
+  note     = {Seminar, University Göttingen, Göttingen, Germany, January 7},
+  title    = {Localization of Neural Networks Using Domain Decomposition},
+  year     = {2026}
+}
+
+@misc{Heinlein:2026:Goettingen:SOS,
+  abbr     = {Colloquium},
+  abstract = {The FROSch (Fast and Robust Overlapping Schwarz) domain decomposition preconditioning framework is part of the Trilinos software framework and provides scalable multilevel Schwarz preconditioners, with a particular emphasis on the fully algebraic construction of coarse spaces for large-scale systems arising from the discretization of partial differential equations. The algorithmic backbone of FROSch is formed by extension-based coarse spaces, such as those employed in generalized Dryja-Smith-Widlund (GDSW) methods. In this talk, we focus on recent algorithmic developments in monolithic coarse spaces for block-structured systems, such as those arising in fluid flow, as well as robust algebraic multiscale coarse spaces for strongly heterogeneous problems. We present results that validate these algorithmic advances, together with performance results for challenging applications, including land ice simulations, blood flow, and porous media flow.},
+  author   = {Alexander Heinlein},
+  keywords = {},
+  note     = {Colloquium, University Göttingen Göttingen, Germany, January 6},
+  title    = {Scalable Overlapping Schwarz Domain Decomposition Preconditioners Using Extension-Based Coarse Spaces},
   year     = {2026}
 }
 
