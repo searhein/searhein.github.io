@@ -1174,6 +1174,32 @@ References
 
 # accepted
 
+@techreport{Soliman:2026:SCG,
+  abbr        = {Springer LNCSE},
+  abstract    = {We present a new iteration bound for the preconditioned conjugate gradient (PCG) method that accurately captures convergence for systems with clustered eigenspectra, where the classical condition number-based bound is too pessimistic. By using the extremal values of each subcluster in the spectral distribution, our bound is orders of magnitude sharper than the classical bound. We demonstrate its effectiveness on a high-contrast elliptic PDE preconditioned with a two-level overlapping Schwarz method, where it successfully distinguishes between the performance of different (algebraic) preconditioners. A key contribution is theoretical evidence that, for certain high-contrast problems, PCG convergence can make simpler coarse spaces competitive. Conversely, more complex preconditioners are not always necessary. Finally, we show that our bound can be estimated effectively from Ritz values computed during early PCG iterations.},
+  author      = {Philip Soliman and Filipe Cumaru and Alexander Heinlein},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {October},
+  note        = {Accepted for publication in Springer Lecture Notes in Computational Science and Engineering},
+  preprint    = {https://arxiv.org/abs/2511.12726},
+  title       = {Sharpened PCG Iteration Bound for High-Contrast Heterogeneous Scalar Elliptic PDEs},
+  year        = {2026}
+}
+
+@techreport{Visser:2026:PAC,
+  abbr        = {CMAME},
+  abstract    = {Physics-Informed Neural Networks (PINNs) have emerged as a tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, available adaptive collocation point sampling methods have been reported to scale poorly in terms of computational cost when applied to high-dimensional problems. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). PACMANN incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the PINN loss function, that is, the squared PDE residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems. Key features of the method include its low computational cost and simplicity of integration into existing physics-informed neural network pipelines. The code is available at \url{https://github.com/CoenVisser/PACMANN}.},
+  author      = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {September},
+  note        = {Accepted for publication in Computer Methods in Applied Mechanics and Engineering},
+  preprint    = {https://arxiv.org/abs/2411.19632},
+  title       = {PACMANN: Point Adaptive Collocation Method for Artificial Neural Networks},
+  year        = {2026}
+}
+
 @techreport{Heinlein:2025:NTL,
   abbr        = {Springer LNCSE},
   abstract    = {Owing to the ability of nonlinear domain decomposition methods to improve the nonlinear convergence behavior of Newton's method, they have experienced a rise in popularity recently in the context of problems for which Newton's method converges slowly or not at all. This article introduces a novel parallel implementation of a two-level nonlinear Schwarz solver based on the FROSch (Fast and Robust Overlapping Schwarz) solver framework, part of Sandia's Trilinos library. First, an introduction to the key concepts underlying two-level nonlinear Schwarz methods is given, including a brief overview of the coarse space used to build the second level. Next, the parallel implementation is discussed, followed by preliminary parallel results for a scalar nonlinear diffusion problem and a 2D nonlinear plane-stress Neo-Hooke elasticity problem with large deformations.},
@@ -1263,18 +1289,6 @@ References
   year        = {2025}
 }
 
-@techreport{Soliman:2025:SCG,
-  abstract    = {We present a new iteration bound for the preconditioned conjugate gradient (PCG) method that accurately captures convergence for systems with clustered eigenspectra, where the classical condition number-based bound is too pessimistic. By using the extremal values of each subcluster in the spectral distribution, our bound is orders of magnitude sharper than the classical bound. We demonstrate its effectiveness on a high-contrast elliptic PDE preconditioned with a two-level overlapping Schwarz method, where it successfully distinguishes between the performance of different (algebraic) preconditioners. A key contribution is theoretical evidence that, for certain high-contrast problems, PCG convergence can make simpler coarse spaces competitive. Conversely, more complex preconditioners are not always necessary. Finally, we show that our bound can be estimated effectively from Ritz values computed during early PCG iterations.},
-  author      = {Philip Soliman and Filipe Cumaru and Alexander Heinlein},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
-  month       = {October},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2511.12726},
-  title       = {Sharpened PCG Iteration Bound for High-Contrast Heterogeneous Scalar Elliptic PDEs},
-  year        = {2025}
-}
-
 @techreport{Heinlein:2025:MST,
   abstract    = {We introduce a near-field problem as a benchmark for the time-harmonic Maxwell (THM) equations. Therein, the near-field, i.e., the electric field directly around a nanoparticle, is computed using the finite element method (FEM) with N\'ed\'elec elements. Afterwards, this is compared to results with analytical solutions obtained from Mie's scattering theory. By establishing this benchmark, we aim to provide a reliable and reproducible standard for validating numerical methods for the THM equations.},
   author      = {Alexander Heinlein and Sebastian Kinnewig and Thomas Wick},
@@ -1343,18 +1357,6 @@ References
   note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2503.08126},
   title       = {Trilinos: Enabling Scientific Computing Across Diverse Hardware Architectures at Scale},
-  year        = {2025}
-}
-
-@techreport{Visser:2025:PAC,
-  abstract    = {Physics-Informed Neural Networks (PINNs) have emerged as a tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, available adaptive collocation point sampling methods have been reported to scale poorly in terms of computational cost when applied to high-dimensional problems. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). PACMANN incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the PINN loss function, that is, the squared PDE residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems. Key features of the method include its low computational cost and simplicity of integration into existing physics-informed neural network pipelines. The code is available at \url{https://github.com/CoenVisser/PACMANN}.},
-  author      = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {September},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2411.19632},
-  title       = {PACMANN: Point Adaptive Collocation Method for Artificial Neural Networks},
   year        = {2025}
 }
 
