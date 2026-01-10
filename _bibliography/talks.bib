@@ -5,6 +5,17 @@ References
 
 # talks
 
+@misc{Heinlein:2026:ESCO:TBA,
+  abbr     = {ESCO 2026},
+  abstract = {TBA},
+  author   = {Alexander Heinlein},
+  keywords = {selected},
+  note     = {Keynote lecture, 10th European Seminar on Computing (ESCO 2026), Pilsen, Czech Republic, June 1-4},
+  title    = {TBA},
+  url      = {https://esco2026.fel.zcu.cz/},
+  year     = {2026}
+}
+
 @misc{Heinlein:2026:SIAMPP:DDP,
   abbr     = {SIAM PP26},
   abstract = {Physics-informed machine learning incorporates physical knowledge into machine learning to solve boundary value problems governed by differential equations. This talk presents recent advances in domain decomposition (DD) for physics-informed neural networks (PINNs) and physics-informed deep neural operators (PI-DeepONets). While PINNs offer a flexible, mesh-free framework for high-dimensional, nonlinear problems, they suffer from ill-conditioning, limited training robustness, and scalability challenges. We show how DD yields scalable PINN architectures that improve convergence and training robustness. We further show that DD-enhanced PI-DeepONets efficiently and accurately approximate solution operators for parameterized problems. Numerical experiments on multiscale and wave-propagation problems illustrate the scalability and performance benefits of domain decomposition in physics-informed learning.},
@@ -31,7 +42,7 @@ References
   abstract = {Scientific machine learning (SciML) combines methods from scientific computing and machine learning to solve complex physical problems. This talk presents how domain decomposition (DD) techniques can be used to design scalable, efficient neural network architectures for both physics-informed and data-driven learning tasks. First, domain decomposition-based architectures for physics-informed neural networks (PINNs) are introduced, addressing challenges such as ill-conditioning and limited scalability. To better analyze the training process and explore preconditioning strategies, the networks are simplified to randomized neural networks, where fixing random weights in hidden layers leads to linear least-squares systems that can be efficiently solved and preconditioned using DD methods. These ideas are further extended to Gauss-Newton training for DD-based PINNs, enabling improved convergence compared with standard gradient-based optimizers. Moreover, the arising linear systems share a similar algebraic structure with those of randomized neural networks. Localization via domain decomposition is then applied to learning parameterized problems using (physics-informed) neural operators (DeepONets), where DD-based localization also enhances performance. Numerical experiments across multiscale and wave problems demonstrate how DD strategies systematically improve SciML models. As a final example, it is shown that DD can also increase the efficiency of convolutional neural networks (CNNs) for semantic image segmentation.},
   author   = {Alexander Heinlein},
   keywords = {},
-  note     = {Seminar, University of Göttingen, Göttingen, Germany, January 7},
+  note     = {Oberseminar, University of Göttingen, Göttingen, Germany, January 7},
   title    = {Localization of Neural Networks Using Domain Decomposition},
   year     = {2026}
 }
@@ -41,7 +52,7 @@ References
   abstract = {The FROSch (Fast and Robust Overlapping Schwarz) domain decomposition preconditioning framework is part of the Trilinos software framework and provides scalable multilevel Schwarz preconditioners, with a particular emphasis on the fully algebraic construction of coarse spaces for large-scale systems arising from the discretization of partial differential equations. The algorithmic backbone of FROSch is formed by extension-based coarse spaces, such as those employed in generalized Dryja-Smith-Widlund (GDSW) methods. In this talk, we focus on recent algorithmic developments in monolithic coarse spaces for block-structured systems, such as those arising in fluid flow, as well as robust algebraic multiscale coarse spaces for strongly heterogeneous problems. We present results that validate these algorithmic advances, together with performance results for challenging applications, including land ice simulations, blood flow, and porous media flow.},
   author   = {Alexander Heinlein},
   keywords = {},
-  note     = {Colloquium, University of Göttingen Göttingen, Germany, January 6},
+  note     = {Colloquium, University of Göttingen, Göttingen, Germany, January 6},
   title    = {Scalable Overlapping Schwarz Domain Decomposition Preconditioners Using Extension-Based Coarse Spaces},
   year     = {2026}
 }
@@ -50,8 +61,8 @@ References
   abbr     = {LACAM-25},
   abstract = {Neural network-based surrogate models for physical systems are often promoted for their seemingly low computational costs compared to classical numerical simulations. While inference time is indeed very low, the significant costs of training data generation, hyper-parameter tuning, and model training are often overlooked. Although physics-informed loss functions can reduce or even eliminate the need for training data, optimizing hyper-parameters and network parameters remains challenging in terms of both robustness and efficiency, difficulties that are often even more pronounced in physics-informed training. Moreover, the training process itself is frequently observed to lack robustness. Overall, training neural network-based surrogate models remains a demanding task. In this talk, we focus on physics-informed neural networks (PINNs) and deep operator networks (DeepONets), while noting that many of the concepts discussed also apply to other neural network- and operator-based approaches. First, we analyze the error contributions of the branch and trunk networks in DeepONets and their evolution during training. To this end, we rely on discretization and employ singular value decomposition to study these errors. We then present domain decomposition approaches for localizing neural networks and operators. This strategy helps mitigate spectral bias, i.e., the slow convergence of local and high-frequency components. In addition, domain decomposition enables effective preconditioning of randomized neural networks, substantially improving convergence for linear(ized) problems. Related benefits can also be achieved when these techniques are combined with natural gradient descent optimization. To illustrate these phenomena, we consider a range of model problems, including the Burgers and Allen-Cahn equations, as well as multiscale and wave problems.},
   author   = {Alexander Heinlein},
-  keywords = {},
-  note     = {International Conference on Latest Advances in Computational and Applied Mathematics 2025 (LACAM-25), IISER Thiruvananthapuram, Kerala, India, December 8-11},
+  keywords = {selected},
+  note     = {Invited plenary talk. International Conference on Latest Advances in Computational and Applied Mathematics 2025 (LACAM-25), IISER Thiruvananthapuram, Kerala, India, December 8-11},
   slides   = {2025/2025-heinlein-lacam-nnb/2025-heinlein-sciml.pdf},
   title    = {Neural Network-Based Models for Physical Systems: Analysis, Domain Decomposition, and Preconditioning},
   url      = {https://conference.iisertvm.ac.in/lacam-25/},
@@ -61,8 +72,9 @@ References
 @misc{Heinlein:2025:Tongji:CFS,
   abbr     = {Workshop},
   abstract = {This talk explores how domain decomposition and partition of unity approaches can enhance scalability, efficiency, and robustness in both scientific computing and scientific machine learning. Overlapping Schwarz methods with coarse spaces constructed from partition of unity functions, as implemented in the FROSch package of the Trilinos library, enable algebraic and scalable multilevel preconditioners, with recent advances including inexact local solvers on CPUs and GPUs, robust multiscale coarse spaces, monolithic coarse spaces for multiphysics problems, and machine learning techniques for improving coarse basis construction. At the same time, the same partition of unity concepts also allow for the localization of neural networks and operator-learning architectures, addressing challenges such as spectral bias and limited scalability in multiscale settings. Localization introduces sparsity that supports faster solvers and effective preconditioning for neural networks using domain decomposition. Numerical experiments across a range of application problems demonstrate and confirm the benefits of this algorithmic framework for both classical PDE solvers and modern SciML models.},
+  author   = {Alexander Heinlein},
   keywords = {},
-  note     = {Workshop, Tongji University, Shanghai, China, November 27},
+  note     = {Invited talk. Workshop on Fast Solvers in Scientific Computing, Tongji University, Shanghai, China, November 27},
   title    = {Constructing fast solvers based on domain decomposition and partition of unity approaches},
   year     = {2025}
 }
@@ -72,7 +84,7 @@ References
   abstract = {Scientific machine learning (SciML) combines methods from scientific computing and machine learning to solve complex physical problems. This talk presents how domain decomposition (DD) techniques can be used to design scalable, efficient neural network architectures for both physics-informed and data-driven learning tasks. First, domain decomposition-based architectures for physics-informed neural networks (PINNs) are introduced, addressing challenges such as ill-conditioning and limited scalability. To better analyze the training process and explore preconditioning strategies, the networks are simplified to randomized neural networks, where fixing random weights in hidden layers leads to linear least-squares systems that can be efficiently solved and preconditioned using DD methods. These ideas are further extended to Gauss-Newton training for DD-based PINNs, enabling improved convergence compared with standard gradient-based optimizers. Moreover, the arising linear systems share a similar algebraic structure with those of randomized neural networks. Localization via domain decomposition is then applied to learning parameterized problems using (physics-informed) neural operators (DeepONets), where DD-based localization also enhances performance. Numerical experiments across multiscale and wave problems demonstrate how DD strategies systematically improve SciML models. As a final example, it is shown that DD can also increase the efficiency of convolutional neural networks (CNNs) for semantic image segmentation.},
   author   = {Alexander Heinlein},
   keywords = {},
-  note     = {Seminar, Great Bay University, Dongguan, China, November 10},
+  note     = {Invited seminar talk. Great Bay University, Dongguan, China, November 10},
   slides   = {2025/2025-heinlein-gbu-lnn/2025-heinlein-dd-nns.pdf},
   title    = {Localization of Neural Networks Using Domain Decomposition},
   year     = {2025}
@@ -81,8 +93,8 @@ References
 @misc{Heinlein:2025:ISSBC:DON,
   abbr     = {Workshop},
   author   = {Alexander Heinlein},
-  keywords = {},
-  note     = {International Symposium on Scientific and Bioengineering Computing, University of Macau, Macau, China, November 6-8},
+  keywords = {selected},
+  note     = {Invited talk. International Symposium on Scientific and Bioengineering Computing, University of Macau, Macau, China, November 6-8},
   slides   = {2025/2025-heinlein-issbc-don/2025-heinlein-deeponet.pdf},
   title    = {Deep Operator Networks: From Spectral Analysis to Localization and an Application to Post-Burn Wound Contraction},
   url      = {https://cam.fst.um.edu.mo/international-workshop-on-scientific-computing-and-biomedical-engineering},
@@ -248,8 +260,8 @@ References
   abbr     = {SDT Talks},
   abstract = {Surrogate models—machine learning models designed to approximate complex and computationally expensive numerical simulations—are a central topic in scientific machine learning. These models are especially relevant for parametrized problems, where the goal is to predict solutions across a range of parameter configurations. While much existing research focuses on low-dimensional parameterizations, such as constant material properties, high-dimensional parameterizations—spatially or temporally varying initial or boundary conditions, material distributions, or source terms—introduce significant methodological and computational challenges. Notably, these cases offer even greater potential benefits, making them particularly important. This talk focuses on the spatial and temporal challenges of machine learning-based surrogate modeling. We examine difficulties in training such models for problems with complex features, including variable geometries and multiscale structures. Key topics include convolutional neural network-based surrogate models tailored to complex domains, adaptive sampling strategies to improve learning efficiency, and the use of spatio-temporal domain decomposition to enhance the scalability and accuracy of operator-based approaches. Applications in multiscale and wave-dominated phenomena, as well as computational fluid dynamics, will illustrate the effectiveness and potential of these methods.},
   author   = {Alexander Heinlein},
-  keywords = {},
-  note     = {Invited seminar talk. Siemens Simulation and Digital Twin Tech Talks (Virtual), Siemens, April 28, 2025},
+  keywords = {selected},
+  note     = {Invited seminar talk. Siemens Simulation and Digital Twin Tech Talks (Virtual), Siemens, April 28},
   slides   = {2025/2025-heinlein-sdt-tpm/2025-heinlein-surrogate_models.pdf},
   title    = {Towards Physics-Informed Machine Learning-Based Surrogate Models for Challenging Problems},
   year     = {2025}
@@ -327,7 +339,7 @@ References
 }
 
 @misc{Heinlein:2025:IMG:LPU,
-  abbr     = {Seminar},
+  abbr     = {IMG 2025},
   author   = {Alexander Heinlein},
   keywords = {selected},
   note     = {Invited plenary talk. International Multigrid Conference (IMG) 2025, King Abdullah University of Science and Technology (KAUST), Saudi Arabia, February 3-5},
@@ -338,9 +350,9 @@ References
 }
 
 @misc{Heinlein:2025:SML:DDA,
-  abbr     = {Seminar},
+  abbr     = {Workshop},
   author   = {Alexander Heinlein},
-  keywords = {selected},
+  keywords = {},
   note     = {Invited talk. Workshop "Scientific machine learning: error estimation and analysis", Besançon, France, January 15-16},
   slides   = {2025/2025-heinlein-sciml-dda/2025-heinlein-adaptive_pinns.pdf},
   title    = {Domain decomposition and adaptive sampling for physics-informed neural networks},
@@ -555,7 +567,7 @@ References
   abbr     = {CRUNCH},
   abstract = {Physics-informed neural networks (PINNs) are a class of methods for solving differential equation-based problems using a neural network as the discretization. They have been introduced by Raissi et al. and combine the pioneering collocation approach for neural network functions introduced by Lagaris et al. with the incorporation of data via an additional loss term. PINNs are very versatile as they do not require an explicit mesh, allow for the solution of parameter identification problems, and are well-suited for high-dimensional problems. However, the training of a PINN model is generally not very robust and may require a lot of hyper parameter tuning. In particular, due to the so-called spectral bias, the training of PINN models is notoriously difficult when scaling up to large computational domains as well as for multiscale problems.  In this talk, overlapping domain decomposition-based techniques for PINNs are being discussed. Compared with other domain decomposition techniques for PINNs, in the finite basis physics-informed neural networks (FBPINNs) approach, the coupling is done implicitly via the overlapping regions and does not require additional loss terms. Using the classical Schwarz domain decomposition framework, a very general framework, that also allows for mult-level extensions, can be introduced. The method outperforms classical PINNs on several types of problems, including multiscale problems, both in terms of accuracy and efficiency. Furthermore, the combination of the multi-level domain decomposition strategy with multifidelity stacking PINNs for time-dependent problems will be discussed. It can be observed that the combination of multifidelity stacking PINNs with a domain decomposition in time clearly improves the reference results without a domain decomposition.},
   author   = {Alexander Heinlein},
-  keywords = {},
+  keywords = {selected},
   note     = {Invited seminar talk. CRUNCH seminar, CRUNCH Group, Division of Applied Mathematics, Brown University, USA, March 22},
   slides   = {2024/2024-heinlein-crunch-ddp/2024-heinlein-dd_pinns.pdf},
   title    = {Domain decomposition for physics-informed neural networks},
@@ -1051,7 +1063,7 @@ References
   abbr     = {ICMS@Strathclyde},
   abstract = {Discretizing partial differential equations often results in sparse systems of linear equations. High spatial resolutions lead to large systems, which can be solved efficiently using iterative methods. A suitable class of solvers are Krylov methods preconditioned by domain decomposition preconditioners, which are scalable and robust for a wide range of problems. Unfortunately, highly heterogeneous problems arising, for instance, in the simulation of composite materials or porous media generally lead to unfavorable distributions of the eigenvalues of the system matrix that cause slow convergence for many solvers, including classical domain decomposition preconditioners. In order to retain robustness of domain decomposition methods, the coarse space can be enriched by additional coarse basis functions computed from eigenmodes of local generalized eigenvalue problems, leading to so-called spectral or adaptive coarse spaces. The development of spectral coarse spaces for domain decomposition methods has been a very active topic within the last decade. However, until recently, the algebraic construction of robust spectral coarse spaces, that is, using only the fully assembled system matrix without additional Neumann matrices or geometrical information, has still been on open problem. This talk deals with a specific class of adaptive coarse spaces for overlapping Schwarz methods which are based on a partition of the interface of the corresponding nonoverlapping domain decomposition. An algebraic and robust spectral coarse space is then constructed by solving two eigenvalue problems on each edge of a two-dimensional domain decomposition. One of them is based on optimal local approximation spaces that are also successfully employed in the construction of multiscale discretizations. The resulting condition number bound is independent of the contrast of the coefficient function, indicating the robustness of the method. In order investigate the robustness of this new method numerically, numerical results for different coefficient distributions with large jumps are presented, including typical examples with channels, random distributions, and coefficient distributions generated from the SPE10 benchmark.},
   author   = {Alexander Heinlein},
-  keywords = {selected},
+  keywords = {},
   note     = {Invited talk. ICMS@Strathclyde: Solvers for frequency-domain wave problems and applications, Glasgow, UK, June 20-24},
   slides   = {2022/2022-heinlein-icms-fas/2022-heinlein-adaptive.pdf},
   title    = {A fully algebraic spectral coarse space for overlapping Schwarz methods},
@@ -1126,7 +1138,7 @@ References
 @misc{Heinlein:2021:TUG:FRO,
   abbr     = {TUG 2021},
   author   = {Alexander Heinlein},
-  keywords = {selected},
+  keywords = {},
   note     = {Trilinos User-Developer Group Meeting 2021 (Virtual), November 30-December 2},
   slides   = {2021/2021-heinlein-tug-fro/2021-heinlein-frosch_land_ice_simulations.pdf},
   title    = {FROSch Preconditioners for Land Ice Simulations of Greenland and Antarctica},
@@ -1151,7 +1163,7 @@ References
   abstract = {Simulations of fluid flow are generally very costly because high grid resolutions are not only required to obtain quantitatively accurate results, but too low grid resolutions may also lead to qualitatively incorrect results. In applications, however, one is often not interested in accurate approximations of the complete flow field but only in the qualitative behavior of the flow or in individual quantities (e.g., maximum velocity, pressure drop within a section of a pipe, or wall shear stresses at certain locations). In this talk, the use of convolutional autoencoder neural networks to construct efficient reduced order surrogate models for high fidelity computational fluid dynamics (CFD) simulations is discussed; cf. [Eichinger et al., 2021] and [Eichinger et al., submitted 2020]. Using this approach, which is inspired by [Guo et al., 2016], it is possible to build surrogate models for varying geometries. In particular, the geometry is the input of the neural network, and the flow and pressure fields are the output. The proposed framework is very general since the geometry and solution fields are simply encoded as pixel images, which allows the application to various types of geometries; also the extension to other physics is, in principle, straight forward. In order to construct accurate surrogate models, U-Net [Ronneberger et al., 2015] type convolutional neural networks, which are very successful in image recognition and segmentation tasks, are employed and the architecture and hyper parameters are optimized to this application. As a first step, a fully supervised approach, which requires the availability of simulation results as the training data, is presented. Here, the choice of an appropriate loss function is crucial to obtain good results. After that, results for a newer unsupervised approach, which does not require CFD simulation results but is based on introducing physical constraints via the loss function. As a testbed for the surrogate models, the flow around obstacles with varying shape and size within a channel is considered. Moreover, results for the application to geometries of arteries with aneurysms are presented. In both cases, only two-dimensional configurations are considered for now. The results show that the surrogate models provide good predictions of the flow and pressure fields while being computationally much cheaper compared to classical CFD codes. In particular, the predictions can be performed on a workstation within a fraction of a second, without requiring the generation of a computational mesh. When evaluated on GPUs, the prediction time can be further reduced by factor of more than ten. The talk is based on joint work with Matthias Eichinger, Viktor Grimm, and Axel Klawonn (University of Cologne).},
   author   = {Alexander Heinlein},
   keywords = {selected},
-  note     = {Invited Lecture. CIRM Conference ``Analysis, Control and Numerics for PDE Models of Interest to Physical and Life Sciences'', Levico Terme, Italy, September 20-24},
+  note     = {Invited talk. CIRM Conference ``Analysis, Control and Numerics for PDE Models of Interest to Physical and Life Sciences'', Levico Terme, Italy, September 20-24},
   title    = {Surrogate Models for Computational Fluid Dynamics Simulations Using Convolutional Autoencoder Neural Networks and Physical Constraints},
   url      = {https://pde-levico21.fbk.eu},
   year     = {2021}
