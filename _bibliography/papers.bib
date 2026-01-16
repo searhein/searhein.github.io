@@ -5,6 +5,22 @@ References
 
 # published
 
+@article{Visser:2026:PAC,
+  abbr        = {CMAME},
+  abstract    = {Physics-Informed Neural Networks (PINNs) have emerged as a tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, available adaptive collocation point sampling methods have been reported to scale poorly in terms of computational cost when applied to high-dimensional problems. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). PACMANN incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the PINN loss function, that is, the squared PDE residual. We apply PACMANN to several forward and inverse problems, including one with a low-regularity solution and 3D Navier Stokes, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems. Key features of the method include its low computational cost and simplicity of integration into existing physics-informed neural network pipelines. The code is available at https://github.com/CoenVisser/PACMANN.},
+  author      = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.cma.2025.118723},
+  journal     = {Computer Methods in Applied Mechanics and Engineering},
+  keywords    = {published, reviewed, recent},
+  pages       = {118723},
+  preprint    = {https://arxiv.org/abs/2411.19632},
+  title       = {PACMANN: Point adaptive collocation method for artificial neural networks},
+  url         = {https://www.sciencedirect.com/science/article/pii/S0045782525009958},
+  volume      = {452},
+  year        = {2026}
+}
+
 @article{Giammatteo:2025:DDM,
   abbr        = {CAMWA},
   abstract    = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp--finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
@@ -1184,19 +1200,6 @@ References
   note        = {Accepted for publication in Springer Lecture Notes in Computational Science and Engineering},
   preprint    = {https://arxiv.org/abs/2511.12726},
   title       = {Sharpened PCG Iteration Bound for High-Contrast Heterogeneous Scalar Elliptic PDEs},
-  year        = {2026}
-}
-
-@techreport{Visser:2026:PAC,
-  abbr        = {CMAME},
-  abstract    = {Physics-Informed Neural Networks (PINNs) have emerged as a tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, available adaptive collocation point sampling methods have been reported to scale poorly in terms of computational cost when applied to high-dimensional problems. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). PACMANN incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the PINN loss function, that is, the squared PDE residual. We apply PACMANN for forward and inverse problems, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems. Key features of the method include its low computational cost and simplicity of integration into existing physics-informed neural network pipelines. The code is available at \url{https://github.com/CoenVisser/PACMANN}.},
-  author      = {Coen Visser and Alexander Heinlein and Bianca Giovanardi},
-  bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
-  month       = {September},
-  note        = {Accepted for publication in Computer Methods in Applied Mechanics and Engineering},
-  preprint    = {https://arxiv.org/abs/2411.19632},
-  title       = {PACMANN: Point Adaptive Collocation Method for Artificial Neural Networks},
   year        = {2026}
 }
 
