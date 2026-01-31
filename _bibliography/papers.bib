@@ -1268,11 +1268,22 @@ References
 
 # submitted
 
+@techreport{Wu:2026:DLHIM,
+  abstract    = {Deep learning-based hybrid iterative methods ({DL-HIMs}) integrate classical numerical solvers with neural operators, utilizing their complementary spectral biases to accelerate convergence. Despite this promise, many {DL-HIMs} stagnate at false fixed points where neural updates vanish while the physical residual remains large, raising questions about reliability in scientific computing. In this paper, we provide evidence that performance is highly sensitive to training paradigms and update strategies, even when the neural architecture is fixed. Through a detailed study of a {DeepONet}-based hybrid iterative numerical transferable solver ({HINTS}) and an {FFT}-based Fourier neural solver ({FNS}), we show that significant physical residuals can persist when training objectives are not aligned with solver dynamics and problem physics. We further examine Anderson acceleration ({AA}) and demonstrate that its classical form is ill-suited for nonlinear neural operators. To overcome this, we introduce physics-aware Anderson acceleration ({PA-AA}), which minimizes the physical residual rather than the fixed-point update. Numerical experiments confirm that {PA-AA} restores reliable convergence in substantially fewer iterations. These findings provide a concrete answer to ongoing controversies surrounding AI-based {PDE} solvers: reliability hinges not only on architectures but on physically informed training and iteration design.},
+  author      = {Yuhan Wu and Jan Willem van Beek and Victorita Dolean and Alexander Heinlein},
+  bibtex_show = {true},
+  keywords    = {submitted, reviewed, recent},
+  note        = {Submitted},
+  preprint    = {},
+  title       = {Are Deep Learning Based Hybrid {PDE} Solvers Reliable? Why Training Paradigms and Update Strategies Matter},
+  year        = {2026}
+}
+
 @techreport{Cumaru:2025:DDG,
   abstract    = {Incompressible fluid flow problems appear frequently in different applications. The discretization of such problems may result in large and ill-conditioned systems of linear equations. We consider the case of the Stokes equations discretized using a reduced integration method which approximates the incompressibility constraint by a penalty term thus allowing the problem to be solved only in terms of the velocity unknowns. We investigate the numerical scalability of a two-level overlapping additive Schwarz method with a reduced dimension generalized Dryja-Smith-Widlund (RGDSW) coarse space. In addition, we discuss the parallel implementation of the examples using the Fast and Robust Overlapping Schwarz (FROSch) package for additive Schwarz preconditioners and the NGSolve library, which implements multiple finite element space formulations.},
   author      = {Filipe Cumaru and Alexander Heinlein and Joachim Sch\"oberl},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
+  keywords    = {submitted, reviewed},
   month       = {November},
   note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2512.01706},
@@ -1296,7 +1307,7 @@ References
   abstract    = {We introduce a near-field problem as a benchmark for the time-harmonic Maxwell (THM) equations. Therein, the near-field, i.e., the electric field directly around a nanoparticle, is computed using the finite element method (FEM) with N\'ed\'elec elements. Afterwards, this is compared to results with analytical solutions obtained from Mie's scattering theory. By establishing this benchmark, we aim to provide a reliable and reproducible standard for validating numerical methods for the THM equations.},
   author      = {Alexander Heinlein and Sebastian Kinnewig and Thomas Wick},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
+  keywords    = {submitted, reviewed},
   month       = {October},
   note        = {Submitted},
   preprint    = {},
@@ -1308,7 +1319,7 @@ References
   abstract    = {Approximating the solutions of boundary value problems governed by partial differential equations with neural networks is challenging, largely due to the difficult training process. This difficulty can be partly explained by the spectral bias, that is, the slower convergence of high-frequency components, and can be mitigated by localizing neural networks via (overlapping) domain decomposition. We combine this localization with the Gauss--Newton method as the optimizer to obtain faster convergence than gradient-based schemes such as Adam; this comes at the cost of solving an ill-conditioned linear system in each iteration. Domain decomposition induces a block-sparse structure in the otherwise dense Gauss--Newton system, reducing the computational cost per iteration. Our numerical results indicate that combining localization and Gauss--Newton optimization is promising for neural network-based solvers for partial differential equations.},
   author      = {Alexander Heinlein and Taniya Kapoor},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
+  keywords    = {submitted, reviewed},
   month       = {October},
   note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2510.27018},
@@ -1320,7 +1331,7 @@ References
   abstract    = {Monolithic preconditioners applied to the linear systems arising during the solution of the discretized incompressible Navier--Stokes equations are typically more robust than preconditioners based on incomplete block factorizations. Lower number of iterations and a reduced sensitivity to parameters like velocity and viscosity can significantly outweigh the additional cost for their setup. Different monolithic preconditioning techniques are introduced and compared to a selection of block preconditioners. In particular, two-level additive overlapping Schwarz methods (OSM) are used to set up monolithic preconditioners and to approximate the inverses arising in the block preconditioners. GDSW-type (Generalized Dryja--Smith--Widlund) coarse spaces are used for the second level. These highly scalable, parallel preconditioners have been implemented in the solver framework FROSch (Fast and Robust Overlapping Schwarz), which is part of the software library Trilinos. The new GDSW-type coarse space GDSW* is introduced; combining it with other techniques results in a robust algorithm. The block preconditioners PCD (Pressure Convection--Diffusion), SIMPLE (Semi-Implicit Method for Pressure Linked Equations), and LSC (Least-Squares Commutator) are considered to various degrees. The OSM for the monolithic as well as the block approach allows the optimized combination of different coarse spaces for the velocity and pressure component, enabling the use of tailored coarse spaces. The numerical and parallel performance of the different preconditioning methods for finite element discretizations of stationary as well as time-dependent incompressible fluid flow problems is investigated and compared. Their robustness is analyzed for a range of Reynolds and Courant-Friedrichs-Lewy (CFL) numbers with respect to a realistic problem setting.},
   author      = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Lea Sa{\ss}mannshausen},
   bibtex_show = {true},
-  keywords    = {submitted, reviewed, recent},
+  keywords    = {submitted, reviewed},
   month       = {June},
   preprint    = {https://arxiv.org/abs/2506.16179},
   title       = {Monolithic and Block Overlapping Schwarz Preconditioners for the Incompressible Navier--Stokes Equations},

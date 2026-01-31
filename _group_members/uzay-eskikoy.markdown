@@ -1,15 +1,16 @@
 ---
 layout: page
-first_name: Marius
-last_name: Kielhöfer
+first_name: Uzay
+last_name: Eskiköy
 university: Delft University of Technology
 department: Delft Institute of Applied Mathematics
 address: Mekelweg 4, 2628 CD Delft, The Netherlands
-email: M.Kielhofer@student.tudelft.nl
+email:
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
-project: /teaching/msc-theses/33-pinns-inverse-problems-sensor-data
+project:
+note: Co-supervisor Chris Klijn (TU Delft)
 nolink: true
 redirect:
-category: former members
+category: bachelor students
 ---

@@ -11,5 +11,5 @@ img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dc
 project: /teaching/bsc-theses/6-preconditioned-krylov-methods-shared-memory-parallelism
 nolink: true
 redirect:
-category: bachelor students
+category: former members
 ---
