@@ -27,6 +27,17 @@ References
   year     = {2026}
 }
 
+@misc{Heinlein:2026:Sanya:APINN,
+  abbr     = {TSIMF 2026},
+  abstract = {Physics-informed neural networks (PINNs) are a powerful framework for solving partial differential equations (PDEs), but their accuracy is fundamentally limited by three sources of error: residual sampling, training, and neural network approximation error. In this talk, we focus on adaptive approaches for the first two, and on problems with complex spatial behavior, which pose challenges for standard PINN methods. First, we show how residual sampling can be improved through adaptive collocation using the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN), which relocates training points toward regions of high residuals by following residual gradients. To improve the training dynamics and address spectral bias, we consider finite basis PINNs (FBPINNs) based on overlapping domain decomposition, which enable localized representations and improved learning of high-frequency features through an appropriate choice of the domain decomposition.},
+  author   = {Alexander Heinlein},
+  keywords = {},
+  note     = {International Workshop on Numerical and Learning Methods for PDEs, Tsinghua Sanya International Mathematics Forum (TSIMF), Sanya, Hainan, China, February 9-13, 2026},
+  title    = {Adaptivity in Physics-Informed Neural Networks},
+  url      = {https://tsimf.tsinghua.edu.cn/info/1549/1752.htm},
+  year     = {2026}
+}
+
 @misc{Heinlein:2026:FAU:DDP,
   abbr     = {Seminar},
   abstract = {This talk highlights how domain decomposition methods—rooted in ideas introduced by Schwarz in the 19th century and later developed into numerical algorithms by Lions in the 1980s—remain highly relevant for modern high-performance computing and scientific machine learning. The central principle is to decompose a global computational domain into subdomains, thereby splitting large-scale problems into smaller, local subproblems that can be solved efficiently and in parallel. We focus on modern overlapping Schwarz preconditioners as implemented in the FROSch (Fast and Robust Overlapping Schwarz) package of the Trilinos library, which have demonstrated robustness and scalability for a wide range of challenging applications on contemporary CPU and GPU architectures. Beyond their classical role in numerical solvers for partial differential equations, we also explore how domain decomposition techniques can be employed to localize neural networks and operator-learning architectures, introducing sparsity, improving scalability, and enhancing training in multiscale settings. The underlying algorithmic ideas are validated on representative test problems, including diffusion, wave propagation, and flow problems, illustrating how domain decomposition provides a unifying framework bridging large-scale numerical simulation and modern scientific machine learning.},
