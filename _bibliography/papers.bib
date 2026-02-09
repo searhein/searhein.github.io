@@ -1215,6 +1215,19 @@ References
   year        = {2025}
 }
 
+@techreport{Heinlein:2025:DDA,
+  abbr        = {Springer LNCSE},
+  abstract    = {Approximating the solutions of boundary value problems governed by partial differential equations with neural networks is challenging, largely due to the difficult training process. This difficulty can be partly explained by the spectral bias, that is, the slower convergence of high-frequency components, and can be mitigated by localizing neural networks via (overlapping) domain decomposition. We combine this localization with the Gauss--Newton method as the optimizer to obtain faster convergence than gradient-based schemes such as Adam; this comes at the cost of solving an ill-conditioned linear system in each iteration. Domain decomposition induces a block-sparse structure in the otherwise dense Gauss--Newton system, reducing the computational cost per iteration. Our numerical results indicate that combining localization and Gauss--Newton optimization is promising for neural network-based solvers for partial differential equations.},
+  author      = {Alexander Heinlein and Taniya Kapoor},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {February},
+  note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
+  preprint    = {https://arxiv.org/abs/2510.27018},
+  title       = {Domain decomposition architectures and Gauss--Newton training for physics-informed neural networks},
+  year        = {2025}
+}
+
 @techreport{Dolean:2025:TDD,
   abbr        = {Springer LNCSE},
   abstract    = {This study presents a two-level Deep Domain Decomposition Method (Deep-DDM) augmented with a coarse-level network for solving boundary value problems using physics-informed neural networks (PINNs). The addition of the coarse level network improves scalability and convergence rates compared to the single level method. Tested on a Poisson equation with Dirichlet boundary conditions, the two-level deep DDM demonstrates superior performance, maintaining efficient convergence regardless of the number of subdomains. This advance provides a more scalable and effective approach to solving complex partial differential equations with machine learning.},
@@ -1250,6 +1263,19 @@ References
   month       = {July},
   note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
   title       = {Domain decomposition method with randomized neural networks},
+  year        = {2025}
+}
+
+@techreport{Heinlein:2025:MBO,
+  abbr        = {ETNA},
+  abstract    = {Monolithic preconditioners applied to the linear systems arising during the solution of the discretized incompressible Navier--Stokes equations are typically more robust than preconditioners based on incomplete block factorizations. Lower number of iterations and a reduced sensitivity to parameters like velocity and viscosity can significantly outweigh the additional cost for their setup. Different monolithic preconditioning techniques are introduced and compared to a selection of block preconditioners. In particular, two-level additive overlapping Schwarz methods (OSM) are used to set up monolithic preconditioners and to approximate the inverses arising in the block preconditioners. GDSW-type (Generalized Dryja--Smith--Widlund) coarse spaces are used for the second level. These highly scalable, parallel preconditioners have been implemented in the solver framework FROSch (Fast and Robust Overlapping Schwarz), which is part of the software library Trilinos. The new GDSW-type coarse space GDSW* is introduced; combining it with other techniques results in a robust algorithm. The block preconditioners PCD (Pressure Convection--Diffusion), SIMPLE (Semi-Implicit Method for Pressure Linked Equations), and LSC (Least-Squares Commutator) are considered to various degrees. The OSM for the monolithic as well as the block approach allows the optimized combination of different coarse spaces for the velocity and pressure component, enabling the use of tailored coarse spaces. The numerical and parallel performance of the different preconditioning methods for finite element discretizations of stationary as well as time-dependent incompressible fluid flow problems is investigated and compared. Their robustness is analyzed for a range of Reynolds and Courant-Friedrichs-Lewy (CFL) numbers with respect to a realistic problem setting.},
+  author      = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Lea Sa{\ss}mannshausen},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {February},
+  note        = {Accepted for publication in Electronic Transactions on Numerical Analysis (ETNA)},
+  preprint    = {https://arxiv.org/abs/2506.16179},
+  title       = {Monolithic and Block Overlapping Schwarz Preconditioners for the Incompressible Navier--Stokes Equations},
   year        = {2025}
 }
 
@@ -1312,29 +1338,6 @@ References
   note        = {Submitted},
   preprint    = {},
   title       = {The Mie Scattering Theory as Benchmark Problem for the Time-Harmonic Maxwell's Equations},
-  year        = {2025}
-}
-
-@techreport{Heinlein:2025:DDA,
-  abstract    = {Approximating the solutions of boundary value problems governed by partial differential equations with neural networks is challenging, largely due to the difficult training process. This difficulty can be partly explained by the spectral bias, that is, the slower convergence of high-frequency components, and can be mitigated by localizing neural networks via (overlapping) domain decomposition. We combine this localization with the Gauss--Newton method as the optimizer to obtain faster convergence than gradient-based schemes such as Adam; this comes at the cost of solving an ill-conditioned linear system in each iteration. Domain decomposition induces a block-sparse structure in the otherwise dense Gauss--Newton system, reducing the computational cost per iteration. Our numerical results indicate that combining localization and Gauss--Newton optimization is promising for neural network-based solvers for partial differential equations.},
-  author      = {Alexander Heinlein and Taniya Kapoor},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {October},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2510.27018},
-  title       = {Domain decomposition architectures and Gauss--Newton training for physics-informed neural networks},
-  year        = {2025}
-}
-
-@techreport{Heinlein:2025:MBO,
-  abstract    = {Monolithic preconditioners applied to the linear systems arising during the solution of the discretized incompressible Navier--Stokes equations are typically more robust than preconditioners based on incomplete block factorizations. Lower number of iterations and a reduced sensitivity to parameters like velocity and viscosity can significantly outweigh the additional cost for their setup. Different monolithic preconditioning techniques are introduced and compared to a selection of block preconditioners. In particular, two-level additive overlapping Schwarz methods (OSM) are used to set up monolithic preconditioners and to approximate the inverses arising in the block preconditioners. GDSW-type (Generalized Dryja--Smith--Widlund) coarse spaces are used for the second level. These highly scalable, parallel preconditioners have been implemented in the solver framework FROSch (Fast and Robust Overlapping Schwarz), which is part of the software library Trilinos. The new GDSW-type coarse space GDSW* is introduced; combining it with other techniques results in a robust algorithm. The block preconditioners PCD (Pressure Convection--Diffusion), SIMPLE (Semi-Implicit Method for Pressure Linked Equations), and LSC (Least-Squares Commutator) are considered to various degrees. The OSM for the monolithic as well as the block approach allows the optimized combination of different coarse spaces for the velocity and pressure component, enabling the use of tailored coarse spaces. The numerical and parallel performance of the different preconditioning methods for finite element discretizations of stationary as well as time-dependent incompressible fluid flow problems is investigated and compared. Their robustness is analyzed for a range of Reynolds and Courant-Friedrichs-Lewy (CFL) numbers with respect to a realistic problem setting.},
-  author      = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Lea Sa{\ss}mannshausen},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {June},
-  preprint    = {https://arxiv.org/abs/2506.16179},
-  title       = {Monolithic and Block Overlapping Schwarz Preconditioners for the Incompressible Navier--Stokes Equations},
   year        = {2025}
 }
 
