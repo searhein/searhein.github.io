@@ -22,6 +22,7 @@ References
 }
 
 @article{Schmidt:2026:TGNN,
+  abbr        = {Sci Rep},
   abstract    = {During the COVID-19 crisis, mechanistic models have been proven fundamental to guide evidence-based decision making. However, time-critical decisions in a dynamically changing environment restrict  the time available for modelers to gather supporting evidence. As infectious disease dynamics are often heterogeneous on a spatial or demographic scale, models should be resolved accordingly. In addition, with a large number of potential interventions, all scenarios can barely be computed on time, even when using supercomputing facilities. We suggest to combine complex mechanistic models with data-driven surrogate models to allow for on-the-fly model adaptations by public health experts. We build upon a spatially and demographically resolved infectious disease model and train a graph neural network for data sets representing early phases of the pandemic. The resulting networks reached an execution time of less than a second, a significant speedup compared to the metapopulation approach. The suggested approach yields potential for on-the-fly execution and, thus, integration of disease dynamics models in low-barrier website applications. For the approach to be used with decision-making, datasets with larger variance will have to be considered.},
   author      = {Agatha Schmidt and Henrik Zunker and Alexander Heinlein and Martin J. K\"uhn},
   bibtex_show = {true},
@@ -1206,6 +1207,32 @@ References
 
 # accepted
 
+@techreport{Pelzer:2025:FLE,
+  abbr        = {AI\&PDE},
+  abstract    = {Machine learning methods often struggle with real-world applications in science and engineering due to an insufficient amount or quality of training data. In this work, the example of subsurface porous media flow is considered; this corresponds to advection-diffusion processes under heterogeneous flow conditions, i.e., for spatially varying material parameters, and a large number of spatially distributed source terms. This challenge comes at high computing costs for classical simulation methods due to the required high spatio-temporal resolution and large domains. Machine learning-based surrogate models seem to offer a computationally efficient alternative. However, faced with real-world data-limitations, purely data-driven approaches face difficulties in predicting the advection process, which is highly sensitive to input variations and involves long-range interactions. Therefore, in this work, a Local-Global Convolutional Neural Network (LGCNN) approach is introduced, that combines a lightweight numerical surrogate for the global transport process with convolutional neural networks (CNNs) for the remaining local processes. With the LGCNN, we model a city-wide subsurface temperature field, involving a heterogeneous groundwater flow field and one hundred groundwater heat pump injection points forming interacting heat plumes over long distances. In order to first systematically analyze the method, random subsurface input fields are employed. Then, the model is trained on a single cut-out from a real-world subsurface map of the Munich region in Germany. Our model scales to larger cut-outs without retraining by accounting for the global effects with numerical physics models. All datasets, our code, and trained models are published for reproducibility.},
+  author      = {Julia Pelzer and Corné Verburg and Alexander Heinlein and Miriam Schulte},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {March},
+  note        = {Accepted for poster presentation at AI\&PDE},
+  preprint    = {https://arxiv.org/abs/2507.06062},
+  title       = {Resolving Extreme Data Scarcity by Explicit Physics Integration: An Application to Groundwater Heat Transport},
+  year        = {2026}
+}
+
+@techreport{Mayr:2025:TES,
+  abbr        = {ACM TOMS},
+  abstract    = {Trilinos is a community-developed, open-source software framework that facilitates building large-scale, complex, multiscale, multiphysics simulation code bases for scientific and engineering problems. Since the Trilinos framework has undergone substantial changes to support new applications and new hardware architectures, this document is an update to ``An Overview of the Trilinos project'' by Heroux et al. (ACM Transactions on Mathematical Software, 31(3):397--423, 2005). It describes the design of Trilinos, introduces its new organization in product areas, and highlights established and new features available in Trilinos. Particular focus is put on the modernized software stack based on the Kokkos ecosystem to deliver performance portability across heterogeneous hardware architectures. This paper also outlines the organization of the Trilinos community and the contribution model to help onboard interested users and contributors.},
+  author      = {Matthias Mayr and Alexander Heinlein and Christian Glusa and Sivasankaran Rajamanickam and Maarten Arnst and Roscoe A. Bartlett and Luc Berger-Vergiat and Erik G. Boman and Karen Devine and Graham Harper and Michael Heroux and Mark Hoemmen and Jonathan Hu and Brian Kelley and Kyungjoo Kim and Drew P. Kouri and Paul Kuberry and Kim Liegeois and Curtis C. Ober and Roger Pawlowski and Carl Pearson and Mauro Perego and Eric Phipps and Denis Ridzal and Nathan V. Roberts and Christopher M. Siefert and Heidi K. Thornquist and Romin Tomasetti and Christian R. Trott and Raymond S. Tuminaro and James M. Willenbring and Michael M. Wolf and Ichitaro Yamazaki},
+  bibtex_show = {true},
+  keywords    = {accepted, reviewed, recent},
+  month       = {March},
+  note        = {Accepted for publication in ACM Transactions on Mathematical Software},
+  preprint    = {https://arxiv.org/abs/2503.08126},
+  title       = {Trilinos: Enabling Scientific Computing Across Diverse Hardware Architectures at Scale},
+  year        = {2026}
+}
+
 @techreport{Soliman:2026:SCG,
   abbr        = {Springer LNCSE},
   abstract    = {We present a new iteration bound for the preconditioned conjugate gradient (PCG) method that accurately captures convergence for systems with clustered eigenspectra, where the classical condition number-based bound is too pessimistic. By using the extremal values of each subcluster in the spectral distribution, our bound is orders of magnitude sharper than the classical bound. We demonstrate its effectiveness on a high-contrast elliptic PDE preconditioned with a two-level overlapping Schwarz method, where it successfully distinguishes between the performance of different (algebraic) preconditioners. A key contribution is theoretical evidence that, for certain high-contrast problems, PCG convergence can make simpler coarse spaces competitive. Conversely, more complex preconditioners are not always necessary. Finally, we show that our bound can be estimated effectively from Ritz values computed during early PCG iterations.},
@@ -1310,6 +1337,18 @@ References
 
 # submitted
 
+@techreport{Heinlein:2026:EON,
+  abstract    = {Operator learning has the potential to strongly impact scientific computing by learning solution operators for differential equations, potentially accelerating multi-query tasks such as design optimization and uncertainty quantification by orders of magnitude. Despite proven universal approximation properties, deep operator networks ({DeepONets}) often exhibit limited accuracy and generalization in practice, which hinders their adoption. Understanding these limitations is therefore crucial for further advancing the approach. This work analyzes performance limitations of the classical {DeepONet} architecture. It is shown that the approximation error is dominated by the branch network when the internal dimension is sufficiently large, and that the learned trunk basis can often be replaced by classical basis functions without a significant impact on performance. To investigate this further, a modified {DeepONet} is constructed in which the trunk network is replaced by the left singular vectors of the training solution matrix. This modification yields several key insights. First, a spectral bias in the branch network is observed, with coefficients of dominant, low-frequency modes learned more effectively. Second, due to singular-value scaling of the branch coefficients, the overall branch error is dominated by modes with intermediate singular values rather than the smallest ones. Third, using a shared branch network for all mode coefficients, as in the standard architecture, improves generalization of small modes compared to a stacked architecture in which coefficients are computed separately. Finally, strong and detrimental coupling between modes in parameter space is identified.},
+  author      = {Alexander Heinlein and Johannes Taraz},
+  bibtex_show = {true},
+  keywords    = {submitted, reviewed, recent},
+  month       = {February},
+  note        = {Submitted},
+  preprint    = {https://arxiv.org/abs/2602.21910},
+  title       = {The Error of Deep Operator Networks Is the Sum of Its Parts: Branch-Trunk and Mode Error Decompositions},
+  year        = {2026}
+}
+
 @techreport{Wu:2026:DLHIM,
   abstract    = {Deep learning-based hybrid iterative methods ({DL-HIMs}) integrate classical numerical solvers with neural operators, utilizing their complementary spectral biases to accelerate convergence. Despite this promise, many {DL-HIMs} stagnate at false fixed points where neural updates vanish while the physical residual remains large, raising questions about reliability in scientific computing. In this paper, we provide evidence that performance is highly sensitive to training paradigms and update strategies, even when the neural architecture is fixed. Through a detailed study of a {DeepONet}-based hybrid iterative numerical transferable solver ({HINTS}) and an {FFT}-based Fourier neural solver ({FNS}), we show that significant physical residuals can persist when training objectives are not aligned with solver dynamics and problem physics. We further examine Anderson acceleration ({AA}) and demonstrate that its classical form is ill-suited for nonlinear neural operators. To overcome this, we introduce physics-aware Anderson acceleration ({PA-AA}), which minimizes the physical residual rather than the fixed-point update. Numerical experiments confirm that {PA-AA} restores reliable convergence in substantially fewer iterations. These findings provide a concrete answer to ongoing controversies surrounding AI-based {PDE} solvers: reliability hinges not only on architectures but on physically informed training and iteration design.},
   author      = {Yuhan Wu and Jan Willem van Beek and Victorita Dolean and Alexander Heinlein},
@@ -1337,7 +1376,7 @@ References
   abstract    = {Accurate yet efficient surrogate models are essential for large-scale simulations of partial differential equations (PDEs), particularly for uncertainty quantification  (UQ) tasks that demand hundreds or thousands of evaluations. We develop a physics-inspired graph neural network (GNN) surrogate that operates directly on unstructured meshes and leverages the flexibility of graph attention. To improve both training efficiency and generalization properties of the model, we introduce a domain decomposition (DD) strategy that partitions the mesh into subdomains, trains local GNN surrogates in parallel, and aggregates their predictions. We then employ transfer learning to fine-tune models across subdomains, accelerating training and improving accuracy in data-limited settings. Applied to ice sheet simulations, our approach accurately predicts full-field velocities on high-resolution meshes, substantially reduces training time relative to a single global surrogate model, and provides a ripe foundation for UQ objectives. Our results demonstrate that graph-based DD, combined with transfer learning, provides a scalable and reliable pathway for training GNN surrogates on massive PDE-governed systems, with broad potential for application beyond ice sheet dynamics.},
   author      = {Adrienne M. Propp and Mauro Perego and Eric C. Cyr and Anthony Gruber and Amanda Howard and Alexander Heinlein and Panos Stinis and Daniel Tartakovsky},
   bibtex_show = {true},
-  keywords    = {recent},
+  keywords    = {},
   month       = {November},
   note        = {},
   preprint    = {https://arxiv.org/abs/2512.01888},
@@ -1357,18 +1396,6 @@ References
   year        = {2025}
 }
 
-@techreport{Pelzer:2025:FLE,
-  abstract    = {Machine learning methods often struggle with real-world applications in science and engineering due to an insufficient amount or quality of training data. In this work, the example of subsurface porous media flow is considered; this corresponds to advection-diffusion processes under heterogeneous flow conditions, i.e., for spatially varying material parameters, and a large number of spatially distributed source terms. This challenge comes at high computing costs for classical simulation methods due to the required high spatio-temporal resolution and large domains. Machine learning-based surrogate models seem to offer a computationally efficient alternative. However, faced with real-world data-limitations, purely data-driven approaches face difficulties in predicting the advection process, which is highly sensitive to input variations and involves long-range interactions. Therefore, in this work, a Local-Global Convolutional Neural Network (LGCNN) approach is introduced, that combines a lightweight numerical surrogate for the global transport process with convolutional neural networks (CNNs) for the remaining local processes. With the LGCNN, we model a city-wide subsurface temperature field, involving a heterogeneous groundwater flow field and one hundred groundwater heat pump injection points forming interacting heat plumes over long distances. In order to first systematically analyze the method, random subsurface input fields are employed. Then, the model is trained on a single cut-out from a real-world subsurface map of the Munich region in Germany. Our model scales to larger cut-outs without retraining by accounting for the global effects with numerical physics models. All datasets, our code, and trained models are published for reproducibility.},
-  author      = {Julia Pelzer and Corné Verburg and Alexander Heinlein and Miriam Schulte},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {May},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2507.06062},
-  title       = {Few-Shot Learning by Explicit Physics Integration: An Application to Groundwater Heat Transport},
-  year        = {2025}
-}
-
 @techreport{Yang:2025:NSH,
   abstract    = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyper parameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyper parameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyper parameter settings are known to be different for different model problems and currently no universal rule for the choice of hyper parameters is known. In this paper, for second order elliptic model problems, various hyper parameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyper parameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
   author      = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
@@ -1378,18 +1405,6 @@ References
   note        = {Submitted},
   preprint    = {https://arxiv.org/abs/2503.09086},
   title       = {Numerical study on hyper parameter settings for neural network approximation to partial differential equations},
-  year        = {2025}
-}
-
-@techreport{Mayr:2025:TES,
-  abstract    = {Trilinos is a community-developed, open-source software framework that facilitates building large-scale, complex, multiscale, multiphysics simulation code bases for scientific and engineering problems. Since the Trilinos framework has undergone substantial changes to support new applications and new hardware architectures, this document is an update to ``An Overview of the Trilinos project'' by Heroux et al. (ACM Transactions on Mathematical Software, 31(3):397--423, 2005). It describes the design of Trilinos, introduces its new organization in product areas, and highlights established and new features available in Trilinos. Particular focus is put on the modernized software stack based on the Kokkos ecosystem to deliver performance portability across heterogeneous hardware architectures. This paper also outlines the organization of the Trilinos community and the contribution model to help onboard interested users and contributors.},
-  author      = {Matthias Mayr and Alexander Heinlein and Christian Glusa and Sivasankaran Rajamanickam and Maarten Arnst and Roscoe A. Bartlett and Luc Berger-Vergiat and Erik G. Boman and Karen Devine and Graham Harper and Michael Heroux and Mark Hoemmen and Jonathan Hu and Brian Kelley and Kyungjoo Kim and Drew P. Kouri and Paul Kuberry and Kim Liegeois and Curtis C. Ober and Roger Pawlowski and Carl Pearson and Mauro Perego and Eric Phipps and Denis Ridzal and Nathan V. Roberts and Christopher M. Siefert and Heidi K. Thornquist and Romin Tomasetti and Christian R. Trott and Raymond S. Tuminaro and James M. Willenbring and Michael M. Wolf and Ichitaro Yamazaki},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {March},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2503.08126},
-  title       = {Trilinos: Enabling Scientific Computing Across Diverse Hardware Architectures at Scale},
   year        = {2025}
 }
 
