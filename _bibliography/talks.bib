@@ -5,6 +5,17 @@ References
 
 # talks
 
+@misc{Heinlein:2026:AIM:SML,
+  abbr     = {AIM 2026},
+  abstract = {Scientific machine learning (SciML) combines scientific computing and machine learning to solve complex physical problems. In this talk, we discuss neural network and neural operator approaches for differential equations, trained using data and/or physics-based loss functions. The focus of this talk is on two aspects. First, localization techniques based on domain decomposition are used to improve scalability, reduce computational costs, and help the models capture challenging spatio-temporal scales. Second, we discuss the training of these models, which constitutes the major computational cost. We investigate the training dynamics and how training may be improved. Numerical experiments on representative academic model problems (including multiscale problems) illustrate the performance of the discussed approaches.},
+  author   = {Alexander Heinlein},
+  keywords = {},
+  note     = {Scientific Machine Learning session, 5th workshop on Mathematics and AI -- connecting the mathematics clusters, University of Groningen, Groningen, The Netherlands, June 5, 2026},
+  title    = {Localization and Efficient Training of Scientific Machine Learning Models},
+  url      = {https://aimath.nl/index.php/2025/08/27/5th-aim-workshop/},
+  year     = {2026}
+}
+
 @misc{Heinlein:2026:ESCO:TBA,
   abbr     = {ESCO 2026},
   abstract = {TBA},
@@ -16,14 +27,25 @@ References
   year     = {2026}
 }
 
+@misc{Heinlein:2026:DCSE:DON,
+  abbr     = {DCSE 2026},
+  abstract = {Scientific machine learning (SciML) combines scientific computing and machine learning to address complex physical problems. Operator learning aims to approximate maps between function spaces, such as solution operators of PDEs, with DeepONets providing a flexible framework for both data-driven and physics-informed training. This talk focuses on error contributions from branch and trunk networks and shows how domain decomposition-based localization improves training and fine-scale accuracy, illustrated by numerical experiments on model problems.},
+  author   = {Alexander Heinlein},
+  keywords = {},
+  note     = {Annual DCSE Conference 2026, The Green Village, TU Delft, Delft, The Netherlands, April 14},
+  title    = {Error Analysis and Localization via Domain Decomposition for Deep Operator Networks},
+  url      = {https://www.tudelft.nl/en/events/2026/delft-ai/annual-dcse-conference-2026},
+  year     = {2026}
+}
+
 @misc{Heinlein:2026:SIAMPP:DDP,
   abbr     = {SIAM PP26},
-  abstract = {Physics-informed machine learning incorporates physical knowledge into machine learning to solve boundary value problems governed by differential equations. This talk presents recent advances in domain decomposition (DD) for physics-informed neural networks (PINNs) and physics-informed deep neural operators (PI-DeepONets). While PINNs offer a flexible, mesh-free framework for high-dimensional, nonlinear problems, they suffer from ill-conditioning, limited training robustness, and scalability challenges. We show how DD yields scalable PINN architectures that improve convergence and training robustness. We further show that DD-enhanced PI-DeepONets efficiently and accurately approximate solution operators for parameterized problems. Numerical experiments on multiscale and wave-propagation problems illustrate the scalability and performance benefits of domain decomposition in physics-informed learning.},
+  abstract = {Physics-informed machine learning incorporates physical knowledge into machine learning models to solve boundary value problems governed by differential equations. This talk focuses on training approaches for physics-informed neural networks (PINNs), with particular emphasis on preconditioning strategies motivated by numerical linear algebra. While PINNs provide a flexible, mesh-free framework for high-dimensional and nonlinear problems, their training is often hampered by ill-conditioning, limited robustness, and poor scalability. We discuss how domain decomposition-based architectures enable effective preconditioning techniques for the training process. In particular, we consider preconditioned Krylov methods for randomized neural networks, as well as preconditioning strategies for gradient-based training using LBFGS and Gauss–Newton-type methods. These approaches significantly improve convergence behavior, robustness, and scalability. Numerical experiments on model problems illustrate the effectiveness of preconditioned training methods for physics-informed learning. This talk is based on joint work with Taniya Kapoor (WUR), Rolf Krause (King Abdullah University of Science and Technology), Aymane Kssim, Serge Gratton, and Alena Kopanicáková (Toulouse INP–ENSEEIHT, IRIT, ANITI), Siddhartha Mishra (ETH), Marc Salvado-Benasco (Università della Svizzera Italiana), and Yong Shang and Fei Wang (Xi'an Jiaotong University).},
   author   = {Alexander Heinlein},
   keywords = {},
   note     = {SIAM Conference on Parallel Processing for Scientific Computing (PP26), Berlin, Germany, March 3-6},
-  title    = {Domain Decomposition for Physics-Informed Machine Learning},
-  url      = {https://www.siam.org/conferences-events/siam-conferences/pp26/},
+  title    = {Training Algorithms for Domain Decomposition-Based Physics-Informed Neural Networks},
+  url      = {https://meetings.siam.org/sess/dsp_talk.cfm?p=151655},
   year     = {2026}
 }
 
