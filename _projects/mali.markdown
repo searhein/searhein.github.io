@@ -5,7 +5,7 @@ description: A Variable-Resolution Ice Sheet Model for Earth System Modeling Usi
 img:
 redirect: https://climatemodeling.science.energy.gov/research-highlights/mpas-albany-land-ice-mali-variable-resolution-ice-sheet-model-earth-system
 importance: 3
-category: active
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.

@@ -5,6 +5,5 @@ description: The FEDDLib (Finite Element and Domain Decomposition Library) is a 
 img:
 redirect: https://github.com/FEDDLib/
 importance: 2
-category:
 nolink: false
 ---

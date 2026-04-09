@@ -12,5 +12,5 @@ project: /teaching/msc-theses/42-reduced-order-network-models-for-optimization
 note:
 nolink: true
 redirect:
-category: master students
+category: former members
 ---

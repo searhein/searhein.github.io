@@ -5,7 +5,7 @@ description: Applied mathematics algorithms, tools, and software for HPC applica
 img:
 redirect: https://fastmath-scidac.llnl.gov
 importance: 3
-category: active
+category: archive
 ---
 
 Every project has a beautiful feature showcase page.

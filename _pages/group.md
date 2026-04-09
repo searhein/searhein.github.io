@@ -5,6 +5,12 @@ permalink: /group/
 description:
 nav: true
 nav_order: 1
+dropdown: true
+children:
+    - title: group members
+      permalink: /group/
+    - title: open positions
+      permalink: /open_positions/
 display_categories: [phd candidates, master students, bachelor students, former members]
 horizontal: false
 ---
