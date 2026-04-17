@@ -68,12 +68,15 @@
           {%- for p in sorted_pages -%}
           {%- if p.nav and p.autogen == nil -%}
           {%- if p.dropdown %}
+          {%- assign current_nav_path = page.permalink | default: page.url -%}
           {%- assign is_dropdown_active = false -%}
-          {%- if page.title == p.title -%}
+          {%- if p.permalink and p.permalink == current_nav_path -%}
+          {%- assign is_dropdown_active = true -%}
+          {%- elsif page.title == p.title -%}
           {%- assign is_dropdown_active = true -%}
           {%- else -%}
           {%- for child in p.children -%}
-          {%- if child.permalink == page.permalink -%}
+          {%- if child.title != 'divider' and child.permalink and child.permalink == current_nav_path -%}
           {%- assign is_dropdown_active = true -%}
           {%- endif -%}
           {%- endfor -%}
