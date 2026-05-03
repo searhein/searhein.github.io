@@ -9,7 +9,7 @@ email: K.Slepova@tudelft.nl
 website:
 img: https://filelist.tudelft.nl/_processed_/7/3/csm_wl16nq_31763815f4.webp
 project:
-note: Main supervisor Martin van Gijzen
+note: Co-supervisor Martin van Gijzen
 nolink: true
 redirect:
 category: phd candidates

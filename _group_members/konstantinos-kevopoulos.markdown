@@ -9,7 +9,7 @@ email: K.Kevopoulos@tudelft.nl
 website:
 img: https://research.tudelft.nl/assets/no-portrait-473c6d005990baa1f418d9c668dcd4ec.png
 project:
-note: Main supervisor Mathias Peirlinck
+note: Co-supervisor Mathias Peirlinck
 nolink: true
 redirect:
 category: phd candidates
