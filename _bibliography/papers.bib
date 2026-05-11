@@ -1324,6 +1324,20 @@ References
   year        = {2025}
 }
 
+@techreport{Yang:2025:NSH,
+  abbr        = {MLCSE},
+  abstract    = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyperparameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyperparameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyperparameter settings are known to be different for different model problems and currently no universal rule for the choice of hyperparameters is known. In this paper, for second order elliptic model problems, various hyperparameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyperparameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
+  author      = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
+  bibtex_show = {true},
+  journal     = {Machine Learning for Computational Science and Engineering},
+  keywords    = {accepted, reviewed, recent},
+  month       = {May},
+  note        = {Accepted for publication in Machine Learning for Computational Science and Engineering},
+  preprint    = {https://arxiv.org/abs/2503.09086},
+  title       = {Numerical study on hyperparameter settings for neural network approximation to partial differential equations},
+  year        = {2026}
+}
+
 @techreport{Alves:2024:CSA,
   abbr        = {Springer LNCSE},
   abstract    = {The two-level overlapping additive Schwarz method offers a robust and scalable preconditioner for various linear systems resulting from elliptic problems. One of the key to these properties is the construction of the coarse space used to solve a global coupling problem, which traditionally requires information about the underlying discretization. An algebraic formulation of the coarse space reduces the complexity of its assembly. Furthermore, well-chosen coarse basis functions within this space can better represent changes in the problem's properties. Here we introduce an algebraic formulation of the multiscale finite element method (MsFEM) based on the algebraic multiscale solver (AMS) in the context of the two-level Schwarz method. We show how AMS is related to other energy-minimizing coarse spaces. Furthermore, we compare the AMS with other algebraic energy-minimizing spaces: the generalized Dryja--Smith--Widlund (GDSW), and the reduced dimension GDSW (RGDSW).},
@@ -1405,18 +1419,6 @@ References
   note        = {Submitted},
   preprint    = {},
   title       = {The Mie Scattering Theory as Benchmark Problem for the Time-Harmonic Maxwell's Equations},
-  year        = {2025}
-}
-
-@techreport{Yang:2025:NSH,
-  abstract    = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyper parameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyper parameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyper parameter settings are known to be different for different model problems and currently no universal rule for the choice of hyper parameters is known. In this paper, for second order elliptic model problems, various hyper parameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyper parameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
-  author      = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
-  bibtex_show = {true},
-  keywords    = {submitted, reviewed},
-  month       = {March},
-  note        = {Submitted},
-  preprint    = {https://arxiv.org/abs/2503.09086},
-  title       = {Numerical study on hyper parameter settings for neural network approximation to partial differential equations},
   year        = {2025}
 }
 

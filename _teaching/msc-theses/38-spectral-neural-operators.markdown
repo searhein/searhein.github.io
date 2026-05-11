@@ -2,7 +2,7 @@
 layout: page_thesis
 university: tud
 collaboration: 
-title: Spectral Neural Operators
+title: Operator Learning Using Wavelet Representations
 co-supervisor: 
 student: Hangyu Xia
 runningindex: 38
@@ -14,5 +14,5 @@ interim_presentation:
 final_thesis:
 final_presentation:
 category: master_thesis
-status: ongoing
+status: archive
 ---
