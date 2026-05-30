@@ -53,6 +53,22 @@ References
   year        = {2026}
 }
 
+@article{Heinlein:2026:MBO,
+  abbr        = {ETNA},
+  abstract    = {Monolithic preconditioners applied to the linear systems arising during the solution of the discretized incompressible Navier--Stokes equations are typically more robust than preconditioners based on incomplete block factorizations. Lower number of iterations and a reduced sensitivity to parameters like velocity and viscosity can significantly outweigh the additional cost for their setup. Different monolithic preconditioning techniques are introduced and compared to a selection of block preconditioners. In particular, two-level additive overlapping Schwarz methods (OSM) are used to set up monolithic preconditioners and to approximate the inverses arising in the block preconditioners. GDSW-type (Generalized Dryja--Smith--Widlund) coarse spaces are used for the second level. These highly scalable, parallel preconditioners have been implemented in the solver framework FROSch (Fast and Robust Overlapping Schwarz), which is part of the software library Trilinos. The new GDSW-type coarse space GDSW* is introduced; combining it with other techniques results in a robust algorithm. The block preconditioners PCD (Pressure Convection--Diffusion), SIMPLE (Semi-Implicit Method for Pressure Linked Equations), and LSC (Least-Squares Commutator) are considered to various degrees. The OSM for the monolithic as well as the block approach allows the optimized combination of different coarse spaces for the velocity and pressure component, enabling the use of tailored coarse spaces. The numerical and parallel performance of the different preconditioning methods for finite element discretizations of stationary as well as time-dependent incompressible fluid flow problems is investigated and compared. Their robustness is analyzed for a range of Reynolds and Courant-Friedrichs-Lewy (CFL) numbers with respect to a realistic problem setting.},
+  author      = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Lea Sa{\ss}mannshausen},
+  bibtex_show = {true},
+  doi         = {10.1553/etna_vol65s156},
+  journal     = {Electronic Transactions on Numerical Analysis},
+  keywords    = {published, reviewed, recent},
+  pages       = {156--206},
+  preprint    = {https://arxiv.org/abs/2506.16179},
+  title       = {Monolithic and Block Overlapping Schwarz Preconditioners for the Incompressible Navier--Stokes Equations},
+  url         = {https://doi.org/10.1553/etna_vol65s156},
+  volume      = {65},
+  year        = {2026}
+}
+
 @article{Giammatteo:2025:HDA,
   abbr        = {CAMWA},
   abstract    = {The computational complexity and efficiency of the approximate mode component synthesis (ACMS) method is investigated for the two-dimensional heterogeneous Helmholtz equations, aiming at the simulation of large but finite-size photonic crystals. The ACMS method is a Galerkin method that relies on a non-overlapping domain decomposition and special basis functions defined based on the domain decomposition. While, in previous works, the ACMS method was realized using first-order finite elements, we use an underlying hp--finite element method. We study the accuracy of the ACMS method for different wavenumbers, domain decompositions, and discretization parameters. Moreover, the computational complexity of the method is investigated theoretically and compared with computing times for an implementation based on the open source software package NGSolve. The numerical results indicate that, for relevant wavenumber regimes, the size of the resulting linear systems for the ACMS method remains moderate, such that sparse direct solvers are a reasonable choice. Moreover, the ACMS method exhibits only a weak dependence on the selected domain decomposition, allowing for greater flexibility in its choice. Additionally, the numerical results show that the error of the ACMS method achieves the predicted convergence rate for increasing wavenumbers. Finally, to display the versatility of the implementation, the results of simulations of large but finite-size photonic crystals with defects are presented.},
@@ -1222,6 +1238,19 @@ References
 
 # accepted
 
+@techreport{Mollaali:2026:CKU,
+  abbr        = {MLST},
+  abstract    = {This paper explores uncertainty quantification (UQ) methods in the context of Kolmogorov--Arnold Networks (KANs). We apply an ensemble approach to KANs to obtain a heuristic measure of UQ, enhancing interpretability and robustness in modeling complex functions. Building on this, we introduce Conformalized-KANs, which integrate conformal prediction, a distribution-free UQ technique, with KAN ensembles to generate calibrated prediction intervals with guaranteed coverage. Extensive numerical experiments are conducted to evaluate the effectiveness of these methods, focusing particularly on the robustness and accuracy of the prediction intervals under various hyperparameter settings. We show that the conformal KAN predictions can be applied to recent extensions of KANs, including Finite Basis KANs (FBKANs) and multifidelity KANs (MFKANs). The results demonstrate the potential of our approaches to significantly improve the reliability and applicability of KANs in scientific machine learning.},
+  author      = {Amirhossein Mollaali and Christian Bolivar Moya and Amanda A. Howard and Alexander Heinlein and Panos Stinis and Guang Lin},
+  bibtex_show = {true},
+  journal     = {Machine Learning: Science and Technology},
+  keywords    = {accepted, reviewed, recent},
+  month       = {May},
+  note        = {Accepted for publication in Machine Learning: Science and Technology},
+  title       = {Conformalized-{KAN}s: Uncertainty Quantification with Coverage Guarantees for Kolmogorov--Arnold Networks ({KAN}s) in Scientific Machine Learning},
+  year        = {2026}
+}
+
 @techreport{Wu:2026:DLHIM,
   abbr        = {CiSE},
   abstract    = {Deep learning-based hybrid iterative methods ({DL-HIMs}) integrate classical numerical solvers with neural operators, utilizing their complementary spectral biases to accelerate convergence. Despite this promise, many {DL-HIMs} stagnate at false fixed points where neural updates vanish while the physical residual remains large, raising questions about reliability in scientific computing. In this paper, we provide evidence that performance is highly sensitive to training paradigms and update strategies, even when the neural architecture is fixed. Through a detailed study of a {DeepONet}-based hybrid iterative numerical transferable solver ({HINTS}) and an {FFT}-based Fourier neural solver ({FNS}), we show that significant physical residuals can persist when training objectives are not aligned with solver dynamics and problem physics. We further examine Anderson acceleration ({AA}) and demonstrate that its classical form is ill-suited for nonlinear neural operators. To overcome this, we introduce physics-aware Anderson acceleration ({PA-AA}), which minimizes the physical residual rather than the fixed-point update. Numerical experiments confirm that {PA-AA} restores reliable convergence in substantially fewer iterations. These findings provide a concrete answer to ongoing controversies surrounding AI-based {PDE} solvers: reliability hinges not only on architectures but on physically informed training and iteration design.},
@@ -1325,19 +1354,6 @@ References
   year        = {2025}
 }
 
-@techreport{Heinlein:2025:MBO,
-  abbr        = {ETNA},
-  abstract    = {Monolithic preconditioners applied to the linear systems arising during the solution of the discretized incompressible Navier--Stokes equations are typically more robust than preconditioners based on incomplete block factorizations. Lower number of iterations and a reduced sensitivity to parameters like velocity and viscosity can significantly outweigh the additional cost for their setup. Different monolithic preconditioning techniques are introduced and compared to a selection of block preconditioners. In particular, two-level additive overlapping Schwarz methods (OSM) are used to set up monolithic preconditioners and to approximate the inverses arising in the block preconditioners. GDSW-type (Generalized Dryja--Smith--Widlund) coarse spaces are used for the second level. These highly scalable, parallel preconditioners have been implemented in the solver framework FROSch (Fast and Robust Overlapping Schwarz), which is part of the software library Trilinos. The new GDSW-type coarse space GDSW* is introduced; combining it with other techniques results in a robust algorithm. The block preconditioners PCD (Pressure Convection--Diffusion), SIMPLE (Semi-Implicit Method for Pressure Linked Equations), and LSC (Least-Squares Commutator) are considered to various degrees. The OSM for the monolithic as well as the block approach allows the optimized combination of different coarse spaces for the velocity and pressure component, enabling the use of tailored coarse spaces. The numerical and parallel performance of the different preconditioning methods for finite element discretizations of stationary as well as time-dependent incompressible fluid flow problems is investigated and compared. Their robustness is analyzed for a range of Reynolds and Courant-Friedrichs-Lewy (CFL) numbers with respect to a realistic problem setting.},
-  author      = {Alexander Heinlein and Axel Klawonn and Jascha Knepper and Lea Sa{\ss}mannshausen},
-  bibtex_show = {true},
-  keywords    = {accepted, reviewed, recent},
-  month       = {February},
-  note        = {Accepted for publication in Electronic Transactions on Numerical Analysis (ETNA)},
-  preprint    = {https://arxiv.org/abs/2506.16179},
-  title       = {Monolithic and Block Overlapping Schwarz Preconditioners for the Incompressible Navier--Stokes Equations},
-  year        = {2025}
-}
-
 @techreport{Yang:2025:NSH,
   abbr        = {MLCSE},
   abstract    = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyperparameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyperparameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyperparameter settings are known to be different for different model problems and currently no universal rule for the choice of hyperparameters is known. In this paper, for second order elliptic model problems, various hyperparameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyperparameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
@@ -1412,16 +1428,18 @@ References
   year        = {2025}
 }
 
-@techreport{Propp:2025:DDG,
-  abstract    = {Accurate yet efficient surrogate models are essential for large-scale simulations of partial differential equations (PDEs), particularly for uncertainty quantification  (UQ) tasks that demand hundreds or thousands of evaluations. We develop a physics-inspired graph neural network (GNN) surrogate that operates directly on unstructured meshes and leverages the flexibility of graph attention. To improve both training efficiency and generalization properties of the model, we introduce a domain decomposition (DD) strategy that partitions the mesh into subdomains, trains local GNN surrogates in parallel, and aggregates their predictions. We then employ transfer learning to fine-tune models across subdomains, accelerating training and improving accuracy in data-limited settings. Applied to ice sheet simulations, our approach accurately predicts full-field velocities on high-resolution meshes, substantially reduces training time relative to a single global surrogate model, and provides a ripe foundation for UQ objectives. Our results demonstrate that graph-based DD, combined with transfer learning, provides a scalable and reliable pathway for training GNN surrogates on massive PDE-governed systems, with broad potential for application beyond ice sheet dynamics.},
+@techreport{Propp:2026:GNS,
+  abbr        = {Nat Comput Sci},
+  abstract    = {Natural and engineered systems involve complex interactions across a range of spatiotemporal scales. Their governing nonlinear partial differential equations are costly to solve at high resolution, rendering ensemble-based tasks such as uncertainty quantification, parameter estimation, and optimization infeasible. Surrogate models offer a practical alternative, but often struggle to scale to realistic geometries and data regimes. We introduce a physics-inspired graph neural network (GNN) surrogate that operates directly on unstructured finite-element meshes and deploys bracket-based Hamiltonian dynamics to mitigate oversmoothing. Applied to ice-sheet dynamics, a notoriously challenging problem in Earth system science, our surrogate reconstructs velocity fields within 4% relative error, even when trained on only ten high-fidelity simulations. Transfer learning accelerates convergence and improves accuracy within and across glaciers. Pretraining on Humboldt Glacier accelerates training on Thwaites Glacier sevenfold and improves final accuracy by nearly 30%. To account for physical heterogeneity, we introduce a novel domain decomposition strategy for GNNs. Combined with transfer learning, this approach further improves both accuracy and wall-clock efficiency. Our framework supports uncertainty-aware grounding-line flux prediction and scalable surrogate modeling of large-scale physical systems.},
   author      = {Adrienne M. Propp and Mauro Perego and Eric C. Cyr and Anthony Gruber and Amanda Howard and Alexander Heinlein and Panos Stinis and Daniel Tartakovsky},
   bibtex_show = {true},
-  keywords    = {},
-  month       = {November},
-  note        = {},
+  journal     = {Nature Computational Science},
+  keywords    = {submitted, reviewed, recent},
+  month       = {May},
+  note        = {Submitted to Nature Computational Science},
   preprint    = {https://arxiv.org/abs/2512.01888},
-  title       = {Domain-Decomposed Graph Neural Network Surrogate Modeling for Ice Sheets},
-  year        = {2025}
+  title       = {Graph Neural Network Surrogates for Large-Scale Problems: Domain Decomposition and Transfer Learning Applied to Ice-Sheet Modeling},
+  year        = {2026}
 }
 
 @techreport{Heinlein:2025:MST,
