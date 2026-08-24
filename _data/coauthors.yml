@@ -1,18 +1,34 @@
+"Alheit":
+  - firstname: ["Benjamin", "B."]
+    url: https://peirlincklab.com/people/
+
 "Alves":
-  - firstname: ["Filipe A. C. S. ", "Filipe", "F."]
-    url: https://filipe-cumaru.github.io
+  - firstname: ["Filipe A. C. S.", "Filipe", "F."]
+    url:
 
 "Balzani":
   - firstname: ["Daniel", "D."]
-    url: https://www.lkm.ruhr-uni-bochum.de/lkm/lehrstuhl/balzani.html.de
+    url: https://www.sfb1683.ruhr-uni-bochum.de/mru/team/dbalzani.html.de
+
+"Bartlett":
+  - firstname: ["Roscoe A.", "Roscoe", "R. A.", "R."]
+    url: https://www.sandia.gov/ccr/staff/roscoe-bartlett/
 
 "Beecroft":
   - firstname: ["Damien", "D."]
     url: https://amath.washington.edu/people/damien-beecroft
 
-"Bruno":
-  - firstname: ["Jacob", "J."]
-    url: 
+"Berger-Vergiat":
+  - firstname: ["Luc", "L."]
+    url:
+
+"Budko":
+  - firstname: ["Neil", "N."]
+    url: https://repository.tudelft.nl/person/Person_7618a946-f00d-42b8-9edc-3e99367ded61
+
+"Chirinos":
+  - firstname: ["Julio A.", "Julio", "J. A.", "J."]
+    url: https://www.med.upenn.edu/apps/faculty/index.php/g323/p8164475
 
 "Cumaru":
   - firstname: ["Filipe", "Filipe A.", "F."]
@@ -40,7 +56,7 @@
 
 "Egberts":
   - firstname: ["Ginger", "G."]
-    url: https://www.uhasselt.be/ginger.egberts
+    url: https://www.uhasselt.be/nl/wie-is-wie/detail/ginger-egberts
 
 "Ehlers":
   - firstname: ["Svenja", "S."]
@@ -64,6 +80,7 @@
 
 "Glusa":
   - firstname: ["Christian A.", "Christian", "C."]
+    url:
 
 "Gratton":
   - firstname: ["Serge", "S."]
@@ -76,6 +93,14 @@
 "Gruber":
   - firstname: ["Anthony C.", "Anthony", "A. C.", "A."]
     url: https://www.sandia.gov/ccr/staff/anthony-gruber/
+
+"Heroux":
+  - firstname: ["Michael", "M."]
+    url: https://maherou.github.io/Bio/
+
+"Herrmann":
+  - firstname: ["Julien", "J."]
+    url:
 
 "Hajibeygi":
   - firstname: ["Hadi", "H."]
@@ -94,12 +119,28 @@
     url: https://cgi.tuhh.de/dyn/www/members/norbert-hoffmann
 
 "Howard":
-  - firstname: ["Amanda A.", "A. A."]
+  - firstname: ["Amanda A.", "Amanda", "A. A.", "A."]
     url: https://www.pnnl.gov/people/amanda-howard
+
+"Husanović":
+  - firstname: ["Selma", "S."]
+    url:
+
+"Jacob":
+  - firstname: ["Bruno", "B."]
+    url:
 
 "Kapoor":
   - firstname: ["Taniya", "T."]
     url: https://taniyakapoor.github.io
+
+"Kelley":
+  - firstname: ["Brian", "B."]
+    url:
+
+"Kevopoulos":
+  - firstname: ["Konstantinos", "K."]
+    url: https://research.tudelft.nl/en/persons/k-kevopoulos/
 
 "Kiefer":
   - firstname: ["Björn", "B."]
@@ -107,7 +148,7 @@
 
 "Kim":
   - firstname: ["Hyea Hyun", "Hyea H.", "Hyea", "H."]
-    url: https://khu.elsevierpure.com/en/persons/hyea-hyun-kim
+    url: https://khu.elsevierpure.com/en/persons/hyea-hyun-kim/
 
 "Kinnewig":
   - firstname: ["Sebastian", "S."]
@@ -120,6 +161,14 @@
 "Knepper":
   - firstname: ["Jascha", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-j-knepper
+
+"Kopaničáková":
+  - firstname: ["Alena", "A."]
+    url: https://kopanicakova.github.io/
+
+"Kuberry":
+  - firstname: ["Paul", "P."]
+    url: https://www.sandia.gov/ccr/staff/paul-allen-kuberry/
 
 "Kemna":
   - firstname: ["Mirko", "M."]
@@ -141,6 +190,14 @@
   - firstname: ["Martin", "M."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-m-lanser
 
+"Liegeois":
+  - firstname: ["Kim", "K."]
+    url: https://orbi.uliege.be/profile?uid=p088269
+
+"Lin":
+  - firstname: ["Guang", "G."]
+    url: https://www.math.purdue.edu/~lin491/
+
 "Mache":
   - firstname: ["Ramiyou Karim", "R. K."]
     url: https://www.fz-juelich.de/en/jsc/about-us/structure/divisions/large-scale-data-science/earth-system-data-exploration
@@ -161,13 +218,21 @@
   - firstname: ["Siddhartha", "Sid", "S."]
     url: https://math.ethz.ch/sam/the-institute/people/siddhartha-mishra.html
 
+"Mollaali":
+  - firstname: ["Amirhossein", "A."]
+    url:
+
 "Monsuur":
   - firstname: ["Harald", "H."]
     url:
 
 "Moseley":
   - firstname: ["Ben", "B."]
-    url: https://math.ethz.ch/sam/the-institute/people.html?u=bmosele
+    url: https://benmoseley.blog/
+
+"Moscoloni":
+  - firstname: ["Beatrice", "B."]
+    url: https://research.tudelft.nl/en/persons/b-moscoloni/
 
 "Mu":
   - firstname: ["Hongliang", "H."]
@@ -183,7 +248,15 @@
 
 "Pelzer":
   - firstname: ["Julia", "J."]
-    url: https://www.sfb1313.uni-stuttgart.de/team/Pelzer-00003/
+    url:
+
+"Pearson":
+  - firstname: ["Carl", "C."]
+    url: https://www.sandia.gov/ccr/staff/carl-pearson/
+
+"Peirlinck":
+  - firstname: ["Mathias", "M."]
+    url: https://peirlincklab.com/people/
 
 "Propp":
   - firstname: ["Adrienne M.", "Adrienne", "A. M.", "A."]
@@ -199,7 +272,7 @@
 
 "Ramesh":
   - firstname: ["Sharan Nurani", "S. N.", "Sharan", "S"]
-    url: https://www.lkm.ruhr-uni-bochum.de/lkm/lehrstuhl/nurani.html.en
+    url:
 
 "Rajamanickam":
   - firstname: ["Sivasankaran", "Siva", "S."]
@@ -217,9 +290,13 @@
   - firstname: ["Thomas", "T."]
     url: https://numerics.ovgu.de/people/richter/
 
+"Roberts":
+  - firstname: ["Nathan V.", "Nathan", "N. V.", "N."]
+    url:
+
 "Röver":
   - firstname: ["Friederike", "F."]
-    url: https://tu-freiberg.de/urz/team
+    url: https://tu-freiberg.de/urz/service-portfolio/high-performance-computing-hpc/team
 
 "Sandfeld":
   - firstname: ["Stefan", "S."]
@@ -271,7 +348,7 @@
 
 "Stadtler":
   - firstname: ["Scarlet", "S."]
-    url: https://www.scarletstadtler.me/
+    url:
 
 "Steinberger":
   - firstname: ["Dominik", "D."]
@@ -295,11 +372,15 @@
 
 "Uhlmann":
   - firstname: ["Klemens", "K."]
-    url: https://www.lkm.ruhr-uni-bochum.de/lkm/lehrstuhl/uhlmann.html.en
+    url:
 
 "van Beek":
   - firstname: ["Jan Willem", "Jan W.", "J. W.", "J."]
-    url:
+    url: https://research.tue.nl/en/persons/jan-willem-van-beek/
+
+"van Eeuwijk":
+  - firstname: ["Fred", "Fred A.", "F. A.", "F."]
+    url: https://research.wur.nl/en/persons/fred-van-eeuwijk/
 
 "van Noorden":
   - firstname: ["Tycho", "T."]
@@ -311,11 +392,11 @@
 
 "Vermolen":
   - firstname: ["Fred", "F."]
-    url: https://www.uhasselt.be/fred.vermolen
+    url: https://www.uhasselt.be/nl/wie-is-wie/detail/fred-vermolen
 
 "Visser":
   - firstname: ["Coen", "C."]
-    url:
+    url: https://www.maths.ox.ac.uk/people/coen.visser
 
 "Vuik":
   - firstname: ["Cornelis", "C.", "Kees", "K."]
@@ -329,9 +410,13 @@
   - firstname: ["Janine", "J."]
     url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-j-weber-hamacher
 
+"Weber-Hamacher":
+  - firstname: ["Janine", "J."]
+    url: https://numerik.uni-koeln.de/arbeitsgruppe/dr-j-weber-hamacher
+
 "Wedler":
   - firstname: ["Mathies", "M."]
-    url: https://www.tuhh.de/mle/team
+    url: https://tore.tuhh.de/entities/person/da3c5664-74fd-474b-86ec-f826b91198ed
 
 "Widlund":
   - firstname: ["Olof B.", "O. B.", "Olof", "O."]
@@ -341,9 +426,13 @@
   - firstname: ["Thomas", "T."]
     url: https://www.ifam.uni-hannover.de/wick
 
+"Willenbring":
+  - firstname: ["James M.", "James", "J. M.", "J."]
+    url:
+
 "Wu":
   - firstname: ["Yuhan", "Y."]
-    url:
+    url: https://www.kth.se/profile/yuhanwu
 
 "Yamazaki":
   - firstname: ["Ichitaro", "I."]
@@ -355,7 +444,7 @@
 
 "Zandbergen":
   - firstname: ["Anouk", "A."]
-    url: 
+    url:
 
 "Zhao":
   - firstname: ["Jing", "J."]
