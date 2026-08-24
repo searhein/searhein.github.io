@@ -1,116 +1,120 @@
 #!/usr/bin/env bash
 
-# Run this script to deploy the app to Github Pages
+# Build the site and publish it to a GitHub Pages branch.
 
-# Parse cmd arguments
+set -Eeuo pipefail
 
 SRC_BRANCH="master"
 DEPLOY_BRANCH="gh-pages"
+NO_PUSH=false
 
 USAGE_MSG="usage: deploy [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--verbose] [--no-push]"
 
-while [[ $# > 0 ]]; do
-    key="$1"
-
-    case $key in
+while [[ $# -gt 0 ]]; do
+    case "$1" in
         -h|--help)
-        echo $USAGE_MSG
-        exit 0
-        ;;
+            echo "$USAGE_MSG"
+            exit 0
+            ;;
         -u|--user)
-        ;;
+            # Kept for backwards compatibility. User pages use the defaults.
+            ;;
         -s|--src)
-        SRC_BRANCH="$2"
-        shift
-        ;;
+            [[ $# -ge 2 ]] || { echo "Missing value for $1." >&2; exit 1; }
+            SRC_BRANCH="$2"
+            shift
+            ;;
         -d|--deploy)
-        DEPLOY_BRANCH="$2"
-        shift
-        ;;
+            [[ $# -ge 2 ]] || { echo "Missing value for $1." >&2; exit 1; }
+            DEPLOY_BRANCH="$2"
+            shift
+            ;;
         --verbose)
-        set -x
-        ;;
+            set -x
+            ;;
         --no-push)
-        NO_PUSH="--no-push"
-        ;;
+            NO_PUSH=true
+            ;;
         *)
-        echo "Option $1 is unknown." >&2
-        echo $USAGE_MSG >&2
-        exit 1
-        ;;
+            echo "Option $1 is unknown." >&2
+            echo "$USAGE_MSG" >&2
+            exit 1
+            ;;
     esac
     shift
 done
 
-# Exit if any subcommand fails
-set -e
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(git -C "$SCRIPT_DIR" rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
 
 echo "Deploying..."
 echo "Source branch: $SRC_BRANCH"
 echo "Deploy branch: $DEPLOY_BRANCH"
 
 read -r -p "Do you want to proceed? [y/N] " response
-if [[ ! $response =~ ^([yY][eE][sS]|[yY])+$ ]]
-then
+if [[ ! "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
     echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+    exit 1
 fi
 
-# Check if there are any uncommitted changes
-if ! git diff-index --quiet HEAD --; then
-    echo "Changes to the following files are uncommitted:"
-    git diff-index --name-only HEAD --
-    echo "Please commit the changes before proceeding."
+if [[ -n "$(git status --porcelain --untracked-files=all)" ]]; then
+    echo "The working tree contains uncommitted or untracked files:"
+    git status --short
+    echo "Please commit or stash them before proceeding."
     echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+    exit 1
 fi
 
-# Check if there are any untracked files
-if ! test -z "$(git ls-files --exclude-standard --others)"; then
-    echo "There are untracked files:"
-    git ls-files --exclude-standard --others
-    echo "Please commit those files or stash them before proceeding."
-    echo "Aborting."
-    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+if ! git show-ref --verify --quiet "refs/heads/$SRC_BRANCH"; then
+    echo "Source branch '$SRC_BRANCH' does not exist locally." >&2
+    exit 1
 fi
 
-# Switch to source branch (creates it if necessary from the current branch)
-if [ `git branch | grep $SRC_BRANCH | tr ' ' '\n' | tail -1` ]
-then
-    git checkout $SRC_BRANCH
-else
-    git checkout -b $SRC_BRANCH
-fi
+git switch "$SRC_BRANCH"
 
-# Checkout DEPLOY_BRANCH branch
-if [ `git branch | grep $DEPLOY_BRANCH` ]
-then
-  git branch -D $DEPLOY_BRANCH
-fi
-git checkout -b $DEPLOY_BRANCH
-
-# Export JEKYLL_ENV=production
 export JEKYLL_ENV=production
-
-# Build site
 bundle exec jekyll build --lsi
 
-# Delete and move files
-find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name 'CNAME' ! -name '.gitignore' -exec rm -rf {} \;
-mv _site/* .
-rm -R _site/
+TEMP_DIR="$(mktemp -d "${TMPDIR:-/tmp}/jekyll-deploy.XXXXXX")"
+DEPLOY_DIR="$TEMP_DIR/site"
+WORKTREE_ADDED=false
 
-# Create `.nojekyll` file (bypass GitHub Pages Jekyll processing)
-touch .nojekyll
+cleanup() {
+    if [[ "$WORKTREE_ADDED" == true ]]; then
+        git worktree remove --force "$DEPLOY_DIR" >/dev/null 2>&1 || true
+    fi
+    rm -rf "$TEMP_DIR"
+}
+trap cleanup EXIT
 
-# Push to DEPLOY_BRANCH
-git add -fA
-git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
-[[ ${NO_PUSH} ]] || git push -f -q origin $DEPLOY_BRANCH
+# Base the local deployment branch on its remote counterpart when available.
+# This also repairs stale local branches left behind by older versions of this
+# script without touching the source checkout.
+if git show-ref --verify --quiet "refs/remotes/origin/$DEPLOY_BRANCH"; then
+    git worktree add --force -B "$DEPLOY_BRANCH" "$DEPLOY_DIR" "origin/$DEPLOY_BRANCH"
+elif git show-ref --verify --quiet "refs/heads/$DEPLOY_BRANCH"; then
+    git worktree add "$DEPLOY_DIR" "$DEPLOY_BRANCH"
+else
+    git worktree add -b "$DEPLOY_BRANCH" "$DEPLOY_DIR" "$SRC_BRANCH"
+fi
+WORKTREE_ADDED=true
 
-# Move back to SRC_BRANCH
-git checkout $SRC_BRANCH
+# Replace only the contents of the isolated deployment worktree.
+git -C "$DEPLOY_DIR" rm -rf --ignore-unmatch .
+git -C "$DEPLOY_DIR" clean -fdx
+rsync -a "$REPO_ROOT/_site/" "$DEPLOY_DIR/"
+touch "$DEPLOY_DIR/.nojekyll"
+
+git -C "$DEPLOY_DIR" add -fA
+git -C "$DEPLOY_DIR" commit --allow-empty \
+    -m "$(git log -1 --pretty=%s "$SRC_BRANCH") [ci skip]"
+
+if [[ "$NO_PUSH" == false ]]; then
+    git -C "$DEPLOY_DIR" push --force --quiet origin \
+        "$DEPLOY_BRANCH:$DEPLOY_BRANCH"
+else
+    echo "Skipping push (--no-push)."
+fi
 
 echo "Deployed successfully!"
-
-exit 0
