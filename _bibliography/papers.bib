@@ -1450,6 +1450,18 @@ References
   year        = {2026}
 }
 
+@techreport{Salvado-Benasco:2026:MPL,
+  abstract    = {A multi-preconditioned LBFGS (MP-LBFGS) algorithm is introduced for training finite-basis physics-informed neural networks (FBPINNs). The algorithm is motivated by the nonlinear additive Schwarz method and exploits the domain-decomposition-inspired additive architecture of FBPINNs, in which local neural networks are defined on subdomains, thereby localizing the network representation. Parallel, subdomain-local quasi-Newton corrections are then constructed on the corresponding local parts of the architecture. A key feature is a novel nonlinear multi-preconditioning mechanism, in which subdomain corrections are optimally combined through the solution of a low-dimensional subspace minimization problem. Numerical experiments indicate that MP-LBFGS can improve convergence speed, as well as model accuracy over standard LBFGS while incurring lower communication overhead.},
+  author      = {Marc Salvadó-Benasco and Aymane Kssim and Alexander Heinlein and Rolf Krause and Serge Gratton and Alena Kopaničáková},
+  bibtex_show = {true},
+  keywords    = {submitted, reviewed},
+  month       = {January},
+  note        = {Submitted},
+  preprint    = {https://arxiv.org/abs/2601.08709},
+  title       = {Multi-Preconditioned {LBFGS} for Training Finite-Basis {PINNs}},
+  year        = {2026}
+}
+
 @techreport{Cumaru:2025:DDG,
   abstract    = {Incompressible fluid flow problems appear frequently in different applications. The discretization of such problems may result in large and ill-conditioned systems of linear equations. We consider the case of the Stokes equations discretized using a reduced integration method which approximates the incompressibility constraint by a penalty term thus allowing the problem to be solved only in terms of the velocity unknowns. We investigate the numerical scalability of a two-level overlapping additive Schwarz method with a reduced dimension generalized Dryja-Smith-Widlund (RGDSW) coarse space. In addition, we discuss the parallel implementation of the examples using the Fast and Robust Overlapping Schwarz (FROSch) package for additive Schwarz preconditioners and the NGSolve library, which implements multiple finite element space formulations.},
   author      = {Filipe Cumaru and Alexander Heinlein and Joachim Sch\"oberl},
