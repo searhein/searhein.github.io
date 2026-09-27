@@ -9,3 +9,6 @@ _site
 Gemfile.lock
 vendor
 
+
+# macOS folder metadata
+.DS_Store
