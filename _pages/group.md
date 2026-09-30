@@ -11,7 +11,7 @@ children:
       permalink: /group/
     - title: open positions
       permalink: /open_positions/
-display_categories: [phd candidates, master students, bachelor students, former members]
+display_categories: [postdoctoral researchers, phd candidates, master students, bachelor students, former members]
 horizontal: false
 ---
 
