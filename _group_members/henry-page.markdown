@@ -12,5 +12,5 @@ project: /teaching/msc-theses/40-pinns-inverse-problems-framework
 note:
 nolink: true
 redirect:
-category: master students
+category: former members
 ---
