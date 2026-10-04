@@ -5,6 +5,17 @@ References
 
 # talks
 
+@misc{Heinlein:2026:BIRS:ALN,
+  abbr     = {BIRS 2026},
+  abstract = {Neural network-based discretizations offer a monolithic approach to time-dependent PDEs by approximating the solution over the entire space-time domain. Physics-informed neural networks (PINNs) are a prominent example. Unlike traditional discretizations with fixed, local bases, neural network trial functions have global support and depend nonlinearly on trainable parameters. Parameter updates can therefore affect the solution throughout the domain, and even linear PDEs can lead to nonlinear optimization problems. The formulation is often algorithmically straightforward, but training can be computationally expensive and unstable, particularly when the solution involves multiple space-time scales. This talk discusses adaptive sampling and domain decomposition as complementary approaches to addressing these challenges. Adaptive sampling improves the placement of collocation points, while domain decomposition localizes the approximation to resolve solution features and improve scalability. Numerical examples illustrate the interplay between sampling, approximation, and training, and its effects on accuracy, robustness, and computational efficiency.},
+  author   = {Alexander Heinlein},
+  keywords = {},
+  note     = {Invited talk. BIRS workshop 26w5643, Space-Time Approaches to PDE Solvers: Unlocking the Power of Co-Design, November 10, lecture 2.4},
+  title    = {Adaptivity and Localization in Neural Network-Based Discretizations of Space-Time PDEs},
+  url      = {https://www.birs.ca/events/2026/5-day-workshops/26w5643},
+  year     = {2026}
+}
+
 @misc{Heinlein:2026:ICRAFMN:LET,
   abbr     = {ICRAFMN 2026},
   abstract = {Scientific machine learning (SciML) combines scientific computing and machine learning to solve complex physical problems. In this talk, we discuss neural network and neural operator approaches for differential equations, trained using data and/or physics-based loss functions. The focus of this talk is on two aspects. First, localization techniques based on domain decomposition are used to improve scalability, reduce computational costs, and help the models capture challenging spatio-temporal scales. Second, we discuss the training of these models, which constitutes the major computational cost. We investigate the training dynamics and how training may be improved. Numerical experiments on representative academic model problems (including multiscale problems) illustrate the performance of the discussed approaches.},
