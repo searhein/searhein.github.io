@@ -5,6 +5,57 @@ References
 
 # published
 
+@article{Mollaali:2026:CKU,
+  abbr        = {MLST},
+  abstract    = {This paper explores uncertainty quantification (UQ) methods in the context of Kolmogorov--Arnold Networks (KANs). We apply an ensemble approach to KANs to obtain a heuristic measure of UQ, enhancing interpretability and robustness in modeling complex functions. Building on this, we introduce Conformalized-KANs, which integrate conformal prediction, a distribution-free UQ technique, with KAN ensembles to generate calibrated prediction intervals with guaranteed coverage. Extensive numerical experiments are conducted to evaluate the effectiveness of these methods, focusing particularly on the robustness and accuracy of the prediction intervals under various hyperparameter settings. We show that the conformal KAN predictions can be applied to recent extensions of KANs, including Finite Basis KANs (FBKANs) and multifidelity KANs (MFKANs). The results demonstrate the potential of our approaches to significantly improve the reliability and applicability of KANs in scientific machine learning.},
+  author      = {Amirhossein Mollaali and Christian Bolivar Moya and Amanda A. Howard and Alexander Heinlein and Panos Stinis and Guang Lin},
+  bibtex_show = {true},
+  doi         = {10.1088/2632-2153/ae7495},
+  journal     = {Machine Learning: Science and Technology},
+  keywords    = {published, reviewed},
+  month       = {June},
+  number      = {3},
+  pages       = {035060},
+  title       = {Conformalized-{KAN}s: Uncertainty Quantification with Coverage Guarantees for Kolmogorov--Arnold Networks ({KAN}s) in Scientific Machine Learning},
+  url         = {https://doi.org/10.1088/2632-2153/ae7495},
+  volume      = {7},
+  year        = {2026}
+}
+
+@article{Yang:2025:NSH,
+  abbr        = {MLCSE},
+  abstract    = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyperparameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyperparameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyperparameter settings are known to be different for different model problems and currently no universal rule for the choice of hyperparameters is known. In this paper, for second order elliptic model problems, various hyperparameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyperparameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
+  author      = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
+  bibtex_show = {true},
+  doi         = {10.1007/s44379-026-00068-w},
+  journal     = {Machine Learning for Computational Science and Engineering},
+  keywords    = {published, reviewed},
+  month       = {May},
+  number      = {1},
+  pages       = {21},
+  preprint    = {https://arxiv.org/abs/2503.09086},
+  title       = {Numerical study on hyperparameter settings for neural network approximation to partial differential equations},
+  url         = {https://link.springer.com/article/10.1007/s44379-026-00068-w},
+  volume      = {2},
+  year        = {2026}
+}
+
+@article{Wu:2026:DLHIM,
+  abbr        = {CiSE},
+  abstract    = {Deep learning-based hybrid iterative methods ({DL-HIMs}) integrate classical numerical solvers with neural operators, utilizing their complementary spectral biases to accelerate convergence. Despite this promise, many {DL-HIMs} stagnate at false fixed points where neural updates vanish while the physical residual remains large, raising questions about reliability in scientific computing. In this paper, we provide evidence that performance is highly sensitive to training paradigms and update strategies, even when the neural architecture is fixed. Through a detailed study of a {DeepONet}-based hybrid iterative numerical transferable solver ({HINTS}) and an {FFT}-based Fourier neural solver ({FNS}), we show that significant physical residuals can persist when training objectives are not aligned with solver dynamics and problem physics. We further examine Anderson acceleration ({AA}) and demonstrate that its classical form is ill-suited for nonlinear neural operators. To overcome this, we introduce physics-aware Anderson acceleration ({PA-AA}), which minimizes the physical residual rather than the fixed-point update. Numerical experiments confirm that {PA-AA} restores reliable convergence in substantially fewer iterations. These findings provide a concrete answer to ongoing controversies surrounding AI-based {PDE} solvers: reliability hinges not only on architectures but on physically informed training and iteration design.},
+  author      = {Yuhan Wu and Jan Willem {van Beek} and Victorita Dolean and Alexander Heinlein},
+  bibtex_show = {true},
+  doi         = {10.1109/MCSE.2026.3696587},
+  journal     = {Computing in Science \& Engineering},
+  keywords    = {published, reviewed},
+  note        = {Early access},
+  pages       = {1--12},
+  preprint    = {https://arxiv.org/abs/2602.06842},
+  title       = {Are Deep Learning Based Hybrid {PDE} Solvers Reliable? Why Training Paradigms and Update Strategies Matter},
+  url         = {https://ieeexplore.ieee.org/document/11534640},
+  year        = {2026}
+}
+
 @article{Visser:2026:PAC,
   abbr        = {CMAME},
   abstract    = {Physics-Informed Neural Networks (PINNs) have emerged as a tool for approximating the solution of Partial Differential Equations (PDEs) in both forward and inverse problems. PINNs minimize a loss function which includes the PDE residual determined for a set of collocation points. Previous work has shown that the number and distribution of these collocation points have a significant influence on the accuracy of the PINN solution. Therefore, the effective placement of these collocation points is an active area of research. Specifically, available adaptive collocation point sampling methods have been reported to scale poorly in terms of computational cost when applied to high-dimensional problems. In this work, we address this issue and present the Point Adaptive Collocation Method for Artificial Neural Networks (PACMANN). PACMANN incrementally moves collocation points toward regions of higher residuals using gradient-based optimization algorithms guided by the gradient of the PINN loss function, that is, the squared PDE residual. We apply PACMANN to several forward and inverse problems, including one with a low-regularity solution and 3D Navier Stokes, and demonstrate that this method matches the performance of state-of-the-art methods in terms of the accuracy/efficiency tradeoff for the low-dimensional problems, while outperforming available approaches for high-dimensional problems. Key features of the method include its low computational cost and simplicity of integration into existing physics-informed neural network pipelines. The code is available at https://github.com/CoenVisser/PACMANN.},
@@ -1265,33 +1316,6 @@ References
   year        = {2026}
 }
 
-@techreport{Mollaali:2026:CKU,
-  abbr        = {MLST},
-  abstract    = {This paper explores uncertainty quantification (UQ) methods in the context of Kolmogorov--Arnold Networks (KANs). We apply an ensemble approach to KANs to obtain a heuristic measure of UQ, enhancing interpretability and robustness in modeling complex functions. Building on this, we introduce Conformalized-KANs, which integrate conformal prediction, a distribution-free UQ technique, with KAN ensembles to generate calibrated prediction intervals with guaranteed coverage. Extensive numerical experiments are conducted to evaluate the effectiveness of these methods, focusing particularly on the robustness and accuracy of the prediction intervals under various hyperparameter settings. We show that the conformal KAN predictions can be applied to recent extensions of KANs, including Finite Basis KANs (FBKANs) and multifidelity KANs (MFKANs). The results demonstrate the potential of our approaches to significantly improve the reliability and applicability of KANs in scientific machine learning.},
-  author      = {Amirhossein Mollaali and Christian Bolivar Moya and Amanda A. Howard and Alexander Heinlein and Panos Stinis and Guang Lin},
-  bibtex_show = {true},
-  journal     = {Machine Learning: Science and Technology},
-  keywords    = {accepted, reviewed},
-  month       = {May},
-  note        = {Accepted for publication in Machine Learning: Science and Technology},
-  title       = {Conformalized-{KAN}s: Uncertainty Quantification with Coverage Guarantees for Kolmogorov--Arnold Networks ({KAN}s) in Scientific Machine Learning},
-  year        = {2026}
-}
-
-@techreport{Wu:2026:DLHIM,
-  abbr        = {CiSE},
-  abstract    = {Deep learning-based hybrid iterative methods ({DL-HIMs}) integrate classical numerical solvers with neural operators, utilizing their complementary spectral biases to accelerate convergence. Despite this promise, many {DL-HIMs} stagnate at false fixed points where neural updates vanish while the physical residual remains large, raising questions about reliability in scientific computing. In this paper, we provide evidence that performance is highly sensitive to training paradigms and update strategies, even when the neural architecture is fixed. Through a detailed study of a {DeepONet}-based hybrid iterative numerical transferable solver ({HINTS}) and an {FFT}-based Fourier neural solver ({FNS}), we show that significant physical residuals can persist when training objectives are not aligned with solver dynamics and problem physics. We further examine Anderson acceleration ({AA}) and demonstrate that its classical form is ill-suited for nonlinear neural operators. To overcome this, we introduce physics-aware Anderson acceleration ({PA-AA}), which minimizes the physical residual rather than the fixed-point update. Numerical experiments confirm that {PA-AA} restores reliable convergence in substantially fewer iterations. These findings provide a concrete answer to ongoing controversies surrounding AI-based {PDE} solvers: reliability hinges not only on architectures but on physically informed training and iteration design.},
-  author      = {Yuhan Wu and Jan Willem {van Beek} and Victorita Dolean and Alexander Heinlein},
-  bibtex_show = {true},
-  journal     = {Computing in Science \& Engineering},
-  keywords    = {accepted, reviewed},
-  month       = {May},
-  note        = {Accepted for publication in Computing in Science \& Engineering, special issue ``Controversies on the Usage of AI/ML for Science and Engineering''},
-  preprint    = {},
-  title       = {Are Deep Learning Based Hybrid {PDE} Solvers Reliable? Why Training Paradigms and Update Strategies Matter},
-  year        = {2026}
-}
-
 @techreport{Pelzer:2025:FLE,
   abbr        = {AI\&PDE},
   abstract    = {Machine learning methods often struggle with real-world applications in science and engineering due to an insufficient amount or quality of training data. In this work, the example of subsurface porous media flow is considered; this corresponds to advection-diffusion processes under heterogeneous flow conditions, i.e., for spatially varying material parameters, and a large number of spatially distributed source terms. This challenge comes at high computing costs for classical simulation methods due to the required high spatio-temporal resolution and large domains. Machine learning-based surrogate models seem to offer a computationally efficient alternative. However, faced with real-world data-limitations, purely data-driven approaches face difficulties in predicting the advection process, which is highly sensitive to input variations and involves long-range interactions. Therefore, in this work, a Local-Global Convolutional Neural Network (LGCNN) approach is introduced, that combines a lightweight numerical surrogate for the global transport process with convolutional neural networks (CNNs) for the remaining local processes. With the LGCNN, we model a city-wide subsurface temperature field, involving a heterogeneous groundwater flow field and one hundred groundwater heat pump injection points forming interacting heat plumes over long distances. In order to first systematically analyze the method, random subsurface input fields are employed. Then, the model is trained on a single cut-out from a real-world subsurface map of the Munich region in Germany. Our model scales to larger cut-outs without retraining by accounting for the global effects with numerical physics models. All datasets, our code, and trained models are published for reproducibility.},
@@ -1379,20 +1403,6 @@ References
   note        = {Accepted for publication in the proceedings of the 28th International Conference on Domain Decomposition Methods (DD28)},
   title       = {Domain decomposition method with randomized neural networks},
   year        = {2025}
-}
-
-@techreport{Yang:2025:NSH,
-  abbr        = {MLCSE},
-  abstract    = {Approximate solutions of partial differential equations (PDEs) obtained by neural networks are highly affected by hyperparameter settings. For instance, the model training strongly depends on loss function design, including the choice of weight factors for different terms in the loss function, and the sampling set related to numerical integration; other hyperparameters, like the network architecture and the optimizer settings, also impact the model performance. On the other hand, suitable hyperparameter settings are known to be different for different model problems and currently no universal rule for the choice of hyperparameters is known. In this paper, for second order elliptic model problems, various hyperparameter settings are tested numerically to provide a practical guide for efficient and accurate neural network approximation. While a full study of all possible hyperparameter settings is not possible, we focus on studying the formulation of the PDE loss as well as the incorporation of the boundary conditions, the choice of collocation points associated with numerical integration schemes, and various approaches for dealing with loss imbalances will be extensively studied on various model problems; in addition to various Poisson model problems, also a nonlinear and an eigenvalue problem are considered.},
-  author      = {Hee Jun Yang and Alexander Heinlein and Hyea Hyun Kim},
-  bibtex_show = {true},
-  journal     = {Machine Learning for Computational Science and Engineering},
-  keywords    = {accepted, reviewed},
-  month       = {May},
-  note        = {Accepted for publication in Machine Learning for Computational Science and Engineering},
-  preprint    = {https://arxiv.org/abs/2503.09086},
-  title       = {Numerical study on hyperparameter settings for neural network approximation to partial differential equations},
-  year        = {2026}
 }
 
 @techreport{Alves:2024:CSA,
