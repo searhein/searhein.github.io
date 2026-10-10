@@ -8,7 +8,7 @@ student: Maaike Bukman
 runningindex: 13
 nolink: false
 redirect:
-project_description: /assets/pdf/thesis_projects/2022/2022-heinlein_van_noorden-nonlinear_convergence_ml/project_description.pdf
+project_description: /assets/pdf/thesis_projects/2022/2022-heinlein_van_noorden-nonlinear_convergence_ml/2022-heinlein_van_noorden-nonlinear-convergence-ml-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

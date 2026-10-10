@@ -6,8 +6,8 @@ title: Developing Data-Driven Models for Real-Time Dredging Production Optimizat
 student:
 runningindex: 61
 nolink: false
-redirect: /assets/pdf/thesis_projects/2026/2026-heinlein-boskalis-dredging-production-optimization/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2026/2026-heinlein-boskalis-dredging-production-optimization/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2026/2026-heinlein-boskalis-dredging-production-optimization/2026-heinlein_boskalis-dredging-production-optimization-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2026/2026-heinlein-boskalis-dredging-production-optimization/2026-heinlein_boskalis-dredging-production-optimization-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

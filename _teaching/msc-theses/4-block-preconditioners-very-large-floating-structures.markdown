@@ -7,7 +7,7 @@ co-supervisor: Oriol Colomés (TU Delft, Offshore Engineering)
 student: Shreyas Prashanth
 runningindex: 4
 nolink: false
-redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_colomes-block_preconditioners_floating_structures/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_colomes-block_preconditioners_floating_structures/2021-heinlein_colomes-block-preconditioners-floating-structures-project-description.pdf
 project_description:
 interim_thesis:
 interim_presentation:

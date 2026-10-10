@@ -7,8 +7,8 @@ co-supervisor: Cordula Reisch (TU Braunschweig)
 student: Tirtho Sarathi Saha
 runningindex: 20
 nolink: false
-redirect: /assets/pdf/thesis_projects/2023/2023-heinlein_reisch-pinns-longtime_behavior/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2023/2023-heinlein_reisch-pinns-longtime_behavior/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2023/2023-heinlein_reisch-pinns-longtime_behavior/2023-heinlein_reisch-pinns-longtime-behavior-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2023/2023-heinlein_reisch-pinns-longtime_behavior/2023-heinlein_reisch-pinns-longtime-behavior-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

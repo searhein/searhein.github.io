@@ -7,8 +7,8 @@ co-supervisor: Martin Lesueur
 student:
 runningindex: 56
 nolink: false
-redirect: /assets/pdf/thesis_projects/2026/2026-heinlein-lesueur-fem-multiphase-flow/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2026/2026-heinlein-lesueur-fem-multiphase-flow/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2026/2026-heinlein-lesueur-fem-multiphase-flow/2026-heinlein_lesueur-fem-multiphase-flow-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2026/2026-heinlein-lesueur-fem-multiphase-flow/2026-heinlein_lesueur-fem-multiphase-flow-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

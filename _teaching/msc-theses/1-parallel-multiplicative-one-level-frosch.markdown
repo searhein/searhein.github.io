@@ -6,7 +6,7 @@ title: >
   Parallel Multiplicative One-Level Schwarz Preconditioners With FROSch and Trilinos
 runningindex: 1
 nolink: false
-redirect: /assets/pdf/thesis_projects/2021/2021-heinlein-frosch_multiplicative_coloring/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2021/2021-heinlein-frosch_multiplicative_coloring/2021-heinlein-frosch-multiplicative-coloring-project-description.pdf
 project_description:
 interim_thesis:
 interim_presentation:

@@ -7,8 +7,8 @@ co-supervisor: Filipe Cumaru (TU Delft), Dane Lacey, and Gerhard Wellein (FAU)
 student:
 runningindex: 48
 nolink: false
-redirect: /assets/pdf/thesis_projects/2025/2025-cumaru_heinlein_lacey_wellein-frosch-race/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2025/2025-cumaru_heinlein_lacey_wellein-frosch-race/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2025/2025-cumaru_heinlein_lacey_wellein-frosch-race/2025-cumaru_heinlein_lacey_wellein-frosch-race-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2025/2025-cumaru_heinlein_lacey_wellein-frosch-race/2025-cumaru_heinlein_lacey_wellein-frosch-race-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

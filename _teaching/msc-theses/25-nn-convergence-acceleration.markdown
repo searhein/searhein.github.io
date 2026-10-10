@@ -8,7 +8,7 @@ student: Ezra Cerpac
 runningindex: 25
 nolink: false
 redirect:
-project_description: /assets/pdf/thesis_projects/2024/2024-heinlein_stender-nn-convergence_acceleration/project_description.pdf
+project_description: /assets/pdf/thesis_projects/2024/2024-heinlein_stender-nn-convergence_acceleration/2024-heinlein_stender-nn-convergence-acceleration-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

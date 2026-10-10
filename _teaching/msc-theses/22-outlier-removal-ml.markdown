@@ -8,7 +8,7 @@ student: Thomas Kamminga
 runningindex: 22
 nolink: false
 redirect:
-project_description: /assets/pdf/thesis_projects/2024/2024-bekker_heinlein-outlier_removal_ml/project_description.pdf
+project_description: /assets/pdf/thesis_projects/2024/2024-bekker_heinlein-outlier_removal_ml/2024-bekker_heinlein-outlier-removal-ml-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

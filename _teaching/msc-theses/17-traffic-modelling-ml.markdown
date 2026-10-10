@@ -8,10 +8,10 @@ student: Vosse Meijssen
 runningindex: 17
 nolink: false
 redirect:
-project_description: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/project_description.pdf
-interim_thesis: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/interim_thesis.pdf
-interim_presentation: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/interim_presentation.pdf
-final_thesis: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/final_thesis.pdf
+project_description: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/2023-portengen_heinlein-traffic-modelling-ml-project-description.pdf
+interim_thesis: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/2023-portengen_heinlein-traffic-modelling-ml-interim-thesis.pdf
+interim_presentation: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/2023-portengen_heinlein-traffic-modelling-ml-interim-presentation.pdf
+final_thesis: /assets/pdf/thesis_projects/2023/2023-portengen_heinlein-traffic_modelling-ml/2023-portengen_heinlein-traffic-modelling-ml-final-thesis.pdf
 final_presentation:
 category: master_thesis
 status: archive

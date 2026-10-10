@@ -7,8 +7,8 @@ co-supervisor: Vandana Dwarka (TU Delft, Numerical Analysis)
 student:
 runningindex: 18
 nolink: false
-redirect: /assets/pdf/thesis_projects/2023/2023-dwarka_heinlein-ddm_helmholtz/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2023/2023-dwarka_heinlein-ddm_helmholtz/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2023/2023-dwarka_heinlein-ddm_helmholtz/2023-dwarka_heinlein-ddm-helmholtz-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2023/2023-dwarka_heinlein-ddm_helmholtz/2023-dwarka_heinlein-ddm-helmholtz-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

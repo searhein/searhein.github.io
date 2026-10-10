@@ -8,7 +8,7 @@ student: Michael Aldorf
 runningindex: 23
 nolink: false
 redirect:
-project_description: /assets/pdf/thesis_projects/2024/2024-heinlein_wiarda-data-driven-metrology/project_description.pdf
+project_description: /assets/pdf/thesis_projects/2024/2024-heinlein_wiarda-data-driven-metrology/2024-heinlein_wiarda-data-driven-metrology-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

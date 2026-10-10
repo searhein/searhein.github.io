@@ -7,8 +7,8 @@ co-supervisor: Rui Peng Li (LLNL)
 student:
 runningindex: 51
 nolink: false
-redirect: /assets/pdf/thesis_projects/2025/2025-heinlein_li-gnns-learning-preconditioners/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2025/2025-heinlein_li-gnns-learning-preconditioners/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2025/2025-heinlein_li-gnns-learning-preconditioners/2025-heinlein_li-gnns-learning-preconditioners-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2025/2025-heinlein_li-gnns-learning-preconditioners/2025-heinlein_li-gnns-learning-preconditioners-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

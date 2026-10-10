@@ -7,8 +7,8 @@ co-supervisor: Birupaksha Pal (Bosch, India)
 student:
 runningindex: 27
 nolink: false
-redirect: /assets/pdf/thesis_projects/2024/2024-heinlein_pal-operator-learning-hidden-physics/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2024/2024-heinlein_pal-operator-learning-hidden-physics/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2024/2024-heinlein_pal-operator-learning-hidden-physics/2024-heinlein_pal-operator-learning-hidden-physics-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2024/2024-heinlein_pal-operator-learning-hidden-physics/2024-heinlein_pal-operator-learning-hidden-physics-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

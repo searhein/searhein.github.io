@@ -7,7 +7,7 @@ co-supervisor: Edo Frederix (NRG), Deepesh Toshniwal (TU Delft, Numerical Analys
 student: Gonzalo Bonilla Moreno
 runningindex: 11
 nolink: false
-redirect: /assets/pdf/thesis_projects/2022/2022-nrg_heinlein_toshniwal-ai_turbulence_modeling/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2022/2022-nrg_heinlein_toshniwal-ai_turbulence_modeling/2022-nrg_heinlein_toshniwal-ai-turbulence-modeling-project-description.pdf
 project_description:
 interim_thesis:
 interim_presentation:

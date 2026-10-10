@@ -7,8 +7,8 @@ co-supervisor: Denis Voskov (TU Delft, Geoscience and Engineering)
 student:
 runningindex: 60
 nolink: false
-redirect: /assets/pdf/thesis_projects/2026/2026-voskov_heinlein-foundation-model-proxies-porous-media/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2026/2026-voskov_heinlein-foundation-model-proxies-porous-media/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2026/2026-voskov_heinlein-foundation-model-proxies-porous-media/2026-voskov_heinlein-foundation-model-proxies-porous-media-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2026/2026-voskov_heinlein-foundation-model-proxies-porous-media/2026-voskov_heinlein-foundation-model-proxies-porous-media-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

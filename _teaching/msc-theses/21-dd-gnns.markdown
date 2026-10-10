@@ -8,7 +8,7 @@ student:
 runningindex: 21
 nolink: false
 redirect:
-project_description: /assets/pdf/thesis_projects/2023/2023-kopanicakova_heinlein-dd-gnns/project_description.pdf
+project_description: /assets/pdf/thesis_projects/2023/2023-kopanicakova_heinlein-dd-gnns/2023-kopanicakova_heinlein-dd-gnns-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

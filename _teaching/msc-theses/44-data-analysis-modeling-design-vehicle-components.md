@@ -7,8 +7,8 @@ co-supervisor: Daniel Kreuter (Bosch)
 student:
 runningindex: 44
 nolink: false
-redirect: /assets/pdf/thesis_projects/2025/2025-heinlein_bosch-data-analysis-modeling-design-vehicle-components/project_description.pdf
-project_description: /assets/pdf/thesis_projects/2025/2025-heinlein_bosch-data-analysis-modeling-design-vehicle-components/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2025/2025-heinlein_bosch-data-analysis-modeling-design-vehicle-components/2025-heinlein_bosch-data-analysis-modeling-design-vehicle-components-project-description.pdf
+project_description: /assets/pdf/thesis_projects/2025/2025-heinlein_bosch-data-analysis-modeling-design-vehicle-components/2025-heinlein_bosch-data-analysis-modeling-design-vehicle-components-project-description.pdf
 interim_thesis:
 interim_presentation:
 final_thesis:

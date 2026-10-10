@@ -6,7 +6,7 @@ co-supervisor: Deepesh Toshniwal (TU Delft, Numerical Analysis)
 student: Yijun Wu
 runningindex: 1
 nolink: false
-redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_toshniwal-neural_networks_error_estimation/project_description.pdf
+redirect: /assets/pdf/thesis_projects/2021/2021-heinlein_toshniwal-neural_networks_error_estimation/2021-heinlein_toshniwal-neural-networks-error-estimation-project-description.pdf
 project_description:
 interim_thesis:
 interim_presentation:
