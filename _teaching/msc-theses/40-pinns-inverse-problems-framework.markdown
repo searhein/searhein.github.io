@@ -2,7 +2,7 @@
 layout: page_thesis
 university: tud
 collaboration:
-title: Physics-Guided Machine Learning - A Novel Neural Network-Based Approach for Inverse Problems
+title: Bayesian Inverse Generative Neural Operator — Latent-Space Posterior Formulation for PDE-Constrained Inverse Problems
 co-supervisor: Jing Sun (TU Delft, Intelligent Systems)
 student: Henry Page
 runningindex: 40

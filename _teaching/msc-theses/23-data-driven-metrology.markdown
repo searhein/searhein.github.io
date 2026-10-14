@@ -2,9 +2,9 @@
 layout: page_thesis
 university: tud
 collaboration: ASML
-title: Data-driven methods for  machine-induced metrology errors
+title: Adapting Contrastive Learning Methods for Few-Shot Imputation in High-Dimensional Data
 co-supervisor: Sjoerd Wiarda (ASML)
-student: Michael Aldorf
+student: Michael Henry Aldorf
 runningindex: 23
 nolink: false
 redirect:

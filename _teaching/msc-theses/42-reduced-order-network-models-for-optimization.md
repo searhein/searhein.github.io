@@ -2,7 +2,7 @@
 layout: page_thesis
 university: tud
 collaboration:
-title: Reduced Order Network Models for Optimization
+title: Reduced Order Modeling for District Heating Network State Estimation
 co-supervisor: Mirko Kemna (Gradyent)
 student: Zomer van Noord
 runningindex: 42

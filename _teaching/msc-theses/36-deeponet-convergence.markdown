@@ -2,9 +2,9 @@
 layout: page_thesis
 university: tud
 collaboration:
-title: Investigation of the convergence of deep operator networks
+title: Mode-Decomposition in DeepONets — Generalization and Coupling Analysis
 co-supervisor:
-student: Johannes Taraz
+student: Julius Johannes Taraz
 runningindex: 36
 nolink: false
 redirect:

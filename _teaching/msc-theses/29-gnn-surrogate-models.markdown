@@ -2,7 +2,7 @@
 layout: page_thesis
 university: tud
 collaboration: Flow Physics and Technology, TU Delft
-title: CFD surrogate models based on graph neural networks
+title: A Study on the Stability Limits of Graph Neural Network Surrogates for Advection-Diffusion Problems
 co-supervisor: Richard Dwight (TU Delft, Flow Physics and Technology)
 student: Mitchell Maassen van den Brink
 runningindex: 29

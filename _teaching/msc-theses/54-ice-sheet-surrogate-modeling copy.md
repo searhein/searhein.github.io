@@ -2,8 +2,8 @@
 layout: page_thesis
 university: tud
 collaboration: TNO
-title: Ice Sheet Surrogate Modeling with Scientific Machine Learning
-co-supervisor:
+title: Physics Informed Neural Networks for Infrared Atomic Force Microscopy
+co-supervisor: Maarten van Es (TNO)
 student: Aidan Engelhard
 runningindex: 54
 nolink: true
@@ -14,5 +14,5 @@ interim_presentation:
 final_thesis:
 final_presentation:
 category: master_thesis
-status: ongoing
+status: archive
 ---
